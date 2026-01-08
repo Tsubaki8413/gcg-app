@@ -6,9 +6,14 @@ export default defineConfig({
   plugins: [react()],
   server: {
     proxy: {
-      // /api で始まるリクエストを PHPサーバー(localhost:80) へ転送
+      // APIへのリクエストを転送
       '/api': {
-        target: 'http://localhost:80', // 環境に合わせて変更してください
+        target: 'http://localhost:8080',
+        changeOrigin: true,
+      },
+      // 画像へのリクエストも転送
+      '/images': {
+        target: 'http://localhost:8080',
         changeOrigin: true,
       }
     }
