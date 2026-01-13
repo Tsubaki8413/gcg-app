@@ -1,73 +1,17 @@
-# React + TypeScript + Vite
+# 提出課題
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## 起動方法
+本システムは、バックエンドがAWS（EC2）、フロントエンドがローカルPC（Windows）で動作するハイブリッド構成である。 開発時は**3つのターミナル（PowerShell等）**を開き、以下の手順でSSHトンネルを確立して接続する。画面はすべて閉じない。
 
-Currently, two official plugins are available:
+**バックエンド起動（AWS側）**
+1. ssh接続　ssh -i C:\Users\student.501-05\Desktop\GCG_app\documents\TCG_key.pem ec2-user@54.174.151.132
+2. ディレクトリ移動　cd /var/www/html
+3. PHPサーバー起動　php -S 0.0.0.0:8080
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+**SSHトンネル接続（ローカル側）**
+1. ssh接続　ssh -i C:\Users\student.501-05\Desktop\GCG_app\documents\TCG_key.pem **-L 8080:localhost:8080** ec2-user@54.174.151.132
 
-## React Compiler
-
-The React Compiler is currently not compatible with SWC. See [this issue](https://github.com/vitejs/vite-plugin-react/issues/428) for tracking the progress.
-
-## Expanding the ESLint configuration
-
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
-
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
-
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
-
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
-
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
-
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+**フロントエンド起動（ローカル側）**
+1. 権限関連　Set-ExecutionPolicy -ExecutionPolicy RemoteSigned -Scope Process
+2. インストール　npm install react-router-dom react-virtuoso html2canvas recharts framer-motion clsx tailwind-merge
+3. 起動　npm run dev

@@ -1,4 +1,4 @@
-// import { Card } from '../../types'; // ←もしパスエラーが出たら '../types' か直接定義で対応
+import type { Card } from '../../types';
 import { Modal } from '../common/Modal';
 
 interface CardDetailModalProps {

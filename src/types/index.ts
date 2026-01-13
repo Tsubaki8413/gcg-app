@@ -1,39 +1,31 @@
 export interface Card {
-  id: string;          // ST01-001 (PK)
+  id: string;
   name: string;
-  rarity: string;
-  expansion_set: string;
-  level: number;
-  cost: number;
-  color: string;
   type: string;        // UNIT, PILOT, etc.
-  text: string;
-  zone: string;
-  traits: string;
-  link: string;        // リンク条件
+  color: string;       // Red, Blue, etc.
+  cost: number;
+  source: number;      // 軽減コスト(もしあれば)
   ap: number;
   hp: number;
-  image_url: string;   // .webp
-  updated_at?: string;
+  rarity: string;
+  expansion_set: string; // set ではなく expansion_set
+  level: number;
+  zone: string;        // Earth, Space
+  image_url: string;   // img ではなく image_url
+  text: string;
+  traits: string;      // 特徴
+  link: string;
 }
 
-export interface Deck {
-  id: string;
-  user_id: string;
-  title: string;
-  cards: Record<string, number>; // {"ST01-001": 4, ...}
-  thumbnail_id: string | null;
-  created_at: string;
-  updated_at: string;
-}
-
-// 検索フィルタ用
-export interface CardFilters {
-  q?: string;
-  color?: string;
-  type?: string;
-  cost?: number;
-  level?: number;
-  rarity?: string;
-  expansion_set?: string;
+export interface FilterState {
+  colors: string[];      // 複数選択
+  types: string[];       // 複数選択
+  costs: string[];       // 複数選択 (1-9)
+  levels: string[];      // 複数選択 (1-9)
+  rarities: string[];    // 複数選択
+  expansion_sets: string[]; // 複数選択
+  zones: string[];       // 複数選択
+  aps: string[];         // 複数選択 (1-9)
+  hps: string[];         // 複数選択 (1-9)
+  text: string;
 }

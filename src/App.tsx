@@ -1,5 +1,5 @@
 import { BrowserRouter, Routes, Route, Link } from 'react-router-dom';
-import { CardList } from './components/features/CardList/CardList'; // インポート追加
+import { CardGrid } from './components/features/CardList/CardGrid'; // インポート追加
 
 // 仮のコンポーネント
 const DeckList = () => <div className="p-4"><h2>DECK LIST (Coming Soon)</h2></div>;
@@ -23,7 +23,7 @@ function App() {
     <BrowserRouter>
       <div style={{ paddingBottom: '60px', minHeight: '100vh', background: '#F5F7FA' }}>
         <Routes>
-          <Route path="/" element={<CardList />} />
+          <Route path="/" element={<CardGrid />} />
           <Route path="/deck" element={<DeckList />} />
           <Route path="/play" element={<SoloPlay />} />
         </Routes>
