@@ -43,7 +43,32 @@ export const useCards = () => {
     return cards.filter((card) => {
       // テキスト検索
       const searchTarget = `${card.name} ${card.traits} ${card.id} ${card.text}`.toLowerCase();
-      if (filters.text && !searchTarget.includes(filters.text.toLowerCase())) return false;
+
+      // テキスト検索ロジック（空白区切り＆マイナス検索対応）
+      if (filters.text) {
+        // 1. 入力を小文字化し、全角スペースを半角に置換して、空白で分割
+        const keywords = filters.text
+          .toLowerCase()
+          .replace(/　/g, ' ') // 全角スペース対応
+          .split(' ')
+          .filter(k => k.trim() !== ''); // 空文字除去
+
+        // 2. すべてのキーワード条件を満たすかチェック (AND検索)
+        const isMatch = keywords.every((keyword) => {
+          if (keyword.startsWith('-')) {
+            // マイナス検索: 「-」を取り除いた単語が含まれていては『いけない』
+            const excludeWord = keyword.slice(1);
+            // マイナスだけの入力("-")は無視する
+            if (!excludeWord) return true; 
+            return !searchTarget.includes(excludeWord);
+          } else {
+            // 通常検索: 単語が含まれている『必要がある』
+            return searchTarget.includes(keyword);
+          }
+        });
+
+        if (!isMatch) return false;
+      }
 
       // 各種フィルター（配列が空なら無視、入っていれば含まれるかチェック）
       if (filters.colors.length > 0 && !filters.colors.includes(card.color)) return false;

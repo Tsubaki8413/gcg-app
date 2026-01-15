@@ -151,11 +151,31 @@ function saveAsWebP($imgData, $savePath) {
 // Excel用にデータを整形する関数
 function cleanForExcel($text) {
     if ($text === null) return '';
-    $text = trim(preg_replace('/\s+/', ' ', $text));
-    return mb_convert_encoding($text, 'SJIS-win', 'UTF-8');
+    // 前後の空白削除
+    return trim($text);
 }
 
-echo "処理を開始します... (Excel最適化モード + WebP変換)\n";
+// 【追加】DOM要素からHTMLを取得し、<br>を改行コードに変換してからテキスト化する関数
+function getTextWithNewlines($node) {
+    if (!$node) return '';
+
+    // ノード内のHTMLを取得 (例: "攻撃時<br>1枚引く")
+    $html = $node->ownerDocument->saveHTML($node);
+
+    // <br>タグ (表記ゆれ含む) を \n に置換
+    $html = preg_replace('/<br\s*\/?>/i', "\n", $html);
+
+    // タグを除去して前後の空白を削除
+    $text = trim(strip_tags($html));
+
+    // 「。」の後に改行が続き、その後に「(」または「（」が来る場合、
+    // 間の改行を強制的に「1つ」にします（空行を削除）。
+    $text = preg_replace('/(。)\n+([\(（])/u', "$1\n$2", $text);
+
+    return $text;
+}
+
+echo "処理を開始します...\n";
 flush();
 
 // CSVを開く
@@ -165,6 +185,9 @@ if ($fp === false) {
     die("エラー: Excelで '$csv_path' を開いている場合は閉じてから再実行してください。");
 }
 
+// 【重要】Excelで文字化けしないための「BOM」を書き込む
+fwrite($fp, "\xEF\xBB\xBF");
+
 // ヘッダー書き込み（SJIS変換）
 $header = [
     'id', 'name', 'rarity', 'expansion_set', 
@@ -172,8 +195,7 @@ $header = [
     'text', 'zone', 'traits', 'link', 
     'ap', 'hp', 'set_name', 'image_url'
 ];
-$header_sjis = array_map(function($v){ return mb_convert_encoding($v, 'SJIS-win', 'UTF-8'); }, $header);
-fputcsv($fp, $header_sjis);
+fputcsv($fp, $header);
 
 foreach ($settings as $set) {
     $prefix = $set['prefix'];
@@ -224,8 +246,16 @@ foreach ($settings as $set) {
         $rarity = ($rarityNodes->length > 0) ? trim($rarityNodes->item(0)->textContent) : '';
 
         $dataNodes = $xpath->query($xpath_stats);
-        $getByIndex = function($idx) use ($dataNodes) {
+        $getByIndex = function($idx) use ($dataNodes, $idx_text) {
             if ($dataNodes->length > $idx) {
+                $node = $dataNodes->item($idx);
+                
+                // テキストの場合は、改行コード付きで取得する
+                if ($idx === $idx_text) {
+                    return getTextWithNewlines($node);
+                }
+                
+                // それ以外は通常のテキスト取得
                 return trim($dataNodes->item($idx)->textContent);
             }
             return '';
@@ -286,9 +316,9 @@ foreach ($settings as $set) {
         $row_data[] = $image_filename;
 
         // CSVに書き込む (改行削除 & SJIS変換)
-        $row_sjis = array_map('cleanForExcel', $row_data);
+        $row_formatted = array_map('cleanForExcel', $row_data);
 
-        fputcsv($fp, $row_sjis);
+        fputcsv($fp, $row_formatted);
 
         echo "Done ($name)\n";
         flush();

@@ -39,8 +39,9 @@ export const Modal = ({ isOpen, onClose, children }: ModalProps) => {
           borderRadius: '12px',
           maxWidth: '500px',
           width: '100%',
-          maxHeight: '90vh',
-          overflowY: 'auto',
+          height: '90vh',      // 高さを画面の80%に固定
+          overflowY: 'auto',   // 中身がこの高さを超えたらスクロール
+          boxSizing: 'border-box', // paddingを高さに含める
           position: 'relative',
           padding: '20px'
         }}

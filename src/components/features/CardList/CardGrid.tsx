@@ -14,6 +14,24 @@ export const CardGrid = () => {
   const [selectedCard, setSelectedCard] = useState<Card | null>(null);
   const [isFilterOpen, setIsFilterOpen] = useState(false);
 
+  // 現在開いているカードがリストの何番目かを取得
+  const currentIndex = selectedCard 
+    ? cards.findIndex((c) => c.id === selectedCard.id) 
+    : -1;
+
+  // 前後があるか判定
+  const hasPrev = currentIndex > 0;
+  const hasNext = currentIndex !== -1 && currentIndex < cards.length - 1;
+
+  // 移動関数
+  const handlePrev = () => {
+    if (hasPrev) setSelectedCard(cards[currentIndex - 1]);
+  };
+
+  const handleNext = () => {
+    if (hasNext) setSelectedCard(cards[currentIndex + 1]);
+  };
+
   // フィルターが何か1つでも設定されているか
   const isFilterActive = 
     Object.entries(filters).some(([key, value]) => key !== 'text' && Array.isArray(value) && value.length > 0);
@@ -75,7 +93,14 @@ export const CardGrid = () => {
         ))}
       </div>
 
-      <CardDetailModal card={selectedCard} onClose={() => setSelectedCard(null)} />
+      <CardDetailModal
+        card={selectedCard}
+        onClose={() => setSelectedCard(null)}
+        onPrev={handlePrev}
+        onNext={handleNext}
+        hasPrev={hasPrev}
+        hasNext={hasNext}
+      />
 
       {/* 新しいフィルター画面 */}
       <FilterOverLay 

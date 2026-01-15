@@ -1,367 +1,667 @@
 id,name,rarity,expansion_set,level,cost,color,type,text,zone,traits,link,ap,hp,set_name,image_url
-ST01-001,�K���_��,LR,ST01,4,3,Blue,UNIT,�s���y�A2�t(�����̃^�[���I�����A���̃��j�b�g���w��̐��񕜂���)�y�Z�b�g���z�����̃^�[�����A�����̃��j�b�g���ׂĂ�AP+1����B,"�F�� �n��","�k�n���A�M�l �kWB���l",�u�A�����E���C�v,3,4,"Heroic Beginnings [ST01]",ST01-001.webp
-ST01-002,�K���_���iMA�`�ԁj,C,ST01,5,3,Blue,UNIT,�y�Z�b�g���E�kWB���l�̃p�C���b�g�z������1���h���[����B,�F��,"�k�n���A�M�l �kWB���l",�u�A�����E���C�v,4,3,"Heroic Beginnings [ST01]",ST01-002.webp
-ST01-003,�K���L���m��,C,ST01,3,2,Blue,UNIT,-,"�F�� �n��","�k�n���A�M�l �kWB���l",�u�J�C�E�V�f���v,2,4,"Heroic Beginnings [ST01]",ST01-003.webp
-ST01-004,�K���^���N,C,ST01,3,2,Blue,UNIT,�y�z�����zHP2�ȉ��̑���̃��j�b�g1��I�ԁB��������X�g�ɂ���B,"�F�� �n��","�k�n���A�M�l �kWB���l",�u�n���g�E�R�o���V�v,2,3,"Heroic Beginnings [ST01]",ST01-004.webp
-ST01-005,�W��,C,ST01,2,1,Blue,UNIT,-,"�F�� �n��",�k�n���A�M�l,-,2,2,"Heroic Beginnings [ST01]",ST01-005.webp
-ST01-006,�K���_���E�G�A���A���i�p�[���b�g�X�R�A�E�V�b�N�X�j,LR,ST01,5,4,White,UNIT,�y�Z�b�g���zLv.5�ȉ��̑���̃��j�b�g1��I�ԁB���̃^�[�����A�����AP-3����B,"�F�� �n��",�k�w���l,�u�X���b�^�E�}�[�L�����[�v,4,4,"Heroic Beginnings [ST01]",ST01-006.webp
-ST01-007,�K���_���E�G�A���A���i�r�b�g�I���t�H�[���j,C,ST01,4,2,White,UNIT,-,"�F�� �n��",�k�w���l,�u�X���b�^�E�}�[�L�����[�v,3,4,"Heroic Beginnings [ST01]",ST01-007.webp
-ST01-008,�f�~�g���[�i�[,C,ST01,1,1,White,UNIT,�s�u���b�J�[�t(���X�g�ɂ��邱�ƂŃA�^�b�N������̃��j�b�g�ɂ���),"�F�� �n��",�k�w���l,-,1,1,"Heroic Beginnings [ST01]",ST01-008.webp
-ST01-009,�U�E�H�[�g,C,ST01,2,2,White,UNIT,�s�u���b�J�[�t(���X�g�ɂ��邱�ƂŃA�^�b�N������̃��j�b�g�ɂ���)���̃��j�b�g�́A����v���C���[���A�^�b�N��ɑI�ׂȂ��B,"�F�� �n��",�k�w���l,-,3,2,"Heroic Beginnings [ST01]",ST01-009.webp
-ST01-010,�A�����E���C,C,ST01,4,1,Blue,PILOT,�y�o�[�X�g�z���̃J�[�h����D�ɉ�����B�y�Z�b�g���zHP5�ȉ��̑���̃��j�b�g1��I�ԁB��������X�g�ɂ���B,-,"�k�n���A�M�l �kWB���l �k�j���[�^�C�v�l",-,+2,+1,"Heroic Beginnings [ST01]",ST01-010.webp
-ST01-011,�X���b�^�E�}�[�L�����[,C,ST01,4,1,White,PILOT,"�y�o�[�X�g�z���̃J�[�h����D�ɉ�����B�y�A�^�b�N���z�y�^�[��1��z�����̃��\�[�X1��I�ԁB������A�N�e�B�u�ɂ���B",-,�k�w���l,-,+1,+2,"Heroic Beginnings [ST01]",ST01-011.webp
-ST01-012,���g�n�w,C,ST01,2,1,Blue,COMMAND,�y���C���z���X�g�̑���̃��j�b�g1��I�ԁB�����1�_���[�W��^����B�y�p�C���b�g�z�u�n���g�E�R�o���V�v,-,"�k�n���A�M�l �kWB���l",-,+0,+1,"Heroic Beginnings [ST01]",ST01-012.webp
-ST01-013,�J�C�̌���,C,ST01,3,1,Blue,COMMAND,�y���C���z�����̃��j�b�g1��I�ԁB�����3�񕜂���B�y�p�C���b�g�z�u�J�C�E�V�f���v,-,"�k�n���A�M�l �kWB���l",-,+1,+0,"Heroic Beginnings [ST01]",ST01-013.webp
-ST01-014,"�\�����ʏo����",C,ST01,3,1,White,COMMAND,�y�o�[�X�g�z���̃J�[�h�́y���C���z�𔭓�����B�y���C���z/�y�A�N�V�����z����̃��j�b�g1��I�ԁB���̃^�[�����A�����AP-3����B,-,-,-,-,-,"Heroic Beginnings [ST01]",ST01-014.webp
-ST01-015,�z���C�g�x�[�X,C,ST01,3,2,Blue,BASE,"�y�o�[�X�g�z���̃J�[�h��z������B�y�z�����z�����̃V�[���h1����D�ɉ�����B �y�N���E���C���z�y�^�[��1��z�A�F�����̃��j�b�g�����Ȃ��Ȃ�A�u�K���_���v(�kWB���l�EAP3�EHP3)�A1��������Ȃ�A�u�K���L���m���v(�kWB���l�EAP2�EHP2)�A2�ȏア��Ȃ�A�u�K���^���N�v(�kWB���l�EAP1�EHP1)�̃��j�b�g�g�[�N��1��z������B","�F�� �n��","�k�n���A�M�l �kWB���l �k�͑D�l",-,-,5,"Heroic Beginnings [ST01]",ST01-015.webp
-ST01-016,"�A�X�e�B�J�V�A�������w�� �n����",C,ST01,2,1,White,BASE,"�y�o�[�X�g�z���̃J�[�h��z������B�y�z�����z�����̃V�[���h1����D�ɉ�����B �y�N���E���C���z���̃x�[�X�����X�g�ɂ���F���̃^�[�����A�����̃����N���j�b�g���ׂĂ�AP+1����B",�F��,"�k�w���l �k���_�l",-,-,5,"Heroic Beginnings [ST01]",ST01-016.webp
-ST02-001,�E�C���O�K���_��,LR,ST02,6,4,Green,UNIT,�s�˔j5�t(�A�^�b�N�ő���̃��j�b�g��j�󂵂��Ƃ��A���̑���̃V�[���h�G���A�̐擪�̃J�[�h1���Ɏw��̐��_���[�W��^����)���̃��j�b�g�́A�A�N�e�B�u��Lv.4�ȉ��̑���̃��j�b�g���A�^�b�N��ɑI��ł��悢�B,"�F�� �n��",�k�I�y���[�V�����E���e�I�l,�u�q�C���E���C�v,4,5,"Wings of Advance [ST02]",ST02-001.webp
-ST02-002,�E�C���O�K���_���i�o�[�h�`�ԁj,C,ST02,3,3,Green,UNIT,"�y�z�����z������EX���\�[�X1��u���B","�F�� �n��",�k�I�y���[�V�����E���e�I�l,�u�q�C���E���C�v,2,2,"Wings of Advance [ST02]",ST02-002.webp
-ST02-003,�K���_���w�r�[�A�[���Y,C,ST02,5,3,Green,UNIT,�y�Z�b�g���z�����̃^�[�����A���̃��j�b�g���o�g���_���[�W�ő���̃��j�b�g��j�󂵂��Ƃ��ALv.3�ȉ��̑���̃��j�b�g���ׂĂ�1�_���[�W��^����B,�n��,�k�I�y���[�V�����E���e�I�l,�u�g�����E�o�[�g���v,3,4,"Wings of Advance [ST02]",ST02-003.webp
-ST02-004,�K���_���T���h���b�N,C,ST02,4,2,Green,UNIT,-,�n��,�k�I�y���[�V�����E���e�I�l,�u�J�g���E���o�[�o�E�E�B�i�[�v,4,3,"Wings of Advance [ST02]",ST02-004.webp
-ST02-005,�}�O�A�i�b�N,C,ST02,2,2,Green,UNIT,-,"�F�� �n��",�k�}�O�A�i�b�N���l,-,3,2,"Wings of Advance [ST02]",ST02-005.webp
-ST02-006,�g�[���M�X,LR,ST02,5,4,Blue,UNIT,�y�N���E���C���z�y�^�[��1��z�C�F���̃��j�b�g���A�N�e�B�u�ɂ���B,"�F�� �n��",�kOZ�l,�u�[�N�X�E�}�[�L�X�v,4,4,"Wings of Advance [ST02]",ST02-006.webp
-ST02-007,���[�I�[,C,ST02,2,2,Blue,UNIT,-,"�F�� �n��",�kOZ�l,�����kOZ�l,2,2,"Wings of Advance [ST02]",ST02-007.webp
-ST02-008,�G�A���[�Y,C,ST02,2,2,Blue,UNIT,�s�u���b�J�[�t(���X�g�ɂ��邱�ƂŃA�^�b�N������̃��j�b�g�ɂ���),�n��,�kOZ�l,-,2,1,"Wings of Advance [ST02]",ST02-008.webp
-ST02-009,�g���S�X,C,ST02,1,1,Blue,UNIT,�s�u���b�J�[�t(���X�g�ɂ��邱�ƂŃA�^�b�N������̃��j�b�g�ɂ���),�n��,�kOZ�l,-,1,1,"Wings of Advance [ST02]",ST02-009.webp
-ST02-010,�q�C���E���C,C,ST02,4,1,Green,PILOT,�y�o�[�X�g�z���̃J�[�h����D�ɉ�����B�y�����N���z���̃��j�b�g��AP+1�AHP+1����B,-,�k�I�y���[�V�����E���e�I�l,-,+2,+1,"Wings of Advance [ST02]",ST02-010.webp
-ST02-011,�[�N�X�E�}�[�L�X,C,ST02,5,1,Blue,PILOT,�y�o�[�X�g�z���̃J�[�h����D�ɉ�����B�y�����N���z�����̃^�[�����A���̃��j�b�g���o�g���_���[�W�ő���̃��j�b�g��j�󂵂��Ƃ��A������1���h���[����B,-,�kOZ�l,-,+2,+1,"Wings of Advance [ST02]",ST02-011.webp
-ST02-012,��Ĕ���,C,ST02,4,1,Green,COMMAND,"�y���C���z�����̃��j�b�g1��I�ԁB���̃^�[�����A����́s�˔j3�t�𓾂�B (�A�^�b�N�ő���̃��j�b�g��j�󂵂��Ƃ��A���̑���̃V�[���h�G���A�̐擪�̃J�[�h1���Ɏw��̐��_���[�W��^����)�y�p�C���b�g�z�u�g�����E�o�[�g���v",-,�k�I�y���[�V�����E���e�I�l,-,+1,+1,"Wings of Advance [ST02]",ST02-012.webp
-ST02-013,���₩�ȉ��F,C,ST02,4,1,Green,COMMAND,�y�A�N�V�����z���̃o�g�����A�����̃V�[���h�G���A�̃J�[�h�́ALv.4�ȉ��̑���̃��j�b�g����_���[�W���󂯂Ȃ��B�y�p�C���b�g�z�u�J�g���E���o�[�o�E�E�B�i�[�v,-,�k�I�y���[�V�����E���e�I�l,-,+1,+1,"Wings of Advance [ST02]",ST02-013.webp
-ST02-014,��͐�p,C,ST02,3,1,Blue,COMMAND,�y�o�[�X�g�z���̃J�[�h�́y���C���z�𔭓�����B�y���C���z/�y�A�N�V�����zHP5�ȉ��̑���̃��j�b�g1��I�ԁB��������X�g�ɂ���B,-,-,-,-,-,"Wings of Advance [ST02]",ST02-014.webp
-ST02-015,���K�u���G���w��,C,ST02,2,2,Green,BASE,�y�o�[�X�g�z���̃J�[�h��z������B�y�z�����z�����̃V�[���h1����D�ɉ�����B���̌�A�����̃f�b�L���ォ��2�����āA���̒��̃J�[�h1������ɖ߂��B�c�����J�[�h�͉��ɖ߂��B,�n��,"�k�w���l �k���_�l",-,-,5,"Wings of Advance [ST02]",ST02-015.webp
-ST02-016,�R���V�J��n,C,ST02,3,3,Blue,BASE,�y�o�[�X�g�z���̃J�[�h��z������B�y�z�����z�����̃V�[���h1����D�ɉ�����B���̌�A�����̃^�[���Ȃ�A�u�g�[���M�X�v(�kOZ�l�EAP4�EHP2)�̃��j�b�g�g�[�N��1��z������B�����̃^�[���ŁA�����̃g���b�V���ɃJ�[�h���Ɂu�R���V�J��n�v���܂ރJ�[�h������Ȃ�A�����Ɂu���[�I�[�v(�kOZ�l�EAP1�EHP1)�̃��j�b�g�g�[�N��2��z������B,�n��,"�kOZ�l �k���_�l",-,-,5,"Wings of Advance [ST02]",ST02-016.webp
-ST03-001,�V�i���W��,LR,ST03,6,5,Red,UNIT,"�y�Z�b�g���z���̃��j�b�g�́s���@���t�𓾂�B (���̃��j�b�g�̓u���b�N����Ȃ�)�����̃^�[�����A���̃��j�b�g���o�g���_���[�W�ő���̃V�[���h�G���A�̃J�[�h��j�󂵂��Ƃ��A����̃��j�b�g1��I�ԁB�����2�_���[�W��^����B","�F�� �n��",�k�l�I�E�W�I���l,�u�t���E�t�����^���v,5,4,"Zeon's Rush [ST03]",ST03-001.webp
-ST03-002,�M���E�Y�[���i�A���W�F���E�U�E�p�[��p�@�j,C,ST03,4,3,Red,UNIT,�y�N���E���C���z�s����2�t(���X�g�ɂ��邱�ƂŁA���̃^�[�����A���̖����̃��j�b�g1��AP+(�w��̐�)����),"�F�� �n��",�k�l�I�E�W�I���l,�u�A���W�F���E�U�E�p�[�v,3,3,"Zeon's Rush [ST03]",ST03-002.webp
-ST03-003,�M���E�Y�[��,C,ST03,3,2,Red,UNIT,-,"�F�� �n��",�k�l�I�E�W�I���l,�����k�l�I�E�W�I���l,3,2,"Zeon's Rush [ST03]",ST03-003.webp
-ST03-004,�K�UD�i���t���d�l�j,C,ST03,2,2,Red,UNIT,�y�N���E���C���z�s����2�t(���X�g�ɂ��邱�ƂŁA���̃^�[�����A���̖����̃��j�b�g1��AP+(�w��̐�)����),"�F�� �n��",�k�l�I�E�W�I���l,-,2,1,"Zeon's Rush [ST03]",ST03-004.webp
-ST03-005,�h���b�c�F�i���t���d�l�j,C,ST03,1,1,Red,UNIT,-,�F��,�k�l�I�E�W�I���l,-,1,2,"Zeon's Rush [ST03]",ST03-005.webp
-ST03-006,�U�N�U�i�V���A�E�A�Y�i�u���@�j,LR,ST03,3,2,Green,UNIT,�y�j�󎞁z�����̃f�b�L���ォ��3�����āA���̒��́A�k�W�I���l/�k�l�I�E�W�I���l�̃��j�b�g�J�[�h1�������J���Ď�D�ɉ����Ă��悢�B�c�����J�[�h�͖���ׂɉ��ɖ߂��B,"�F�� �n��",�k�W�I���l,�u�V���A�E�A�Y�i�u���v,3,2,"Zeon's Rush [ST03]",ST03-006.webp
-ST03-007,�U�N�T,C,ST03,1,1,Green,UNIT,-,"�F�� �n��",�k�W�I���l,-,1,2,"Zeon's Rush [ST03]",ST03-007.webp
-ST03-008,�U�N�U,C,ST03,2,1,Green,UNIT,�y�A�^�b�N���z���̃^�[�����A���̃��j�b�g��AP+2����B,"�F�� �n��",�k�W�I���l,-,1,2,"Zeon's Rush [ST03]",ST03-008.webp
-ST03-009,�O�t,C,ST03,3,3,Green,UNIT,�y�z�����z�u�U�N�U�v(�k�W�I���l�EAP1�EHP1)�̃��j�b�g�g�[�N��1�����X�g�Ŕz������B,�n��,�k�W�I���l,�u�����o�E�����v,2,3,"Zeon's Rush [ST03]",ST03-009.webp
-ST03-010,�t���E�t�����^��,C,ST03,6,1,Red,PILOT,�y�o�[�X�g�z���̃J�[�h����D�ɉ�����B�y�Z�b�g���z�����̎�D�́ALv.4�ȉ��́A�k�l�I�E�W�I���l/�k�W�I���l�̃��j�b�g�J�[�h1����z�����Ă��悢�B,-,"�k�l�I�E�W�I���l �k�����l�ԁl",-,+2,+2,"Zeon's Rush [ST03]",ST03-010.webp
-ST03-011,�V���A�E�A�Y�i�u��,C,ST03,3,1,Green,PILOT,"�y�o�[�X�g�z���̃J�[�h����D�ɉ�����B�y�A�^�b�N���z���̃^�[�����A���̃��j�b�g��AP+1���A���ꂪ�����N���j�b�g�Ȃ�A����́s���@���t�𓾂�B (���̃��j�b�g�̓u���b�N����Ȃ�)",-,"�k�W�I���l �k�j���[�^�C�v�l",-,+1,+1,"Zeon's Rush [ST03]",ST03-011.webp
-ST03-012,���V,C,ST03,2,1,Red,COMMAND,�y���C���z/�y�A�N�V�����z�����̃��j�b�g1��I�ԁB���̃^�[�����A�����AP+2����B�y�p�C���b�g�z�u�A���W�F���E�U�E�p�[�v,-,�k�l�I�E�W�I���l,-,+1,+0,"Zeon's Rush [ST03]",ST03-012.webp
-ST03-013,�i����,C,ST03,2,2,Red,COMMAND,�y�o�[�X�g�z���̃J�[�h�́y���C���z�𔭓�����B�y���C���z/�y�A�N�V�����z����̃��j�b�g1��I�ԁB�����2�_���[�W��^����B,-,-,-,-,-,"Zeon's Rush [ST03]",ST03-013.webp
-ST03-014,������,C,ST03,4,1,Green,COMMAND,�y�A�N�V�����z�����̃��j�b�g1��I�ԁB���̃o�g�����A�����AP2�ȉ��̑���̃��j�b�g����o�g���_���[�W���󂯂Ȃ��B�y�p�C���b�g�z�u�����o�E�����v,-,�k�W�I���l,-,+1,+1,"Zeon's Rush [ST03]",ST03-014.webp
-ST03-015,���E���[��,C,ST03,3,2,Red,BASE,�y�o�[�X�g�z���̃J�[�h��z������B�y�z�����z�����̃V�[���h1����D�ɉ�����B���̌�AAP5�ȉ��̑���̃��j�b�g1��I�ԁB�����1�_���[�W��^����B,�F��,"�k�l�I�E�W�I���l �k�͑D�l",-,-,5,"Zeon's Rush [ST03]",ST03-015.webp
-ST03-016,�t�@������,C,ST03,3,2,Green,BASE,�y�o�[�X�g�z���̃J�[�h��z������B�y�z�����z�����̃V�[���h1����D�ɉ�����B���̌�A�����̃^�[���Ȃ�A�u�U�N�U�i�V���A�E�A�Y�i�u���@�j�v(�k�W�I���l�EAP3�EHP1)�̃��j�b�g�g�[�N��1�����X�g�Ŕz������B,�F��,"�k�W�I���l �k�͑D�l",-,-,5,"Zeon's Rush [ST03]",ST03-016.webp
-ST04-001,�G�[���X�g���C�N�K���_��,LR,ST04,5,4,White,UNIT,�s�u���b�J�[�t(���X�g�ɂ��邱�ƂŃA�^�b�N������̃��j�b�g�ɂ���)�y�Z�b�g���ELv.4�ȏ�̃p�C���b�g�zHP4�ȉ��̑���̃��j�b�g1��I�ԁB�����������̎�D�ɖ߂��B,"�F�� �n��",�k�n���A���l,�u�L���E���}�g�v,4,4,"SEED Strike [ST04]",ST04-001.webp
-ST04-002,�X�g���C�N�K���_��,C,ST04,4,2,White,UNIT,�y�z�����z������1���h���[����B���̌�A�����̎�D1�����̂Ă�B,"�F�� �n��",�k�n���A���l,�u�L���E���}�g�v,3,3,"SEED Strike [ST04]",ST04-002.webp
-ST04-003,���r�E�X�[��,C,ST04,3,2,White,UNIT,-,�F��,�k�n���A���l,�u���E�E���E�t���K�v,2,4,"SEED Strike [ST04]",ST04-003.webp
-ST04-004,���r�E�X,C,ST04,1,1,White,UNIT,�s�u���b�J�[�t(���X�g�ɂ��邱�ƂŃA�^�b�N������̃��j�b�g�ɂ���),�F��,�k�n���A���l,-,1,1,"SEED Strike [ST04]",ST04-004.webp
-ST04-005,�X�g���C�N�_�K�[,C,ST04,2,2,White,UNIT,-,"�F�� �n��",�k�n���A���l,-,3,2,"SEED Strike [ST04]",ST04-005.webp
-ST04-006,�C�[�W�X�K���_��,LR,ST04,4,3,Red,UNIT,�y�A�^�b�N���z���̃��j�b�g��AP5�ȏ�Ȃ�ALv.5�ȏ�̑���̃��j�b�g1��I�ԁB�����3�_���[�W��^����B,"�F�� �n��",�k�U�t�g�l,�u�A�X�����E�U���v,4,3,"SEED Strike [ST04]",ST04-006.webp
-ST04-007,�C�[�W�X�K���_���iMA�`�ԁj,C,ST04,4,3,Red,UNIT,�s�˔j3�t(�A�^�b�N�ő���̃��j�b�g��j�󂵂��Ƃ��A���̑���̃V�[���h�G���A�̐擪�̃J�[�h1���Ɏw��̐��_���[�W��^����),"�F�� �n��",�k�U�t�g�l,�u�A�X�����E�U���v,3,4,"SEED Strike [ST04]",ST04-007.webp
-ST04-008,�W��,C,ST04,2,1,Red,UNIT,-,"�F�� �n��",�k�U�t�g�l,-,2,2,"SEED Strike [ST04]",ST04-008.webp
-ST04-009,�W���i�~�Q���E�A�C�}����p�@�j,C,ST04,2,2,Red,UNIT,�y�Z�b�g���z�y�j�󎞁z���̃��j�b�g�ȊO�́A�����̃����N���j�b�g������Ȃ�A������1���h���[����B,"�F�� �n��",�k�U�t�g�l,�u�~�Q���E�A�C�}���v,3,1,"SEED Strike [ST04]",ST04-009.webp
-ST04-010,�L���E���}�g,C,ST04,4,1,White,PILOT,�y�o�[�X�g�z���̃J�[�h����D�ɉ�����B�y�A�^�b�N���z����̃��j�b�g1��I�ԁB���̃o�g�����A�����AP-2����B,-,"�k�n���A���l �k�R�[�f�B�l�C�^�[�l",-,+2,+1,"SEED Strike [ST04]",ST04-010.webp
-ST04-011,�A�X�����E�U��,C,ST04,4,1,Red,PILOT,�y�o�[�X�g�z���̃J�[�h����D�ɉ�����B�y�����N���z���̃^�[�����A���̃��j�b�g�̓A�N�e�B�u��Lv.5�ȉ��̑���̃��j�b�g���A�^�b�N��ɑI��ł��悢�B,-,"�k�U�t�g�l �k�R�[�f�B�l�C�^�[�l",-,+1,+2,"SEED Strike [ST04]",ST04-011.webp
-ST04-012,�X�g���C�J�[�p�b�N,C,ST04,4,2,White,COMMAND,"�y�o�[�X�g�z�k�n���A���l�̎����̃��j�b�g�g�[�N�������Ȃ��Ȃ�A�u�G�[���X�g���C�N�K���_���v(�k�n���A���l�EAP3�EHP3�E�s�u���b�J�[�t)�̃��j�b�g�g�[�N��1��z������B�y���C���z�k�n���A���l�̎����̃��j�b�g�g�[�N�������Ȃ��Ȃ�A�u�\�[�h�X�g���C�N�K���_���v(�k�n���A���l�EAP4�EHP2�E�s�u���b�J�[�t)���A�u�����`���[�X�g���C�N�K���_���v(�k�n���A���l�EAP2�EHP4�E�s�u���b�J�[�t)�̃��j�b�g�g�[�N��1��z������B",-,-,-,-,-,"SEED Strike [ST04]",ST04-012.webp
-ST04-013,�G���f���~�I���̑�,C,ST04,2,1,White,COMMAND,�y���C���z/�y�A�N�V�����zHP3�ȉ��̑���̃��j�b�g1��I�ԁB�����������̎�D�ɖ߂��B�y�p�C���b�g�z�u���E�E���E�t���K�v,-,�k�n���A���l,-,+1,+0,"SEED Strike [ST04]",ST04-013.webp
-ST04-014,�����̖��e,C,ST04,3,1,Red,COMMAND,"�y���C���z/�y�A�N�V�����zLv.2�ȉ��̖����̃��j�b�g1��I�ԁB���̃^�[�����A����́s�搧�U���t�𓾂�B (�A�^�b�N���̂��̃��j�b�g�́A�������Ƀ_���[�W��^����)�y�p�C���b�g�z�u�~�Q���E�A�C�}���v",-,"�k�U�t�g�l �k�R�[�f�B�l�C�^�[�l",-,+0,+1,"SEED Strike [ST04]",ST04-014.webp
-ST04-015,�A�[�N�G���W�F��,C,ST04,3,1,White,BASE,"�y�o�[�X�g�z���̃J�[�h��z������B�y�z�����z�����̃V�[���h1����D�ɉ�����B �y�N���E���C���z�y�^�[��1��z�A�F�s�u���b�J�[�t���������̃��j�b�g1��I�ԁB������A�N�e�B�u�ɂ��A���̃^�[�����A����̓A�^�b�N�ł��Ȃ��B","�F�� �n��","�k�n���A���l �k�͑D�l",-,-,5,"SEED Strike [ST04]",ST04-015.webp
-ST04-016,���F�T���E�X,C,ST04,3,1,Red,BASE,"�y�o�[�X�g�z���̃J�[�h��z������B�y�z�����z�����̃V�[���h1����D�ɉ�����B �y�N���E���C���z���̃x�[�X�����X�g�ɂ���F�����̃��j�b�g1��I�ԁB���̃^�[�����A�����AP+1����B",�F��,"�k�U�t�g�l �k�͑D�l",-,-,5,"SEED Strike [ST04]",ST04-016.webp
-ST05-001,�K���_���E�o���o�g�X�i��4�`�ԁj,LR,ST05,6,4,Purple,UNIT,"�y�z�����z���̃��j�b�g�ȊO�́A�����̃��j�b�g1��I�ԁB�����1�_���[�W��^���A���̃^�[�����A�����AP+1����B���̃��j�b�g���_���[�W���󂯂Ă���ԁA����́s�����t�𓾂�B (�A�^�b�N�ŃV�[���h�ɗ^����_���[�W�́A�擪����2�ɓ����ɗ^������)","�F�� �n��","�k�S�ؒc�l �k�K���_���E�t���[���l",�u�O�����E�I�[�K�X�v,4,5,"Iron Bloom [ST05]",ST05-001.webp
-ST05-002,�K���_���E�o���o�g�X�i��2�`�ԁj,C,ST05,4,2,Purple,UNIT,���̃��j�b�g���_���[�W���󂯂Ă���ԁA�����AP+2����B,"�F�� �n��","�k�S�ؒc�l �k�K���_���E�t���[���l",�u�O�����E�I�[�K�X�v,2,4,"Iron Bloom [ST05]",ST05-002.webp
-ST05-003,CGS���r�����[�J�[,C,ST05,1,1,Purple,UNIT,�y�N���E���C���z���̃��j�b�g�����X�g�ɂ���F�����̃��j�b�g1��I�ԁB�����1�_���[�W��^���A���̃^�[�����A�����AP+1����B,�n��,�k�S�ؒc�l,-,-,2,"Iron Bloom [ST05]",ST05-003.webp
-ST05-004,�O���C�Y��,C,ST05,2,1,Purple,UNIT,-,"�F�� �n��",�k�S�ؒc�l,-,2,2,"Iron Bloom [ST05]",ST05-004.webp
-ST05-005,�K���_���E�O�V�I�����x�C�N,C,ST05,4,3,Purple,UNIT,�y�j�󎞁zAP4�ȉ��̑���̃��j�b�g1��I�ԁB��������X�g�ɂ���B,"�F�� �n��","�k�S�ؒc�l �k�K���_���E�t���[���l",�u���O�E�A���g�����h�v,3,4,"Iron Bloom [ST05]",ST05-005.webp
-ST05-006,�S�B,C,ST05,3,2,Purple,UNIT,-,"�F�� �n��",�k�e�C���Y�l,-,4,3,"Iron Bloom [ST05]",ST05-006.webp
-ST05-007,"�V�����@���ׁE�O���C�Y �i�}�N�M���X�@�j",LR,ST05,4,3,White,UNIT,�s�u���b�J�[�t(���X�g�ɂ��邱�ƂŃA�^�b�N������̃��j�b�g�ɂ���)�y�Z�b�g���zLv.3�ȉ��̑���̃��j�b�g1��I�ԁB���̃^�[�����A�����AP-2����B,"�F�� �n��",�k�M�������z�����l,�u�}�N�M���X�E�t�@���h�v,4,2,"Iron Bloom [ST05]",ST05-007.webp
-ST05-008,"�O���C�Y �i�w�����@�j",C,ST05,3,2,White,UNIT,�s�u���b�J�[�t(���X�g�ɂ��邱�ƂŃA�^�b�N������̃��j�b�g�ɂ���),"�F�� �n��",�k�M�������z�����l,�����k�M�������z�����l,3,2,"Iron Bloom [ST05]",ST05-008.webp
-ST05-009,�O���C�Y,C,ST05,2,1,White,UNIT,-,"�F�� �n��",�k�M�������z�����l,-,2,2,"Iron Bloom [ST05]",ST05-009.webp
-ST05-010,�O�����E�I�[�K�X,C,ST05,4,1,Purple,PILOT,�y�o�[�X�g�z���̃J�[�h����D�ɉ�����B�y�Z�b�g���z�����̃��j�b�g1�ƁA����̃��j�b�g1��I�ԁB������1�_���[�W��^����B,-,"�k�S�ؒc�l �k�����뎯�l",-,+2,+1,"Iron Bloom [ST05]",ST05-010.webp
-ST05-011,���O�E�A���g�����h,C,ST05,3,1,Purple,PILOT,�y�o�[�X�g�z���̃J�[�h����D�ɉ�����B�y�����N���z�����̃^�[�����A���̃��j�b�g���o�g���_���[�W�ő���̃��j�b�g��j�󂵂��Ƃ��A�����̃g���b�V����Lv.2�ȉ��́k�S�ؒc�l�̃��j�b�g�J�[�h1����I�ԁB�������D�ɉ�����B,-,"�k�S�ؒc�l �k�����뎯�l",-,+1,+1,"Iron Bloom [ST05]",ST05-011.webp
-ST05-012,�}�N�M���X�E�t�@���h,C,ST05,4,1,White,PILOT,�y�o�[�X�g�z���̃J�[�h����D�ɉ�����B�y�Z�b�g���z���̃��j�b�g�ȊO�́A�k�M�������z�����l/�k�S�ؒc�l�̎����̃��j�b�g��2�ȏア��Ȃ�AHP3�ȉ��̑���̃��j�b�g1��I�ԁB��������X�g�ɂ���B,-,�k�M�������z�����l,-,+2,+1,"Iron Bloom [ST05]",ST05-012.webp
-ST05-013,�S�ƌ���,C,ST05,2,1,Purple,COMMAND,�y���C���z/�y�A�N�V�����z�����̃��j�b�g1��I�ԁB�����1�_���[�W��^���A���̃^�[�����A�����AP+3����B,-,-,-,-,-,"Iron Bloom [ST05]",ST05-013.webp
-ST05-014,�v���̈ꌂ,C,ST05,4,2,Purple,COMMAND,�y�o�[�X�g�z����̃��j�b�g1��I�ԁB�����1�_���[�W��^����B�y���C���zLv.3�ȉ��̑���̃��j�b�g1��I�ԁB�����j�󂷂�B,-,-,-,-,-,"Iron Bloom [ST05]",ST05-014.webp
-ST05-015,�C�T���r,C,ST05,3,1,Purple,BASE,"�y�o�[�X�g�z���̃J�[�h��z������B�y�z�����z�����̃V�[���h1����D�ɉ�����B �y�N���E���C���z���̃x�[�X�����X�g�ɂ���F�_���[�W���󂯂Ă��鎩���̃��j�b�g1��I�ԁB���̃^�[�����A�����AP+2����B",�F��,"�k�S�ؒc�l �k�͑D�l",-,-,5,"Iron Bloom [ST05]",ST05-015.webp
-ST06-001,GQuuuuuuX�i�I���K�E�T�C�R�~���N�����j,LR,ST06,5,3,Red,UNIT,"�y�����N���z���̃��j�b�g�ȊO�́A�k�N�����l�̖����̃��j�b�g������Ȃ�A���̃^�[�����A����́s�搧�U���t�𓾂�B (�A�^�b�N���̂��̃��j�b�g�́A�������Ƀ_���[�W��^����)","�F�� �n��",�k�N�����l,�u�A�}�e�E���Y���n�i�}�`���j�v,4,4,"Clan Unity [ST06]",ST06-001.webp
-ST06-002,GQuuuuuuX�i�I���K�E�T�C�R�~���N�����j,C,ST06,4,3,Red,UNIT,�y�z�����z���̃��j�b�g�ȊO�́A�k�N�����l�̖����̃��j�b�g������Ȃ�A����̃��j�b�g1��I�ԁB�����1�_���[�W��^����B,"�F�� �n��",�k�N�����l,�u�A�}�e�E���Y���n�i�}�`���j�v,4,2,"Clan Unity [ST06]",ST06-002.webp
-ST06-003,"���b�N�E�h�� �K�C�A�@�iGQ�j",C,ST06,2,2,Red,UNIT,�y�N���E���C���z�s����1�t(���X�g�ɂ��邱�ƂŁA���̃^�[�����A���̖����̃��j�b�g1��AP+(�w��̐�)����),�F��,�k�N�����l,�u�K�C�A�v,2,2,"Clan Unity [ST06]",ST06-003.webp
-ST06-004,�Q���O�O�iGQ�j,C,ST06,2,1,Red,UNIT,-,"�F�� �n��",�k�W�I���l,-,2,2,"Clan Unity [ST06]",ST06-004.webp
-ST06-005,�Ԃ��K���_��,LR,ST06,4,3,Green,UNIT,�s�˔j1�t(�A�^�b�N�ő���̃��j�b�g��j�󂵂��Ƃ��A���̑���̃V�[���h�G���A�̐擪�̃J�[�h1���Ɏw��̐��_���[�W��^����)�y�A�^�b�N���z�k�N�����l�̖����̃��j�b�g1�`2��I�ԁB���̃^�[�����A������AP+2����B,"�F�� �n��",�k�N�����l,�u�V���E�W�E�C�g�E�v,4,3,"Clan Unity [ST06]",ST06-005.webp
-ST06-006,�Ԃ��K���_��,C,ST06,4,2,Green,UNIT,-,"�F�� �n��",�k�N�����l,�u�V���E�W�E�C�g�E�v,3,4,"Clan Unity [ST06]",ST06-006.webp
-ST06-007,"���b�N�E�h�� �I���e�K�@�iGQ�j",C,ST06,3,2,Green,UNIT,�y�z�����z���̃��j�b�g�ȊO�́A�k�N�����l�̎����̃��j�b�g1��I�ԁB���̃^�[�����A����̓A�N�e�B�u��AP3�ȉ��̑���̃��j�b�g���A�^�b�N��ɑI��ł��悢�B,�F��,�k�N�����l,�u�I���e�K�v,3,2,"Clan Unity [ST06]",ST06-007.webp
-ST06-008,"�Q���O�O �X�K�C�@�iGQ�j",C,ST06,3,2,Green,UNIT,-,"�F�� �n��",�k�N�����l,�����k�N�����l,�R,�R,"Clan Unity [ST06]",ST06-008.webp
-ST06-009,�A�}�e�E���Y���n�i�}�`���j,C,ST06,4,1,Red,PILOT,�y�o�[�X�g�z���̃J�[�h����D�ɉ�����B�y�����N���z�����̃f�b�L���ォ��1������B���ꂪ�k�N�����l�̃J�[�h�Ȃ���J���Ď�D�ɉ����Ă��悢�B�c�����J�[�h�͉��ɖ߂��B,-,"�k�N�����l �k�j���[�^�C�v�l",-,+2,+1,"Clan Unity [ST06]",ST06-009.webp
-ST06-010,�V���E�W�E�C�g�E,C,ST06,4,1,Green,PILOT,�y�o�[�X�g�z���̃J�[�h����D�ɉ�����B�y�����N���z�y�A�^�b�N���z�k�N�����l�̎����̃��j�b�g������Ȃ�A�����̃f�b�L���ォ��1�����āA�ォ���ɖ߂��B,-,"�k�N�����l �k�j���[�^�C�v�l",-,+1,+2,"Clan Unity [ST06]",ST06-010.webp
-ST06-011,��O�Ȑ�p,C,ST06,3,1,Red,COMMAND,�y���C���z/�y�A�N�V�����z�k�N�����l�̖����̃��j�b�g1�`2��I�ԁB���̃^�[�����A������AP+2����B�y�p�C���b�g�z�u�K�C�A�iGQ�j�v,-,�k�N�����l,-,+1,+0,"Clan Unity [ST06]",ST06-011.webp
-ST06-012,���q�����Ɖ^�щ�,C,ST06,1,1,Green,COMMAND,�y���C���z�����̃f�b�L���ォ��3�����āA���̒��́k�N�����l�́A���j�b�g�J�[�h1��/�p�C���b�g�J�[�h1�������J���Ď�D�ɉ����Ă��悢�B�c�����J�[�h�͖���ׂɉ��ɖ߂��B,-,-,-,-,-,"Clan Unity [ST06]",ST06-012.webp
-ST06-013,�Ҏ҂̘A�g,C,ST06,3,1,Green,COMMAND,�y�A�N�V�����z�k�N�����l�̖����̃��j�b�g1�`2��I�ԁB���̃^�[�����A������Lv.2�ȉ��̑���̃��j�b�g����o�g���_���[�W���󂯂Ȃ��B�y�p�C���b�g�z�u�I���e�K�iGQ�j�v,-,�k�N�����l,-,+1,+0,"Clan Unity [ST06]",ST06-013.webp
-ST06-014,�N�����o�g��,C,ST06,3,1,Red,BASE,"�y�o�[�X�g�z���̃J�[�h��z������B�y�z�����z�����̃V�[���h1����D�ɉ�����B �y�N���E���C���z���̃x�[�X�����X�g�ɂ���F�k�N�����l�̖����̃����N���j�b�g������Ȃ�A�����̃��j�b�g1��I�ԁB���̃^�[�����A�����AP+2����B",�F��,"�k�N�����l �k���_�l",-,-,5,"Clan Unity [ST06]",ST06-014.webp
-ST06-015,�J�l�o���L�����i,C,ST06,4,2,Green,BASE,"�y�o�[�X�g�z���̃J�[�h��z������B�y�z�����z�����̃V�[���h1����D�ɉ�����B �y�^�[��1��z�k�N�����l�̖����̃��j�b�g�������N�����Ƃ��A���̃^�[�����A����́s�˔j3�t�𓾂�B (�A�^�b�N�ő���̃��j�b�g��j�󂵂��Ƃ��A���̑���̃V�[���h�G���A�̐擪�̃J�[�h1���Ɏw��̐��_���[�W��^����)",�F��,"�k�N�����l �k���_�l",-,-,5,"Clan Unity [ST06]",ST06-015.webp
-GD01-001,�K���_��,LR,GD01,4,3,Blue,UNIT,"�kWB���l�̎����̃��j�b�g���ׂẮs���y�A1�t�𓾂�B (�����̃^�[���I�����A���̃��j�b�g���w��̐��񕜂���)�y�Z�b�g���z���̃��j�b�g�ȊO�́A�����̃��j�b�g��2�ȏア��Ȃ�A������1���h���[����B","�F�� �n��","�k�n���A�M�l �kWB���l",�u�A�����E���C�v,3,3,"Newtype Rising [GD01]",GD01-001.webp
-GD01-002,���j�R�[���K���_���i�f�X�g���C���[�h�j,LR,GD01,7,6,Blue,UNIT,��D�̂��̃J�[�h���v���C����Ƃ��ALv.5�̃J�[�h���Ɂu���j�R�[�����[�h�v���܂ގ����̃����N���j�b�g1��j�󂵂Ă��悢�B���������Ȃ�A�����Lv.�ƃR�X�g��0�Ƃ��ăv���C����B�y�A�^�b�N���z����̃��j�b�g1��I�ԁB��������X�g�ɂ���B,"�F�� �n��",�k���ԁl,�u�o�i�[�W�E�����N�X�v,5,4,"Newtype Rising [GD01]",GD01-002.webp
-GD01-003,"���j�R�[���K���_��2���@ �o���V�B�i�f�X�g���C���[�h�j",LR,GD01,6,4,Blue,UNIT,"�y�����N���z�y�A�^�b�N���z�����̃g���b�V���̃J�[�h12����I�ԁB������������̃f�b�L�ɖ߂��A�V���b�t������B���������Ȃ�A���̃��j�b�g���A�N�e�B�u�ɂ��A���̃^�[�����A����́s�搧�U���t�𓾂�B (�A�^�b�N���̂��̃��j�b�g�́A�������Ƀ_���[�W��^����)","�F�� �n��",�k�n���A�M�l,�u�}���[�_�E�N���X�v,5,4,"Newtype Rising [GD01]",GD01-003.webp
-GD01-004,�K���L���m��,R,GD01,3,2,Blue,UNIT,�s���y�A1�t(�����̃^�[���I�����A���̃��j�b�g���w��̐��񕜂���)�y�Z�b�g���zHP2�ȉ��̑���̃��j�b�g1��I�ԁB��������X�g�ɂ���B,"�F�� �n��","�k�n���A�M�l �kWB���l",�����kWB���l,2,3,"Newtype Rising [GD01]",GD01-004.webp
-GD01-005,���j�R�[���K���_���i���j�R�[�����[�h�j,R,GD01,5,4,Blue,UNIT,�y�����N���z�y�j�󎞁z���̃��j�b�g�ɃZ�b�g����Ă����p�C���b�g��������̎�D�ɖ߂��B���̌�A�����̎�D1�����̂Ă�B,"�F�� �n��",�k���ԁl,�u�o�i�[�W�E�����N�X�v,4,3,"Newtype Rising [GD01]",GD01-005.webp
-GD01-006,�f���^�v���X,R,GD01,4,3,Blue,UNIT,�s���y�A1�t(�����̃^�[���I�����A���̃��j�b�g���w��̐��񕜂���)�y�����N���z���̃��j�b�g��HP+1����B,"�F�� �n��",�k�n���A�M�l,�����k�n���A�M�l,4,3,"Newtype Rising [GD01]",GD01-006.webp
-GD01-007,�G�A���[�Y�i�m�C���@�j,R,GD01,3,3,Blue,UNIT,�y�j�󎞁z���̃��j�b�g�ȊO�́A�kOZ�l�̎����̃��j�b�g������Ȃ�A������1���h���[����B,�n��,�kOZ�l,�u���N���c�B�A�E�m�C���v,2,3,"Newtype Rising [GD01]",GD01-007.webp
-GD01-008,�K���^���N,U,GD01,2,1,Blue,UNIT,�y�z�����z���X�g�̑���̃��j�b�g1��I�ԁB�����1�_���[�W��^����B,"�F�� �n��","�k�n���A�M�l �kWB���l",-,1,2,"Newtype Rising [GD01]",GD01-008.webp
-GD01-009,G�t�@�C�^�[,U,GD01,3,2,Blue,UNIT,"�y�z�����z�kWB���l�̎����̃��j�b�g1��I�ԁB���̃^�[�����A����́s���@���t�𓾂�B (���̃��j�b�g�̓u���b�N����Ȃ�)","�F�� �n��","�k�n���A�M�l �kWB���l",�����kWB���l,3,2,"Newtype Rising [GD01]",GD01-009.webp
-GD01-010,"���j�R�[���K���_��2���@ �o���V�B�i���j�R�[�����[�h�j",R,GD01,4,3,Blue,UNIT,�y�Z�b�g���zHP3�ȉ��̑���̃��j�b�g1��I�ԁB��������X�g�ɂ���B,"�F�� �n��",�k�n���A�M�l,�����k�����l�ԁl,4,3,"Newtype Rising [GD01]",GD01-010.webp
-GD01-011,���g,U,GD01,2,2,Blue,UNIT,-,"�F�� �n��",�k�n���A�M�l,�����k�n���A�M�l,2,2,"Newtype Rising [GD01]",GD01-011.webp
-GD01-012,���[�I�[�i�[�N�X�@�j,U,GD01,3,2,Blue,UNIT,�y�Z�b�g���zHP3�ȉ��̑���̃��j�b�g1��I�ԁB��������X�g�ɂ���B,"�F�� �n��",�kOZ�l,�����kOZ�l,3,2,"Newtype Rising [GD01]",GD01-012.webp
-GD01-013,�K���_��,C,GD01,4,2,Blue,UNIT,-,"�F�� �n��","�k�n���A�M�l �kWB���l",�u�A�����E���C�v,3,4,"Newtype Rising [GD01]",GD01-013.webp
-GD01-014,G�X�J�C�E�C�[�W�[,C,GD01,3,2,Blue,UNIT,�y�����N���z�y�N���E�A�N�V�����z�y�^�[��1��z���j�b�g1��I�ԁB�����1�񕜂���B,"�F�� �n��","�k�n���A�M�l �kWB���l",�����kWB���l,1,3,"Newtype Rising [GD01]",GD01-014.webp
-GD01-015,�{�[��,C,GD01,1,1,Blue,UNIT,�y�A�^�b�N���z�����̃��j�b�g1��I�ԁB�����1�񕜂���B,�F��,�k�n���A�M�l,-,1,1,"Newtype Rising [GD01]",GD01-015.webp
-GD01-016,�W�F�K��,C,GD01,3,2,Blue,UNIT,�k�n���A�M�l�̎����̃��j�b�g��2�ȏア��ԁA��D�̂��̃J�[�h���R�X�g-1����B,"�F�� �n��",�k�n���A�M�l,-,2,3,"Newtype Rising [GD01]",GD01-016.webp
-GD01-017,�X�^�[�N�W�F�K��,C,GD01,3,3,Blue,UNIT,�s���y�A1�t(�����̃^�[���I�����A���̃��j�b�g���w��̐��񕜂���),"�F�� �n��",�k�n���A�M�l,�����k�n���A�M�l,3,3,"Newtype Rising [GD01]",GD01-017.webp
-GD01-018,���[��,C,GD01,3,2,Blue,UNIT,-,"�F�� �n��",�k�n���A�M�l,-,4,3,"Newtype Rising [GD01]",GD01-018.webp
-GD01-019,�o�C�A�����E�J�X�^��,U,GD01,4,2,Blue,UNIT,"����̃��j�b�g��4�ȏア��ԁA���̃��j�b�g�́s�u���b�J�[�t�𓾂�B (���X�g�ɂ��邱�ƂŃA�^�b�N������̃��j�b�g�ɂ���)","�F�� �n��",�k�n���A�M�l,-,3,4,"Newtype Rising [GD01]",GD01-019.webp
-GD01-020,�A���N�V��,C,GD01,4,2,Blue,UNIT,�y�z�����z���X�g�̑���̃��j�b�g1��I�ԁB�����1�_���[�W��^����B,�n��,�k�n���A�M�l,-,3,3,"Newtype Rising [GD01]",GD01-020.webp
-GD01-021,�p�C�V�[�Y,C,GD01,1,1,Blue,UNIT,-,�n��,�kOZ�l,-,1,2,"Newtype Rising [GD01]",GD01-021.webp
-GD01-022,�L�����T�[,C,GD01,2,2,Blue,UNIT,-,�n��,�kOZ�l,-,2,3,"Newtype Rising [GD01]",GD01-022.webp
-GD01-023,�V���A��p�Q���O�O,LR,GD01,4,4,Green,UNIT,�y�N���E���C���z�����̎�D�́k�W�I���l/�k�l�I�E�W�I���l�̃��j�b�g�J�[�h1�����̂Ă�F���̃��j�b�g�Ƀp�C���b�g���Z�b�g����Ă��Ȃ��Ȃ�A�����̃g���b�V����Lv.3�ȉ��́k�j���[�^�C�v�l�̃p�C���b�g�J�[�h1����I�ԁB���������ɃZ�b�g����B,"�F�� �n��",�k�W�I���l,�u�V���A�E�A�Y�i�u���v,4,3,"Newtype Rising [GD01]",GD01-023.webp
-GD01-024,�E�C���O�K���_���[��,LR,GD01,8,8,Green,UNIT,�s���@���t(���̃��j�b�g�̓u���b�N����Ȃ�)�y�z�����zLv.5�ȉ��̃��j�b�g���ׂĂ�3�_���[�W��^����B,"�F�� �n��",�kG�`�[���l,�u�q�C���E���C�v,5,7,"Newtype Rising [GD01]",GD01-024.webp
-GD01-025,�K���_���f�X�T�C�Y,LR,GD01,6,4,Green,UNIT,"�y�Z�b�g���E�k�I�y���[�V�����E���e�I�l�̃p�C���b�g�z�����̓��\�[�X1�����X�g�Œu���B���̌�A���̃^�[�����A���̃��j�b�g�́s�搧�U���t�𓾂�B (�A�^�b�N���̂��̃��j�b�g�́A�������Ƀ_���[�W��^����)",�n��,�k�I�y���[�V�����E���e�I�l,�u�f���I�E�}�b�N�X�E�F���v,5,4,"Newtype Rising [GD01]",GD01-025.webp
-GD01-026,�U�N�U�i�V���A�E�A�Y�i�u���@�j,R,GD01,3,2,Green,UNIT,�y�Z�b�g���z�y�j�󎞁z�u�U�N�U�i�V���A�E�A�Y�i�u���@�j�v(�k�W�I���l�EAP3�EHP1)�̃��j�b�g�g�[�N��1�����X�g�Ŕz������B,"�F�� �n��",�k�W�I���l,�u�V���A�E�A�Y�i�u���v,3,2,"Newtype Rising [GD01]",GD01-026.webp
-GD01-027,�r�O�E�U��,R,GD01,7,5,Green,UNIT,�s�˔j4�t(�A�^�b�N�ő���̃��j�b�g��j�󂵂��Ƃ��A���̑���̃V�[���h�G���A�̐擪�̃J�[�h1���Ɏw��̐��_���[�W��^����)�y�z�����z�����̃g���b�V���Ɂk�W�I���l/�k�l�I�E�W�I���l�̃��j�b�g�J�[�h��10���ȏ゠��Ȃ�A�s�u���b�J�[�t�������j�b�g���ׂĂ�4�_���[�W��^����B,"�F�� �n��",�k�W�I���l,�u�h�Y���E�U�r�v,5,6,"Newtype Rising [GD01]",GD01-027.webp
-GD01-028,�K���_���T���h���b�N,R,GD01,5,3,Green,UNIT,�y�z�����z�����̎�D�́A�k�}�O�A�i�b�N���l�̃��j�b�g�J�[�h1����z�����Ă��悢�B,�n��,�k�I�y���[�V�����E���e�I�l,�u�J�g���E���o�[�o�E�E�B�i�[�v,4,4,"Newtype Rising [GD01]",GD01-028.webp
-GD01-029,�V�F�������K���_��,R,GD01,5,4,Green,UNIT,�s�˔j4�t(�A�^�b�N�ő���̃��j�b�g��j�󂵂��Ƃ��A���̑���̃V�[���h�G���A�̐擪�̃J�[�h1���Ɏw��̐��_���[�W��^����)�y�A�^�b�N���z�s�u���b�J�[�t������Lv.3�ȉ��̑���̃��j�b�g1��I�ԁB�����j�󂷂�B,�n��,�k�I�y���[�V�����E���e�I�l,�u���ܔ�v,4,4,"Newtype Rising [GD01]",GD01-029.webp
-GD01-030,���b�N�E�h��,U,GD01,3,2,Green,UNIT,�s�˔j2�t(�A�^�b�N�ő���̃��j�b�g��j�󂵂��Ƃ��A���̑���̃V�[���h�G���A�̐擪�̃J�[�h1���Ɏw��̐��_���[�W��^����),�F��,�k�W�I���l,-,3,3,"Newtype Rising [GD01]",GD01-030.webp
-GD01-031,�Q���O�O,U,GD01,4,2,Green,UNIT,-,"�F�� �n��",�k�W�I���l,�����k�W�I���l,4,3,"Newtype Rising [GD01]",GD01-031.webp
-GD01-032,�M����,R,GD01,4,3,Green,UNIT,�y�Z�b�g���E�k�W�I���l�̃p�C���b�g�z�s�u���b�J�[�t������Lv.2�ȉ��̑���̃��j�b�g1��I�ԁB�����j�󂷂�B,"�F�� �n��",�k�W�I���l,�u�}�E�N�x�v,4,3,"Newtype Rising [GD01]",GD01-032.webp
-GD01-033,�K���_���f�X�T�C�Y,U,GD01,4,2,Green,UNIT,�s���y�A1�t(�����̃^�[���I�����A���̃��j�b�g���w��̐��񕜂���),�n��,�k�I�y���[�V�����E���e�I�l,�u�f���I�E�}�b�N�X�E�F���v,4,3,"Newtype Rising [GD01]",GD01-033.webp
-GD01-034,�K���_���w�r�[�A�[���Y,U,GD01,4,2,Green,UNIT,"�y�Z�b�g���z���̃��j�b�g�́s�˔j3�t�𓾂�B (�A�^�b�N�ő���̃��j�b�g��j�󂵂��Ƃ��A���̑���̃V�[���h�G���A�̐擪�̃J�[�h1���Ɏw��̐��_���[�W��^����)",�n��,�k�I�y���[�V�����E���e�I�l,�u�g�����E�o�[�g���v,3,4,"Newtype Rising [GD01]",GD01-034.webp
-GD01-035,�U�N�U,C,GD01,2,1,Green,UNIT,-,"�F�� �n��",�k�W�I���l,-,2,2,"Newtype Rising [GD01]",GD01-035.webp
-GD01-036,�O�t,C,GD01,2,2,Green,UNIT,-,�n��,�k�W�I���l,-,3,2,"Newtype Rising [GD01]",GD01-036.webp
-GD01-037,�S�b�O,C,GD01,2,2,Green,UNIT,-,�n��,�k�W�I���l,-,2,3,"Newtype Rising [GD01]",GD01-037.webp
-GD01-038,�A�b�U��,U,GD01,5,4,Green,UNIT,�y�z�����z����̃��j�b�g��5�ȏア��Ȃ�A����̃��j�b�g���ׂĂ�1�_���[�W��^����B,�n��,�k�W�I���l,�����k�W�I���l,2,5,"Newtype Rising [GD01]",GD01-038.webp
-GD01-039,�h�b�v,C,GD01,1,1,Green,UNIT,�y�z�����z�����̃f�b�L���ォ��1�����āA�ォ���ɖ߂��B,�n��,�k�W�I���l,-,1,1,"Newtype Rising [GD01]",GD01-039.webp
-GD01-040,�E�C���O�K���_��,C,GD01,5,2,Green,UNIT,-,"�F�� �n��",�k�I�y���[�V�����E���e�I�l,�u�q�C���E���C�v,4,3,"Newtype Rising [GD01]",GD01-040.webp
-GD01-041,�V�F�������K���_��,C,GD01,4,3,Green,UNIT,�s�˔j3�t(�A�^�b�N�ő���̃��j�b�g��j�󂵂��Ƃ��A���̑���̃V�[���h�G���A�̐擪�̃J�[�h1���Ɏw��̐��_���[�W��^����),�n��,�k�I�y���[�V�����E���e�I�l,�u���ܔ�v,4,3,"Newtype Rising [GD01]",GD01-041.webp
-GD01-042,���[�I�[�i�f���I�@�j,C,GD01,2,2,Green,UNIT,���̃��j�b�g�́A�A�N�e�B�u��Lv.2�ȉ��̑���̃��j�b�g���A�^�b�N��ɑI��ł��悢�B,"�F�� �n��",�k�I�y���[�V�����E���e�I�l,�u�f���I�E�}�b�N�X�E�F���v,2,2,"Newtype Rising [GD01]",GD01-042.webp
-GD01-043,�}�O�A�i�b�N�i���V�[�h�@�j,C,GD01,3,2,Green,UNIT,�y�z�����z�΂̎����̃��j�b�g1��I�ԁB���̃^�[�����A����̓A�N�e�B�u��AP4�ȉ��̑���̃��j�b�g���A�^�b�N��ɑI��ł��悢�B,"�F�� �n��",�k�}�O�A�i�b�N���l,�����k�}�O�A�i�b�N���l,2,3,"Newtype Rising [GD01]",GD01-043.webp
-GD01-044,�N�V���g����,LR,GD01,5,4,Red,UNIT,�y�Z�b�g���E�k�����l�ԁl/�k�j���[�^�C�v�l�̃p�C���b�g�z����̃��j�b�g1�`2��I�ԁB������1�_���[�W��^����B,"�F�� �n��",�k�l�I�E�W�I���l,�u�}���[�_�E�N���X�v,5,4,"Newtype Rising [GD01]",GD01-044.webp
-GD01-045,"�f���G���K���_�� �A�T���g�V�����E�h",LR,GD01,5,4,Red,UNIT,�y�Z�b�g���z�����̃f�b�L���ォ��3�����āA���̒��́ALv.4�ȉ��́k�U�t�g�l�̃��j�b�g�J�[�h1����z�����Ă��悢�B�c�����J�[�h�͖���ׂɉ��ɖ߂��B,"�F�� �n��",�k�U�t�g�l,�u�C�U�[�N�E�W���[���v,4,4,"Newtype Rising [GD01]",GD01-045.webp
-GD01-046,�o�X�^�[�K���_��,LR,GD01,4,2,Red,UNIT,�y�N���E���C���z�s����3�t(���X�g�ɂ��邱�ƂŁA���̃^�[�����A���̖����̃��j�b�g1��AP+(�w��̐�)����)�y�Z�b�g���E�k�R�[�f�B�l�C�^�[�l�̃p�C���b�g�z�y�^�[��1��z���̃��j�b�g�́s����t�Łk�U�t�g�l�̃��j�b�g��AP+�����Ƃ��A������A�N�e�B�u�ɂ���B,"�F�� �n��",�k�U�t�g�l,�u�f�B�A�b�J�E�G���X�}���v,1,4,"Newtype Rising [GD01]",GD01-046.webp
-GD01-047,�V�����u��,R,GD01,8,7,Red,UNIT,�y�A�^�b�N���z���̃��j�b�g�ȊO�̃��X�g�̖����̃��j�b�g��2�ȏア��Ȃ�A����̃��j�b�g1��I�ԁB�����3�_���[�W��^����B,�n��,�k�W�I���l,"�����k�j���[�^�C�v�l �����k�����l�ԁl",6,5,"Newtype Rising [GD01]",GD01-047.webp
-GD01-048,�U�N�T�E�X�i�C�p�[�^�C�v,R,GD01,2,2,Red,UNIT,�y�N���E���C���z�s����1�t(���X�g�ɂ��邱�ƂŁA���̃^�[�����A���̖����̃��j�b�g1��AP+(�w��̐�)����)�y�z�����z�����̃f�b�L���ォ��1������B���ꂪ�A�k�W�I���l/�k�l�I�E�W�I���l�̃��j�b�g�J�[�h�Ȃ���J���Ď�D�ɉ����Ă��悢�B�c�����J�[�h�͉��ɖ߂��B,"�F�� �n��",�k�W�I���l,�����k�W�I���l,-,1,"Newtype Rising [GD01]",GD01-048.webp
-GD01-049,�u���b�c�K���_��,R,GD01,4,3,Red,UNIT,"�y�z�����zAP5�ȏ�́k�U�t�g�l�̎����̃��j�b�g1��I�ԁB���̃^�[�����A����́s�搧�U���t�𓾂�B (�A�^�b�N���̂��̃��j�b�g�́A�������Ƀ_���[�W��^����)","�F�� �n��",�k�U�t�g�l,�u�j�R���E�A�}���t�B�v,3,3,"Newtype Rising [GD01]",GD01-049.webp
-GD01-050,���S�D,R,GD01,3,2,Red,UNIT,�y�A�^�b�N���z���̃��j�b�g��AP5�ȏ�ŁA����̃��j�b�g�ɃA�^�b�N���Ă���Ȃ�A����̃��j�b�g1��I�ԁB�����2�_���[�W��^����B,�n��,�k�U�t�g�l,�����k�U�t�g�l,2,3,"Newtype Rising [GD01]",GD01-050.webp
-GD01-051,�N�V���g����,U,GD01,4,2,Red,UNIT,-,"�F�� �n��",�k�l�I�E�W�I���l,�����k�����l�ԁl,3,4,"Newtype Rising [GD01]",GD01-051.webp
-GD01-052,�M���E�Y�[���i�e�q���@�j,U,GD01,4,3,Red,UNIT,�y�z�����z����̃��j�b�g1��I�ԁB�����1�_���[�W��^����B,"�F�� �n��",�k�l�I�E�W�I���l,-,2,4,"Newtype Rising [GD01]",GD01-052.webp
-GD01-053,�M���E�h�[�K�i�d�����d�l�j,U,GD01,4,3,Red,UNIT,�y�N���E���C���z�y�^�[��1��z�@�FAP2�ȉ��̑���̃��j�b�g1��I�ԁB�����1�_���[�W��^����B,"�F�� �n��",�k�l�I�E�W�I���l,-,4,2,"Newtype Rising [GD01]",GD01-053.webp
-GD01-054,�f���G���K���_��,R,GD01,3,2,Red,UNIT,"���̃��j�b�g��AP5�ȏ�̊ԁA����́s�˔j3�t�𓾂�B (�A�^�b�N�ő���̃��j�b�g��j�󂵂��Ƃ��A���̑���̃V�[���h�G���A�̐擪�̃J�[�h1���Ɏw��̐��_���[�W��^����)","�F�� �n��",�k�U�t�g�l,�����k�U�t�g�l,3,3,"Newtype Rising [GD01]",GD01-054.webp
-GD01-055,�o�N�D,U,GD01,3,2,Red,UNIT,�y�N���E���C���z�s����2�t(���X�g�ɂ��邱�ƂŁA���̃^�[�����A���̖����̃��j�b�g1��AP+(�w��̐�)����),�n��,�k�U�t�g�l,-,2,3,"Newtype Rising [GD01]",GD01-055.webp
-GD01-056,�M���E�h�[�K�i���t���d�l�j,C,GD01,3,2,Red,UNIT,�y�j�󎞁zAP5�ȉ��̑���̃��j�b�g1��I�ԁB�����1�_���[�W��^����B,"�F�� �n��",�k�l�I�E�W�I���l,-,2,3,"Newtype Rising [GD01]",GD01-056.webp
-GD01-057,�h���C�Z���i���t���d�l�j,C,GD01,2,2,Red,UNIT,-,"�F�� �n��",�k�l�I�E�W�I���l,-,2,3,"Newtype Rising [GD01]",GD01-057.webp
-GD01-058,�K���XK,C,GD01,3,2,Red,UNIT,�y�N���E�A�N�V�����z�y�^�[��1��z�@�FLv.4�ȏ�̃��j�b�g1��I�ԁB���̃o�g�����A�����AP+1����B,"�F�� �n��",�k�W�I���l,-,3,2,"Newtype Rising [GD01]",GD01-058.webp
-GD01-059,�[�[�E�Y�[��,C,GD01,2,2,Red,UNIT,�y�A�^�b�N���z����v���C���[�ɃA�^�b�N���Ă���Ȃ�A���̃o�g�����A���̃��j�b�g��AP+2����B,�n��,�k�l�I�E�W�I���l,-,2,2,"Newtype Rising [GD01]",GD01-059.webp
-GD01-060,�U�N�E�}���i�[,C,GD01,2,1,Red,UNIT,-,�n��,�k�W�I���l,-,2,2,"Newtype Rising [GD01]",GD01-060.webp
-GD01-061,�U�E�[�g,C,GD01,1,1,Red,UNIT,�y�N���E���C���z�s����1�t(���X�g�ɂ��邱�ƂŁA���̃^�[�����A���̖����̃��j�b�g1��AP+(�w��̐�)����),�n��,�k�U�t�g�l,-,-,2,"Newtype Rising [GD01]",GD01-061.webp
-GD01-062,�O�[��,C,GD01,1,1,Red,UNIT,-,�n��,�k�U�t�g�l,-,1,2,"Newtype Rising [GD01]",GD01-062.webp
-GD01-063,�]�m,U,GD01,2,2,Red,UNIT,"�����̃^�[�����A���̃��j�b�g��Lv.2�ȉ��̑���̃��j�b�g�ƃo�g�����Ă���ԁA����́s�搧�U���t�𓾂�B (�A�^�b�N���̂��̃��j�b�g�́A�������Ƀ_���[�W��^����)",�n��,�k�U�t�g�l,�����k�U�t�g�l,2,1,"Newtype Rising [GD01]",GD01-063.webp
-GD01-064,�f�B��,C,GD01,2,2,Red,UNIT,-,�n��,�k�U�t�g�l,-,3,2,"Newtype Rising [GD01]",GD01-064.webp
-GD01-065,�t���[�_���K���_��,LR,GD01,7,5,White,UNIT,�s�u���b�J�[�t(���X�g�ɂ��邱�ƂŃA�^�b�N������̃��j�b�g�ɂ���)�y�Z�b�g���z�y�^�[��1��z���̃��j�b�g���A���̎����̃��j�b�g�Ƀp�C���b�g���Z�b�g�����Ƃ��A����̃��j�b�g1��I�ԁB���̃^�[�����A�����AP-2����B,"�F�� �n��",�k�O�Ǔ����l,�u�L���E���}�g�v,4,6,"Newtype Rising [GD01]",GD01-065.webp
-GD01-066,�W���X�e�B�X�K���_��,LR,GD01,7,5,White,UNIT,�y�z�����z�u�t�@�g�D��-00�v(�k�O�Ǔ����l�EAP2�EHP2�E�s�u���b�J�[�t)�̃��j�b�g�g�[�N��1��z������B�y�Z�b�g���z�y�A�^�b�N���z�����́k�O�Ǔ����l�̃��j�b�g�g�[�N��1��I�ԁB����͔z�������^�[���ɃA�^�b�N���Ă��悢�B,"�F�� �n��",�k�O�Ǔ����l,�u�A�X�����E�U���v,5,5,"Newtype Rising [GD01]",GD01-066.webp
-GD01-067,�K���_���E�G�A���A���i���C�^�j,LR,GD01,6,5,White,UNIT,�y�Z�b�g���z�����̃g���b�V����Lv.5�ȉ��̃R�}���h�J�[�h1����I�ԁB�������D�ɉ�����B,"�F�� �n��",�k�w���l,�u�X���b�^�E�}�[�L�����[�v,5,4,"Newtype Rising [GD01]",GD01-067.webp
-GD01-068,�p�[�t�F�N�g�X�g���C�N�K���_��,R,GD01,5,3,White,UNIT,�s�u���b�J�[�t(���X�g�ɂ��邱�ƂŃA�^�b�N������̃��j�b�g�ɂ���)�y�z�����zHP1�̑���̃��j�b�g1��I�ԁB�����������̎�D�ɖ߂��B,"�F�� �n��",�k�O�Ǔ����l,�����k�n���A���l,4,4,"Newtype Rising [GD01]",GD01-068.webp
-GD01-069,�X�g���C�N���[�W��,R,GD01,3,2,White,UNIT,�y�N���E���C���z�y�^�[��1��z�@�F�s�u���b�J�[�t�������X�g�̔��̎����̃��j�b�g1��I�ԁB������A�N�e�B�u�ɂ��A���̃^�[�����A����̓A�^�b�N�ł��Ȃ��B,"�F�� �n��",�k�O�Ǔ����l,�����k�I�[�u�l,3,2,"Newtype Rising [GD01]",GD01-069.webp
-GD01-070,�K���_���E�G�A���A��,R,GD01,5,3,White,UNIT,�����̃g���b�V���ɃR�}���h�J�[�h��4���ȏ゠��ԁA��D�̂��̃J�[�h���R�X�g-2����B,"�F�� �n��",�k�w���l,�u�X���b�^�E�}�[�L�����[�v,3,3,"Newtype Rising [GD01]",GD01-070.webp
-GD01-071,�K���_���E�t�@���N�g,R,GD01,4,3,White,UNIT,�y�����N���z�y�A�^�b�N���z����̃��j�b�g1��I�ԁB���̃o�g�����A�����AP-2����B,"�F�� �n��",�k�w���l,�����k�w���l,3,4,"Newtype Rising [GD01]",GD01-071.webp
-GD01-072,�����`���[�X�g���C�N�K���_��,U,GD01,4,3,White,UNIT,�s�u���b�J�[�t(���X�g�ɂ��邱�ƂŃA�^�b�N������̃��j�b�g�ɂ���),"�F�� �n��",�k�n���A���l,�����k�n���A���l,3,4,"Newtype Rising [GD01]",GD01-072.webp
-GD01-073,"�\�[�h�X�g���C�N�K���_��",U,GD01,4,3,White,UNIT,�y�����N���z�y�A�^�b�N���zHP2�ȉ��̑���̃��j�b�g1��I�ԁB�����������̎�D�ɖ߂��B,"�F�� �n��",�k�n���A���l,�����k�n���A���l,4,3,"Newtype Rising [GD01]",GD01-073.webp
-GD01-074,"�f�~�g���[�i�[ �`���`����p�@",R,GD01,2,2,White,UNIT,�y�A�^�b�N���z������1���h���[����B���̌�A�����̎�D1�����̂Ă�B,"�F�� �n��",�k�w���l,�u�`���A�`�����[�E�p�������`�v,3,1,"Newtype Rising [GD01]",GD01-074.webp
-GD01-075,�_�����o���f,U,GD01,3,2,White,UNIT,�y�z�����zHP1�̑���̃��j�b�g1��I�ԁB�����������̎�D�ɖ߂��B,"�F�� �n��",�k�w���l,�����k�w���l,4,2,"Newtype Rising [GD01]",GD01-075.webp
-GD01-076,�~�J�G���X,U,GD01,3,2,White,UNIT,�����̃g���b�V���ɃR�}���h�J�[�h��4���ȏ゠��ԁA���̃��j�b�g��AP+1�AHP+1����B,"�F�� �n��",�k�w���l,�����k�w���l,3,3,"Newtype Rising [GD01]",GD01-076.webp
-GD01-077,�X�g���C�N�K���_��,C,GD01,4,2,White,UNIT,-,"�F�� �n��",�k�n���A���l,�u�L���E���}�g�v,3,4,"Newtype Rising [GD01]",GD01-077.webp
-GD01-078,�~�X�g����,C,GD01,1,1,White,UNIT,�y�z�����z����̃��j�b�g1��I�ԁB���̃^�[�����A�����AP-1����B,�F��,�k�n���A���l,-,1,1,"Newtype Rising [GD01]",GD01-078.webp
-GD01-079,�X�J�C�O���X�p�[,C,GD01,2,2,White,UNIT,-,�n��,�k�n���A���l,�����k�n���A���l,2,2,"Newtype Rising [GD01]",GD01-079.webp
-GD01-080,�X�J�C�O���X�p�[�i�J�K���@�j,C,GD01,2,2,White,UNIT,�y�j�󎞁zLv.2�ȉ��̑���̃��j�b�g1��I�ԁB�����������̎�D�ɖ߂��B,�n��,�k�n���A���l,�u�J�K���E�����E�A�X�n�v,2,1,"Newtype Rising [GD01]",GD01-080.webp
-GD01-081,M1�A�X�g���C,C,GD01,2,2,White,UNIT,"���̃��j�b�g�ȊO�́A�k�O�Ǔ����l�̎����̃��j�b�g������ԁA�����AP+1����A�s�u���b�J�[�t�𓾂�B (���X�g�ɂ��邱�ƂŃA�^�b�N������̃��j�b�g�ɂ���)","�F�� �n��",�k�O�Ǔ����l,-,2,2,"Newtype Rising [GD01]",GD01-081.webp
-GD01-082,"�K���_���E�G�A���A���i�~���\�E���А��t���C�g���j�b�g�����j",U,GD01,4,3,White,UNIT,�y�Z�b�g���z�y�N���E�A�N�V�����z�y�^�[��1��z�A�F����̃��j�b�g1��I�ԁB���̃o�g�����A�����AP-1����B,"�F�� �n��",�k�w���l,�u�X���b�^�E�}�[�L�����[�v,4,3,"Newtype Rising [GD01]",GD01-082.webp
-GD01-083,"�f�B�����U �O�G����p�@",C,GD01,2,2,White,UNIT,-,"�F�� �n��",�k�w���l,�����k�w���l,2,2,"Newtype Rising [GD01]",GD01-083.webp
-GD01-084,�x�M���y���f,C,GD01,2,2,White,UNIT,-,"�F�� �n��",�k�w���l,-,2,3,"Newtype Rising [GD01]",GD01-084.webp
-GD01-085,"�f�~�M�����\��",C,GD01,2,1,White,UNIT,-,"�F�� �n��",�k�w���l,-,2,2,"Newtype Rising [GD01]",GD01-085.webp
-GD01-086,�K���_���E���u���X,C,GD01,3,2,White,UNIT,�s�u���b�J�[�t(���X�g�ɂ��邱�ƂŃA�^�b�N������̃��j�b�g�ɂ���),"�F�� �n��",�k���@�i�f�B�[�X�@�ցl,-,2,4,"Newtype Rising [GD01]",GD01-086.webp
-GD01-087,�Z�C���E�}�X,R,GD01,3,1,Blue,PILOT,"�y�o�[�X�g�z���̃J�[�h����D�ɉ�����B���̃��j�b�g���̊ԁA����́s���y�A1�t�𓾂�B (�����̃^�[���I�����A���̃��j�b�g���w��̐��񕜂���)",-,"�k�n���A�M�l �kWB���l �k�j���[�^�C�v�l",-,+1,+1,"Newtype Rising [GD01]",GD01-087.webp
-GD01-088,�o�i�[�W�E�����N�X,U,GD01,5,1,Blue,PILOT,�y�o�[�X�g�z���̃J�[�h����D�ɉ�����B�y�����N���z������1���h���[����B,-,"�k���ԁl �k�j���[�^�C�v�l",-,+2,+2,"Newtype Rising [GD01]",GD01-088.webp
-GD01-089,���f�B�E�}�[�Z�i�X,C,GD01,3,1,Blue,PILOT,�y�o�[�X�g�z���̃J�[�h����D�ɉ�����B���̃��j�b�g���s���y�A�t�����ԁA�����AP+1����B,-,�k�n���A�M�l,-,+1,+1,"Newtype Rising [GD01]",GD01-089.webp
-GD01-090,�f���I�E�}�b�N�X�E�F��,R,GD01,4,1,Green,PILOT,�y�o�[�X�g�z���̃J�[�h����D�ɉ�����B�y�����N���z���̃��j�b�g��AP�͑���̌��ʂŌ������Ȃ��B,-,�k�I�y���[�V�����E���e�I�l,-,+1,+2,"Newtype Rising [GD01]",GD01-090.webp
-GD01-091,���ܔ�,U,GD01,4,1,Green,PILOT,�y�o�[�X�g�z���̃J�[�h����D�ɉ�����B�����̃^�[�����A���̃��j�b�g���s�˔j�t�����ԁA�����AP3�ȉ��̑���̃��j�b�g����o�g���_���[�W���󂯂Ȃ��B,-,�k�I�y���[�V�����E���e�I�l,-,+2,+1,"Newtype Rising [GD01]",GD01-091.webp
-GD01-092,�}�E�N�x,C,GD01,3,1,Green,PILOT,"�y�o�[�X�g�z���̃J�[�h����D�ɉ�����B���̃��j�b�g���k�W�I���l�̊ԁA����́s�˔j1�t�𓾂�B (�A�^�b�N�ő���̃��j�b�g��j�󂵂��Ƃ��A���̑���̃V�[���h�G���A�̐擪�̃J�[�h1���Ɏw��̐��_���[�W��^����)",-,�k�W�I���l,-,+1,+1,"Newtype Rising [GD01]",GD01-092.webp
-GD01-093,�}���[�_�E�N���X,R,GD01,4,1,Red,PILOT,�y�o�[�X�g�z���̃J�[�h����D�ɉ�����B�y�����N���z�y�A�^�b�N���z���̃��j�b�g��Lv.�ȉ��̑���̃��j�b�g1��I�ԁB�����1�_���[�W��^����B,-,"�k�l�I�E�W�I���l �k�����l�ԁl",-,+2,+1,"Newtype Rising [GD01]",GD01-093.webp
-GD01-094,�C�U�[�N�E�W���[��,U,GD01,3,1,Red,PILOT,�y�o�[�X�g�z���̃J�[�h����D�ɉ�����B�y�^�[��1��z���̃��j�b�g���A�^�b�N���Ă���ԁA����̃����N���j�b�g���_���[�W�Ŕj�󂳂ꂽ�Ƃ��A������1���h���[����B,-,"�k�U�t�g�l �k�R�[�f�B�l�C�^�[�l",-,+1,+1,"Newtype Rising [GD01]",GD01-094.webp
-GD01-095,�f�B�A�b�J�E�G���X�}��,C,GD01,3,1,Red,PILOT,�y�o�[�X�g�z���̃J�[�h����D�ɉ�����B�y�����N���z�����̎�D1�����̂Ă�B���������Ȃ�A������1���h���[����B,-,"�k�U�t�g�l �k�R�[�f�B�l�C�^�[�l",-,+1,+1,"Newtype Rising [GD01]",GD01-095.webp
-GD01-096,�J�K���E�����E�A�X�n,R,GD01,4,1,White,PILOT,"�y�o�[�X�g�z���̃J�[�h����D�ɉ�����B���̃��j�b�g�����̊ԁA����́s�u���b�J�[�t�𓾂�B (���X�g�ɂ��邱�ƂŃA�^�b�N������̃��j�b�g�ɂ���)",-,�k�I�[�u�l,-,+1,+1,"Newtype Rising [GD01]",GD01-096.webp
-GD01-097,�O�G���E�W�F�^�[�N,U,GD01,3,1,White,PILOT,�y�o�[�X�g�z���̃J�[�h����D�ɉ�����B�y�N���E���C���z�y�^�[��1��z����̎�D��8���ȏ゠��Ȃ�A���̃��j�b�g���A�N�e�B�u�ɂ��A���̃^�[�����A����̓A�^�b�N�ł��Ȃ��B,-,�k�w���l,-,+1,+1,"Newtype Rising [GD01]",GD01-097.webp
-GD01-098,�G�����E�P���X�i�����l�m4���j,C,GD01,4,1,White,PILOT,�y�o�[�X�g�z���̃J�[�h����D�ɉ�����B�y�N���E�A�N�V�����z�y�^�[��1��zAP1�ȉ��̑���̃��j�b�g������Ȃ�A���̃��j�b�g��1�񕜂���B,-,�k�w���l,-,+2,+1,"Newtype Rising [GD01]",GD01-098.webp
-GD01-099,�}������,R,GD01,4,2,Blue,COMMAND,�y�o�[�X�g�zHP5�ȉ��̑���̃��j�b�g1��I�ԁB��������X�g�ɂ���B�y���C���z/�y�A�N�V�����zHP3�ȉ��̑���̃��j�b�g1�`2��I�ԁB���������X�g�ɂ���B,-,-,-,-,-,"Newtype Rising [GD01]",GD01-099.webp
-GD01-100,"�o��̕\��",U,GD01,4,3,Blue,COMMAND,�y���C���z������2���h���[����B,-,-,-,-,-,"Newtype Rising [GD01]",GD01-100.webp
-GD01-101,�[������,R,GD01,2,1,Blue,COMMAND,�y���C���z/�y�A�N�V�����z�����̃����N���j�b�g1��I�ԁB�����3�񕜂���B�y�p�C���b�g�z�u���N���c�B�A�E�m�C���v,-,�kOZ�l,-,+1,+0,"Newtype Rising [GD01]",GD01-101.webp
-GD01-102,�����̗A��,U,GD01,4,2,Blue,COMMAND,�y���C���zLv.4�ȉ��̖����̃��j�b�g���ׂĂ�2�񕜂���B,-,-,-,-,-,"Newtype Rising [GD01]",GD01-102.webp
-GD01-103,���Ԃ̈Ӓn,C,GD01,1,1,Blue,COMMAND,�y���C���z�A�N�e�B�u�́k�n���A�M�l�̖����̃��j�b�g1�ƁA����̃��j�b�g1��I�ԁB���������X�g�ɂ���B�y�p�C���b�g�z�u�_�O�U�E�}�b�N�[���v,-,�k�n���A�M�l,-,+0,+1,"Newtype Rising [GD01]",GD01-103.webp
-GD01-104,�v���̋C�z,C,GD01,3,2,Blue,COMMAND,�y�o�[�X�g�z������1���h���[����B�y���C���z���X�g�̑���̃��j�b�g1��I�ԁB�����2�_���[�W��^����B,-,-,-,-,-,"Newtype Rising [GD01]",GD01-104.webp
-GD01-105,���Ă捑���I,R,GD01,4,1,Green,COMMAND,�y�o�[�X�g�z���̃J�[�h����D�ɉ�����B�y���C���z���̃^�[�����A�����̃��j�b�g���ׂĂ�AP+2����B,-,-,-,-,-,"Newtype Rising [GD01]",GD01-105.webp
-GD01-106,�v�ǖh�q��,R,GD01,5,2,Green,COMMAND,�y���C���z�u�U�N�U�v(�k�W�I���l�EAP1�EHP1)�̃��j�b�g�g�[�N��2��z������B�y�p�C���b�g�z�u�h�Y���E�U�r�v,-,�k�W�I���l,-,+1,+0,"Newtype Rising [GD01]",GD01-106.webp
-GD01-107,�t�@�[�X�g�R���^�N�g,U,GD01,3,3,Green,COMMAND,"�y�o�[�X�g�z������EX���\�[�X1��u���B�y���C���z�����̓��\�[�X1�����X�g�Œu���B",-,-,-,-,-,"Newtype Rising [GD01]",GD01-107.webp
-GD01-108,�헪������,U,GD01,6,6,Green,COMMAND,�y���C���z�s�u���b�J�[�t�������j�b�g���ׂĂ�2�_���[�W��^����B,-,-,-,-,-,"Newtype Rising [GD01]",GD01-108.webp
-GD01-109,�����Ɣs�k�̋O��,C,GD01,5,1,Green,COMMAND,�y���C���z�����̃f�b�L���ォ��5�����āA���̒��́A�k�I�y���[�V�����E���e�I�l/�kG�`�[���l�́A���j�b�g�J�[�h1��/�p�C���b�g�J�[�h1�������J���Ď�D�ɉ����Ă��悢�B�c�����J�[�h�͖���ׂɉ��ɖ߂��B,-,-,-,-,-,"Newtype Rising [GD01]",GD01-109.webp
-GD01-110,���V�[�h�̎w��,C,GD01,3,1,Green,COMMAND,�y���C���z/�y�A�N�V�����zLv.4�ȏ�̃��j�b�g1��I�ԁB���̃^�[�����A����̓A�N�e�B�u��AP6�ȉ��̑���̃��j�b�g���A�^�b�N��ɑI��ł��悢�B�y�p�C���b�g�z�u���V�[�h�E�N���}�v,-,�k�}�O�A�i�b�N���l,-,+0,+1,"Newtype Rising [GD01]",GD01-110.webp
-GD01-111,�G�[�X�̐킢,R,GD01,3,2,Red,COMMAND,�y�o�[�X�g�z����̃��j�b�g1��I�ԁB�����2�_���[�W��^����B�y���C���z/�y�A�N�V�����z�_���[�W���󂯂Ă��鑊��̃��j�b�g1��I�ԁB�����3�_���[�W��^����B,-,-,-,-,-,"Newtype Rising [GD01]",GD01-111.webp
-GD01-112,���Q�̉ʂ�,R,GD01,6,1,Red,COMMAND,�y���C���z�A�N�e�B�u�̎����̃��j�b�g2��I�ԁB���������X�g�ɂ���B���������Ȃ�A����̃��j�b�g1��I�ԁB�����3�_���[�W��^����B�y�p�C���b�g�z�u���j�E�K�[�x�C�v,-,"�k�W�I���l �k�j���[�^�C�v�l",-,+1,+0,"Newtype Rising [GD01]",GD01-112.webp
-GD01-113,�����̌�,U,GD01,3,1,Red,COMMAND,�y���C���z/�y�A�N�V�����z�k�U�t�g�l�̖����̃��j�b�g1��I�ԁB���̃^�[�����A�����AP+3����B�y�p�C���b�g�z�u�A���h�����[�E�o���g�t�F���h�v,-,"�k�U�t�g�l �k�R�[�f�B�l�C�^�[�l",-,+1,+0,"Newtype Rising [GD01]",GD01-113.webp
-GD01-114,�g�����g����n�P��,C,GD01,1,1,Red,COMMAND,�y�A�N�V�����z�����̃��j�b�g2��I�ԁB���̃^�[�����A������AP+1����B�y�p�C���b�g�z�u�������E�J�[�N�X�v,-,�k�W�I���l,-,+1,+0,"Newtype Rising [GD01]",GD01-114.webp
-GD01-115,�W�I���c�}�R,U,GD01,2,1,Red,COMMAND,�y���C���z/�y�A�N�V�����z����̃��j�b�g1��I�ԁB�����1�_���[�W��^����B,-,-,-,-,-,"Newtype Rising [GD01]",GD01-115.webp
-GD01-116,�B�����,C,GD01,2,1,Red,COMMAND,�y���C���z/�y�A�N�V�����zAP2�ȉ��̑���̃��j�b�g1��I�ԁB�����2�_���[�W��^����B�y�p�C���b�g�z�u�j�R���E�A�}���t�B�v,-,"�k�U�t�g�l �k�R�[�f�B�l�C�^�[�l",-,+0,+1,"Newtype Rising [GD01]",GD01-116.webp
-GD01-117,�����Ɖԉ�,R,GD01,5,2,White,COMMAND,�y�o�[�X�g�z���̃J�[�h�́y���C���z�𔭓�����B�y���C���z/�y�A�N�V�����zHP5�ȉ��̑���̃��j�b�g1��I�ԁB�����������̎�D�ɖ߂��B,-,-,-,-,-,"Newtype Rising [GD01]",GD01-117.webp
-GD01-118,���鎜��,U,GD01,2,1,White,COMMAND,�y���C���z������2���h���[����B���̌�A�����̎�D1�����̂Ă�B,-,-,-,-,-,"Newtype Rising [GD01]",GD01-118.webp
-GD01-119,�S������,R,GD01,2,1,White,COMMAND,�y���C���z/�y�A�N�V�����zLv.4�ȉ��̑���̃��j�b�g1��I�ԁB���̃^�[�����A�����AP-2����B�y�p�C���b�g�z�u�`���A�`�����[�E�p�������`�v,-,�k�w���l,-,+1,+0,"Newtype Rising [GD01]",GD01-119.webp
-GD01-120,�͖C�ˌ�,C,GD01,2,1,White,COMMAND,�y�o�[�X�g�z����̃��j�b�g1��I�ԁB���̃^�[�����A�����AP-3����B�y�A�N�V�����z�s�u���b�J�[�t���������̃��j�b�g1��I�ԁB���̃^�[�����A�����AP+3����B,-,-,-,-,-,"Newtype Rising [GD01]",GD01-120.webp
-GD01-121,�󒆊���,U,GD01,3,2,White,COMMAND,�y�o�[�X�g�z���̃J�[�h�́y���C���z�𔭓�����B�y���C���z�s�u���b�J�[�t�������X�g�̃��j�b�g1��I�ԁB������A�N�e�B�u�ɂ��A���̃^�[�����A����̓A�^�b�N�ł��Ȃ��B,-,-,-,-,-,"Newtype Rising [GD01]",GD01-121.webp
-GD01-122,�Ö􂷂����,C,GD01,3,1,White,COMMAND,�y���C���zHP2�ȉ��̑���̃��j�b�g1��I�ԁB�����������̎�D�ɖ߂��B�����̃����N���j�b�g������Ȃ�A������HP4�ȉ��̑���̃��j�b�g1��I�ԁB�y�p�C���b�g�z�u�V���f�B�N�E�[�l���v,-,�k�w���l,-,+1,+0,"Newtype Rising [GD01]",GD01-122.webp
-GD01-123,�l�F���E�A�[�K�},U,GD01,3,2,Blue,BASE,�y�o�[�X�g�z���̃J�[�h��z������B�y�z�����z�����̃V�[���h1����D�ɉ�����B���̌�AHP3�ȉ��̑���̃��j�b�g1��I�ԁB��������X�g�ɂ���B,"�F�� �n��","�k�n���A�M�l �k�͑D�l",-,-,5,"Newtype Rising [GD01]",GD01-123.webp
-GD01-124,�T�C�h7,C,GD01,1,1,Blue,BASE,"�y�o�[�X�g�z���̃J�[�h��z������B�y�z�����z�����̃V�[���h1����D�ɉ�����B �y�N���E���C���z���̃x�[�X�����X�g�ɂ���F�����̃��j�b�g1��I�ԁB�����1�񕜂���B",�F��,"�k�n���A�M�l �k���_�l",-,-,4,"Newtype Rising [GD01]",GD01-124.webp
-GD01-125,�U���W�o��,U,GD01,4,2,Green,BASE,�y�o�[�X�g�z���̃J�[�h��z������B�y�z�����z�����̃V�[���h1����D�ɉ�����B���̌�A�����̃^�[���Ȃ�A�����̎�D��Lv.4�ȉ��́k�W�I���l�̃��j�b�g�J�[�h1����z�����Ă��悢�B,"�F�� �n��","�k�W�I���l �k�͑D�l",-,-,5,"Newtype Rising [GD01]",GD01-125.webp
-GD01-126,�����n����n,C,GD01,2,1,Green,BASE,�y�o�[�X�g�z���̃J�[�h��z������B�y�z�����z�����̃V�[���h1����D�ɉ�����B,�n��,"�k�}�O�A�i�b�N���l �k���_�l",-,-,6,"Newtype Rising [GD01]",GD01-126.webp
-GD01-127,�K���t,U,GD01,2,1,Red,BASE,"�y�o�[�X�g�z���̃J�[�h��z������B�y�z�����z�����̃V�[���h1����D�ɉ�����B �y�N���E�A�N�V�����z���̃x�[�X�����X�g�ɂ���FAP5�ȏ�́k�U�t�g�l�̖����̃��j�b�g1��I�ԁB���̃o�g�����A����́s�˔j3�t�𓾂�B (�A�^�b�N�ő���̃��j�b�g��j�󂵂��Ƃ��A���̑���̃V�[���h�G���A�̐擪�̃J�[�h1���Ɏw��̐��_���[�W��^����)",�F��,"�k�U�t�g�l �k�͑D�l",-,-,5,"Newtype Rising [GD01]",GD01-127.webp
-GD01-128,�����q���p���I,C,GD01,2,1,Red,BASE,�y�o�[�X�g�z���̃J�[�h��z������B�y�z�����z�����̃V�[���h1����D�ɉ�����B,�F��,"�k�l�I�E�W�I���l �k���_�l",-,-,6,"Newtype Rising [GD01]",GD01-128.webp
-GD01-129,�N�T�i�M,U,GD01,4,2,White,BASE,�y�o�[�X�g�z���̃J�[�h��z������B�y�z�����z�����̃V�[���h1����D�ɉ�����B���̌�AHP3�ȉ��̑���̃��j�b�g1��I�ԁB�����������̎�D�ɖ߂��B,�F��,"�k�O�Ǔ����l �k�͑D�l",-,-,4,"Newtype Rising [GD01]",GD01-129.webp
-GD01-130,��13��p�������,C,GD01,3,1,White,BASE,"�y�o�[�X�g�z���̃J�[�h��z������B�y�z�����z�����̃V�[���h1����D�ɉ�����B �y�N���E���C���z���̃x�[�X�����X�g�ɂ���F�k�w���l�̖����̃��j�b�g������Ȃ�A����̃��j�b�g1��I�ԁB���̃^�[�����A�����AP-1����B",�F��,"�k�w���l �k���_�l",-,-,5,"Newtype Rising [GD01]",GD01-130.webp
-GD02-001,�T�C�R�E�K���_��,LR,GD02,6,4,Blue,UNIT,�s�˔j3�t(�A�^�b�N�ő���̃��j�b�g��j�󂵂��Ƃ��A���̑���̃V�[���h�G���A�̐擪�̃J�[�h1���Ɏw��̐��_���[�W��^����)�y�Z�b�g���E�k�����l�ԁl�̃p�C���b�g�z�k�e�B�^�[���Y�l�̎����̃��j�b�g���_���[�W�ő���̃V�[���h�G���A�̃J�[�h��j�󂵂��Ƃ��A���̃��j�b�g��2�񕜂���B,"�F�� �n��",�k�e�B�^�[���Y�l,�u�t�H�E�E�����T���v,4,5,"Dual Impact [GD02]",GD02-001.webp
-GD02-002,�K���_���G�s�I��,LR,GD02,8,7,Blue,UNIT,�y�����N���z�y�^�[��1��z�����̃^�[�����A�����̃��j�b�g���o�g���_���[�W�ő���̃��j�b�g��j�󂵂��Ƃ��A���̃��j�b�g���A�N�e�B�u�ɂ���B,"�F�� �n��",�k�z���C�g�t�@���O�l,�u�[�N�X�E�}�[�L�X�v,6,6,"Dual Impact [GD02]",GD02-002.webp
-GD02-003,�K���_��Mk-II�i�e�B�^�[���Y�d�l�j,R,GD02,4,3,Blue,UNIT,�y�Z�b�g���ELv.3�ȉ��̃p�C���b�g�z�y�j�󎞁z�����̎�D�̃��j�b�g�J�[�h1�����̂ĂĂ��悢�B���������Ȃ�A���̃��j�b�g�ɃZ�b�g����Ă����J�[�h����D�ɖ߂��B,"�F�� �n��",�k�e�B�^�[���Y�l,�����k�e�B�^�[���Y�l,4,2,"Dual Impact [GD02]",GD02-003.webp
-GD02-004,�o�C�A����,R,GD02,5,3,Blue,UNIT,�y�Z�b�g���z���X�g��HP3�ȉ��̑���̃��j�b�g1��I�ԁB����͎��̑���̃^�[���̃X�^�[�g�t�F�C�Y�ŃA�N�e�B�u�ɂȂ�Ȃ��B,"�F�� �n��",�k�e�B�^�[���Y�l,�u�W�F���h�E���T�v,4,3,"Dual Impact [GD02]",GD02-004.webp
-GD02-005,�g�[���M�X,R,GD02,4,3,Blue,UNIT,�y�����N���z�y�A�^�b�N���zHP2�ȉ��̑���̃��j�b�g1��I�ԁB��������X�g�ɂ���B,"�F�� �n��",�kOZ�l,�����kOZ�l,3,4,"Dual Impact [GD02]",GD02-005.webp
-GD02-006,�t�H�r�h�D���K���_��,R,GD02,5,3,Blue,UNIT,�s�u���b�J�[�t(���X�g�ɂ��邱�ƂŃA�^�b�N������̃��j�b�g�ɂ���)�����̃^�[�����A���̃��j�b�g��Lv.2�ȉ��̑���̃��j�b�g����o�g���_���[�W���󂯂Ȃ��B,"�F�� �n��",�k�n���A���l,�����k����CPU�l,4,4,"Dual Impact [GD02]",GD02-006.webp
-GD02-007,�T�C�R�E�K���_���iMA�`�ԁj,U,GD02,5,3,Blue,UNIT,�s���y�A2�t(�����̃^�[���I�����A���̃��j�b�g���w��̐��񕜂���),"�F�� �n��",�k�e�B�^�[���Y�l,�����k�����l�ԁl,3,4,"Dual Impact [GD02]",GD02-007.webp
-GD02-008,�K�u�X���C,U,GD02,4,3,Blue,UNIT,�y�����N���z���X�g�̑���̃��j�b�g1��I�ԁB�����1�_���[�W��^����B,"�F�� �n��",�k�e�B�^�[���Y�l,�����k�e�B�^�[���Y�l,4,3,"Dual Impact [GD02]",GD02-008.webp
-GD02-009,�J���~�e�B�K���_��,U,GD02,5,3,Blue,UNIT,�y�^�[��1��z���̃��j�b�g��AP������̌��ʂŌ��������Ƃ��A���X�g�̑���̃��j�b�g1��I�ԁB�����2�_���[�W��^����B,"�F�� �n��",�k�n���A���l,�����k����CPU�l,3,5,"Dual Impact [GD02]",GD02-009.webp
-GD02-010,���C�_�[�K���_��,U,GD02,5,3,Blue,UNIT,�y�^�[��1��z���̃��j�b�g������̌��ʃ_���[�W���󂯂��Ƃ��A������1���h���[����B,"�F�� �n��",�k�n���A���l,�����k����CPU�l,4,4,"Dual Impact [GD02]",GD02-010.webp
-GD02-011,���r�E�X�i�s�[�X���[�J�[���j,U,GD02,4,2,Blue,UNIT,�y�N���E�A�N�V�����z���̃��j�b�g��j�󂷂�F���̃��j�b�g�ƃo�g�����Ă���A����̃x�[�X1��/����̃V�[���h1��6�_���[�W��^����B,�F��,�k�n���A���l,-,-,1,"Dual Impact [GD02]",GD02-011.webp
-GD02-012,�R�A�E�u�[�X�^�[,C,GD02,2,2,Blue,UNIT,-,"�F�� �n��","�k�n���A�M�l �kWB���l",�����kWB���l,2,2,"Dual Impact [GD02]",GD02-012.webp
-GD02-013,�n�C�U�b�N,C,GD02,2,1,Blue,UNIT,-,"�F�� �n��",�k�e�B�^�[���Y�l,-,2,2,"Dual Impact [GD02]",GD02-013.webp
-GD02-014,�K���o���f�B��,C,GD02,2,2,Blue,UNIT,�y�z�����z�k�e�B�^�[���Y�l�̎����̃��j�b�g1��I�ԁB���̃^�[�����A�����AP+1����B,"�F�� �n��",�k�e�B�^�[���Y�l,-,3,1,"Dual Impact [GD02]",GD02-014.webp
-GD02-015,�}���T�C,C,GD02,3,2,Blue,UNIT,-,"�F�� �n��",�k�e�B�^�[���Y�l,�����k�e�B�^�[���Y�l,3,3,"Dual Impact [GD02]",GD02-015.webp
-GD02-016,�o�[�U��,C,GD02,3,2,Blue,UNIT,�y�z�����z�k�e�B�^�[���Y�l�̎����̃��j�b�g1��I�ԁB���̃^�[�����A�����AP+1����B,"�F�� �n��",�k�e�B�^�[���Y�l,-,3,2,"Dual Impact [GD02]",GD02-016.webp
-GD02-017,�f���^�v���X�i�E�F�C�u���C�_�[�`�ԁj,C,GD02,3,2,Blue,UNIT,�s���y�A2�t(�����̃^�[���I�����A���̃��j�b�g���w��̐��񕜂���),"�F�� �n��",�k�n���A�M�l,�u���f�B�E�}�[�Z�i�X�v,2,3,"Dual Impact [GD02]",GD02-017.webp
-GD02-018,�g�[���X,C,GD02,2,2,Blue,UNIT,���̃��j�b�g�́A����v���C���[���A�^�b�N��ɑI�ׂȂ��B,"�F�� �n��",�kOZ�l,-,3,3,"Dual Impact [GD02]",GD02-018.webp
-GD02-019,���C�_�[�K���_���iMA�`�ԁj,C,GD02,4,2,Blue,UNIT,-,"�F�� �n��",�k�n���A���l,�����k����CPU�l,4,3,"Dual Impact [GD02]",GD02-019.webp
-GD02-020,�G�����X,LR,GD02,6,5,Green,UNIT,�y�z�����z�����̃f�b�L���ォ��5�����āA���̒��̗΂́k�W�I���l�̃p�C���b�g�J�[�h1�������J���Ď�D�ɉ����Ă��悢�B�c�����J�[�h�͖���ׂɉ��ɖ߂��B�y�����N���z���̃��j�b�g��AP+2����B,�F��,�k�W�I���l,�u�����@�E�X���v,4,4,"Dual Impact [GD02]",GD02-020.webp
-GD02-021,"�K���_��AGE-1 �m�[�}��",LR,GD02,3,2,Green,UNIT,"�y�z�����z�����̎�D�̗΂́k�n���A�M�l�̃��j�b�g�J�[�h1�����̂ĂĂ��悢�B���������Ȃ�A������EX���\�[�X1��u���B���̌�A������Lv.7�ȏ�Ȃ�A������1���h���[����B","�F�� �n��","�k�n���A�M�l �kAGE�V�X�e���l",�����k�A�X�m�Ɓl,2,2,"Dual Impact [GD02]",GD02-021.webp
-GD02-022,G�G�O�[�X,R,GD02,3,2,Green,UNIT,"�y�^�[��1��z������EX���\�[�X���u���ꂽ�Ƃ��A�kAGE�V�X�e���l�̎����̃��j�b�g1��I�ԁB���̃^�[�����A����́s�˔j2�t�𓾂�B (�A�^�b�N�ő���̃��j�b�g��j�󂵂��Ƃ��A���̑���̃V�[���h�G���A�̐擪�̃J�[�h1���Ɏw��̐��_���[�W��^����)","�F�� �n��",�k�n���A�M�l,�u�E���t�E�G�j�A�N���v,2,3,"Dual Impact [GD02]",GD02-022.webp
-GD02-023,"�K���_��AGE-1 �X�p���[",R,GD02,4,3,Green,UNIT,"�y�����N���z������Lv.7�ȏ�̊ԁA���̃��j�b�g�́s�搧�U���t�𓾂�B (�A�^�b�N���̂��̃��j�b�g�́A�������Ƀ_���[�W��^����)","�F�� �n��","�k�n���A�M�l �kAGE�V�X�e���l",�u�t���b�g�E�A�X�m�v,3,4,"Dual Impact [GD02]",GD02-023.webp
-GD02-024,�Ԃ��K���_��,R,GD02,5,3,Green,UNIT,"�y�����N���z���̃��j�b�g�́s���@���t�𓾂�B (���̃��j�b�g�̓u���b�N����Ȃ�)","�F�� �n��",�k�N�����l,�����k�N�����l,4,4,"Dual Impact [GD02]",GD02-024.webp
-GD02-025,�K���_���w�r�[�A�[���Y,U,GD02,4,3,Green,UNIT,�y�z�����z�����̃f�b�L���ォ��1�����āA�ォ���ɖ߂��B,�n��,�k�I�y���[�V�����E���e�I�l,�����k�I�y���[�V�����E���e�I�l,3,4,"Dual Impact [GD02]",GD02-025.webp
-GD02-026,�W�F�m�A�X�J�X�^��,U,GD02,2,2,Green,UNIT,�y�z�����z������Lv.7�ȏ�Ȃ�A�kAGE�V�X�e���l�̎����̃��j�b�g1��I�ԁB���̃^�[�����A�����AP+2����B,"�F�� �n��",�k�n���A�M�l,�u�E���t�E�G�j�A�N���v,2,2,"Dual Impact [GD02]",GD02-026.webp
-GD02-027,"�K���_��AGE-1 �^�C�^�X",U,GD02,7,4,Green,UNIT,�s�˔j3�t(�A�^�b�N�ő���̃��j�b�g��j�󂵂��Ƃ��A���̑���̃V�[���h�G���A�̐擪�̃J�[�h1���Ɏw��̐��_���[�W��^����),"�F�� �n��","�k�n���A�M�l �kAGE�V�X�e���l",�u�t���b�g�E�A�X�m�v,5,5,"Dual Impact [GD02]",GD02-027.webp
-GD02-028,�}�O�A�i�b�N�i�A�u�h���@�j,C,GD02,3,2,Green,UNIT,-,"�F�� �n��",�k�}�O�A�i�b�N���l,�����k�}�O�A�i�b�N���l,3,3,"Dual Impact [GD02]",GD02-028.webp
-GD02-029,"�K���_��AGE-1 �m�[�}��",C,GD02,3,2,Green,UNIT,-,"�F�� �n��","�k�n���A�M�l �kAGE�V�X�e���l",�����k�A�X�m�Ɓl,3,3,"Dual Impact [GD02]",GD02-029.webp
-GD02-030,�W�F�m�A�X,C,GD02,1,1,Green,UNIT,-,"�F�� �n��",�k�n���A�M�l,-,1,2,"Dual Impact [GD02]",GD02-030.webp
-GD02-031,"�K���_��AGE-1 �^�C�^�X",C,GD02,4,2,Green,UNIT,������Lv.7�ȏ�̊ԁA���̃��j�b�g��AP+2����B,"�F�� �n��","�k�n���A�M�l �kAGE�V�X�e���l",�u�t���b�g�E�A�X�m�v,2,4,"Dual Impact [GD02]",GD02-031.webp
-GD02-032,�����K���_��,C,GD02,3,2,Green,UNIT,-,"�F�� �n��",�k�W�I���l,�u�V���A�E�A�Y�i�u���v,3,3,"Dual Impact [GD02]",GD02-032.webp
-GD02-033,�L�P���K�iMA�`�ԁj�iGQ�j,C,GD02,5,4,Green,UNIT,"���̃��j�b�g�ȊO�́A�k�W�I���l�̖����̃����N���j�b�g������ԁA����́s�˔j5�t�𓾂�B (�A�^�b�N�ő���̃��j�b�g��j�󂵂��Ƃ��A���̑���̃V�[���h�G���A�̐擪�̃J�[�h1���Ɏw��̐��_���[�W��^����)",�F��,�k�W�I���l,�u�V�����A�E�u���v,3,4,"Dual Impact [GD02]",GD02-033.webp
-GD02-034,GQuuuuuuX,C,GD02,2,1,Green,UNIT,�y�Z�b�g���E�Ԃ̃p�C���b�g�z���̃��j�b�g��AP+2����B,"�F�� �n��",�k�W�I���l,-,-,3,"Dual Impact [GD02]",GD02-034.webp
-GD02-035,"�R�x�U�N ���ꕔ���d�l",C,GD02,2,1,Green,UNIT,���̃��j�b�g�́A����v���C���[���A�^�b�N��ɑI�ׂȂ��B,"�F�� �n��",�k�T�C�h6�l,-,2,3,"Dual Impact [GD02]",GD02-035.webp
-GD02-036,�L���x���C,LR,GD02,7,5,Red,UNIT,"�y�����N���z���̃^�[�����A���̃��j�b�g�́s�����t�𓾂�B (�A�^�b�N�ŃV�[���h�ɗ^����_���[�W�́A�擪����2�ɓ����ɗ^������)�y�Z�b�g���E�k�l�I�E�W�I���l�̃p�C���b�g�z�y�A�^�b�N���z�_���[�W���󂯂Ă��鑊��̃��j�b�g1��I�ԁB�����2�_���[�W��^����B","�F�� �n��",�k�l�I�E�W�I���l,�u�n�}�[���E�J�[���v,5,5,"Dual Impact [GD02]",GD02-036.webp
-GD02-037,�K���_�����@�T�[�S,LR,GD02,5,4,Red,UNIT,�s�˔j1�t(�A�^�b�N�ő���̃��j�b�g��j�󂵂��Ƃ��A���̑���̃V�[���h�G���A�̐擪�̃J�[�h1���Ɏw��̐��_���[�W��^����)�y�z�����z����̃V�[���h��3�ȉ��Ȃ�AAP5�ȉ��̑���̃��j�b�g1��I�ԁB�����2�_���[�W��^����B,"�F�� �n��",�k�V�A�M�l,�u�V���M�A�E�t���X�g�v,4,4,"Dual Impact [GD02]",GD02-037.webp
-GD02-038,GQuuuuuuX�i�I���K�E�T�C�R�~���N�����j,LR,GD02,7,5,Red,UNIT,�y�z�����z�����̃f�b�L���ォ��3�����āA���̒���Lv.4�ȉ��́k�N�����l�̃��j�b�g�J�[�h1����z�����Ă��悢�B�c�����J�[�h�͖���ׂɉ��ɖ߂��B,"�F�� �n��",�k�N�����l,�u�A�}�e�E���Y���n�i�}�`���j�v,5,4,"Dual Impact [GD02]",GD02-038.webp
-GD02-039,�K�UC�i�n�}�[���E�J�[����p�@�j,R,GD02,3,2,Red,UNIT,�y�Z�b�g���zLv.3�ȉ��̑���̃��j�b�g1��I�ԁB�����1�_���[�W��^����B,"�F�� �n��",�k�l�I�E�W�I���l,�u�n�}�[���E�J�[���v,2,3,"Dual Impact [GD02]",GD02-039.webp
-GD02-040,�K���_���A�V���^����,R,GD02,4,3,Red,UNIT,�y�N���E���C���z�s����2�t(���X�g�ɂ��邱�ƂŁA���̃^�[�����A���̖����̃��j�b�g1��AP+(�w��̐�)����)�y�z�����z���̃��j�b�g�ȊO�́A�k�V�A�M�l�̎����̃��j�b�g1��I�ԁB���̃^�[�����A�����HP2�ȉ��̑���̃��j�b�g����o�g���_���[�W���󂯂Ȃ��B,"�F�� �n��",�k�V�A�M�l,�����k�V�A�M�l,3,3,"Dual Impact [GD02]",GD02-040.webp
-GD02-041,"�Q���O�O �X�K�C�@�iGQ�j",R,GD02,4,4,Red,UNIT,�y�z�����zLv.5�ȏ�̑���̃��j�b�g1��I�ԁB�����2�_���[�W��^����B,"�F�� �n��",�k�N�����l,�u�V�C�R�E�X�K�C�v,3,3,"Dual Impact [GD02]",GD02-041.webp
-GD02-042,�K���_���A�V���^�����iMA�`�ԁj,U,GD02,3,2,Red,UNIT,"�y�z�����z�k�V�A�M�l�̎����̃��j�b�g1��I�ԁB���̃^�[�����A����́s���@���t�𓾂�B (���̃��j�b�g�̓u���b�N����Ȃ�)","�F�� �n��",�k�V�A�M�l,�u�I���o�E�t���X�g�v,3,2,"Dual Impact [GD02]",GD02-042.webp
-GD02-043,�h�[�g���X�E�E�F�|��,U,GD02,2,2,Red,UNIT,�y�z�����z���̃��j�b�g�ȊO�́A�k�V�A�M�l�̎����̃��j�b�g������Ȃ�A�u�h�[�g���X�v(�k�V�A�M�l�EAP0�EHP1)�̃��j�b�g�g�[�N��1�����X�g�Ŕz������B,"�F�� �n��",�k�V�A�M�l,-,2,1,"Dual Impact [GD02]",GD02-043.webp
-GD02-044,�h�[�g���X�E�R�}���h,U,GD02,2,2,Red,UNIT,�y�j�󎞁z���̃��j�b�g�ȊO�́A�k�V�A�M�l�̎����̃��j�b�g������Ȃ�A�u�h�[�g���X�v(�k�V�A�M�l�EAP0�EHP1)�̃��j�b�g�g�[�N��1�����X�g�Ŕz������B,"�F�� �n��",�k�V�A�M�l,-,3,1,"Dual Impact [GD02]",GD02-044.webp
-GD02-045,���������s��@�����^�W��,U,GD02,2,2,Red,UNIT,�y�A�^�b�N���z���̃��j�b�g��AP5�ȏ�ŁA����̃��j�b�g�ɃA�^�b�N���Ă���Ȃ�A������1���h���[����B,"�F�� �n��",�k�U�t�g�l,-,1,1,"Dual Impact [GD02]",GD02-045.webp
-GD02-046,�Z�C����p�y�L���m��,U,GD02,4,2,Red,UNIT,�y�z�����z����̃��j�b�g�g�[�N��1��I�ԁB�����2�_���[�W��^����B,"�F�� �n��",�k�n���A�M�l,�u�Z�C���E�}�X�v,3,4,"Dual Impact [GD02]",GD02-046.webp
-GD02-047,�K�UC,C,GD02,1,1,Red,UNIT,�y�N���E���C���z���̃��j�b�g�����X�g�ɂ���F�����j�󂵁ALv.5�ȉ��̑���̃��j�b�g1��I�ԁB�����1�_���[�W��^����B,"�F�� �n��",�k�l�I�E�W�I���l,-,-,1,"Dual Impact [GD02]",GD02-047.webp
-GD02-048,�U�N�V�i���t���d�l�j,C,GD02,3,2,Red,UNIT,-,"�F�� �n��",�k�l�I�E�W�I���l,�����k�l�I�E�W�I���l,4,1,"Dual Impact [GD02]",GD02-048.webp
-GD02-049,�h�[�g���X,C,GD02,1,1,Red,UNIT,�y�N���E���C���z�s����1�t(���X�g�ɂ��邱�ƂŁA���̃^�[�����A���̖����̃��j�b�g1��AP+(�w��̐�)����),"�F�� �n��",�k�V�A�M�l,-,1,1,"Dual Impact [GD02]",GD02-049.webp
-GD02-050,�K�E�]�E���i���t���d�l�j,C,GD02,2,2,Red,UNIT,-,"�F�� �n��",�k�l�I�E�W�I���l,-,3,2,"Dual Impact [GD02]",GD02-050.webp
-GD02-051,01�K���_��,C,GD02,2,2,Red,UNIT,-,"�F�� �n��",�k�n���A�M�l,-,2,3,"Dual Impact [GD02]",GD02-051.webp
-GD02-052,�K���L���m���iGQ�j,C,GD02,2,2,Red,UNIT,-,"�F�� �n��",�k�n���A�M�l,-,3,2,"Dual Impact [GD02]",GD02-052.webp
-GD02-053,�K���_��X,LR,GD02,7,5,Purple,UNIT,�s�����t(�A�^�b�N�ŃV�[���h�ɗ^����_���[�W�́A�擪����2�ɓ����ɗ^������)�y�����N���z�����̃^�[�����A�����̃g���b�V���ɃJ�[�h��7���ȏ゠��ԁA���̃��j�b�g�ȊO�́A�k�o���`���[�l�̎����̃��j�b�g���ׂĂ�AP+2����B,"�F�� �n��",�k�o���`���[�l,�u�K���[�h�E�����v,6,5,"Dual Impact [GD02]",GD02-053.webp
-GD02-054,�K���_���E�o���o�g�X�i��1�`�ԁj,LR,GD02,3,2,Purple,UNIT,�y�A�^�b�N���z���̃��j�b�g���_���[�W���󂯂Ă���Ȃ�A������1���h���[����B,"�F�� �n��","�k�S�ؒc�l �k�K���_���E�t���[���l",�u�O�����E�I�[�K�X�v,3,2,"Dual Impact [GD02]",GD02-054.webp
-GD02-055,�K���_���E�O�V�I�����x�C�N,LR,GD02,5,4,Purple,UNIT,�s�u���b�J�[�t(���X�g�ɂ��邱�ƂŃA�^�b�N������̃��j�b�g�ɂ���)�y�z�����z�����̃��j�b�g1�ƁA����̃��j�b�g1��I�ԁB������1�_���[�W��^����B,"�F�� �n��","�k�S�ؒc�l �k�K���_���E�t���[���l",�u���O�E�A���g�����h�v,3,5,"Dual Impact [GD02]",GD02-055.webp
-GD02-056,�K���_��X,R,GD02,4,3,Purple,UNIT,�y�Z�b�g���E�k�o���`���[�l�̃p�C���b�g�z�y�j�󎞁z�����̃g���b�V����Lv.5�ȏ�́k�o���`���[�l�̃��j�b�g�J�[�h1����I�ԁB�������D�ɉ�����B,"�F�� �n��",�k�o���`���[�l,�u�K���[�h�E�����v,3,4,"Dual Impact [GD02]",GD02-056.webp
-GD02-057,�[�_�X,R,GD02,5,3,Purple,UNIT,�y�Z�b�g���z�y�A�^�b�N���z���̃��j�b�g�ȊO�́A�����̃��j�b�g1��I��ł��悢�B�����j�󂷂�B���������Ȃ�ALv.4�ȉ��̑���̃��j�b�g1��I�ԁB�����2�_���[�W��^����B,"�F�� �n��","�kUE�l �k���F�C�K���l",�u�f�V���E�K���b�g�v,5,3,"Dual Impact [GD02]",GD02-057.webp
-GD02-058,�������i�O���C�Y����j,R,GD02,3,2,Purple,UNIT,�y�z�����z�����̃��j�b�g1��I�ԁB�����1�_���[�W��^����B���������Ȃ�A������1���h���[����B���̌�A�����̎�D1�����̂Ă�B,"�F�� �n��",�k�S�ؒc�l,�����k�S�ؒc�l,2,2,"Dual Impact [GD02]",GD02-058.webp
-GD02-059,�K���_���G�A�}�X�^�[,U,GD02,4,3,Purple,UNIT,�s�u���b�J�[�t(���X�g�ɂ��邱�ƂŃA�^�b�N������̃��j�b�g�ɂ���),"�F�� �n��",�k�o���`���[�l,�����k�o���`���[�l,4,3,"Dual Impact [GD02]",GD02-059.webp
-GD02-060,�K���_�����I�p���h,U,GD02,5,4,Purple,UNIT,�y�z�����z�����̃g���b�V���ɃJ�[�h��7���ȏ゠��Ȃ�ALv.4�ȉ��̑���̃��j�b�g1��I�ԁB��������X�g�ɂ���B,"�F�� �n��",�k�o���`���[�l,�u���A�r�B�E���C�v,4,4,"Dual Impact [GD02]",GD02-060.webp
-GD02-061,�S��,U,GD02,4,2,Purple,UNIT,�y�Z�b�g���E���̃p�C���b�g�z�����̃g���b�V���Ɂk�e�C���Y�l/�k�S�ؒc�l�̃J�[�h��3���ȏ゠��Ȃ�AAP3�ȉ��̑���̃��j�b�g1��I�ԁB��������X�g�ɂ���B,�F��,�k�e�C���Y�l,�����k�e�C���Y�l,3,3,"Dual Impact [GD02]",GD02-061.webp
-GD02-062,�S�B�i�A�~�_�@�j,U,GD02,4,2,Purple,UNIT,-,"�F�� �n��",�k�e�C���Y�l,�����k�e�C���Y�l,3,4,"Dual Impact [GD02]",GD02-062.webp
-GD02-063,�K���_���G�A�}�X�^�[�i�t�@�C�^�[���[�h�j,C,GD02,3,2,Purple,UNIT,-,"�F�� �n��",�k�o���`���[�l,�����k�o���`���[�l,3,3,"Dual Impact [GD02]",GD02-063.webp
-GD02-064,�K���_�����I�p���h,C,GD02,5,4,Purple,UNIT,�����̃^�[�����A�����̃g���b�V���ɃJ�[�h��7���ȏ゠��ԁA���̃��j�b�g�͑���̃R�}���h������ʃ_���[�W���󂯂Ȃ��B,�n��,�k�o���`���[�l,�����k�o���`���[�l,4,4,"Dual Impact [GD02]",GD02-064.webp
-GD02-065,�W�F�j�X��,C,GD02,1,1,Purple,UNIT,-,�n��,�k�o���`���[�l,-,1,2,"Dual Impact [GD02]",GD02-065.webp
-GD02-066,�K�t����,C,GD02,2,1,Purple,UNIT,���̃��j�b�g�͑���v���C���[���A�^�b�N��ɑI�ׂȂ��B,"�F�� �n��","�kUE�l �k���F�C�K���l",-,2,3,"Dual Impact [GD02]",GD02-066.webp
-GD02-067,�o�N�g,C,GD02,2,2,Purple,UNIT,-,"�F�� �n��","�kUE�l �k���F�C�K���l",-,2,3,"Dual Impact [GD02]",GD02-067.webp
-GD02-068,�K���_���E�o���o�g�X�i��3�`�ԁj,C,GD02,4,2,Purple,UNIT,�y�z�����z���̃��j�b�g��2�_���[�W��^����B,"�F�� �n��","�k�S�ؒc�l �k�K���_���E�t���[���l",�����k�S�ؒc�l,3,5,"Dual Impact [GD02]",GD02-068.webp
-GD02-069,���K���_��,LR,GD02,6,5,White,UNIT,�y�����N���z�y�N���E���C���z�y�^�[��1��z�A�N�e�B�u�̖����̃x�[�X1��I�ԁB��������X�g�ɂ���B���������Ȃ�A���̃��j�b�g���A�N�e�B�u�ɂ��A���̃^�[�����A����͑���v���C���[���A�^�b�N��ɑI�ׂȂ��B,"�F�� �n��",�k�G�D�[�S�l,�u�J�~�[���E�r�_���v,5,4,"Dual Impact [GD02]",GD02-069.webp
-GD02-070,�K���_���E�L�}���X,LR,GD02,5,4,White,UNIT,�y�z�����z�����̃g���b�V���Ɂk�M�������z�����l�̃J�[�h��4���ȏ゠��Ȃ�A������2���h���[����B���������Ȃ�A�����̎�D2�����̂Ă�B,"�F�� �n��","�k�M�������z�����l �k�K���_���E�t���[���l",�u�K�G���I�E�{�[�h�E�B���v,4,4,"Dual Impact [GD02]",GD02-070.webp
-GD02-071,�K���_��Mk-II�i�G�D�[�S�d�l�j,R,GD02,4,3,White,UNIT,�y�z�����z���̖����̃x�[�X������Ȃ�A�����̎�D�́k�G�D�[�S�l�̃p�C���b�g�J�[�h1�������̃��j�b�g�ɃZ�b�g���Ă��悢�B,"�F�� �n��",�k�G�D�[�S�l,�����k�G�D�[�S�l,3,4,"Dual Impact [GD02]",GD02-071.webp
-GD02-072,�S��,R,GD02,5,3,White,UNIT,"�s�u���b�J�[�t(���X�g�ɂ��邱�ƂŃA�^�b�N������̃��j�b�g�ɂ���)���̖����̃x�[�X������ԁA���̃��j�b�g�́s���y�A1�t�𓾂�B (�����̃^�[���I�����A���̃��j�b�g���w��̐��񕜂���)","�F�� �n��",�k�G�D�[�S�l,�u�N���g���E�o�W�[�i�v,4,4,"Dual Impact [GD02]",GD02-072.webp
-GD02-073,�O���C�Y���b�^�[�i�J���^�@�^�n���d�l�j,R,GD02,4,3,White,UNIT,"����̃^�[�����A���̃��j�b�g�ƃo�g�����Ă��鑊��̃��j�b�g�́s�搧�U���t�𓾂�B (�A�^�b�N���̂��̃��j�b�g�́A�������Ƀ_���[�W��^����)",�n��,�k�M�������z�����l,�u�J���^�E�C�V���[�v,5,4,"Dual Impact [GD02]",GD02-073.webp
-GD02-074,�K���_���E�G�A���A���i���C�^�j,R,GD02,7,5,White,UNIT,"�s���@���t(���̃��j�b�g�̓u���b�N����Ȃ�)�y�Z�b�g���z�����̃g���b�V���ɃR�}���h�J�[�h��4���ȏ゠��ԁA���̃��j�b�g�́s�u���b�J�[�t�𓾂�B (���X�g�ɂ��邱�ƂŃA�^�b�N������̃��j�b�g�ɂ���)","�F�� �n��",�k�w���l,�u�X���b�^�E�}�[�L�����[�v,5,5,"Dual Impact [GD02]",GD02-074.webp
-GD02-075,���b�N�E�f�B�A�X�i�ԁj,U,GD02,4,3,White,UNIT,�y�A�^�b�N���z�A�N�e�B�u�̖����̃x�[�X1��I�ԁB��������X�g�ɂ���B���������Ȃ�ALv.4�ȉ��̑���̃��j�b�g1��I�ԁB���̃o�g�����A�����AP-2����B,"�F�� �n��",�k�G�D�[�S�l,�����k�G�D�[�S�l,4,3,"Dual Impact [GD02]",GD02-075.webp
-GD02-076,�o�X�^�[�K���_��,U,GD02,4,3,White,UNIT,"���̃��j�b�g��AP5�ȏ�̊ԁA����́s�u���b�J�[�t�𓾂�B (���X�g�ɂ��邱�ƂŃA�^�b�N������̃��j�b�g�ɂ���)","�F�� �n��",�k�O�Ǔ����l,�����k�R�[�f�B�l�C�^�[�l,4,3,"Dual Impact [GD02]",GD02-076.webp
-GD02-077,�V�����@���x�E�O���C�Y�i�A�C���@�j,U,GD02,4,2,White,UNIT,-,"�F�� �n��",�k�M�������z�����l,�����k�M�������z�����l,4,3,"Dual Impact [GD02]",GD02-077.webp
-GD02-078,�K���_���E�t�@���N�g,U,GD02,5,3,White,UNIT,-,"�F�� �n��",�k�w���l,�u�G�����E�P���X�v,5,4,"Dual Impact [GD02]",GD02-078.webp
-GD02-079,���b�N�E�f�B�A�X,C,GD02,3,2,White,UNIT,�s�u���b�J�[�t(���X�g�ɂ��邱�ƂŃA�^�b�N������̃��j�b�g�ɂ���),"�F�� �n��",�k�G�D�[�S�l,-,3,3,"Dual Impact [GD02]",GD02-079.webp
-GD02-080,�l��,C,GD02,2,1,White,UNIT,-,"�F�� �n��",�k�G�D�[�S�l,-,2,2,"Dual Impact [GD02]",GD02-080.webp
-GD02-081,���^�X,C,GD02,2,2,White,UNIT,�y�z�����z���̖����̃x�[�X������Ȃ�A����̃��j�b�g1��I�ԁB���̃^�[�����A�����AP-2����B,"�F�� �n��",�k�G�D�[�S�l,�u�t�@�E���C���B�v,1,1,"Dual Impact [GD02]",GD02-081.webp
-GD02-082,�V�����@���x�E�O���C�Y�i�K�G���I�@�j,C,GD02,3,2,White,UNIT,"���̃��j�b�g�ȊO�́A�k�M�������z�����l�̎����̃��j�b�g������ԁA����́s�u���b�J�[�t�𓾂�B (���X�g�ɂ��邱�ƂŃA�^�b�N������̃��j�b�g�ɂ���)","�F�� �n��",�k�M�������z�����l,�u�K�G���I�E�{�[�h�E�B���v,3,3,"Dual Impact [GD02]",GD02-082.webp
-GD02-083,�O���C�Y���b�^�[�i�n���d�l�j,C,GD02,3,2,White,UNIT,�y�j�󎞁z����̃^�[���Ȃ�A�k�M�������z�����l�̎����̃��j�b�g1��I�ԁB������A�N�e�B�u�ɂ���B,�n��,�k�M�������z�����l,-,3,2,"Dual Impact [GD02]",GD02-083.webp
-GD02-084,"�f�B�����U ���E�_��p�@",C,GD02,2,2,White,UNIT,-,"�F�� �n��",�k�w���l,�����k�w���l,1,3,"Dual Impact [GD02]",GD02-084.webp
-GD02-085,�t�H�E�E�����T��,R,GD02,5,1,Blue,PILOT,�y�o�[�X�g�z���̃J�[�h����D�ɉ�����B�y�����N���z�y�^�[��1��z�����̃^�[�����A���̃��j�b�g���񕜂����Ƃ��A�����̎�D��4���ȉ��Ȃ�A������1���h���[����B,-,"�k�e�B�^�[���Y�l �k�����l�ԁl",-,+2,+1,"Dual Impact [GD02]",GD02-085.webp
-GD02-086,�W�F���h�E���T,U,GD02,3,1,Blue,PILOT,�y�o�[�X�g�z���̃J�[�h����D�ɉ�����B���̃��j�b�g�ȊO�́A�k�e�B�^�[���Y�l�̎����̃��j�b�g������ԁA�����AP+1����B,-,�k�e�B�^�[���Y�l,-,+1,+1,"Dual Impact [GD02]",GD02-086.webp
-GD02-087,�I���K���N���g���V���j,C,GD02,5,1,Blue,PILOT,�y�o�[�X�g�z���̃J�[�h����D�ɉ�����B�y�����N���z���̃��j�b�g���Ȃ�A�s�u���b�J�[�t��������̃��j�b�g1��I�ԁB��������X�g�ɂ���B,-,"�k�n���A���l �k����CPU�l",-,+2,+1,"Dual Impact [GD02]",GD02-087.webp
-GD02-088,�t���b�g�E�A�X�m,R,GD02,3,1,Green,PILOT,�y�o�[�X�g�z���̃J�[�h����D�ɉ�����B�y�����N���z�����̃f�b�L���ォ��3�����āA���̒��́A�΂́k�n���A�M�l�̃��j�b�g�J�[�h1��/�J�[�h���ɁuAGE�f�o�C�X�v���܂ރJ�[�h1�������J���Ď�D�ɉ����Ă��悢�B�c�����J�[�h�͖���ׂɉ��ɖ߂��B,-,"�k�n���A�M�l �k�A�X�m�Ɓl �kX���E���_�[�l",-,+1,+1,"Dual Impact [GD02]",GD02-088.webp
-GD02-089,�����@�E�X��,U,GD02,3,1,Green,PILOT,"�y�o�[�X�g�z���̃J�[�h����D�ɉ�����B�y�Z�b�g���z���̃��j�b�g�ȊO�́A�k�W�I���l�̎����̃����N���j�b�g1��I�ԁB���̃^�[�����A����́s�˔j1�t�𓾂�B (�A�^�b�N�ő���̃��j�b�g��j�󂵂��Ƃ��A���̑���̃V�[���h�G���A�̐擪�̃J�[�h1���Ɏw��̐��_���[�W��^����)",-,"�k�W�I���l �k�j���[�^�C�v�l",-,+1,+1,"Dual Impact [GD02]",GD02-089.webp
-GD02-090,�V�����A�E�u���iGQ�j,C,GD02,5,1,Green,PILOT,�y�o�[�X�g�z���̃J�[�h����D�ɉ�����B���̃��j�b�g�ȊO�́A�s���@���t���������̃��j�b�g������ԁA�����AP+1����B,-,"�k�W�I���l �k�j���[�^�C�v�l",-,+1,+2,"Dual Impact [GD02]",GD02-090.webp
-GD02-091,�n�}�[���E�J�[��,R,GD02,5,1,Red,PILOT,�y�o�[�X�g�z���̃J�[�h����D�ɉ�����B�y�Z�b�g���z���̃��j�b�g���ԂȂ�A�����Lv.�ȉ��̑���̃��j�b�g1��I�ԁB�����1�_���[�W��^����B,-,"�k�l�I�E�W�I���l �k�j���[�^�C�v�l",-,+2,+1,"Dual Impact [GD02]",GD02-091.webp
-GD02-092,�V���M�A�E�t���X�g,U,GD02,4,1,Red,PILOT,�y�o�[�X�g�z���̃J�[�h����D�ɉ�����B�y�����N���z�y�A�^�b�N���z�k�V�A�M�l�̎����̃��j�b�g1��I�ԁB���̃^�[�����A�����AP+2����B,-,�k�V�A�M�l,-,+1,+2,"Dual Impact [GD02]",GD02-092.webp
-GD02-093,�I���o�E�t���X�g,C,GD02,3,1,Red,PILOT,�y�o�[�X�g�z���̃J�[�h����D�ɉ�����B�����̃^�[�����A���̃��j�b�g���o�g���_���[�W�Łk�j���[�^�C�v�l�̃p�C���b�g���Z�b�g����Ă��鑊��̃��j�b�g��j�󂵂��Ƃ��A������1���h���[����B,-,�k�V�A�M�l,-,+1,+1,"Dual Impact [GD02]",GD02-093.webp
-GD02-094,�K���[�h�E�������e�B�t�@�E�A�f�B�[��,R,GD02,4,1,Purple,PILOT,�y�o�[�X�g�z���̃J�[�h����D�ɉ�����B�y�Z�b�g���z�����̎�D1�����̂ĂĂ��悢�B���������Ȃ�A�����̃f�b�L���ォ��3�����āA���̒��́k�o���`���[�l�̃��j�b�g�J�[�h1�������J���Ď�D�ɉ����Ă��悢�B�c�����J�[�h�͖���ׂɉ��ɖ߂��B,-,"�k�o���`���[�l �k�j���[�^�C�v�l",-,+1,+2,"Dual Impact [GD02]",GD02-094.webp
-GD02-095,���t�^�E�t�����N�����h,U,GD02,4,1,Purple,PILOT,"�y�o�[�X�g�z���̃J�[�h����D�ɉ�����B�y�A�^�b�N���z���̃��j�b�g���_���[�W���󂯂Ă���Lv.5�ȉ��Ȃ�A���̃o�g�����A����́s���@���t�𓾂�B (���̃��j�b�g�̓u���b�N����Ȃ�)",-,�k�e�C���Y�l,-,+2,+1,"Dual Impact [GD02]",GD02-095.webp
-GD02-096,�f�V���E�K���b�g,C,GD02,4,1,Purple,PILOT,�y�o�[�X�g�z���̃J�[�h����D�ɉ�����B�y�����N���z�����̃g���b�V����Lv.2�ȉ��́k���F�C�K���l�̃��j�b�g�J�[�h1����I��ł��悢�B������R�X�g���x�����Ĕz������B,-,"�k���F�C�K���l �kX���E���_�[�l",-,+2,+1,"Dual Impact [GD02]",GD02-096.webp
-GD02-097,�J�~�[���E�r�_��,R,GD02,5,1,White,PILOT,�y�o�[�X�g�z���̃J�[�h����D�ɉ�����B���̖����̃x�[�X������ԁA���̃��j�b�g��AP+2����B,-,"�k�G�D�[�S�l �k�j���[�^�C�v�l",-,+1,+2,"Dual Impact [GD02]",GD02-097.webp
-GD02-098,�N���g���E�o�W�[�i,U,GD02,4,1,White,PILOT,"���̃J�[�h�̃J�[�h���́u�V���A�E�A�Y�i�u���v�Ƃ��Ă������B �y�o�[�X�g�z���̃J�[�h����D�ɉ�����B�y�����N���z���̃��j�b�g���k�G�D�[�S�l�Ȃ�A������1���h���[����B���������Ȃ�A�����̎�D1�����̂Ă�B",-,"�k�G�D�[�S�l �k�j���[�^�C�v�l",-,+1,+2,"Dual Impact [GD02]",GD02-098.webp
-GD02-099,�K�G���I�E�{�[�h�E�B��,C,GD02,3,1,White,PILOT,�y�o�[�X�g�z���̃J�[�h����D�ɉ�����B�y�Z�b�g���z�����̃g���b�V���Ɂk�M�������z�����l�̃J�[�h��4���ȏ゠��Ȃ�A����̃��j�b�g1��I�ԁB���̃^�[�����A�����AP-2����B,-,�k�M�������z�����l,-,+1,+1,"Dual Impact [GD02]",GD02-099.webp
-GD02-100,�t�]�̈��,R,GD02,5,2,Blue,COMMAND,�y�o�[�X�g�z������1���h���[����B�y���C���z�_���[�W���󂯂Ă��閡���̃��j�b�g1��I�ԁB�����2�񕜂���B���̌�A������1���h���[����B,-,-,-,-,-,"Dual Impact [GD02]",GD02-100.webp
-GD02-101,���ʂ̉�,U,GD02,1,1,Blue,COMMAND,�y���C���z/�y�A�N�V�����zLv.2�ȉ��̑���̃��j�b�g1�`2��I�ԁB���������X�g�ɂ���B,-,-,-,-,-,"Dual Impact [GD02]",GD02-101.webp
-GD02-102,�}�E�A�[�̐M�O,C,GD02,2,1,Blue,COMMAND,�y���C���z/�y�A�N�V�����z�k�e�B�^�[���Y�l�̖����̃��j�b�g1��I�ԁB���̃^�[�����A�����AP+2����B�y�p�C���b�g�z�u�}�E�A�[�E�t�@���I�v,-,�k�e�B�^�[���Y�l,-,+1,+0,"Dual Impact [GD02]",GD02-102.webp
-GD02-103,AGE�f�o�C�X,R,GD02,4,2,Green,COMMAND,"�y�o�[�X�g�z�����̃g���b�V���́k�A�X�m�Ɓl�̃p�C���b�g�J�[�h1����I�ԁB�������D�ɉ�����B�y���C���z�kAGE�V�X�e���l�̎����̃��j�b�g������Ȃ�A������EX���\�[�X1��u���B",-,-,-,-,-,"Dual Impact [GD02]",GD02-103.webp
-GD02-104,���j�̕���_,U,GD02,1,1,Green,COMMAND,�y���C���z�����̃f�b�L���ォ��3�����āA���̒��̃J�[�h1������ɖ߂��B�c�����J�[�h�͖���ׂɉ��ɖ߂��B���̌�A�k�j���[�^�C�v�l�̎����̃p�C���b�g������Ȃ�A������1���h���[����B,-,-,-,-,-,"Dual Impact [GD02]",GD02-104.webp
-GD02-105,��ȑ��Ɛ�,U,GD02,2,1,Green,COMMAND,�y�A�N�V�����z�����̃��j�b�g�g�[�N��1��I�ԁB���̃o�g�����A����͑���̃��j�b�g����o�g���_���[�W���󂯂Ȃ��B�y�p�C���b�g�z�u�G�O�U�x�E�I���x�v,-,"�k�W�I���l �k�j���[�^�C�v�l",-,+1,+0,"Dual Impact [GD02]",GD02-105.webp
-GD02-106,�����T,C,GD02,3,1,Green,COMMAND,�y�A�N�V�����z���̃o�g�����A�����̃V�[���h�G���A�̃J�[�h�́ALv.3�ȉ��̑���̃��j�b�g����_���[�W���󂯂Ȃ��B�y�p�C���b�g�z�u�E���t�E�G�j�A�N���v,-,�k�n���A�M�l,-,+1,+0,"Dual Impact [GD02]",GD02-106.webp
-GD02-107,�I�[�������W�U��,R,GD02,4,2,Red,COMMAND,�y�o�[�X�g�z����̃��j�b�g1��I�ԁB�����1�_���[�W��^����B�y���C���z�����N���j�b�g�ȊO�́A����̃��j�b�g���ׂĂ�1�_���[�W��^����B,-,-,-,-,-,"Dual Impact [GD02]",GD02-107.webp
-GD02-108,�������̕�������������Ȃ��H,U,GD02,3,1,Red,COMMAND,�y���C���z�k�N�����l�̖����̃��j�b�g1��I�ԁB���̃^�[�����A����̓A�N�e�B�u��Lv.4�ȉ��̑���̃��j�b�g���A�^�b�N��ɑI��ł��悢�B,-,-,-,-,-,"Dual Impact [GD02]",GD02-108.webp
-GD02-109,�����ʎ��O,C,GD02,4,1,Red,COMMAND,�y���C���z/�y�A�N�V�����z����̃��j�b�g1��I�ԁB�����1�_���[�W��^����B�y�p�C���b�g�z�u�V�C�R�E�X�K�C�v,-,"�k�N�����l �k�j���[�^�C�v�l",-,+1,+1,"Dual Impact [GD02]",GD02-109.webp
-GD02-110,�ڊo�߂��,R,GD02,6,2,Purple,COMMAND,�y���C���z�����̃g���b�V����Lv.5�ȉ��̃��j�b�g�J�[�h1����I�ԁB������R�X�g���x�����Ĕz������B,-,-,-,-,-,"Dual Impact [GD02]",GD02-110.webp
-GD02-111,����̐؂�D,R,GD02,5,4,Purple,COMMAND,�y�o�[�X�g�zLv.3�ȉ��̑���̃��j�b�g1��I�ԁB�����2�_���[�W��^����B�y���C���z�����̃g���b�V���̎��̃��j�b�g�J�[�h6����I�ԁB�������Q�[�����珜�O����B���������Ȃ�A����̃��j�b�g1��I�ԁB�����j�󂷂�B,-,-,-,-,-,"Dual Impact [GD02]",GD02-111.webp
-GD02-112,�e���̂ЂƂƂ�,R,GD02,4,3,Purple,COMMAND,�y�o�[�X�g�z������1���h���[����B�y���C���z�����̃g���b�V���̎��̃p�C���b�g�J�[�h1����I�ԁB�������D�ɉ�����B,-,-,-,-,-,"Dual Impact [GD02]",GD02-112.webp
-GD02-113,�o�䔧,U,GD02,4,2,Purple,COMMAND,�y���C���z/�y�A�N�V�����z�k�e�C���Y�l�̖����̃����N���j�b�g������Ȃ�AAP2�ȉ��̑���̃��j�b�g1��I�ԁB�����j�󂷂�B�y�p�C���b�g�z�u�A�~�_�E�A���J�v,-,�k�e�C���Y�l,-,+1,+1,"Dual Impact [GD02]",GD02-113.webp
-GD02-114,���̖��͗�����,U,GD02,2,1,Purple,COMMAND,�y���C���z/�y�A�N�V�����z�_���[�W���󂯂Ă��閡���̃��j�b�g1��I�ԁB���̃^�[�����A�����AP+2����B�y�p�C���b�g�z�u�m���o�E�V�m�v,-,"�k�S�ؒc�l �k�����뎯�l",-,+1,+0,"Dual Impact [GD02]",GD02-114.webp
-GD02-115,�Ƒ��ւ̑z��,C,GD02,2,1,Purple,COMMAND,�y���C���z/�y�A�N�V�����z�k�o���`���[�l�̖����̃��j�b�g1��I�ԁB���̃^�[�����A�����AP+2����B�y�p�C���b�g�z�u�E�B�b�c�E�X�[�v,-,�k�o���`���[�l,-,+0,+1,"Dual Impact [GD02]",GD02-115.webp
-GD02-116,���Ԉӎ�,C,GD02,3,1,Purple,COMMAND,�y���C���z�����̃g���b�V���ɃJ�[�h��7���ȏ゠��Ȃ�A�k�o���`���[�l�̖����̃��j�b�g1��I�ԁB���̃^�[�����A����̓A�N�e�B�u��Lv.4�ȉ��̑���̃��j�b�g���A�^�b�N��ɑI��ł��悢�B�y�p�C���b�g�z�u���A�r�B�E���C�v,-,�k�o���`���[�l,-,+1,+0,"Dual Impact [GD02]",GD02-116.webp
-GD02-117,�V���Ȍۓ�,R,GD02,4,3,White,COMMAND,�y�o�[�X�g�z�����̃g���b�V���́k�G�D�[�S�l�̃x�[�X�J�[�h1����I�ԁB�������D�ɉ�����B�y���C���z������3���h���[����B���̌�A�����̎�D2�����̂Ă�B,-,-,-,-,-,"Dual Impact [GD02]",GD02-117.webp
-GD02-118,�w�����̌���,U,GD02,3,1,White,COMMAND,�y�A�N�V�����z�s�u���b�J�[�t���������̃��j�b�g�ƃo�g�����Ă���AHP4�ȉ��̑���̃��j�b�g1��I�ԁB�����������̎�D�ɖ߂��B�y�p�C���b�g�z�u�A�C���E�_���g���v,-,�k�M�������z�����l,-,+1,+0,"Dual Impact [GD02]",GD02-118.webp
-GD02-119,�ʕǋ�N�E���S����,U,GD02,2,1,White,COMMAND,�y�A�N�V�����z�k�M�������z�����l�̎����̃����N���j�b�g������Ȃ�A����̃��j�b�g1��I�ԁB���̃o�g�����A�����AP-3����B�y�p�C���b�g�z�u�J���^�E�C�V���[�v,-,�k�M�������z�����l,-,+1,+0,"Dual Impact [GD02]",GD02-119.webp
-GD02-120,�p�C���b�g�ւ̎u��,C,GD02,3,1,White,COMMAND,�y�A�N�V�����z�k�G�D�[�S�l�̎����́A���j�b�g1��/�x�[�X1��I�ԁB�����2�񕜂���B�y�p�C���b�g�z�u�t�@�E���C���B�v,-,�k�G�D�[�S�l,-,+0,+1,"Dual Impact [GD02]",GD02-120.webp
-GD02-121,�h�~�j�I��,U,GD02,4,1,Blue,BASE,�y�o�[�X�g�z���̃J�[�h��z������B�y�z�����z�����̃V�[���h1����D�ɉ�����B���̌�A�̖����̃��j�b�g1��I�ԁB�����2�񕜂���B,"�F�� �n��","�k�n���A���l �k�͑D�l",-,-,5,"Dual Impact [GD02]",GD02-121.webp
-GD02-122,�A���L�T���h���A,C,GD02,3,2,Blue,BASE,�y�o�[�X�g�z���̃J�[�h��z������B�y�z�����z�����̃V�[���h1����D�ɉ�����B���̌�A���X�g��Lv.4�ȉ��̑���̃��j�b�g1��I�ԁB�����1�_���[�W��^����B,�F��,"�k�e�B�^�[���Y�l �k�͑D�l",-,-,5,"Dual Impact [GD02]",GD02-122.webp
-GD02-123,"�\�h��",R,GD02,3,2,Green,BASE,�y�o�[�X�g�z���̃J�[�h��z������B�y�z�����z�����̃V�[���h1����D�ɉ�����B���̌�A�����̃��j�b�g�g�[�N��1��I�ԁB���̃^�[�����A����̓A�N�e�B�u��AP5�ȉ��̑���̃��j�b�g���A�^�b�N��ɑI��ł��悢�B,"�F�� �n��","�k�W�I���l �k�͑D�l",-,-,5,"Dual Impact [GD02]",GD02-123.webp
-GD02-124,�f�B�[���@,C,GD02,3,1,Green,BASE,"�y�o�[�X�g�z���̃J�[�h��z������B�y�z�����z�����̃V�[���h1����D�ɉ�����B �����̃^�[�����A������Lv.7�ȏ�̊ԁA�΂́k�n���A�M�l�̖����̃��j�b�g���ׂĂ�AP+1����B","�F�� �n��","�k�n���A�M�l �k�͑D�l",-,-,5,"Dual Impact [GD02]",GD02-124.webp
-GD02-125,�O���_��,R,GD02,4,2,Red,BASE,�y�o�[�X�g�z���̃J�[�h��z������B�y�z�����z�����̃V�[���h1����D�ɉ�����B���̌�A�����̃^�[���Ȃ�A�����̎�D�̐Ԃ̃J�[�h1�����̂ĂĂ��悢�B���������Ȃ�A������1���h���[����B,�F��,"�k�l�I�E�W�I���l �k�͑D�l",-,-,5,"Dual Impact [GD02]",GD02-125.webp
-GD02-126,�V���E�W�̉B���,C,GD02,3,1,Red,BASE,"�y�o�[�X�g�z���̃J�[�h��z������B�y�z�����z�����̃V�[���h1����D�ɉ�����B �y�j�󎞁zLv.4�ȉ��̑���̃��j�b�g1��I�ԁB�����1�_���[�W��^����B",�F��,"�k�N�����l �k���_�l",-,-,5,"Dual Impact [GD02]",GD02-126.webp
-GD02-127,�t���[�f��,U,GD02,2,1,Purple,BASE,"�y�o�[�X�g�z���̃J�[�h��z������B�y�z�����z�����̃V�[���h1����D�ɉ�����B �y�j�󎞁z�����̃f�b�L���ォ��2���A�����̃g���b�V���ɒu���B",�n��,"�k�o���`���[�l �k�͑D�l",-,-,5,"Dual Impact [GD02]",GD02-127.webp
-GD02-128,�n���}�[�w�b�h,C,GD02,4,2,Purple,BASE,�y�o�[�X�g�z���̃J�[�h��z������B�y�z�����z�����̃V�[���h1����D�ɉ�����B���̌�A�����̃^�[���ŁA�k�e�C���Y�l�̖����̃����N���j�b�g������Ȃ�AAP2�ȉ��̑���̃��j�b�g1��I�ԁB�����j�󂷂�B,�F��,"�k�e�C���Y�l �k�͑D�l",-,-,5,"Dual Impact [GD02]",GD02-128.webp
-GD02-129,�A�[�K�},R,GD02,3,1,White,BASE,"�y�o�[�X�g�z���̃J�[�h��z������B�y�z�����z�����̃V�[���h1����D�ɉ�����B ���̃x�[�X�͑��肩����ʃ_���[�W���󂯂Ȃ��B","�F�� �n��","�k�G�D�[�S�l �k�͑D�l",-,-,5,"Dual Impact [GD02]",GD02-129.webp
-GD02-130,�X���C�v�j��,C,GD02,4,2,White,BASE,�y�o�[�X�g�z���̃J�[�h��z������B�y�z�����z�����̃V�[���h1����D�ɉ�����B���̌�A�k�M�������z�����l�̖����̃��j�b�g������Ȃ�A����̃��j�b�g1��I�ԁB���̃^�[�����A�����AP-2����B,�F��,"�k�M�������z�����l �k�͑D�l",-,-,5,"Dual Impact [GD02]",GD02-130.webp
-T-001,�K���_��,C,T,-,-,-,"UNIT TOKEN",-,-,�kWB���l,-,3,3,"Heroic Beginnings [ST01]",T-001.webp
-T-002,�K���L���m��,C,T,-,-,-,"UNIT TOKEN",-,-,�kWB���l,-,2,2,"Heroic Beginnings [ST01]",T-002.webp
-T-003,�K���^���N,C,T,-,-,-,"UNIT TOKEN",-,-,�kWB���l,-,1,1,"Heroic Beginnings [ST01]",T-003.webp
-T-004,���[�I�[,C,T,-,-,-,"UNIT TOKEN",-,-,�kOZ�l,-,1,1,"Wings of Advance [ST02]",T-004.webp
-T-005,�g�[���M�X,C,T,-,-,-,"UNIT TOKEN",-,-,�kOZ�l,-,4,2,"Wings of Advance [ST02]",T-005.webp
-T-006,�U�N�U�i�V���A�E�A�Y�i�u���@�j,C,T,-,-,-,"UNIT TOKEN",-,-,�k�W�I���l,-,3,1,"Zeon's Rush [ST03]",T-006.webp
-T-007,�U�N�U,C,T,-,-,-,"UNIT TOKEN",-,-,�k�W�I���l,-,1,1,"Zeon's Rush [ST03]",T-007.webp
-T-008,�G�[���X�g���C�N�K���_��,C,T,-,-,-,"UNIT TOKEN",�s�u���b�J�[�t(���X�g�ɂ��邱�ƂŃA�^�b�N������̃��j�b�g�ɂ���),-,�k�n���A���l,-,3,3,"SEED Strike [ST04]",T-008.webp
-T-009,�����`���[�X�g���C�N�K���_��,C,T,-,-,-,"UNIT TOKEN",�s�u���b�J�[�t(���X�g�ɂ��邱�ƂŃA�^�b�N������̃��j�b�g�ɂ���),-,�k�n���A���l,-,2,4,"SEED Strike [ST04]",T-009.webp
-T-010,"�\�[�h�X�g���C�N�K���_��",C,T,-,-,-,"UNIT TOKEN",�s�u���b�J�[�t(���X�g�ɂ��邱�ƂŃA�^�b�N������̃��j�b�g�ɂ���),-,�k�n���A���l,-,4,2,"SEED Strike [ST04]",T-010.webp
-T-011,�t�@�g�D��-00,C,T,-,-,-,"UNIT TOKEN",�s�u���b�J�[�t(���X�g�ɂ��邱�ƂŃA�^�b�N������̃��j�b�g�ɂ���),-,�k�O�Ǔ����l,-,2,2,"Newtype Rising [GD01]",T-011.webp
-T-012,�h�[�g���X,C,T,-,-,-,"UNIT TOKEN",-,-,�k�V�A�M�l,-,-,1,-,T-012.webp
+ST01-001,ガンダム,LR,ST01,4,3,Blue,UNIT,"《リペア2》(自分のターン終了時、このユニットを指定の数回復する)
+【セット中】自分のターン中、自分のユニットすべてをAP+1する。","宇宙 地球","〔地球連邦〕 〔WB隊〕",「アムロ・レイ」,3,4,"Heroic Beginnings [ST01]",ST01-001.webp
+ST01-002,ガンダム（MA形態）,C,ST01,5,3,Blue,UNIT,【セット時・〔WB隊〕のパイロット】自分は1枚ドローする。,宇宙,"〔地球連邦〕 〔WB隊〕",「アムロ・レイ」,4,3,"Heroic Beginnings [ST01]",ST01-002.webp
+ST01-003,ガンキャノン,C,ST01,3,2,Blue,UNIT,-,"宇宙 地球","〔地球連邦〕 〔WB隊〕",「カイ・シデン」,2,4,"Heroic Beginnings [ST01]",ST01-003.webp
+ST01-004,ガンタンク,C,ST01,3,2,Blue,UNIT,【配備時】HP2以下の相手のユニット1つを選ぶ。それをレストにする。,"宇宙 地球","〔地球連邦〕 〔WB隊〕",「ハヤト・コバヤシ」,2,3,"Heroic Beginnings [ST01]",ST01-004.webp
+ST01-005,ジム,C,ST01,2,1,Blue,UNIT,-,"宇宙 地球",〔地球連邦〕,-,2,2,"Heroic Beginnings [ST01]",ST01-005.webp
+ST01-006,ガンダム・エアリアル（パーメットスコア・シックス）,LR,ST01,5,4,White,UNIT,【セット時】Lv.5以下の相手のユニット1つを選ぶ。このターン中、それをAP-3する。,"宇宙 地球",〔学園〕,「スレッタ・マーキュリー」,4,4,"Heroic Beginnings [ST01]",ST01-006.webp
+ST01-007,ガンダム・エアリアル（ビットオンフォーム）,C,ST01,4,2,White,UNIT,-,"宇宙 地球",〔学園〕,「スレッタ・マーキュリー」,3,4,"Heroic Beginnings [ST01]",ST01-007.webp
+ST01-008,デミトレーナー,C,ST01,1,1,White,UNIT,《ブロッカー》(レストにすることでアタック先をこのユニットにする),"宇宙 地球",〔学園〕,-,1,1,"Heroic Beginnings [ST01]",ST01-008.webp
+ST01-009,ザウォート,C,ST01,2,2,White,UNIT,"《ブロッカー》(レストにすることでアタック先をこのユニットにする)
+このユニットは、相手プレイヤーをアタック先に選べない。","宇宙 地球",〔学園〕,-,3,2,"Heroic Beginnings [ST01]",ST01-009.webp
+ST01-010,アムロ・レイ,C,ST01,4,1,Blue,PILOT,"【バースト】このカードを手札に加える。
+【セット時】HP5以下の相手のユニット1つを選ぶ。それをレストにする。",-,"〔地球連邦〕 〔WB隊〕 〔ニュータイプ〕",-,+2,+1,"Heroic Beginnings [ST01]",ST01-010.webp
+ST01-011,スレッタ・マーキュリー,C,ST01,4,1,White,PILOT,"【バースト】このカードを手札に加える。
+【アタック時】【ターン1回】自分のリソース1つを選ぶ。それをアクティブにする。",-,〔学園〕,-,+1,+2,"Heroic Beginnings [ST01]",ST01-011.webp
+ST01-012,満身創痍,C,ST01,2,1,Blue,COMMAND,"【メイン】レストの相手のユニット1つを選ぶ。それに1ダメージを与える。
+【パイロット】「ハヤト・コバヤシ」",-,"〔地球連邦〕 〔WB隊〕",-,+0,+1,"Heroic Beginnings [ST01]",ST01-012.webp
+ST01-013,カイの決意,C,ST01,3,1,Blue,COMMAND,"【メイン】味方のユニット1つを選ぶ。それを3回復する。
+【パイロット】「カイ・シデン」",-,"〔地球連邦〕 〔WB隊〕",-,+1,+0,"Heroic Beginnings [ST01]",ST01-013.webp
+ST01-014,予期せぬ出来事,C,ST01,3,1,White,COMMAND,"【バースト】このカードの【メイン】を発動する。
+【メイン】/【アクション】相手のユニット1つを選ぶ。このターン中、それをAP-3する。",-,-,-,-,-,"Heroic Beginnings [ST01]",ST01-014.webp
+ST01-015,ホワイトベース,C,ST01,3,2,Blue,BASE,"【バースト】このカードを配備する。
+【配備時】自分のシールド1つを手札に加える。
+
+【起動・メイン】【ターン1回】②：自分のユニットがいないなら、「ガンダム」(〔WB隊〕・AP3・HP3)、1つだけいるなら、「ガンキャノン」(〔WB隊〕・AP2・HP2)、2つ以上いるなら、「ガンタンク」(〔WB隊〕・AP1・HP1)のユニットトークン1つを配備する。","宇宙 地球","〔地球連邦〕 〔WB隊〕 〔艦船〕",-,-,5,"Heroic Beginnings [ST01]",ST01-015.webp
+ST01-016,"アスティカシア高等専門学園 地球寮",C,ST01,2,1,White,BASE,"【バースト】このカードを配備する。
+【配備時】自分のシールド1つを手札に加える。
+
+【起動・メイン】このベースをレストにする：このターン中、味方のリンクユニットすべてをAP+1する。",宇宙,"〔学園〕 〔拠点〕",-,-,5,"Heroic Beginnings [ST01]",ST01-016.webp
+ST02-001,ウイングガンダム,LR,ST02,6,4,Green,UNIT,"《突破5》(アタックで相手のユニットを破壊したとき、その相手のシールドエリアの先頭のカード1枚に指定の数ダメージを与える)
+このユニットは、アクティブのLv.4以下の相手のユニットをアタック先に選んでもよい。","宇宙 地球",〔オペレーション・メテオ〕,「ヒイロ・ユイ」,4,5,"Wings of Advance [ST02]",ST02-001.webp
+ST02-002,ウイングガンダム（バード形態）,C,ST02,3,3,Green,UNIT,【配備時】自分はEXリソース1つを置く。,"宇宙 地球",〔オペレーション・メテオ〕,「ヒイロ・ユイ」,2,2,"Wings of Advance [ST02]",ST02-002.webp
+ST02-003,ガンダムヘビーアームズ,C,ST02,5,3,Green,UNIT,【セット中】自分のターン中、このユニットがバトルダメージで相手のユニットを破壊したとき、Lv.3以下の相手のユニットすべてに1ダメージを与える。,地球,〔オペレーション・メテオ〕,「トロワ・バートン」,3,4,"Wings of Advance [ST02]",ST02-003.webp
+ST02-004,ガンダムサンドロック,C,ST02,4,2,Green,UNIT,-,地球,〔オペレーション・メテオ〕,「カトル・ラバーバ・ウィナー」,4,3,"Wings of Advance [ST02]",ST02-004.webp
+ST02-005,マグアナック,C,ST02,2,2,Green,UNIT,-,"宇宙 地球",〔マグアナック隊〕,-,3,2,"Wings of Advance [ST02]",ST02-005.webp
+ST02-006,トールギス,LR,ST02,5,4,Blue,UNIT,【起動・メイン】【ターン1回】④：このユニットをアクティブにする。,"宇宙 地球",〔OZ〕,「ゼクス・マーキス」,4,4,"Wings of Advance [ST02]",ST02-006.webp
+ST02-007,リーオー,C,ST02,2,2,Blue,UNIT,-,"宇宙 地球",〔OZ〕,特徴〔OZ〕,2,2,"Wings of Advance [ST02]",ST02-007.webp
+ST02-008,エアリーズ,C,ST02,2,2,Blue,UNIT,《ブロッカー》(レストにすることでアタック先をこのユニットにする),地球,〔OZ〕,-,2,1,"Wings of Advance [ST02]",ST02-008.webp
+ST02-009,トラゴス,C,ST02,1,1,Blue,UNIT,《ブロッカー》(レストにすることでアタック先をこのユニットにする),地球,〔OZ〕,-,1,1,"Wings of Advance [ST02]",ST02-009.webp
+ST02-010,ヒイロ・ユイ,C,ST02,4,1,Green,PILOT,"【バースト】このカードを手札に加える。
+【リンク中】このユニットをAP+1、HP+1する。",-,〔オペレーション・メテオ〕,-,+2,+1,"Wings of Advance [ST02]",ST02-010.webp
+ST02-011,ゼクス・マーキス,C,ST02,5,1,Blue,PILOT,"【バースト】このカードを手札に加える。
+【リンク中】自分のターン中、このユニットがバトルダメージで相手のユニットを破壊したとき、自分は1枚ドローする。",-,〔OZ〕,-,+2,+1,"Wings of Advance [ST02]",ST02-011.webp
+ST02-012,一斉発射,C,ST02,4,1,Green,COMMAND,"【メイン】自分のユニット1つを選ぶ。このターン中、それは《突破3》を得る。
+
+(アタックで相手のユニットを破壊したとき、その相手のシールドエリアの先頭のカード1枚に指定の数ダメージを与える)
+【パイロット】「トロワ・バートン」",-,〔オペレーション・メテオ〕,-,+1,+1,"Wings of Advance [ST02]",ST02-012.webp
+ST02-013,穏やかな音色,C,ST02,4,1,Green,COMMAND,"【アクション】このバトル中、自分のシールドエリアのカードは、Lv.4以下の相手のユニットからダメージを受けない。
+【パイロット】「カトル・ラバーバ・ウィナー」",-,〔オペレーション・メテオ〕,-,+1,+1,"Wings of Advance [ST02]",ST02-013.webp
+ST02-014,包囲戦術,C,ST02,3,1,Blue,COMMAND,"【バースト】このカードの【メイン】を発動する。
+【メイン】/【アクション】HP5以下の相手のユニット1つを選ぶ。それをレストにする。",-,-,-,-,-,"Wings of Advance [ST02]",ST02-014.webp
+ST02-015,聖ガブリエル学園,C,ST02,2,2,Green,BASE,"【バースト】このカードを配備する。
+【配備時】自分のシールド1つを手札に加える。その後、自分のデッキを上から2枚見て、その中のカード1枚を上に戻す。残ったカードは下に戻す。",地球,"〔学園〕 〔拠点〕",-,-,5,"Wings of Advance [ST02]",ST02-015.webp
+ST02-016,コルシカ基地,C,ST02,3,3,Blue,BASE,"【バースト】このカードを配備する。
+【配備時】自分のシールド1つを手札に加える。その後、自分のターンなら、「トールギス」(〔OZ〕・AP4・HP2)のユニットトークン1つを配備する。自分のターンで、自分のトラッシュにカード名に「コルシカ基地」を含むカードがあるなら、かわりに「リーオー」(〔OZ〕・AP1・HP1)のユニットトークン2つを配備する。",地球,"〔OZ〕 〔拠点〕",-,-,5,"Wings of Advance [ST02]",ST02-016.webp
+ST03-001,シナンジュ,LR,ST03,6,5,Red,UNIT,"【セット中】このユニットは《高機動》を得る。
+
+(このユニットはブロックされない)
+自分のターン中、このユニットがバトルダメージで相手のシールドエリアのカードを破壊したとき、相手のユニット1つを選ぶ。それに2ダメージを与える。","宇宙 地球",〔ネオ・ジオン〕,「フル・フロンタル」,5,4,"Zeon's Rush [ST03]",ST03-001.webp
+ST03-002,ギラ・ズール（アンジェロ・ザウパー専用機）,C,ST03,4,3,Red,UNIT,【起動・メイン】《援護2》(レストにすることで、このターン中、他の味方のユニット1つをAP+(指定の数)する),"宇宙 地球",〔ネオ・ジオン〕,「アンジェロ・ザウパー」,3,3,"Zeon's Rush [ST03]",ST03-002.webp
+ST03-003,ギラ・ズール,C,ST03,3,2,Red,UNIT,-,"宇宙 地球",〔ネオ・ジオン〕,特徴〔ネオ・ジオン〕,3,2,"Zeon's Rush [ST03]",ST03-003.webp
+ST03-004,ガザD（袖付き仕様）,C,ST03,2,2,Red,UNIT,【起動・メイン】《援護2》(レストにすることで、このターン中、他の味方のユニット1つをAP+(指定の数)する),"宇宙 地球",〔ネオ・ジオン〕,-,2,1,"Zeon's Rush [ST03]",ST03-004.webp
+ST03-005,ドラッツェ（袖付き仕様）,C,ST03,1,1,Red,UNIT,-,宇宙,〔ネオ・ジオン〕,-,1,2,"Zeon's Rush [ST03]",ST03-005.webp
+ST03-006,ザクⅡ（シャア・アズナブル機）,LR,ST03,3,2,Green,UNIT,【破壊時】自分のデッキを上から3枚見て、その中の、〔ジオン〕/〔ネオ・ジオン〕のユニットカード1枚を公開して手札に加えてもよい。残ったカードは無作為に下に戻す。,"宇宙 地球",〔ジオン〕,「シャア・アズナブル」,3,2,"Zeon's Rush [ST03]",ST03-006.webp
+ST03-007,ザクⅠ,C,ST03,1,1,Green,UNIT,-,"宇宙 地球",〔ジオン〕,-,1,2,"Zeon's Rush [ST03]",ST03-007.webp
+ST03-008,ザクⅡ,C,ST03,2,1,Green,UNIT,【アタック時】このターン中、このユニットをAP+2する。,"宇宙 地球",〔ジオン〕,-,1,2,"Zeon's Rush [ST03]",ST03-008.webp
+ST03-009,グフ,C,ST03,3,3,Green,UNIT,【配備時】「ザクⅡ」(〔ジオン〕・AP1・HP1)のユニットトークン1つをレストで配備する。,地球,〔ジオン〕,「ランバ・ラル」,2,3,"Zeon's Rush [ST03]",ST03-009.webp
+ST03-010,フル・フロンタル,C,ST03,6,1,Red,PILOT,"【バースト】このカードを手札に加える。
+【セット時】自分の手札の、Lv.4以下の、〔ネオ・ジオン〕/〔ジオン〕のユニットカード1枚を配備してもよい。",-,"〔ネオ・ジオン〕 〔強化人間〕",-,+2,+2,"Zeon's Rush [ST03]",ST03-010.webp
+ST03-011,シャア・アズナブル,C,ST03,3,1,Green,PILOT,"【バースト】このカードを手札に加える。
+【アタック時】このターン中、このユニットをAP+1し、これがリンクユニットなら、これは《高機動》を得る。
+
+(このユニットはブロックされない)",-,"〔ジオン〕 〔ニュータイプ〕",-,+1,+1,"Zeon's Rush [ST03]",ST03-011.webp
+ST03-012,激昂,C,ST03,2,1,Red,COMMAND,"【メイン】/【アクション】味方のユニット1つを選ぶ。このターン中、それをAP+2する。
+【パイロット】「アンジェロ・ザウパー」",-,〔ネオ・ジオン〕,-,+1,+0,"Zeon's Rush [ST03]",ST03-012.webp
+ST03-013,格闘戦,C,ST03,2,2,Red,COMMAND,"【バースト】このカードの【メイン】を発動する。
+【メイン】/【アクション】相手のユニット1つを選ぶ。それに2ダメージを与える。",-,-,-,-,-,"Zeon's Rush [ST03]",ST03-013.webp
+ST03-014,青い巨星,C,ST03,4,1,Green,COMMAND,"【アクション】味方のユニット1つを選ぶ。このバトル中、それはAP2以下の相手のユニットからバトルダメージを受けない。
+【パイロット】「ランバ・ラル」",-,〔ジオン〕,-,+1,+1,"Zeon's Rush [ST03]",ST03-014.webp
+ST03-015,レウルーラ,C,ST03,3,2,Red,BASE,"【バースト】このカードを配備する。
+【配備時】自分のシールド1つを手札に加える。その後、AP5以下の相手のユニット1つを選ぶ。それに1ダメージを与える。",宇宙,"〔ネオ・ジオン〕 〔艦船〕",-,-,5,"Zeon's Rush [ST03]",ST03-015.webp
+ST03-016,ファルメル,C,ST03,3,2,Green,BASE,"【バースト】このカードを配備する。
+【配備時】自分のシールド1つを手札に加える。その後、自分のターンなら、「ザクⅡ（シャア・アズナブル機）」(〔ジオン〕・AP3・HP1)のユニットトークン1つをレストで配備する。",宇宙,"〔ジオン〕 〔艦船〕",-,-,5,"Zeon's Rush [ST03]",ST03-016.webp
+ST04-001,エールストライクガンダム,LR,ST04,5,4,White,UNIT,"《ブロッカー》(レストにすることでアタック先をこのユニットにする)
+【セット時・Lv.4以上のパイロット】HP4以下の相手のユニット1つを選ぶ。それを持ち主の手札に戻す。","宇宙 地球",〔地球連合〕,「キラ・ヤマト」,4,4,"SEED Strike [ST04]",ST04-001.webp
+ST04-002,ストライクガンダム,C,ST04,4,2,White,UNIT,【配備時】自分は1枚ドローする。その後、自分の手札1枚を捨てる。,"宇宙 地球",〔地球連合〕,「キラ・ヤマト」,3,3,"SEED Strike [ST04]",ST04-002.webp
+ST04-003,メビウスゼロ,C,ST04,3,2,White,UNIT,-,宇宙,〔地球連合〕,「ムウ・ラ・フラガ」,2,4,"SEED Strike [ST04]",ST04-003.webp
+ST04-004,メビウス,C,ST04,1,1,White,UNIT,《ブロッカー》(レストにすることでアタック先をこのユニットにする),宇宙,〔地球連合〕,-,1,1,"SEED Strike [ST04]",ST04-004.webp
+ST04-005,ストライクダガー,C,ST04,2,2,White,UNIT,-,"宇宙 地球",〔地球連合〕,-,3,2,"SEED Strike [ST04]",ST04-005.webp
+ST04-006,イージスガンダム,LR,ST04,4,3,Red,UNIT,【アタック時】このユニットがAP5以上なら、Lv.5以上の相手のユニット1つを選ぶ。それに3ダメージを与える。,"宇宙 地球",〔ザフト〕,「アスラン・ザラ」,4,3,"SEED Strike [ST04]",ST04-006.webp
+ST04-007,イージスガンダム（MA形態）,C,ST04,4,3,Red,UNIT,《突破3》(アタックで相手のユニットを破壊したとき、その相手のシールドエリアの先頭のカード1枚に指定の数ダメージを与える),"宇宙 地球",〔ザフト〕,「アスラン・ザラ」,3,4,"SEED Strike [ST04]",ST04-007.webp
+ST04-008,ジン,C,ST04,2,1,Red,UNIT,-,"宇宙 地球",〔ザフト〕,-,2,2,"SEED Strike [ST04]",ST04-008.webp
+ST04-009,ジン（ミゲル・アイマン専用機）,C,ST04,2,2,Red,UNIT,【セット中】【破壊時】このユニット以外の、自分のリンクユニットがいるなら、自分は1枚ドローする。,"宇宙 地球",〔ザフト〕,「ミゲル・アイマン」,3,1,"SEED Strike [ST04]",ST04-009.webp
+ST04-010,キラ・ヤマト,C,ST04,4,1,White,PILOT,"【バースト】このカードを手札に加える。
+【アタック時】相手のユニット1つを選ぶ。このバトル中、それをAP-2する。",-,"〔地球連合〕 〔コーディネイター〕",-,+2,+1,"SEED Strike [ST04]",ST04-010.webp
+ST04-011,アスラン・ザラ,C,ST04,4,1,Red,PILOT,"【バースト】このカードを手札に加える。
+【リンク時】このターン中、このユニットはアクティブのLv.5以下の相手のユニットをアタック先に選んでもよい。",-,"〔ザフト〕 〔コーディネイター〕",-,+1,+2,"SEED Strike [ST04]",ST04-011.webp
+ST04-012,ストライカーパック,C,ST04,4,2,White,COMMAND,"【バースト】〔地球連合〕の自分のユニットトークンがいないなら、「エールストライクガンダム」(〔地球連合〕・AP3・HP3・《ブロッカー》)のユニットトークン1つを配備する。
+【メイン】〔地球連合〕の自分のユニットトークンがいないなら、「ソードストライクガンダム」(〔地球連合〕・AP4・HP2・《ブロッカー》)か、「ランチャーストライクガンダム」(〔地球連合〕・AP2・HP4・《ブロッカー》)のユニットトークン1つを配備する。",-,-,-,-,-,"SEED Strike [ST04]",ST04-012.webp
+ST04-013,エンデュミオンの鷹,C,ST04,2,1,White,COMMAND,"【メイン】/【アクション】HP3以下の相手のユニット1つを選ぶ。それを持ち主の手札に戻す。
+【パイロット】「ムウ・ラ・フラガ」",-,〔地球連合〕,-,+1,+0,"SEED Strike [ST04]",ST04-013.webp
+ST04-014,黄昏の魔弾,C,ST04,3,1,Red,COMMAND,"【メイン】/【アクション】Lv.2以下の味方のユニット1つを選ぶ。このターン中、それは《先制攻撃》を得る。
+
+(アタック中のこのユニットは、相手より先にダメージを与える)
+【パイロット】「ミゲル・アイマン」",-,"〔ザフト〕 〔コーディネイター〕",-,+0,+1,"SEED Strike [ST04]",ST04-014.webp
+ST04-015,アークエンジェル,C,ST04,3,1,White,BASE,"【バースト】このカードを配備する。
+【配備時】自分のシールド1つを手札に加える。
+
+【起動・メイン】【ターン1回】②：《ブロッカー》を持つ味方のユニット1つを選ぶ。それをアクティブにし、このターン中、それはアタックできない。","宇宙 地球","〔地球連合〕 〔艦船〕",-,-,5,"SEED Strike [ST04]",ST04-015.webp
+ST04-016,ヴェサリウス,C,ST04,3,1,Red,BASE,"【バースト】このカードを配備する。
+【配備時】自分のシールド1つを手札に加える。
+
+【起動・メイン】このベースをレストにする：味方のユニット1つを選ぶ。このターン中、それをAP+1する。",宇宙,"〔ザフト〕 〔艦船〕",-,-,5,"SEED Strike [ST04]",ST04-016.webp
+ST05-001,ガンダム・バルバトス（第4形態）,LR,ST05,6,4,Purple,UNIT,"【配備時】このユニット以外の、自分のユニット1つを選ぶ。それに1ダメージを与え、このターン中、それをAP+1する。
+このユニットがダメージを受けている間、これは《制圧》を得る。
+(アタックでシールドに与えるダメージは、先頭から2つに同時に与えられる)","宇宙 地球","〔鉄華団〕 〔ガンダム・フレーム〕",「三日月・オーガス」,4,5,"Iron Bloom [ST05]",ST05-001.webp
+ST05-002,ガンダム・バルバトス（第2形態）,C,ST05,4,2,Purple,UNIT,このユニットがダメージを受けている間、これをAP+2する。,"宇宙 地球","〔鉄華団〕 〔ガンダム・フレーム〕",「三日月・オーガス」,2,4,"Iron Bloom [ST05]",ST05-002.webp
+ST05-003,CGSモビルワーカー,C,ST05,1,1,Purple,UNIT,【起動・メイン】このユニットをレストにする：自分のユニット1つを選ぶ。それに1ダメージを与え、このターン中、それをAP+1する。,地球,〔鉄華団〕,-,-,2,"Iron Bloom [ST05]",ST05-003.webp
+ST05-004,グレイズ改,C,ST05,2,1,Purple,UNIT,-,"宇宙 地球",〔鉄華団〕,-,2,2,"Iron Bloom [ST05]",ST05-004.webp
+ST05-005,ガンダム・グシオンリベイク,C,ST05,4,3,Purple,UNIT,【破壊時】AP4以下の相手のユニット1つを選ぶ。それをレストにする。,"宇宙 地球","〔鉄華団〕 〔ガンダム・フレーム〕",「昭弘・アルトランド」,3,4,"Iron Bloom [ST05]",ST05-005.webp
+ST05-006,百錬,C,ST05,3,2,Purple,UNIT,-,"宇宙 地球",〔テイワズ〕,-,4,3,"Iron Bloom [ST05]",ST05-006.webp
+ST05-007,"シュヴァルべ・グレイズ （マクギリス機）",LR,ST05,4,3,White,UNIT,"《ブロッカー》(レストにすることでアタック先をこのユニットにする)
+【セット時】Lv.3以下の相手のユニット1つを選ぶ。このターン中、それをAP-2する。","宇宙 地球",〔ギャラルホルン〕,「マクギリス・ファリド」,4,2,"Iron Bloom [ST05]",ST05-007.webp
+ST05-008,"グレイズ （指揮官機）",C,ST05,3,2,White,UNIT,《ブロッカー》(レストにすることでアタック先をこのユニットにする),"宇宙 地球",〔ギャラルホルン〕,特徴〔ギャラルホルン〕,3,2,"Iron Bloom [ST05]",ST05-008.webp
+ST05-009,グレイズ,C,ST05,2,1,White,UNIT,-,"宇宙 地球",〔ギャラルホルン〕,-,2,2,"Iron Bloom [ST05]",ST05-009.webp
+ST05-010,三日月・オーガス,C,ST05,4,1,Purple,PILOT,"【バースト】このカードを手札に加える。
+【セット時】自分のユニット1つと、相手のユニット1つを選ぶ。それらに1ダメージを与える。",-,"〔鉄華団〕 〔阿頼耶識〕",-,+2,+1,"Iron Bloom [ST05]",ST05-010.webp
+ST05-011,昭弘・アルトランド,C,ST05,3,1,Purple,PILOT,"【バースト】このカードを手札に加える。
+【リンク中】自分のターン中、このユニットがバトルダメージで相手のユニットを破壊したとき、自分のトラッシュのLv.2以下の〔鉄華団〕のユニットカード1枚を選ぶ。それを手札に加える。",-,"〔鉄華団〕 〔阿頼耶識〕",-,+1,+1,"Iron Bloom [ST05]",ST05-011.webp
+ST05-012,マクギリス・ファリド,C,ST05,4,1,White,PILOT,"【バースト】このカードを手札に加える。
+【セット時】このユニット以外の、〔ギャラルホルン〕/〔鉄華団〕の自分のユニットが2つ以上いるなら、HP3以下の相手のユニット1つを選ぶ。それをレストにする。",-,〔ギャラルホルン〕,-,+2,+1,"Iron Bloom [ST05]",ST05-012.webp
+ST05-013,鉄と血と,C,ST05,2,1,Purple,COMMAND,【メイン】/【アクション】自分のユニット1つを選ぶ。それに1ダメージを与え、このターン中、それをAP+3する。,-,-,-,-,-,"Iron Bloom [ST05]",ST05-013.webp
+ST05-014,致命の一撃,C,ST05,4,2,Purple,COMMAND,"【バースト】相手のユニット1つを選ぶ。それに1ダメージを与える。
+【メイン】Lv.3以下の相手のユニット1つを選ぶ。それを破壊する。",-,-,-,-,-,"Iron Bloom [ST05]",ST05-014.webp
+ST05-015,イサリビ,C,ST05,3,1,Purple,BASE,"【バースト】このカードを配備する。
+【配備時】自分のシールド1つを手札に加える。
+
+【起動・メイン】このベースをレストにする：ダメージを受けている自分のユニット1つを選ぶ。このターン中、それをAP+2する。",宇宙,"〔鉄華団〕 〔艦船〕",-,-,5,"Iron Bloom [ST05]",ST05-015.webp
+ST06-001,GQuuuuuuX（オメガ・サイコミュ起動時）,LR,ST06,5,3,Red,UNIT,"【リンク時】このユニット以外の、〔クラン〕の味方のユニットがいるなら、このターン中、これは《先制攻撃》を得る。
+(アタック中のこのユニットは、相手より先にダメージを与える)","宇宙 地球",〔クラン〕,「アマテ・ユズリハ（マチュ）」,4,4,"Clan Unity [ST06]",ST06-001.webp
+ST06-002,GQuuuuuuX（オメガ・サイコミュ起動時）,C,ST06,4,3,Red,UNIT,【配備時】このユニット以外の、〔クラン〕の味方のユニットがいるなら、相手のユニット1つを選ぶ。それに1ダメージを与える。,"宇宙 地球",〔クラン〕,「アマテ・ユズリハ（マチュ）」,4,2,"Clan Unity [ST06]",ST06-002.webp
+ST06-003,"リック・ドム ガイア機（GQ）",C,ST06,2,2,Red,UNIT,【起動・メイン】《援護1》(レストにすることで、このターン中、他の味方のユニット1つをAP+(指定の数)する),宇宙,〔クラン〕,「ガイア」,2,2,"Clan Unity [ST06]",ST06-003.webp
+ST06-004,ゲルググ（GQ）,C,ST06,2,1,Red,UNIT,-,"宇宙 地球",〔ジオン〕,-,2,2,"Clan Unity [ST06]",ST06-004.webp
+ST06-005,赤いガンダム,LR,ST06,4,3,Green,UNIT,"《突破1》(アタックで相手のユニットを破壊したとき、その相手のシールドエリアの先頭のカード1枚に指定の数ダメージを与える)
+【アタック時】〔クラン〕の味方のユニット1～2つを選ぶ。このターン中、それらをAP+2する。","宇宙 地球",〔クラン〕,「シュウジ・イトウ」,4,3,"Clan Unity [ST06]",ST06-005.webp
+ST06-006,赤いガンダム,C,ST06,4,2,Green,UNIT,-,"宇宙 地球",〔クラン〕,「シュウジ・イトウ」,3,4,"Clan Unity [ST06]",ST06-006.webp
+ST06-007,"リック・ドム オルテガ機（GQ）",C,ST06,3,2,Green,UNIT,【配備時】このユニット以外の、〔クラン〕の自分のユニット1つを選ぶ。このターン中、それはアクティブのAP3以下の相手のユニットをアタック先に選んでもよい。,宇宙,〔クラン〕,「オルテガ」,3,2,"Clan Unity [ST06]",ST06-007.webp
+ST06-008,"ゲルググ スガイ機（GQ）",C,ST06,3,2,Green,UNIT,-,"宇宙 地球",〔クラン〕,特徴〔クラン〕,３,３,"Clan Unity [ST06]",ST06-008.webp
+ST06-009,アマテ・ユズリハ（マチュ）,C,ST06,4,1,Red,PILOT,"【バースト】このカードを手札に加える。
+【リンク時】自分のデッキを上から1枚見る。それが〔クラン〕のカードなら公開して手札に加えてもよい。残ったカードは下に戻す。",-,"〔クラン〕 〔ニュータイプ〕",-,+2,+1,"Clan Unity [ST06]",ST06-009.webp
+ST06-010,シュウジ・イトウ,C,ST06,4,1,Green,PILOT,"【バースト】このカードを手札に加える。
+【リンク中】【アタック時】〔クラン〕の自分のユニットがいるなら、自分のデッキを上から1枚見て、上か下に戻す。",-,"〔クラン〕 〔ニュータイプ〕",-,+1,+2,"Clan Unity [ST06]",ST06-010.webp
+ST06-011,冷徹な戦術,C,ST06,3,1,Red,COMMAND,"【メイン】/【アクション】〔クラン〕の味方のユニット1～2つを選ぶ。このターン中、それらをAP+2する。
+【パイロット】「ガイア（GQ）」",-,〔クラン〕,-,+1,+0,"Clan Unity [ST06]",ST06-011.webp
+ST06-012,女子高生と運び屋,C,ST06,1,1,Green,COMMAND,【メイン】自分のデッキを上から3枚見て、その中の〔クラン〕の、ユニットカード1枚/パイロットカード1枚を公開して手札に加えてもよい。残ったカードは無作為に下に戻す。,-,-,-,-,-,"Clan Unity [ST06]",ST06-012.webp
+ST06-013,猛者の連携,C,ST06,3,1,Green,COMMAND,"【アクション】〔クラン〕の味方のユニット1～2つを選ぶ。このターン中、それらはLv.2以下の相手のユニットからバトルダメージを受けない。
+【パイロット】「オルテガ（GQ）」",-,〔クラン〕,-,+1,+0,"Clan Unity [ST06]",ST06-013.webp
+ST06-014,クランバトル,C,ST06,3,1,Red,BASE,"【バースト】このカードを配備する。
+【配備時】自分のシールド1つを手札に加える。
+
+【起動・メイン】このベースをレストにする：〔クラン〕の味方のリンクユニットがいるなら、味方のユニット1つを選ぶ。このターン中、それをAP+2する。",宇宙,"〔クラン〕 〔拠点〕",-,-,5,"Clan Unity [ST06]",ST06-014.webp
+ST06-015,カネバン有限公司,C,ST06,4,2,Green,BASE,"【バースト】このカードを配備する。
+【配備時】自分のシールド1つを手札に加える。
+
+【ターン1回】〔クラン〕の味方のユニットがリンクしたとき、このターン中、それは《突破3》を得る。
+(アタックで相手のユニットを破壊したとき、その相手のシールドエリアの先頭のカード1枚に指定の数ダメージを与える)",宇宙,"〔クラン〕 〔拠点〕",-,-,5,"Clan Unity [ST06]",ST06-015.webp
+ST07-001,ガンダムエクシア,LR,ST07,5,4,Purple,UNIT,"自分のターン終了時、自分のトラッシュに〔CB〕のカードが7枚以上あるなら、自分のリソース1つを選ぶ。それをアクティブにする。
+【セット時】自分のデッキを上から2枚、自分のトラッシュに置く。この効果で〔CB〕のカードを置いたなら、自分は1枚ドローする。","宇宙 地球","〔CB〕 〔GNドライヴ〕",「刹那・F・セイエイ」,4,4,"Celestial Drive [ST07]",ST07-001.webp
+ST07-002,ガンダムエクシア,C,ST07,4,2,Purple,UNIT,-,"宇宙 地球","〔CB〕 〔GNドライヴ〕",「刹那・F・セイエイ」,4,3,"Celestial Drive [ST07]",ST07-002.webp
+ST07-003,ガンダムヴァーチェ,C,ST07,5,3,Purple,UNIT,-,"宇宙 地球","〔CB〕 〔GNドライヴ〕",「ティエリア・アーデ」,5,4,"Celestial Drive [ST07]",ST07-003.webp
+ST07-004,ガンダムヴァーチェ,C,ST07,3,2,Purple,UNIT,"〔CB〕の自分のパイロットがいる間、このユニットは《ブロッカー》を得る。
+
+(レストにすることでアタック先をこのユニットにする)","宇宙 地球","〔CB〕 〔GNドライヴ〕",「ティエリア・アーデ」,3,3,"Celestial Drive [ST07]",ST07-004.webp
+ST07-005,ガンダムデュナメス,LR,ST07,4,3,Green,UNIT,"自分のターン中、このユニットがバトルダメージで相手のユニットを破壊したとき、これを2回復する。
+【リンク中】このユニットをAP+2する。","宇宙 地球","〔CB〕 〔GNドライヴ〕",「ロックオン・ストラトス」,2,4,"Celestial Drive [ST07]",ST07-005.webp
+ST07-006,ガンダムデュナメス,C,ST07,3,2,Green,UNIT,-,"宇宙 地球","〔CB〕 〔GNドライヴ〕",「ロックオン・ストラトス」,3,3,"Celestial Drive [ST07]",ST07-006.webp
+ST07-007,ガンダムキュリオス,C,ST07,3,2,Green,UNIT,自分のターン中、〔CB〕の自分のパイロットがいる間、このユニットをAP+2する。,"宇宙 地球","〔CB〕 〔GNドライヴ〕","「アレルヤ・ハプティズム」 「ハレルヤ・ハプティズム」",2,3,"Celestial Drive [ST07]",ST07-007.webp
+ST07-008,ガンダムキュリオス（飛行形態）,C,ST07,2,2,Green,UNIT,-,"宇宙 地球","〔CB〕 〔GNドライヴ〕","「アレルヤ・ハプティズム」 「ハレルヤ・ハプティズム」",3,1,"Celestial Drive [ST07]",ST07-008.webp
+ST07-009,刹那・F・セイエイ,C,ST07,4,1,Purple,PILOT,"【バースト】このカードを手札に加える。
+【アタック時】このターン中、このユニットをAP+1する。自分のトラッシュに〔CB〕のカードが7枚以上あるなら、かわりに〔CB〕の自分のユニットすべてをAP+1する。",-,〔CB〕,-,+2,+1,"Celestial Drive [ST07]",ST07-009.webp
+ST07-010,ティエリア・アーデ,C,ST07,4,1,Purple,PILOT,"【バースト】このカードを手札に加える。
+【破壊時】相手のターンで、このユニットが〔CB〕なら、自分は1枚ドローする。",-,"〔CB〕 〔イノベイド〕",-,+1,+1,"Celestial Drive [ST07]",ST07-010.webp
+ST07-011,ロックオン・ストラトス（ニール）,C,ST07,4,1,Green,PILOT,"【バースト】このカードを手札に加える。
+【セット時】このユニットが〔CB〕なら、このターン中、これはアクティブの、これのLv.以下の相手のユニットをアタック先に選んでもよい。",-,〔CB〕,-,+1,+2,"Celestial Drive [ST07]",ST07-011.webp
+ST07-012,アレルヤ・ハプティズム,C,ST07,3,1,Green,PILOT,"【バースト】このカードを手札に加える。
+自分のターン中、〔CB〕の自分のリンクユニットがいる間、このユニットはAP3以下の相手のユニットからバトルダメージを受けない。",-,"〔CB〕 〔超兵〕",-,+1,+1,"Celestial Drive [ST07]",ST07-012.webp
+ST07-013,武力介入,C,ST07,4,1,Purple,COMMAND,"【バースト】自分は1枚ドローする。
+【アクション】レストの〔CB〕の味方のユニット1つを選ぶ。バトルしている相手のユニットのアタック先をそれにする。",-,-,-,-,-,"Celestial Drive [ST07]",ST07-013.webp
+ST07-014,戦術予報士,C,ST07,1,1,Green,COMMAND,【メイン】自分のデッキを上から3枚見て、その中の〔CB〕の、ユニットカード1枚/パイロットカード1枚を公開して手札に加えてもよい。残ったカードは無作為に下に戻す。,-,-,-,-,-,"Celestial Drive [ST07]",ST07-014.webp
+ST07-015,プトレマイオス,C,ST07,2,1,Purple,BASE,"【バースト】このカードを配備する。
+【配備時】自分のシールド1つを手札に加える。
+
+レストの〔CB〕の味方のユニットがいる間、このベースは、ユニットトークン以外の、Lv.3以下の相手のユニットからダメージを受けない。",宇宙,"〔CB〕 〔艦船〕",-,-,5,"Celestial Drive [ST07]",ST07-015.webp
+ST08-001,Ξガンダム,LR,ST08,9,8,Red,UNIT,"Lv.6以上の自分のユニットがいない間、相手のユニット1つにつき、手札のこのカードをLv.-1、コスト-1する。
+【セット時】最もLv.が高い相手のユニット1つを選ぶ。それに3ダメージを与える。","宇宙 地球",〔マフティー〕,「ハサウェイ・ノア」,5,5,"Flash of Radiance [ST08]",ST08-001.webp
+ST08-002,Ξガンダム,C,ST08,5,4,Red,UNIT,【配備時】相手のユニット1つを選ぶ。それに1ダメージを与える。,"宇宙 地球",〔マフティー〕,「ハサウェイ・ノア」,4,4,"Flash of Radiance [ST08]",ST08-002.webp
+ST08-003,"メッサーF型 ネイキッド 指揮官機",C,ST08,4,2,Red,UNIT,-,"宇宙 地球",〔マフティー〕,特徴〔マフティー〕,4,3,"Flash of Radiance [ST08]",ST08-003.webp
+ST08-004,メッサーF01型,C,ST08,2,2,Red,UNIT,【アタック時】相手のユニットにアタックしているなら、相手のユニット1つを選ぶ。それに1ダメージを与える。,"宇宙 地球",〔マフティー〕,特徴〔マフティー〕,2,1,"Flash of Radiance [ST08]",ST08-004.webp
+ST08-005,"メッサーF02型 マインレイヤー",C,ST08,3,2,Red,UNIT,-,"宇宙 地球",〔マフティー〕,-,4,3,"Flash of Radiance [ST08]",ST08-005.webp
+ST08-006,ペーネロペー,LR,ST08,7,6,Blue,UNIT,【セット中】【アタック時】【ターン1回】相手プレイヤーにアタックしているなら、自分の手札の〔地球連邦〕のユニットカード1枚を公開し、デッキの下に戻す。そうしたなら、自分は2枚ドローする。,"宇宙 地球",〔地球連邦〕,「レーン・エイム」,5,5,"Flash of Radiance [ST08]",ST08-006.webp
+ST08-007,ペーネロペー,C,ST08,5,3,Blue,UNIT,-,"宇宙 地球",〔地球連邦〕,「レーン・エイム」,5,4,"Flash of Radiance [ST08]",ST08-007.webp
+ST08-008,グスタフ・カール00型,C,ST08,3,3,Blue,UNIT,"相手のユニットが3つ以上いる間、このユニットは《ブロッカー》を得る。
+
+(レストにすることでアタック先をこのユニットにする)","宇宙 地球",〔地球連邦〕,-,3,4,"Flash of Radiance [ST08]",ST08-008.webp
+ST08-009,"陸戦用ジェガンＡ型 マン・ハンター仕様",C,ST08,1,1,Blue,UNIT,【配備時】レストのLv.2以下の相手のユニット1つを選ぶ。それは次の相手のターンのスタートフェイズでアクティブにならない。,地球,〔地球連邦〕,-,-,1,"Flash of Radiance [ST08]",ST08-009.webp
+ST08-010,ハサウェイ・ノア,C,ST08,4,1,Red,PILOT,"【バースト】このカードを手札に加える。
+【セット時】このユニットが〔マフティー〕なら、〔マフティー〕の自分のユニット1つを選ぶ。このターン中、それはダメージを受けているアクティブの相手のユニットをアタック先に選んでもよい。",-,"〔マフティー〕 〔ニュータイプ〕",-,+2,+1,"Flash of Radiance [ST08]",ST08-010.webp
+ST08-011,レーン・エイム,C,ST08,4,1,Blue,PILOT,"【バースト】このカードを手札に加える。
+自分が効果でドローしたとき、このユニットが青なら、このターン中、これは《高機動》を得る。
+
+(このユニットはブロックされない)",-,〔地球連邦〕,-,+2,+1,"Flash of Radiance [ST08]",ST08-011.webp
+ST08-012,ハサウェイへの鼓舞,C,ST08,3,1,Red,COMMAND,"【メイン】味方のリンクユニット1つを選ぶ。このターン中、それは《突破1》を得る。
+
+(アタックで相手のユニットを破壊したとき、その相手のシールドエリアの先頭のカード1枚に指定の数ダメージを与える)
+【パイロット】「ガウマン・ノビル」",-,〔マフティー〕,-,+1,+0,"Flash of Radiance [ST08]",ST08-012.webp
+ST08-013,幸運の女神,C,ST08,5,1,Red,COMMAND,【メイン】/【アクション】相手のユニット1つを選ぶ。それに1ダメージを与える。〔マフティー〕の味方のリンクユニットがいるなら、かわりに2ダメージを与える。,-,-,-,-,-,"Flash of Radiance [ST08]",ST08-013.webp
+ST08-014,ヴァリアント,C,ST08,2,1,Red,BASE,"【バースト】このカードを配備する。
+【配備時】自分のシールド1つを手札に加える。その後、自分のユニット1つを選ぶ。このターン中、それをAP+2する。",地球,"〔マフティー〕 〔艦船〕",-,-,5,"Flash of Radiance [ST08]",ST08-014.webp
+ST08-015,ダバオ,C,ST08,3,1,Blue,BASE,"【バースト】このカードを配備する。
+【配備時】自分のシールド1つを手札に加える。
+
+【起動・メイン】【ターン1回】②：自分のユニット1つを選ぶ。それを2回復する。",地球,"〔地球連邦〕 〔拠点〕",-,-,5,"Flash of Radiance [ST08]",ST08-015.webp
+GD01-001,ガンダム,LR,GD01,4,3,Blue,UNIT,"〔WB隊〕の自分のユニットすべては《リペア1》を得る。
+
+(自分のターン終了時、このユニットを指定の数回復する)
+【セット時】このユニット以外の、自分のユニットが2つ以上いるなら、自分は1枚ドローする。","宇宙 地球","〔地球連邦〕 〔WB隊〕",「アムロ・レイ」,3,3,"Newtype Rising [GD01]",GD01-001.webp
+GD01-002,ユニコーンガンダム（デストロイモード）,LR,GD01,7,6,Blue,UNIT,"手札のこのカードをプレイするとき、Lv.5のカード名に「ユニコーンモード」を含む自分のリンクユニット1つを破壊してもよい。そうしたなら、これをLv.とコストを0としてプレイする。
+【アタック時】相手のユニット1つを選ぶ。それをレストにする。","宇宙 地球",〔民間〕,「バナージ・リンクス」,5,4,"Newtype Rising [GD01]",GD01-002.webp
+GD01-003,"ユニコーンガンダム2号機 バンシィ（デストロイモード）",LR,GD01,6,4,Blue,UNIT,"【リンク中】【アタック時】自分のトラッシュのカード12枚を選ぶ。それらを持ち主のデッキに戻し、シャッフルする。そうしたなら、このユニットをアクティブにし、このターン中、これは《先制攻撃》を得る。
+
+(アタック中のこのユニットは、相手より先にダメージを与える)","宇宙 地球",〔地球連邦〕,「マリーダ・クルス」,5,4,"Newtype Rising [GD01]",GD01-003.webp
+GD01-004,ガンキャノン,R,GD01,3,2,Blue,UNIT,"《リペア1》(自分のターン終了時、このユニットを指定の数回復する)
+【セット時】HP2以下の相手のユニット1つを選ぶ。それをレストにする。","宇宙 地球","〔地球連邦〕 〔WB隊〕",特徴〔WB隊〕,2,3,"Newtype Rising [GD01]",GD01-004.webp
+GD01-005,ユニコーンガンダム（ユニコーンモード）,R,GD01,5,4,Blue,UNIT,【リンク中】【破壊時】このユニットにセットされていたパイロットを持ち主の手札に戻す。その後、自分の手札1枚を捨てる。,"宇宙 地球",〔民間〕,「バナージ・リンクス」,4,3,"Newtype Rising [GD01]",GD01-005.webp
+GD01-006,デルタプラス,R,GD01,4,3,Blue,UNIT,"《リペア1》(自分のターン終了時、このユニットを指定の数回復する)
+【リンク中】このユニットをHP+1する。","宇宙 地球",〔地球連邦〕,特徴〔地球連邦〕,4,3,"Newtype Rising [GD01]",GD01-006.webp
+GD01-007,エアリーズ（ノイン機）,R,GD01,3,3,Blue,UNIT,【破壊時】このユニット以外の、〔OZ〕の自分のユニットがいるなら、自分は1枚ドローする。,地球,〔OZ〕,「ルクレツィア・ノイン」,2,3,"Newtype Rising [GD01]",GD01-007.webp
+GD01-008,ガンタンク,U,GD01,2,1,Blue,UNIT,【配備時】レストの相手のユニット1つを選ぶ。それに1ダメージを与える。,"宇宙 地球","〔地球連邦〕 〔WB隊〕",-,1,2,"Newtype Rising [GD01]",GD01-008.webp
+GD01-009,Gファイター,U,GD01,3,2,Blue,UNIT,"【配備時】〔WB隊〕の自分のユニット1つを選ぶ。このターン中、それは《高機動》を得る。
+
+(このユニットはブロックされない)","宇宙 地球","〔地球連邦〕 〔WB隊〕",特徴〔WB隊〕,3,2,"Newtype Rising [GD01]",GD01-009.webp
+GD01-010,"ユニコーンガンダム2号機 バンシィ（ユニコーンモード）",R,GD01,4,3,Blue,UNIT,【セット時】HP3以下の相手のユニット1つを選ぶ。それをレストにする。,"宇宙 地球",〔地球連邦〕,特徴〔強化人間〕,4,3,"Newtype Rising [GD01]",GD01-010.webp
+GD01-011,ロト,U,GD01,2,2,Blue,UNIT,-,"宇宙 地球",〔地球連邦〕,特徴〔地球連邦〕,2,2,"Newtype Rising [GD01]",GD01-011.webp
+GD01-012,リーオー（ゼクス機）,U,GD01,3,2,Blue,UNIT,【セット時】HP3以下の相手のユニット1つを選ぶ。それをレストにする。,"宇宙 地球",〔OZ〕,特徴〔OZ〕,3,2,"Newtype Rising [GD01]",GD01-012.webp
+GD01-013,ガンダム,C,GD01,4,2,Blue,UNIT,-,"宇宙 地球","〔地球連邦〕 〔WB隊〕",「アムロ・レイ」,3,4,"Newtype Rising [GD01]",GD01-013.webp
+GD01-014,Gスカイ・イージー,C,GD01,3,2,Blue,UNIT,【リンク中】【起動・アクション】【ターン1回】ユニット1つを選ぶ。それを1回復する。,"宇宙 地球","〔地球連邦〕 〔WB隊〕",特徴〔WB隊〕,1,3,"Newtype Rising [GD01]",GD01-014.webp
+GD01-015,ボール,C,GD01,1,1,Blue,UNIT,【アタック時】自分のユニット1つを選ぶ。それを1回復する。,宇宙,〔地球連邦〕,-,1,1,"Newtype Rising [GD01]",GD01-015.webp
+GD01-016,ジェガン,C,GD01,3,2,Blue,UNIT,〔地球連邦〕の自分のユニットが2つ以上いる間、手札のこのカードをコスト-1する。,"宇宙 地球",〔地球連邦〕,-,2,3,"Newtype Rising [GD01]",GD01-016.webp
+GD01-017,スタークジェガン,C,GD01,3,3,Blue,UNIT,《リペア1》(自分のターン終了時、このユニットを指定の数回復する),"宇宙 地球",〔地球連邦〕,特徴〔地球連邦〕,3,3,"Newtype Rising [GD01]",GD01-017.webp
+GD01-018,リゼル,C,GD01,3,2,Blue,UNIT,-,"宇宙 地球",〔地球連邦〕,-,4,3,"Newtype Rising [GD01]",GD01-018.webp
+GD01-019,バイアラン・カスタム,U,GD01,4,2,Blue,UNIT,"相手のユニットが4つ以上いる間、このユニットは《ブロッカー》を得る。
+
+(レストにすることでアタック先をこのユニットにする)","宇宙 地球",〔地球連邦〕,-,3,4,"Newtype Rising [GD01]",GD01-019.webp
+GD01-020,アンクシャ,C,GD01,4,2,Blue,UNIT,【配備時】レストの相手のユニット1つを選ぶ。それに1ダメージを与える。,地球,〔地球連邦〕,-,3,3,"Newtype Rising [GD01]",GD01-020.webp
+GD01-021,パイシーズ,C,GD01,1,1,Blue,UNIT,-,地球,〔OZ〕,-,1,2,"Newtype Rising [GD01]",GD01-021.webp
+GD01-022,キャンサー,C,GD01,2,2,Blue,UNIT,-,地球,〔OZ〕,-,2,3,"Newtype Rising [GD01]",GD01-022.webp
+GD01-023,シャア専用ゲルググ,LR,GD01,4,4,Green,UNIT,【起動・メイン】自分の手札の〔ジオン〕/〔ネオ・ジオン〕のユニットカード1枚を捨てる：このユニットにパイロットがセットされていないなら、自分のトラッシュのLv.3以下の〔ニュータイプ〕のパイロットカード1枚を選ぶ。それをこれにセットする。,"宇宙 地球",〔ジオン〕,「シャア・アズナブル」,4,3,"Newtype Rising [GD01]",GD01-023.webp
+GD01-024,ウイングガンダムゼロ,LR,GD01,8,8,Green,UNIT,"《高機動》(このユニットはブロックされない)
+【配備時】Lv.5以下のユニットすべてに3ダメージを与える。","宇宙 地球",〔Gチーム〕,「ヒイロ・ユイ」,5,7,"Newtype Rising [GD01]",GD01-024.webp
+GD01-025,ガンダムデスサイズ,LR,GD01,6,4,Green,UNIT,"【セット時・〔オペレーション・メテオ〕のパイロット】自分はリソース1つをレストで置く。その後、このターン中、このユニットは《先制攻撃》を得る。
+
+(アタック中のこのユニットは、相手より先にダメージを与える)",地球,〔オペレーション・メテオ〕,「デュオ・マックスウェル」,5,4,"Newtype Rising [GD01]",GD01-025.webp
+GD01-026,ザクⅡ（シャア・アズナブル機）,R,GD01,3,2,Green,UNIT,【セット中】【破壊時】「ザクⅡ（シャア・アズナブル機）」(〔ジオン〕・AP3・HP1)のユニットトークン1つをレストで配備する。,"宇宙 地球",〔ジオン〕,「シャア・アズナブル」,3,2,"Newtype Rising [GD01]",GD01-026.webp
+GD01-027,ビグ・ザム,R,GD01,7,5,Green,UNIT,"《突破4》(アタックで相手のユニットを破壊したとき、その相手のシールドエリアの先頭のカード1枚に指定の数ダメージを与える)
+【配備時】自分のトラッシュに〔ジオン〕/〔ネオ・ジオン〕のユニットカードが10枚以上あるなら、《ブロッカー》を持つユニットすべてに4ダメージを与える。","宇宙 地球",〔ジオン〕,「ドズル・ザビ」,5,6,"Newtype Rising [GD01]",GD01-027.webp
+GD01-028,ガンダムサンドロック,R,GD01,5,3,Green,UNIT,【配備時】自分の手札の、〔マグアナック隊〕のユニットカード1枚を配備してもよい。,地球,〔オペレーション・メテオ〕,「カトル・ラバーバ・ウィナー」,4,4,"Newtype Rising [GD01]",GD01-028.webp
+GD01-029,シェンロンガンダム,R,GD01,5,4,Green,UNIT,"《突破4》(アタックで相手のユニットを破壊したとき、その相手のシールドエリアの先頭のカード1枚に指定の数ダメージを与える)
+【アタック時】《ブロッカー》を持つLv.3以下の相手のユニット1つを選ぶ。それを破壊する。",地球,〔オペレーション・メテオ〕,「張五飛」,4,4,"Newtype Rising [GD01]",GD01-029.webp
+GD01-030,リック・ドム,U,GD01,3,2,Green,UNIT,《突破2》(アタックで相手のユニットを破壊したとき、その相手のシールドエリアの先頭のカード1枚に指定の数ダメージを与える),宇宙,〔ジオン〕,-,3,3,"Newtype Rising [GD01]",GD01-030.webp
+GD01-031,ゲルググ,U,GD01,4,2,Green,UNIT,-,"宇宙 地球",〔ジオン〕,特徴〔ジオン〕,4,3,"Newtype Rising [GD01]",GD01-031.webp
+GD01-032,ギャン,R,GD01,4,3,Green,UNIT,【セット時・〔ジオン〕のパイロット】《ブロッカー》を持つLv.2以下の相手のユニット1つを選ぶ。それを破壊する。,"宇宙 地球",〔ジオン〕,「マ・クベ」,4,3,"Newtype Rising [GD01]",GD01-032.webp
+GD01-033,ガンダムデスサイズ,U,GD01,4,2,Green,UNIT,《リペア1》(自分のターン終了時、このユニットを指定の数回復する),地球,〔オペレーション・メテオ〕,「デュオ・マックスウェル」,4,3,"Newtype Rising [GD01]",GD01-033.webp
+GD01-034,ガンダムヘビーアームズ,U,GD01,4,2,Green,UNIT,"【セット中】このユニットは《突破3》を得る。
+
+(アタックで相手のユニットを破壊したとき、その相手のシールドエリアの先頭のカード1枚に指定の数ダメージを与える)",地球,〔オペレーション・メテオ〕,「トロワ・バートン」,3,4,"Newtype Rising [GD01]",GD01-034.webp
+GD01-035,ザクⅡ,C,GD01,2,1,Green,UNIT,-,"宇宙 地球",〔ジオン〕,-,2,2,"Newtype Rising [GD01]",GD01-035.webp
+GD01-036,グフ,C,GD01,2,2,Green,UNIT,-,地球,〔ジオン〕,-,3,2,"Newtype Rising [GD01]",GD01-036.webp
+GD01-037,ゴッグ,C,GD01,2,2,Green,UNIT,-,地球,〔ジオン〕,-,2,3,"Newtype Rising [GD01]",GD01-037.webp
+GD01-038,アッザム,U,GD01,5,4,Green,UNIT,【配備時】相手のユニットが5つ以上いるなら、相手のユニットすべてに1ダメージを与える。,地球,〔ジオン〕,特徴〔ジオン〕,2,5,"Newtype Rising [GD01]",GD01-038.webp
+GD01-039,ドップ,C,GD01,1,1,Green,UNIT,【配備時】自分のデッキを上から1枚見て、上か下に戻す。,地球,〔ジオン〕,-,1,1,"Newtype Rising [GD01]",GD01-039.webp
+GD01-040,ウイングガンダム,C,GD01,5,2,Green,UNIT,-,"宇宙 地球",〔オペレーション・メテオ〕,「ヒイロ・ユイ」,4,3,"Newtype Rising [GD01]",GD01-040.webp
+GD01-041,シェンロンガンダム,C,GD01,4,3,Green,UNIT,《突破3》(アタックで相手のユニットを破壊したとき、その相手のシールドエリアの先頭のカード1枚に指定の数ダメージを与える),地球,〔オペレーション・メテオ〕,「張五飛」,4,3,"Newtype Rising [GD01]",GD01-041.webp
+GD01-042,リーオー（デュオ機）,C,GD01,2,2,Green,UNIT,このユニットは、アクティブのLv.2以下の相手のユニットをアタック先に選んでもよい。,"宇宙 地球",〔オペレーション・メテオ〕,「デュオ・マックスウェル」,2,2,"Newtype Rising [GD01]",GD01-042.webp
+GD01-043,マグアナック（ラシード機）,C,GD01,3,2,Green,UNIT,【配備時】緑の自分のユニット1つを選ぶ。このターン中、それはアクティブのAP4以下の相手のユニットをアタック先に選んでもよい。,"宇宙 地球",〔マグアナック隊〕,特徴〔マグアナック隊〕,2,3,"Newtype Rising [GD01]",GD01-043.webp
+GD01-044,クシャトリヤ,LR,GD01,5,4,Red,UNIT,【セット時・〔強化人間〕/〔ニュータイプ〕のパイロット】相手のユニット1～2つを選ぶ。それらに1ダメージを与える。,"宇宙 地球",〔ネオ・ジオン〕,「マリーダ・クルス」,5,4,"Newtype Rising [GD01]",GD01-044.webp
+GD01-045,"デュエルガンダム アサルトシュラウド",LR,GD01,5,4,Red,UNIT,【セット時】自分のデッキを上から3枚見て、その中の、Lv.4以下の〔ザフト〕のユニットカード1枚を配備してもよい。残ったカードは無作為に下に戻す。,"宇宙 地球",〔ザフト〕,「イザーク・ジュール」,4,4,"Newtype Rising [GD01]",GD01-045.webp
+GD01-046,バスターガンダム,LR,GD01,4,2,Red,UNIT,"【起動・メイン】《援護3》(レストにすることで、このターン中、他の味方のユニット1つをAP+(指定の数)する)
+【セット中・〔コーディネイター〕のパイロット】【ターン1回】このユニットの《援護》で〔ザフト〕のユニットをAP+したとき、これをアクティブにする。","宇宙 地球",〔ザフト〕,「ディアッカ・エルスマン」,1,4,"Newtype Rising [GD01]",GD01-046.webp
+GD01-047,シャンブロ,R,GD01,8,7,Red,UNIT,【アタック時】このユニット以外のレストの味方のユニットが2つ以上いるなら、相手のユニット1つを選ぶ。それに3ダメージを与える。,地球,〔ジオン〕,"特徴〔ニュータイプ〕 特徴〔強化人間〕",6,5,"Newtype Rising [GD01]",GD01-047.webp
+GD01-048,ザクⅠ・スナイパータイプ,R,GD01,2,2,Red,UNIT,"【起動・メイン】《援護1》(レストにすることで、このターン中、他の味方のユニット1つをAP+(指定の数)する)
+【配備時】自分のデッキを上から1枚見る。それが、〔ジオン〕/〔ネオ・ジオン〕のユニットカードなら公開して手札に加えてもよい。残ったカードは下に戻す。","宇宙 地球",〔ジオン〕,特徴〔ジオン〕,-,1,"Newtype Rising [GD01]",GD01-048.webp
+GD01-049,ブリッツガンダム,R,GD01,4,3,Red,UNIT,"【配備時】AP5以上の〔ザフト〕の自分のユニット1つを選ぶ。このターン中、それは《先制攻撃》を得る。
+
+(アタック中のこのユニットは、相手より先にダメージを与える)","宇宙 地球",〔ザフト〕,「ニコル・アマルフィ」,3,3,"Newtype Rising [GD01]",GD01-049.webp
+GD01-050,ラゴゥ,R,GD01,3,2,Red,UNIT,【アタック時】このユニットがAP5以上で、相手のユニットにアタックしているなら、相手のユニット1つを選ぶ。それに2ダメージを与える。,地球,〔ザフト〕,特徴〔ザフト〕,2,3,"Newtype Rising [GD01]",GD01-050.webp
+GD01-051,クシャトリヤ,U,GD01,4,2,Red,UNIT,-,"宇宙 地球",〔ネオ・ジオン〕,特徴〔強化人間〕,3,4,"Newtype Rising [GD01]",GD01-051.webp
+GD01-052,ギラ・ズール（親衛隊機）,U,GD01,4,3,Red,UNIT,【配備時】相手のユニット1つを選ぶ。それに1ダメージを与える。,"宇宙 地球",〔ネオ・ジオン〕,-,2,4,"Newtype Rising [GD01]",GD01-052.webp
+GD01-053,ギラ・ドーガ（重武装仕様）,U,GD01,4,3,Red,UNIT,【起動・メイン】【ターン1回】①：AP2以下の相手のユニット1つを選ぶ。それに1ダメージを与える。,"宇宙 地球",〔ネオ・ジオン〕,-,4,2,"Newtype Rising [GD01]",GD01-053.webp
+GD01-054,デュエルガンダム,R,GD01,3,2,Red,UNIT,"このユニットがAP5以上の間、これは《突破3》を得る。
+
+(アタックで相手のユニットを破壊したとき、その相手のシールドエリアの先頭のカード1枚に指定の数ダメージを与える)","宇宙 地球",〔ザフト〕,特徴〔ザフト〕,3,3,"Newtype Rising [GD01]",GD01-054.webp
+GD01-055,バクゥ,U,GD01,3,2,Red,UNIT,【起動・メイン】《援護2》(レストにすることで、このターン中、他の味方のユニット1つをAP+(指定の数)する),地球,〔ザフト〕,-,2,3,"Newtype Rising [GD01]",GD01-055.webp
+GD01-056,ギラ・ドーガ（袖付き仕様）,C,GD01,3,2,Red,UNIT,【破壊時】AP5以下の相手のユニット1つを選ぶ。それに1ダメージを与える。,"宇宙 地球",〔ネオ・ジオン〕,-,2,3,"Newtype Rising [GD01]",GD01-056.webp
+GD01-057,ドライセン（袖付き仕様）,C,GD01,2,2,Red,UNIT,-,"宇宙 地球",〔ネオ・ジオン〕,-,2,3,"Newtype Rising [GD01]",GD01-057.webp
+GD01-058,ガルスK,C,GD01,3,2,Red,UNIT,【起動・アクション】【ターン1回】①：Lv.4以上のユニット1つを選ぶ。このバトル中、それをAP+1する。,"宇宙 地球",〔ジオン〕,-,3,2,"Newtype Rising [GD01]",GD01-058.webp
+GD01-059,ゼー・ズール,C,GD01,2,2,Red,UNIT,【アタック時】相手プレイヤーにアタックしているなら、このバトル中、このユニットをAP+2する。,地球,〔ネオ・ジオン〕,-,2,2,"Newtype Rising [GD01]",GD01-059.webp
+GD01-060,ザク・マリナー,C,GD01,2,1,Red,UNIT,-,地球,〔ジオン〕,-,2,2,"Newtype Rising [GD01]",GD01-060.webp
+GD01-061,ザウート,C,GD01,1,1,Red,UNIT,【起動・メイン】《援護1》(レストにすることで、このターン中、他の味方のユニット1つをAP+(指定の数)する),地球,〔ザフト〕,-,-,2,"Newtype Rising [GD01]",GD01-061.webp
+GD01-062,グーン,C,GD01,1,1,Red,UNIT,-,地球,〔ザフト〕,-,1,2,"Newtype Rising [GD01]",GD01-062.webp
+GD01-063,ゾノ,U,GD01,2,2,Red,UNIT,"自分のターン中、このユニットがLv.2以下の相手のユニットとバトルしている間、これは《先制攻撃》を得る。
+
+(アタック中のこのユニットは、相手より先にダメージを与える)",地球,〔ザフト〕,特徴〔ザフト〕,2,1,"Newtype Rising [GD01]",GD01-063.webp
+GD01-064,ディン,C,GD01,2,2,Red,UNIT,-,地球,〔ザフト〕,-,3,2,"Newtype Rising [GD01]",GD01-064.webp
+GD01-065,フリーダムガンダム,LR,GD01,7,5,White,UNIT,"《ブロッカー》(レストにすることでアタック先をこのユニットにする)
+【セット中】【ターン1回】このユニットか、白の自分のユニットにパイロットをセットしたとき、相手のユニット1つを選ぶ。このターン中、それをAP-2する。","宇宙 地球",〔三隻同盟〕,「キラ・ヤマト」,4,6,"Newtype Rising [GD01]",GD01-065.webp
+GD01-066,ジャスティスガンダム,LR,GD01,7,5,White,UNIT,"【配備時】「ファトゥム-00」(〔三隻同盟〕・AP2・HP2・《ブロッカー》)のユニットトークン1つを配備する。
+【セット中】【アタック時】自分の〔三隻同盟〕のユニットトークン1つを選ぶ。それは配備したターンにアタックしてもよい。","宇宙 地球",〔三隻同盟〕,「アスラン・ザラ」,5,5,"Newtype Rising [GD01]",GD01-066.webp
+GD01-067,ガンダム・エアリアル（改修型）,LR,GD01,6,5,White,UNIT,【セット時】自分のトラッシュのLv.5以下のコマンドカード1枚を選ぶ。それを手札に加える。,"宇宙 地球",〔学園〕,「スレッタ・マーキュリー」,5,4,"Newtype Rising [GD01]",GD01-067.webp
+GD01-068,パーフェクトストライクガンダム,R,GD01,5,3,White,UNIT,"《ブロッカー》(レストにすることでアタック先をこのユニットにする)
+【配備時】HP1の相手のユニット1つを選ぶ。それを持ち主の手札に戻す。","宇宙 地球",〔三隻同盟〕,特徴〔地球連合〕,4,4,"Newtype Rising [GD01]",GD01-068.webp
+GD01-069,ストライクルージュ,R,GD01,3,2,White,UNIT,【起動・メイン】【ターン1回】①：《ブロッカー》を持つレストの白の自分のユニット1つを選ぶ。それをアクティブにし、このターン中、それはアタックできない。,"宇宙 地球",〔三隻同盟〕,特徴〔オーブ〕,3,2,"Newtype Rising [GD01]",GD01-069.webp
+GD01-070,ガンダム・エアリアル,R,GD01,5,3,White,UNIT,自分のトラッシュにコマンドカードが4枚以上ある間、手札のこのカードをコスト-2する。,"宇宙 地球",〔学園〕,「スレッタ・マーキュリー」,3,3,"Newtype Rising [GD01]",GD01-070.webp
+GD01-071,ガンダム・ファラクト,R,GD01,4,3,White,UNIT,【リンク中】【アタック時】相手のユニット1つを選ぶ。このバトル中、それをAP-2する。,"宇宙 地球",〔学園〕,特徴〔学園〕,3,4,"Newtype Rising [GD01]",GD01-071.webp
+GD01-072,ランチャーストライクガンダム,U,GD01,4,3,White,UNIT,《ブロッカー》(レストにすることでアタック先をこのユニットにする),"宇宙 地球",〔地球連合〕,特徴〔地球連合〕,3,4,"Newtype Rising [GD01]",GD01-072.webp
+GD01-073,ソードストライクガンダム,U,GD01,4,3,White,UNIT,【リンク中】【アタック時】HP2以下の相手のユニット1つを選ぶ。それを持ち主の手札に戻す。,"宇宙 地球",〔地球連合〕,特徴〔地球連合〕,4,3,"Newtype Rising [GD01]",GD01-073.webp
+GD01-074,"デミトレーナー チュチュ専用機",R,GD01,2,2,White,UNIT,【アタック時】自分は1枚ドローする。その後、自分の手札1枚を捨てる。,"宇宙 地球",〔学園〕,「チュアチュリー・パンランチ」,3,1,"Newtype Rising [GD01]",GD01-074.webp
+GD01-075,ダリルバルデ,U,GD01,3,2,White,UNIT,【配備時】HP1の相手のユニット1つを選ぶ。それを持ち主の手札に戻す。,"宇宙 地球",〔学園〕,特徴〔学園〕,4,2,"Newtype Rising [GD01]",GD01-075.webp
+GD01-076,ミカエリス,U,GD01,3,2,White,UNIT,自分のトラッシュにコマンドカードが4枚以上ある間、このユニットをAP+1、HP+1する。,"宇宙 地球",〔学園〕,特徴〔学園〕,3,3,"Newtype Rising [GD01]",GD01-076.webp
+GD01-077,ストライクガンダム,C,GD01,4,2,White,UNIT,-,"宇宙 地球",〔地球連合〕,「キラ・ヤマト」,3,4,"Newtype Rising [GD01]",GD01-077.webp
+GD01-078,ミストラル,C,GD01,1,1,White,UNIT,【配備時】相手のユニット1つを選ぶ。このターン中、それをAP-1する。,宇宙,〔地球連合〕,-,1,1,"Newtype Rising [GD01]",GD01-078.webp
+GD01-079,スカイグラスパー,C,GD01,2,2,White,UNIT,-,地球,〔地球連合〕,特徴〔地球連合〕,2,2,"Newtype Rising [GD01]",GD01-079.webp
+GD01-080,スカイグラスパー（カガリ機）,C,GD01,2,2,White,UNIT,【破壊時】Lv.2以下の相手のユニット1つを選ぶ。それを持ち主の手札に戻す。,地球,〔地球連合〕,「カガリ・ユラ・アスハ」,2,1,"Newtype Rising [GD01]",GD01-080.webp
+GD01-081,M1アストレイ,C,GD01,2,2,White,UNIT,"このユニット以外の、〔三隻同盟〕の自分のユニットがいる間、これはAP+1され、《ブロッカー》を得る。
+
+(レストにすることでアタック先をこのユニットにする)","宇宙 地球",〔三隻同盟〕,-,2,2,"Newtype Rising [GD01]",GD01-081.webp
+GD01-082,ガンダム・エアリアル（ミラソウル社製フライトユニット装備）,U,GD01,4,3,White,UNIT,【セット中】【起動・アクション】【ターン1回】②：相手のユニット1つを選ぶ。このバトル中、それをAP-1する。,"宇宙 地球",〔学園〕,「スレッタ・マーキュリー」,4,3,"Newtype Rising [GD01]",GD01-082.webp
+GD01-083,"ディランザ グエル専用機",C,GD01,2,2,White,UNIT,-,"宇宙 地球",〔学園〕,特徴〔学園〕,2,2,"Newtype Rising [GD01]",GD01-083.webp
+GD01-084,ベギルペンデ,C,GD01,2,2,White,UNIT,-,"宇宙 地球",〔学園〕,-,2,3,"Newtype Rising [GD01]",GD01-084.webp
+GD01-085,デミギャリソン,C,GD01,2,1,White,UNIT,-,"宇宙 地球",〔学園〕,-,2,2,"Newtype Rising [GD01]",GD01-085.webp
+GD01-086,ガンダム・ルブリス,C,GD01,3,2,White,UNIT,《ブロッカー》(レストにすることでアタック先をこのユニットにする),"宇宙 地球",〔ヴァナディース機関〕,-,2,4,"Newtype Rising [GD01]",GD01-086.webp
+GD01-087,セイラ・マス,R,GD01,3,1,Blue,PILOT,"【バースト】このカードを手札に加える。
+このユニットが青の間、これは《リペア1》を得る。
+
+(自分のターン終了時、このユニットを指定の数回復する)",-,"〔地球連邦〕 〔WB隊〕 〔ニュータイプ〕",-,+1,+1,"Newtype Rising [GD01]",GD01-087.webp
+GD01-088,バナージ・リンクス,U,GD01,5,1,Blue,PILOT,"【バースト】このカードを手札に加える。
+【リンク時】自分は1枚ドローする。",-,"〔民間〕 〔ニュータイプ〕",-,+2,+2,"Newtype Rising [GD01]",GD01-088.webp
+GD01-089,リディ・マーセナス,C,GD01,3,1,Blue,PILOT,"【バースト】このカードを手札に加える。
+このユニットが《リペア》を持つ間、これをAP+1する。",-,〔地球連邦〕,-,+1,+1,"Newtype Rising [GD01]",GD01-089.webp
+GD01-090,デュオ・マックスウェル,R,GD01,4,1,Green,PILOT,"【バースト】このカードを手札に加える。
+【リンク中】このユニットのAPは相手の効果で減少しない。",-,〔オペレーション・メテオ〕,-,+1,+2,"Newtype Rising [GD01]",GD01-090.webp
+GD01-091,張五飛,U,GD01,4,1,Green,PILOT,"【バースト】このカードを手札に加える。
+自分のターン中、このユニットが《突破》を持つ間、これはAP3以下の相手のユニットからバトルダメージを受けない。",-,〔オペレーション・メテオ〕,-,+2,+1,"Newtype Rising [GD01]",GD01-091.webp
+GD01-092,マ・クベ,C,GD01,3,1,Green,PILOT,"【バースト】このカードを手札に加える。
+このユニットが〔ジオン〕の間、これは《突破1》を得る。
+
+(アタックで相手のユニットを破壊したとき、その相手のシールドエリアの先頭のカード1枚に指定の数ダメージを与える)",-,〔ジオン〕,-,+1,+1,"Newtype Rising [GD01]",GD01-092.webp
+GD01-093,マリーダ・クルス,R,GD01,4,1,Red,PILOT,"【バースト】このカードを手札に加える。
+【リンク中】【アタック時】このユニットのLv.以下の相手のユニット1つを選ぶ。それに1ダメージを与える。",-,"〔ネオ・ジオン〕 〔強化人間〕",-,+2,+1,"Newtype Rising [GD01]",GD01-093.webp
+GD01-094,イザーク・ジュール,U,GD01,3,1,Red,PILOT,"【バースト】このカードを手札に加える。
+【ターン1回】このユニットがアタックしている間、相手のリンクユニットがダメージで破壊されたとき、自分は1枚ドローする。",-,"〔ザフト〕 〔コーディネイター〕",-,+1,+1,"Newtype Rising [GD01]",GD01-094.webp
+GD01-095,ディアッカ・エルスマン,C,GD01,3,1,Red,PILOT,"【バースト】このカードを手札に加える。
+【リンク時】自分の手札1枚を捨てる。そうしたなら、自分は1枚ドローする。",-,"〔ザフト〕 〔コーディネイター〕",-,+1,+1,"Newtype Rising [GD01]",GD01-095.webp
+GD01-096,カガリ・ユラ・アスハ,R,GD01,4,1,White,PILOT,"【バースト】このカードを手札に加える。
+このユニットが白の間、これは《ブロッカー》を得る。
+
+(レストにすることでアタック先をこのユニットにする)",-,〔オーブ〕,-,+1,+1,"Newtype Rising [GD01]",GD01-096.webp
+GD01-097,グエル・ジェターク,U,GD01,3,1,White,PILOT,"【バースト】このカードを手札に加える。
+【起動・メイン】【ターン1回】相手の手札が8枚以上あるなら、このユニットをアクティブにし、このターン中、これはアタックできない。",-,〔学園〕,-,+1,+1,"Newtype Rising [GD01]",GD01-097.webp
+GD01-098,エラン・ケレス（強化人士4号）,C,GD01,4,1,White,PILOT,"【バースト】このカードを手札に加える。
+【起動・アクション】【ターン1回】AP1以下の相手のユニットがいるなら、このユニットを1回復する。",-,〔学園〕,-,+2,+1,"Newtype Rising [GD01]",GD01-098.webp
+GD01-099,迎撃命令,R,GD01,4,2,Blue,COMMAND,"【バースト】HP5以下の相手のユニット1つを選ぶ。それをレストにする。
+【メイン】/【アクション】HP3以下の相手のユニット1～2つを選ぶ。それらをレストにする。",-,-,-,-,-,"Newtype Rising [GD01]",GD01-099.webp
+GD01-100,覚悟の表れ,U,GD01,4,3,Blue,COMMAND,【メイン】自分は2枚ドローする。,-,-,-,-,-,"Newtype Rising [GD01]",GD01-100.webp
+GD01-101,深い愛情,R,GD01,2,1,Blue,COMMAND,"【メイン】/【アクション】味方のリンクユニット1つを選ぶ。それを3回復する。
+【パイロット】「ルクレツィア・ノイン」",-,〔OZ〕,-,+1,+0,"Newtype Rising [GD01]",GD01-101.webp
+GD01-102,物資の輸送,U,GD01,4,2,Blue,COMMAND,【メイン】Lv.4以下の味方のユニットすべてを2回復する。,-,-,-,-,-,"Newtype Rising [GD01]",GD01-102.webp
+GD01-103,歯車の意地,C,GD01,1,1,Blue,COMMAND,"【メイン】アクティブの〔地球連邦〕の味方のユニット1つと、相手のユニット1つを選ぶ。それらをレストにする。
+【パイロット】「ダグザ・マックール」",-,〔地球連邦〕,-,+0,+1,"Newtype Rising [GD01]",GD01-103.webp
+GD01-104,革命の気配,C,GD01,3,2,Blue,COMMAND,"【バースト】自分は1枚ドローする。
+【メイン】レストの相手のユニット1つを選ぶ。それに2ダメージを与える。",-,-,-,-,-,"Newtype Rising [GD01]",GD01-104.webp
+GD01-105,立てよ国民！,R,GD01,4,1,Green,COMMAND,"【バースト】このカードを手札に加える。
+【メイン】このターン中、自分のユニットすべてをAP+2する。",-,-,-,-,-,"Newtype Rising [GD01]",GD01-105.webp
+GD01-106,要塞防衛戦,R,GD01,5,2,Green,COMMAND,"【メイン】「ザクⅡ」(〔ジオン〕・AP1・HP1)のユニットトークン2つを配備する。
+【パイロット】「ドズル・ザビ」",-,〔ジオン〕,-,+1,+0,"Newtype Rising [GD01]",GD01-106.webp
+GD01-107,ファーストコンタクト,U,GD01,3,3,Green,COMMAND,"【バースト】自分はEXリソース1つを置く。
+【メイン】自分はリソース1つをレストで置く。",-,-,-,-,-,"Newtype Rising [GD01]",GD01-107.webp
+GD01-108,戦略級兵器,U,GD01,6,6,Green,COMMAND,【メイン】《ブロッカー》を持つユニットすべてに2ダメージを与える。,-,-,-,-,-,"Newtype Rising [GD01]",GD01-108.webp
+GD01-109,勝利と敗北の軌跡,C,GD01,5,1,Green,COMMAND,【メイン】自分のデッキを上から5枚見て、その中の、〔オペレーション・メテオ〕/〔Gチーム〕の、ユニットカード1枚/パイロットカード1枚を公開して手札に加えてもよい。残ったカードは無作為に下に戻す。,-,-,-,-,-,"Newtype Rising [GD01]",GD01-109.webp
+GD01-110,ラシードの指示,C,GD01,3,1,Green,COMMAND,"【メイン】/【アクション】Lv.4以上のユニット1つを選ぶ。このターン中、それはアクティブのAP6以下の相手のユニットをアタック先に選んでもよい。
+【パイロット】「ラシード・クラマ」",-,〔マグアナック隊〕,-,+0,+1,"Newtype Rising [GD01]",GD01-110.webp
+GD01-111,エースの戦い,R,GD01,3,2,Red,COMMAND,"【バースト】相手のユニット1つを選ぶ。それに2ダメージを与える。
+【メイン】/【アクション】ダメージを受けている相手のユニット1つを選ぶ。それに3ダメージを与える。",-,-,-,-,-,"Newtype Rising [GD01]",GD01-111.webp
+GD01-112,怨讐の果て,R,GD01,6,1,Red,COMMAND,"【メイン】アクティブの自分のユニット2つを選ぶ。それらをレストにする。そうしたなら、相手のユニット1つを選ぶ。それに3ダメージを与える。
+【パイロット】「ロニ・ガーベイ」",-,"〔ジオン〕 〔ニュータイプ〕",-,+1,+0,"Newtype Rising [GD01]",GD01-112.webp
+GD01-113,砂漠の虎,U,GD01,3,1,Red,COMMAND,"【メイン】/【アクション】〔ザフト〕の味方のユニット1つを選ぶ。このターン中、それをAP+3する。
+【パイロット】「アンドリュー・バルトフェルド」",-,"〔ザフト〕 〔コーディネイター〕",-,+1,+0,"Newtype Rising [GD01]",GD01-113.webp
+GD01-114,トリントン基地襲撃,C,GD01,1,1,Red,COMMAND,"【アクション】味方のユニット2つを選ぶ。このターン中、それらをAP+1する。
+【パイロット】「ヨンム・カークス」",-,〔ジオン〕,-,+1,+0,"Newtype Rising [GD01]",GD01-114.webp
+GD01-115,ジオン残党軍,U,GD01,2,1,Red,COMMAND,【メイン】/【アクション】相手のユニット1つを選ぶ。それに1ダメージを与える。,-,-,-,-,-,"Newtype Rising [GD01]",GD01-115.webp
+GD01-116,隠密作戦,C,GD01,2,1,Red,COMMAND,"【メイン】/【アクション】AP2以下の相手のユニット1つを選ぶ。それに2ダメージを与える。
+【パイロット】「ニコル・アマルフィ」",-,"〔ザフト〕 〔コーディネイター〕",-,+0,+1,"Newtype Rising [GD01]",GD01-116.webp
+GD01-117,魔女と花嫁,R,GD01,5,2,White,COMMAND,"【バースト】このカードの【メイン】を発動する。
+【メイン】/【アクション】HP5以下の相手のユニット1つを選ぶ。それを持ち主の手札に戻す。",-,-,-,-,-,"Newtype Rising [GD01]",GD01-117.webp
+GD01-118,溢れる慈愛,U,GD01,2,1,White,COMMAND,【メイン】自分は2枚ドローする。その後、自分の手札1枚を捨てる。,-,-,-,-,-,"Newtype Rising [GD01]",GD01-118.webp
+GD01-119,鉄拳制裁,R,GD01,2,1,White,COMMAND,"【メイン】/【アクション】Lv.4以下の相手のユニット1つを選ぶ。このターン中、それをAP-2する。
+【パイロット】「チュアチュリー・パンランチ」",-,〔学園〕,-,+1,+0,"Newtype Rising [GD01]",GD01-119.webp
+GD01-120,艦砲射撃,C,GD01,2,1,White,COMMAND,"【バースト】相手のユニット1つを選ぶ。このターン中、それをAP-3する。
+【アクション】《ブロッカー》を持つ味方のユニット1つを選ぶ。このターン中、それをAP+3する。",-,-,-,-,-,"Newtype Rising [GD01]",GD01-120.webp
+GD01-121,空中換装,U,GD01,3,2,White,COMMAND,"【バースト】このカードの【メイン】を発動する。
+【メイン】《ブロッカー》を持つレストのユニット1つを選ぶ。それをアクティブにし、このターン中、それはアタックできない。",-,-,-,-,-,"Newtype Rising [GD01]",GD01-121.webp
+GD01-122,暗躍するもの,C,GD01,3,1,White,COMMAND,"【メイン】HP2以下の相手のユニット1つを選ぶ。それを持ち主の手札に戻す。自分のリンクユニットがいるなら、かわりにHP4以下の相手のユニット1つを選ぶ。
+【パイロット】「シャディク・ゼネリ」",-,〔学園〕,-,+1,+0,"Newtype Rising [GD01]",GD01-122.webp
+GD01-123,ネェル・アーガマ,U,GD01,3,2,Blue,BASE,"【バースト】このカードを配備する。
+【配備時】自分のシールド1つを手札に加える。その後、HP3以下の相手のユニット1つを選ぶ。それをレストにする。","宇宙 地球","〔地球連邦〕 〔艦船〕",-,-,5,"Newtype Rising [GD01]",GD01-123.webp
+GD01-124,サイド7,C,GD01,1,1,Blue,BASE,"【バースト】このカードを配備する。
+【配備時】自分のシールド1つを手札に加える。
+
+【起動・メイン】このベースをレストにする：味方のユニット1つを選ぶ。それを1回復する。",宇宙,"〔地球連邦〕 〔拠点〕",-,-,4,"Newtype Rising [GD01]",GD01-124.webp
+GD01-125,ザンジバル,U,GD01,4,2,Green,BASE,"【バースト】このカードを配備する。
+【配備時】自分のシールド1つを手札に加える。その後、自分のターンなら、自分の手札のLv.4以下の〔ジオン〕のユニットカード1枚を配備してもよい。","宇宙 地球","〔ジオン〕 〔艦船〕",-,-,5,"Newtype Rising [GD01]",GD01-125.webp
+GD01-126,砂漠地下基地,C,GD01,2,1,Green,BASE,"【バースト】このカードを配備する。
+【配備時】自分のシールド1つを手札に加える。",地球,"〔マグアナック隊〕 〔拠点〕",-,-,6,"Newtype Rising [GD01]",GD01-126.webp
+GD01-127,ガモフ,U,GD01,2,1,Red,BASE,"【バースト】このカードを配備する。
+【配備時】自分のシールド1つを手札に加える。
+
+【起動・アクション】このベースをレストにする：AP5以上の〔ザフト〕の味方のユニット1つを選ぶ。このバトル中、それは《突破3》を得る。
+
+(アタックで相手のユニットを破壊したとき、その相手のシールドエリアの先頭のカード1枚に指定の数ダメージを与える)",宇宙,"〔ザフト〕 〔艦船〕",-,-,5,"Newtype Rising [GD01]",GD01-127.webp
+GD01-128,資源衛星パラオ,C,GD01,2,1,Red,BASE,"【バースト】このカードを配備する。
+【配備時】自分のシールド1つを手札に加える。",宇宙,"〔ネオ・ジオン〕 〔拠点〕",-,-,6,"Newtype Rising [GD01]",GD01-128.webp
+GD01-129,クサナギ,U,GD01,4,2,White,BASE,"【バースト】このカードを配備する。
+【配備時】自分のシールド1つを手札に加える。その後、HP3以下の相手のユニット1つを選ぶ。それを持ち主の手札に戻す。",宇宙,"〔三隻同盟〕 〔艦船〕",-,-,4,"Newtype Rising [GD01]",GD01-129.webp
+GD01-130,第13戦術試験区域,C,GD01,3,1,White,BASE,"【バースト】このカードを配備する。
+【配備時】自分のシールド1つを手札に加える。
+
+【起動・メイン】このベースをレストにする：〔学園〕の味方のユニットがいるなら、相手のユニット1つを選ぶ。このターン中、それをAP-1する。",宇宙,"〔学園〕 〔拠点〕",-,-,5,"Newtype Rising [GD01]",GD01-130.webp
+GD02-001,サイコ・ガンダム,LR,GD02,6,4,Blue,UNIT,"《突破3》(アタックで相手のユニットを破壊したとき、その相手のシールドエリアの先頭のカード1枚に指定の数ダメージを与える)
+【セット中・〔強化人間〕のパイロット】〔ティターンズ〕の自分のユニットがダメージで相手のシールドエリアのカードを破壊したとき、このユニットを2回復する。","宇宙 地球",〔ティターンズ〕,「フォウ・ムラサメ」,4,5,"Dual Impact [GD02]",GD02-001.webp
+GD02-002,ガンダムエピオン,LR,GD02,8,7,Blue,UNIT,【リンク中】【ターン1回】自分のターン中、自分のユニットがバトルダメージで相手のユニットを破壊したとき、このユニットをアクティブにする。,"宇宙 地球",〔ホワイトファング〕,「ゼクス・マーキス」,6,6,"Dual Impact [GD02]",GD02-002.webp
+GD02-003,ガンダムMk-II（ティターンズ仕様）,R,GD02,4,3,Blue,UNIT,【セット中・Lv.3以下のパイロット】【破壊時】自分の手札のユニットカード1枚を捨ててもよい。そうしたなら、このユニットにセットされていたカードを手札に戻す。,"宇宙 地球",〔ティターンズ〕,特徴〔ティターンズ〕,4,2,"Dual Impact [GD02]",GD02-003.webp
+GD02-004,バイアラン,R,GD02,5,3,Blue,UNIT,【セット時】レストのHP3以下の相手のユニット1つを選ぶ。それは次の相手のターンのスタートフェイズでアクティブにならない。,"宇宙 地球",〔ティターンズ〕,「ジェリド・メサ」,4,3,"Dual Impact [GD02]",GD02-004.webp
+GD02-005,トールギス,R,GD02,4,3,Blue,UNIT,【リンク中】【アタック時】HP2以下の相手のユニット1つを選ぶ。それをレストにする。,"宇宙 地球",〔OZ〕,特徴〔OZ〕,3,4,"Dual Impact [GD02]",GD02-005.webp
+GD02-006,フォビドゥンガンダム,R,GD02,5,3,Blue,UNIT,"《ブロッカー》(レストにすることでアタック先をこのユニットにする)
+自分のターン中、このユニットはLv.2以下の相手のユニットからバトルダメージを受けない。","宇宙 地球",〔地球連合〕,特徴〔生体CPU〕,4,4,"Dual Impact [GD02]",GD02-006.webp
+GD02-007,サイコ・ガンダム（MA形態）,U,GD02,5,3,Blue,UNIT,《リペア2》(自分のターン終了時、このユニットを指定の数回復する),"宇宙 地球",〔ティターンズ〕,特徴〔強化人間〕,3,4,"Dual Impact [GD02]",GD02-007.webp
+GD02-008,ガブスレイ,U,GD02,4,3,Blue,UNIT,【リンク時】レストの相手のユニット1つを選ぶ。それに1ダメージを与える。,"宇宙 地球",〔ティターンズ〕,特徴〔ティターンズ〕,4,3,"Dual Impact [GD02]",GD02-008.webp
+GD02-009,カラミティガンダム,U,GD02,5,3,Blue,UNIT,【ターン1回】このユニットのAPが相手の効果で減少したとき、レストの相手のユニット1つを選ぶ。それに2ダメージを与える。,"宇宙 地球",〔地球連合〕,特徴〔生体CPU〕,3,5,"Dual Impact [GD02]",GD02-009.webp
+GD02-010,レイダーガンダム,U,GD02,5,3,Blue,UNIT,【ターン1回】このユニットが相手の効果ダメージを受けたとき、自分は1枚ドローする。,"宇宙 地球",〔地球連合〕,特徴〔生体CPU〕,4,4,"Dual Impact [GD02]",GD02-010.webp
+GD02-011,メビウス（ピースメーカー隊）,U,GD02,4,2,Blue,UNIT,【起動・アクション】このユニットを破壊する：このユニットとバトルしている、相手のベース1つ/相手のシールド1つに6ダメージを与える。,宇宙,〔地球連合〕,-,-,1,"Dual Impact [GD02]",GD02-011.webp
+GD02-012,コア・ブースター,C,GD02,2,2,Blue,UNIT,-,"宇宙 地球","〔地球連邦〕 〔WB隊〕",特徴〔WB隊〕,2,2,"Dual Impact [GD02]",GD02-012.webp
+GD02-013,ハイザック,C,GD02,2,1,Blue,UNIT,-,"宇宙 地球",〔ティターンズ〕,-,2,2,"Dual Impact [GD02]",GD02-013.webp
+GD02-014,ガルバルディβ,C,GD02,2,2,Blue,UNIT,【配備時】〔ティターンズ〕の自分のユニット1つを選ぶ。このターン中、それをAP+1する。,"宇宙 地球",〔ティターンズ〕,-,3,1,"Dual Impact [GD02]",GD02-014.webp
+GD02-015,マラサイ,C,GD02,3,2,Blue,UNIT,-,"宇宙 地球",〔ティターンズ〕,特徴〔ティターンズ〕,3,3,"Dual Impact [GD02]",GD02-015.webp
+GD02-016,バーザム,C,GD02,3,2,Blue,UNIT,【配備時】〔ティターンズ〕の自分のユニット1つを選ぶ。このターン中、それをAP+1する。,"宇宙 地球",〔ティターンズ〕,-,3,2,"Dual Impact [GD02]",GD02-016.webp
+GD02-017,デルタプラス（ウェイブライダー形態）,C,GD02,3,2,Blue,UNIT,《リペア2》(自分のターン終了時、このユニットを指定の数回復する),"宇宙 地球",〔地球連邦〕,「リディ・マーセナス」,2,3,"Dual Impact [GD02]",GD02-017.webp
+GD02-018,トーラス,C,GD02,2,2,Blue,UNIT,このユニットは、相手プレイヤーをアタック先に選べない。,"宇宙 地球",〔OZ〕,-,3,3,"Dual Impact [GD02]",GD02-018.webp
+GD02-019,レイダーガンダム（MA形態）,C,GD02,4,2,Blue,UNIT,-,"宇宙 地球",〔地球連合〕,特徴〔生体CPU〕,4,3,"Dual Impact [GD02]",GD02-019.webp
+GD02-020,エルメス,LR,GD02,6,5,Green,UNIT,"【配備時】自分のデッキを上から5枚見て、その中の緑の〔ジオン〕のパイロットカード1枚を公開して手札に加えてもよい。残ったカードは無作為に下に戻す。
+【リンク中】このユニットをAP+2する。",宇宙,〔ジオン〕,「ララァ・スン」,4,4,"Dual Impact [GD02]",GD02-020.webp
+GD02-021,"ガンダムAGE-1 ノーマル",LR,GD02,3,2,Green,UNIT,【配備時】自分の手札の緑の〔地球連邦〕のユニットカード1枚を捨ててもよい。そうしたなら、自分はEXリソース1つを置く。その後、自分がLv.7以上なら、自分は1枚ドローする。,"宇宙 地球","〔地球連邦〕 〔AGEシステム〕",特徴〔アスノ家〕,2,2,"Dual Impact [GD02]",GD02-021.webp
+GD02-022,Gエグゼス,R,GD02,3,2,Green,UNIT,"【ターン1回】自分のEXリソースが置かれたとき、〔AGEシステム〕の自分のユニット1つを選ぶ。このターン中、それは《突破2》を得る。
+
+(アタックで相手のユニットを破壊したとき、その相手のシールドエリアの先頭のカード1枚に指定の数ダメージを与える)","宇宙 地球",〔地球連邦〕,「ウルフ・エニアクル」,2,3,"Dual Impact [GD02]",GD02-022.webp
+GD02-023,"ガンダムAGE-1 スパロー",R,GD02,4,3,Green,UNIT,"【リンク中】自分がLv.7以上の間、このユニットは《先制攻撃》を得る。
+
+(アタック中のこのユニットは、相手より先にダメージを与える)","宇宙 地球","〔地球連邦〕 〔AGEシステム〕",「フリット・アスノ」,3,4,"Dual Impact [GD02]",GD02-023.webp
+GD02-024,赤いガンダム,R,GD02,5,3,Green,UNIT,"【リンク中】このユニットは《高機動》を得る。
+
+(このユニットはブロックされない)","宇宙 地球",〔クラン〕,特徴〔クラン〕,4,4,"Dual Impact [GD02]",GD02-024.webp
+GD02-025,ガンダムヘビーアームズ,U,GD02,4,3,Green,UNIT,【配備時】自分のデッキを上から1枚見て、上か下に戻す。,地球,〔オペレーション・メテオ〕,特徴〔オペレーション・メテオ〕,3,4,"Dual Impact [GD02]",GD02-025.webp
+GD02-026,ジェノアスカスタム,U,GD02,2,2,Green,UNIT,【配備時】自分がLv.7以上なら、〔AGEシステム〕の自分のユニット1つを選ぶ。このターン中、それをAP+2する。,"宇宙 地球",〔地球連邦〕,「ウルフ・エニアクル」,2,2,"Dual Impact [GD02]",GD02-026.webp
+GD02-027,"ガンダムAGE-1 タイタス",U,GD02,7,4,Green,UNIT,《突破3》(アタックで相手のユニットを破壊したとき、その相手のシールドエリアの先頭のカード1枚に指定の数ダメージを与える),"宇宙 地球","〔地球連邦〕 〔AGEシステム〕",「フリット・アスノ」,5,5,"Dual Impact [GD02]",GD02-027.webp
+GD02-028,マグアナック（アブドル機）,C,GD02,3,2,Green,UNIT,-,"宇宙 地球",〔マグアナック隊〕,特徴〔マグアナック隊〕,3,3,"Dual Impact [GD02]",GD02-028.webp
+GD02-029,"ガンダムAGE-1 ノーマル",C,GD02,3,2,Green,UNIT,-,"宇宙 地球","〔地球連邦〕 〔AGEシステム〕",特徴〔アスノ家〕,3,3,"Dual Impact [GD02]",GD02-029.webp
+GD02-030,ジェノアス,C,GD02,1,1,Green,UNIT,-,"宇宙 地球",〔地球連邦〕,-,1,2,"Dual Impact [GD02]",GD02-030.webp
+GD02-031,"ガンダムAGE-1 タイタス",C,GD02,4,2,Green,UNIT,自分がLv.7以上の間、このユニットをAP+2する。,"宇宙 地球","〔地球連邦〕 〔AGEシステム〕",「フリット・アスノ」,2,4,"Dual Impact [GD02]",GD02-031.webp
+GD02-032,白いガンダム,C,GD02,3,2,Green,UNIT,-,"宇宙 地球",〔ジオン〕,「シャア・アズナブル」,3,3,"Dual Impact [GD02]",GD02-032.webp
+GD02-033,キケロガ（MA形態）（GQ）,C,GD02,5,4,Green,UNIT,"このユニット以外の、〔ジオン〕の味方のリンクユニットがいる間、これは《突破5》を得る。
+
+(アタックで相手のユニットを破壊したとき、その相手のシールドエリアの先頭のカード1枚に指定の数ダメージを与える)",宇宙,〔ジオン〕,「シャリア・ブル」,3,4,"Dual Impact [GD02]",GD02-033.webp
+GD02-034,GQuuuuuuX,C,GD02,2,1,Green,UNIT,【セット中・赤のパイロット】このユニットをAP+2する。,"宇宙 地球",〔ジオン〕,-,-,3,"Dual Impact [GD02]",GD02-034.webp
+GD02-035,"軍警ザク 特殊部隊仕様",C,GD02,2,1,Green,UNIT,このユニットは、相手プレイヤーをアタック先に選べない。,"宇宙 地球",〔サイド6〕,-,2,3,"Dual Impact [GD02]",GD02-035.webp
+GD02-036,キュベレイ,LR,GD02,7,5,Red,UNIT,"【リンク時】このターン中、このユニットは《制圧》を得る。
+
+(アタックでシールドに与えるダメージは、先頭から2つに同時に与えられる)
+【セット中・〔ネオ・ジオン〕のパイロット】【アタック時】ダメージを受けている相手のユニット1つを選ぶ。それに2ダメージを与える。","宇宙 地球",〔ネオ・ジオン〕,「ハマーン・カーン」,5,5,"Dual Impact [GD02]",GD02-036.webp
+GD02-037,ガンダムヴァサーゴ,LR,GD02,5,4,Red,UNIT,"《突破1》(アタックで相手のユニットを破壊したとき、その相手のシールドエリアの先頭のカード1枚に指定の数ダメージを与える)
+【配備時】相手のシールドが3つ以下なら、AP5以下の相手のユニット1つを選ぶ。それに2ダメージを与える。","宇宙 地球",〔新連邦〕,「シャギア・フロスト」,4,4,"Dual Impact [GD02]",GD02-037.webp
+GD02-038,GQuuuuuuX（オメガ・サイコミュ起動時）,LR,GD02,7,5,Red,UNIT,【配備時】自分のデッキを上から3枚見て、その中のLv.4以下の〔クラン〕のユニットカード1枚を配備してもよい。残ったカードは無作為に下に戻す。,"宇宙 地球",〔クラン〕,「アマテ・ユズリハ（マチュ）」,5,4,"Dual Impact [GD02]",GD02-038.webp
+GD02-039,ガザC（ハマーン・カーン専用機）,R,GD02,3,2,Red,UNIT,【セット時】Lv.3以下の相手のユニット1つを選ぶ。それに1ダメージを与える。,"宇宙 地球",〔ネオ・ジオン〕,「ハマーン・カーン」,2,3,"Dual Impact [GD02]",GD02-039.webp
+GD02-040,ガンダムアシュタロン,R,GD02,4,3,Red,UNIT,"【起動・メイン】《援護2》(レストにすることで、このターン中、他の味方のユニット1つをAP+(指定の数)する)
+【配備時】このユニット以外の、〔新連邦〕の自分のユニット1つを選ぶ。このターン中、それはHP2以下の相手のユニットからバトルダメージを受けない。","宇宙 地球",〔新連邦〕,特徴〔新連邦〕,3,3,"Dual Impact [GD02]",GD02-040.webp
+GD02-041,"ゲルググ スガイ機（GQ）",R,GD02,4,4,Red,UNIT,【配備時】Lv.5以上の相手のユニット1つを選ぶ。それに2ダメージを与える。,"宇宙 地球",〔クラン〕,「シイコ・スガイ」,3,3,"Dual Impact [GD02]",GD02-041.webp
+GD02-042,ガンダムアシュタロン（MA形態）,U,GD02,3,2,Red,UNIT,"【配備時】〔新連邦〕の自分のユニット1つを選ぶ。このターン中、それは《高機動》を得る。
+
+(このユニットはブロックされない)","宇宙 地球",〔新連邦〕,「オルバ・フロスト」,3,2,"Dual Impact [GD02]",GD02-042.webp
+GD02-043,ドートレス・ウェポン,U,GD02,2,2,Red,UNIT,【配備時】このユニット以外の、〔新連邦〕の自分のユニットがいるなら、「ドートレス」(〔新連邦〕・AP0・HP1)のユニットトークン1つをレストで配備する。,"宇宙 地球",〔新連邦〕,-,2,1,"Dual Impact [GD02]",GD02-043.webp
+GD02-044,ドートレス・コマンド,U,GD02,2,2,Red,UNIT,【破壊時】このユニット以外の、〔新連邦〕の自分のユニットがいるなら、「ドートレス」(〔新連邦〕・AP0・HP1)のユニットトークン1つをレストで配備する。,"宇宙 地球",〔新連邦〕,-,3,1,"Dual Impact [GD02]",GD02-044.webp
+GD02-045,長距離強行偵察複座型ジン,U,GD02,2,2,Red,UNIT,【アタック時】このユニットがAP5以上で、相手のユニットにアタックしているなら、自分は1枚ドローする。,"宇宙 地球",〔ザフト〕,-,1,1,"Dual Impact [GD02]",GD02-045.webp
+GD02-046,セイラ専用軽キャノン,U,GD02,4,2,Red,UNIT,【配備時】相手のユニットトークン1つを選ぶ。それに2ダメージを与える。,"宇宙 地球",〔地球連邦〕,「セイラ・マス」,3,4,"Dual Impact [GD02]",GD02-046.webp
+GD02-047,ガザC,C,GD02,1,1,Red,UNIT,【起動・メイン】このユニットをレストにする：これを破壊し、Lv.5以下の相手のユニット1つを選ぶ。それに1ダメージを与える。,"宇宙 地球",〔ネオ・ジオン〕,-,-,1,"Dual Impact [GD02]",GD02-047.webp
+GD02-048,ザクⅢ（袖付き仕様）,C,GD02,3,2,Red,UNIT,-,"宇宙 地球",〔ネオ・ジオン〕,特徴〔ネオ・ジオン〕,4,1,"Dual Impact [GD02]",GD02-048.webp
+GD02-049,ドートレス,C,GD02,1,1,Red,UNIT,【起動・メイン】《援護1》(レストにすることで、このターン中、他の味方のユニット1つをAP+(指定の数)する),"宇宙 地球",〔新連邦〕,-,1,1,"Dual Impact [GD02]",GD02-049.webp
+GD02-050,ガ・ゾウム（袖付き仕様）,C,GD02,2,2,Red,UNIT,-,"宇宙 地球",〔ネオ・ジオン〕,-,3,2,"Dual Impact [GD02]",GD02-050.webp
+GD02-051,01ガンダム,C,GD02,2,2,Red,UNIT,-,"宇宙 地球",〔地球連邦〕,-,2,3,"Dual Impact [GD02]",GD02-051.webp
+GD02-052,ガンキャノン（GQ）,C,GD02,2,2,Red,UNIT,-,"宇宙 地球",〔地球連邦〕,-,3,2,"Dual Impact [GD02]",GD02-052.webp
+GD02-053,ガンダムX,LR,GD02,7,5,Purple,UNIT,"《制圧》(アタックでシールドに与えるダメージは、先頭から2つに同時に与えられる)
+【リンク中】自分のターン中、自分のトラッシュにカードが7枚以上ある間、このユニット以外の、〔バルチャー〕の自分のユニットすべてをAP+2する。","宇宙 地球",〔バルチャー〕,「ガロード・ラン」,6,5,"Dual Impact [GD02]",GD02-053.webp
+GD02-054,ガンダム・バルバトス（第1形態）,LR,GD02,3,2,Purple,UNIT,【アタック時】このユニットがダメージを受けているなら、自分は1枚ドローする。,"宇宙 地球","〔鉄華団〕 〔ガンダム・フレーム〕",「三日月・オーガス」,3,2,"Dual Impact [GD02]",GD02-054.webp
+GD02-055,ガンダム・グシオンリベイク,LR,GD02,5,4,Purple,UNIT,"《ブロッカー》(レストにすることでアタック先をこのユニットにする)
+【配備時】自分のユニット1つと、相手のユニット1つを選ぶ。それらに1ダメージを与える。","宇宙 地球","〔鉄華団〕 〔ガンダム・フレーム〕",「昭弘・アルトランド」,3,5,"Dual Impact [GD02]",GD02-055.webp
+GD02-056,ガンダムX,R,GD02,4,3,Purple,UNIT,【セット中・〔バルチャー〕のパイロット】【破壊時】自分のトラッシュのLv.5以上の〔バルチャー〕のユニットカード1枚を選ぶ。それを手札に加える。,"宇宙 地球",〔バルチャー〕,「ガロード・ラン」,3,4,"Dual Impact [GD02]",GD02-056.webp
+GD02-057,ゼダス,R,GD02,5,3,Purple,UNIT,【セット中】【アタック時】このユニット以外の、自分のユニット1つを選んでもよい。それを破壊する。そうしたなら、Lv.4以下の相手のユニット1つを選ぶ。それに2ダメージを与える。,"宇宙 地球","〔UE〕 〔ヴェイガン〕",「デシル・ガレット」,5,3,"Dual Impact [GD02]",GD02-057.webp
+GD02-058,流星号（グレイズ改弐）,R,GD02,3,2,Purple,UNIT,【配備時】自分のユニット1つを選ぶ。それに1ダメージを与える。そうしたなら、自分は1枚ドローする。その後、自分の手札1枚を捨てる。,"宇宙 地球",〔鉄華団〕,特徴〔鉄華団〕,2,2,"Dual Impact [GD02]",GD02-058.webp
+GD02-059,ガンダムエアマスター,U,GD02,4,3,Purple,UNIT,《ブロッカー》(レストにすることでアタック先をこのユニットにする),"宇宙 地球",〔バルチャー〕,特徴〔バルチャー〕,4,3,"Dual Impact [GD02]",GD02-059.webp
+GD02-060,ガンダムレオパルド,U,GD02,5,4,Purple,UNIT,【配備時】自分のトラッシュにカードが7枚以上あるなら、Lv.4以下の相手のユニット1つを選ぶ。それをレストにする。,"宇宙 地球",〔バルチャー〕,「ロアビィ・ロイ」,4,4,"Dual Impact [GD02]",GD02-060.webp
+GD02-061,百里,U,GD02,4,2,Purple,UNIT,【セット時・紫のパイロット】自分のトラッシュに〔テイワズ〕/〔鉄華団〕のカードが3枚以上あるなら、AP3以下の相手のユニット1つを選ぶ。それをレストにする。,宇宙,〔テイワズ〕,特徴〔テイワズ〕,3,3,"Dual Impact [GD02]",GD02-061.webp
+GD02-062,百錬（アミダ機）,U,GD02,4,2,Purple,UNIT,-,"宇宙 地球",〔テイワズ〕,特徴〔テイワズ〕,3,4,"Dual Impact [GD02]",GD02-062.webp
+GD02-063,ガンダムエアマスター（ファイターモード）,C,GD02,3,2,Purple,UNIT,-,"宇宙 地球",〔バルチャー〕,特徴〔バルチャー〕,3,3,"Dual Impact [GD02]",GD02-063.webp
+GD02-064,ガンダムレオパルド,C,GD02,5,4,Purple,UNIT,自分のターン中、自分のトラッシュにカードが7枚以上ある間、このユニットは相手のコマンドから効果ダメージを受けない。,地球,〔バルチャー〕,特徴〔バルチャー〕,4,4,"Dual Impact [GD02]",GD02-064.webp
+GD02-065,ジェニス改,C,GD02,1,1,Purple,UNIT,-,地球,〔バルチャー〕,-,1,2,"Dual Impact [GD02]",GD02-065.webp
+GD02-066,ガフラン,C,GD02,2,1,Purple,UNIT,このユニットは相手プレイヤーをアタック先に選べない。,"宇宙 地球","〔UE〕 〔ヴェイガン〕",-,2,3,"Dual Impact [GD02]",GD02-066.webp
+GD02-067,バクト,C,GD02,2,2,Purple,UNIT,-,"宇宙 地球","〔UE〕 〔ヴェイガン〕",-,2,3,"Dual Impact [GD02]",GD02-067.webp
+GD02-068,ガンダム・バルバトス（第3形態）,C,GD02,4,2,Purple,UNIT,【配備時】このユニットに2ダメージを与える。,"宇宙 地球","〔鉄華団〕 〔ガンダム・フレーム〕",特徴〔鉄華団〕,3,5,"Dual Impact [GD02]",GD02-068.webp
+GD02-069,Ζガンダム,LR,GD02,6,5,White,UNIT,【リンク中】【起動・メイン】【ターン1回】アクティブの味方のベース1つを選ぶ。それをレストにする。そうしたなら、このユニットをアクティブにし、このターン中、これは相手プレイヤーをアタック先に選べない。,"宇宙 地球",〔エゥーゴ〕,「カミーユ・ビダン」,5,4,"Dual Impact [GD02]",GD02-069.webp
+GD02-070,ガンダム・キマリス,LR,GD02,5,4,White,UNIT,【配備時】自分のトラッシュに〔ギャラルホルン〕のカードが4枚以上あるなら、自分は2枚ドローする。そうしたなら、自分の手札2枚を捨てる。,"宇宙 地球","〔ギャラルホルン〕 〔ガンダム・フレーム〕",「ガエリオ・ボードウィン」,4,4,"Dual Impact [GD02]",GD02-070.webp
+GD02-071,ガンダムMk-II（エゥーゴ仕様）,R,GD02,4,3,White,UNIT,【配備時】白の味方のベースがあるなら、自分の手札の〔エゥーゴ〕のパイロットカード1枚をこのユニットにセットしてもよい。,"宇宙 地球",〔エゥーゴ〕,特徴〔エゥーゴ〕,3,4,"Dual Impact [GD02]",GD02-071.webp
+GD02-072,百式,R,GD02,5,3,White,UNIT,"《ブロッカー》(レストにすることでアタック先をこのユニットにする)
+白の味方のベースがある間、このユニットは《リペア1》を得る。
+
+(自分のターン終了時、このユニットを指定の数回復する)","宇宙 地球",〔エゥーゴ〕,「クワトロ・バジーナ」,4,4,"Dual Impact [GD02]",GD02-072.webp
+GD02-073,グレイズリッター（カルタ機／地上戦仕様）,R,GD02,4,3,White,UNIT,"相手のターン中、このユニットとバトルしている相手のユニットは《先制攻撃》を得る。
+
+(アタック中のこのユニットは、相手より先にダメージを与える)",地球,〔ギャラルホルン〕,「カルタ・イシュー」,5,4,"Dual Impact [GD02]",GD02-073.webp
+GD02-074,ガンダム・エアリアル（改修型）,R,GD02,7,5,White,UNIT,"《高機動》(このユニットはブロックされない)
+【セット中】自分のトラッシュにコマンドカードが4枚以上ある間、このユニットは《ブロッカー》を得る。
+
+(レストにすることでアタック先をこのユニットにする)","宇宙 地球",〔学園〕,「スレッタ・マーキュリー」,5,5,"Dual Impact [GD02]",GD02-074.webp
+GD02-075,リック・ディアス（赤）,U,GD02,4,3,White,UNIT,【アタック時】アクティブの味方のベース1つを選ぶ。それをレストにする。そうしたなら、Lv.4以下の相手のユニット1つを選ぶ。このバトル中、それをAP-2する。,"宇宙 地球",〔エゥーゴ〕,特徴〔エゥーゴ〕,4,3,"Dual Impact [GD02]",GD02-075.webp
+GD02-076,バスターガンダム,U,GD02,4,3,White,UNIT,"このユニットがAP5以上の間、これは《ブロッカー》を得る。
+
+(レストにすることでアタック先をこのユニットにする)","宇宙 地球",〔三隻同盟〕,特徴〔コーディネイター〕,4,3,"Dual Impact [GD02]",GD02-076.webp
+GD02-077,シュヴァルベ・グレイズ（アイン機）,U,GD02,4,2,White,UNIT,-,"宇宙 地球",〔ギャラルホルン〕,特徴〔ギャラルホルン〕,4,3,"Dual Impact [GD02]",GD02-077.webp
+GD02-078,ガンダム・ファラクト,U,GD02,5,3,White,UNIT,-,"宇宙 地球",〔学園〕,「エラン・ケレス」,5,4,"Dual Impact [GD02]",GD02-078.webp
+GD02-079,リック・ディアス,C,GD02,3,2,White,UNIT,《ブロッカー》(レストにすることでアタック先をこのユニットにする),"宇宙 地球",〔エゥーゴ〕,-,3,3,"Dual Impact [GD02]",GD02-079.webp
+GD02-080,ネモ,C,GD02,2,1,White,UNIT,-,"宇宙 地球",〔エゥーゴ〕,-,2,2,"Dual Impact [GD02]",GD02-080.webp
+GD02-081,メタス,C,GD02,2,2,White,UNIT,【配備時】白の味方のベースがあるなら、相手のユニット1つを選ぶ。このターン中、それをAP-2する。,"宇宙 地球",〔エゥーゴ〕,「ファ・ユイリィ」,1,1,"Dual Impact [GD02]",GD02-081.webp
+GD02-082,シュヴァルベ・グレイズ（ガエリオ機）,C,GD02,3,2,White,UNIT,"このユニット以外の、〔ギャラルホルン〕の自分のユニットがいる間、これは《ブロッカー》を得る。
+
+(レストにすることでアタック先をこのユニットにする)","宇宙 地球",〔ギャラルホルン〕,「ガエリオ・ボードウィン」,3,3,"Dual Impact [GD02]",GD02-082.webp
+GD02-083,グレイズリッター（地上戦仕様）,C,GD02,3,2,White,UNIT,【破壊時】相手のターンなら、〔ギャラルホルン〕の自分のユニット1つを選ぶ。それをアクティブにする。,地球,〔ギャラルホルン〕,-,3,2,"Dual Impact [GD02]",GD02-083.webp
+GD02-084,"ディランザ ラウダ専用機",C,GD02,2,2,White,UNIT,-,"宇宙 地球",〔学園〕,特徴〔学園〕,1,3,"Dual Impact [GD02]",GD02-084.webp
+GD02-085,フォウ・ムラサメ,R,GD02,5,1,Blue,PILOT,"【バースト】このカードを手札に加える。
+【リンク中】【ターン1回】自分のターン中、このユニットが回復したとき、自分の手札が4枚以下なら、自分は1枚ドローする。",-,"〔ティターンズ〕 〔強化人間〕",-,+2,+1,"Dual Impact [GD02]",GD02-085.webp
+GD02-086,ジェリド・メサ,U,GD02,3,1,Blue,PILOT,"【バースト】このカードを手札に加える。
+このユニット以外の、〔ティターンズ〕の自分のユニットがいる間、これをAP+1する。",-,〔ティターンズ〕,-,+1,+1,"Dual Impact [GD02]",GD02-086.webp
+GD02-087,オルガ＆クロト＆シャニ,C,GD02,5,1,Blue,PILOT,"【バースト】このカードを手札に加える。
+【リンク時】このユニットが青なら、《ブロッカー》を持つ相手のユニット1つを選ぶ。それをレストにする。",-,"〔地球連合〕 〔生体CPU〕",-,+2,+1,"Dual Impact [GD02]",GD02-087.webp
+GD02-088,フリット・アスノ,R,GD02,3,1,Green,PILOT,"【バースト】このカードを手札に加える。
+【リンク時】自分のデッキを上から3枚見て、その中の、緑の〔地球連邦〕のユニットカード1枚/カード名に「AGEデバイス」を含むカード1枚を公開して手札に加えてもよい。残ったカードは無作為に下に戻す。",-,"〔地球連邦〕 〔アスノ家〕 〔Xラウンダー〕",-,+1,+1,"Dual Impact [GD02]",GD02-088.webp
+GD02-089,ララァ・スン,U,GD02,3,1,Green,PILOT,"【バースト】このカードを手札に加える。
+【セット時】このユニット以外の、〔ジオン〕の自分のリンクユニット1つを選ぶ。このターン中、それは《突破1》を得る。
+
+(アタックで相手のユニットを破壊したとき、その相手のシールドエリアの先頭のカード1枚に指定の数ダメージを与える)",-,"〔ジオン〕 〔ニュータイプ〕",-,+1,+1,"Dual Impact [GD02]",GD02-089.webp
+GD02-090,シャリア・ブル（GQ）,C,GD02,5,1,Green,PILOT,"【バースト】このカードを手札に加える。
+このユニット以外の、《高機動》を持つ自分のユニットがいる間、これをAP+1する。",-,"〔ジオン〕 〔ニュータイプ〕",-,+1,+2,"Dual Impact [GD02]",GD02-090.webp
+GD02-091,ハマーン・カーン,R,GD02,5,1,Red,PILOT,"【バースト】このカードを手札に加える。
+【セット時】このユニットが赤なら、これのLv.以下の相手のユニット1つを選ぶ。それに1ダメージを与える。",-,"〔ネオ・ジオン〕 〔ニュータイプ〕",-,+2,+1,"Dual Impact [GD02]",GD02-091.webp
+GD02-092,シャギア・フロスト,U,GD02,4,1,Red,PILOT,"【バースト】このカードを手札に加える。
+【リンク中】【アタック時】〔新連邦〕の自分のユニット1つを選ぶ。このターン中、それをAP+2する。",-,〔新連邦〕,-,+1,+2,"Dual Impact [GD02]",GD02-092.webp
+GD02-093,オルバ・フロスト,C,GD02,3,1,Red,PILOT,"【バースト】このカードを手札に加える。
+自分のターン中、このユニットがバトルダメージで〔ニュータイプ〕のパイロットがセットされている相手のユニットを破壊したとき、自分は1枚ドローする。",-,〔新連邦〕,-,+1,+1,"Dual Impact [GD02]",GD02-093.webp
+GD02-094,ガロード・ラン＆ティファ・アディール,R,GD02,4,1,Purple,PILOT,"【バースト】このカードを手札に加える。
+【セット時】自分の手札1枚を捨ててもよい。そうしたなら、自分のデッキを上から3枚見て、その中の〔バルチャー〕のユニットカード1枚を公開して手札に加えてもよい。残ったカードは無作為に下に戻す。",-,"〔バルチャー〕 〔ニュータイプ〕",-,+1,+2,"Dual Impact [GD02]",GD02-094.webp
+GD02-095,ラフタ・フランクランド,U,GD02,4,1,Purple,PILOT,"【バースト】このカードを手札に加える。
+【アタック時】このユニットがダメージを受けていてLv.5以下なら、このバトル中、これは《高機動》を得る。
+
+(このユニットはブロックされない)",-,〔テイワズ〕,-,+2,+1,"Dual Impact [GD02]",GD02-095.webp
+GD02-096,デシル・ガレット,C,GD02,4,1,Purple,PILOT,"【バースト】このカードを手札に加える。
+【リンク時】自分のトラッシュのLv.2以下の〔ヴェイガン〕のユニットカード1枚を選んでもよい。それをコストを支払って配備する。",-,"〔ヴェイガン〕 〔Xラウンダー〕",-,+2,+1,"Dual Impact [GD02]",GD02-096.webp
+GD02-097,カミーユ・ビダン,R,GD02,5,1,White,PILOT,"【バースト】このカードを手札に加える。
+白の味方のベースがある間、このユニットをAP+2する。",-,"〔エゥーゴ〕 〔ニュータイプ〕",-,+1,+2,"Dual Impact [GD02]",GD02-097.webp
+GD02-098,クワトロ・バジーナ,U,GD02,4,1,White,PILOT,"このカードのカード名は「シャア・アズナブル」としても扱う。
+
+【バースト】このカードを手札に加える。
+【リンク時】このユニットが〔エゥーゴ〕なら、自分は1枚ドローする。そうしたなら、自分の手札1枚を捨てる。",-,"〔エゥーゴ〕 〔ニュータイプ〕",-,+1,+2,"Dual Impact [GD02]",GD02-098.webp
+GD02-099,ガエリオ・ボードウィン,C,GD02,3,1,White,PILOT,"【バースト】このカードを手札に加える。
+【セット時】自分のトラッシュに〔ギャラルホルン〕のカードが4枚以上あるなら、相手のユニット1つを選ぶ。このターン中、それをAP-2する。",-,〔ギャラルホルン〕,-,+1,+1,"Dual Impact [GD02]",GD02-099.webp
+GD02-100,逆転の一手,R,GD02,5,2,Blue,COMMAND,"【バースト】自分は1枚ドローする。
+【メイン】ダメージを受けている味方のユニット1つを選ぶ。それを2回復する。その後、自分は1枚ドローする。",-,-,-,-,-,"Dual Impact [GD02]",GD02-100.webp
+GD02-101,仮面の下,U,GD02,1,1,Blue,COMMAND,【メイン】/【アクション】Lv.2以下の相手のユニット1～2つを選ぶ。それらをレストにする。,-,-,-,-,-,"Dual Impact [GD02]",GD02-101.webp
+GD02-102,マウアーの信念,C,GD02,2,1,Blue,COMMAND,"【メイン】/【アクション】〔ティターンズ〕の味方のユニット1つを選ぶ。このターン中、それをAP+2する。
+【パイロット】「マウアー・ファラオ」",-,〔ティターンズ〕,-,+1,+0,"Dual Impact [GD02]",GD02-102.webp
+GD02-103,AGEデバイス,R,GD02,4,2,Green,COMMAND,"【バースト】自分のトラッシュの〔アスノ家〕のパイロットカード1枚を選ぶ。それを手札に加える。
+【メイン】〔AGEシステム〕の自分のユニットがいるなら、自分はEXリソース1つを置く。",-,-,-,-,-,"Dual Impact [GD02]",GD02-103.webp
+GD02-104,歴史の分岐点,U,GD02,1,1,Green,COMMAND,【メイン】自分のデッキを上から3枚見て、その中のカード1枚を上に戻す。残ったカードは無作為に下に戻す。その後、〔ニュータイプ〕の自分のパイロットがいるなら、自分は1枚ドローする。,-,-,-,-,-,"Dual Impact [GD02]",GD02-104.webp
+GD02-105,首席卒業生,U,GD02,2,1,Green,COMMAND,"【アクション】自分のユニットトークン1つを選ぶ。このバトル中、それは相手のユニットからバトルダメージを受けない。
+【パイロット】「エグザベ・オリベ」",-,"〔ジオン〕 〔ニュータイプ〕",-,+1,+0,"Dual Impact [GD02]",GD02-105.webp
+GD02-106,白い狼,C,GD02,3,1,Green,COMMAND,"【アクション】このバトル中、自分のシールドエリアのカードは、Lv.3以下の相手のユニットからダメージを受けない。
+【パイロット】「ウルフ・エニアクル」",-,〔地球連邦〕,-,+1,+0,"Dual Impact [GD02]",GD02-106.webp
+GD02-107,オールレンジ攻撃,R,GD02,4,2,Red,COMMAND,"【バースト】相手のユニット1つを選ぶ。それに1ダメージを与える。
+【メイン】リンクユニット以外の、相手のユニットすべてに1ダメージを与える。",-,-,-,-,-,"Dual Impact [GD02]",GD02-107.webp
+GD02-108,あっちの方が強そうじゃない？,U,GD02,3,1,Red,COMMAND,【メイン】〔クラン〕の味方のユニット1つを選ぶ。このターン中、それはアクティブのLv.4以下の相手のユニットをアタック先に選んでもよい。,-,-,-,-,-,"Dual Impact [GD02]",GD02-108.webp
+GD02-109,消えぬ執念,C,GD02,4,1,Red,COMMAND,"【メイン】/【アクション】相手のユニット1つを選ぶ。それに1ダメージを与える。
+【パイロット】「シイコ・スガイ」",-,"〔クラン〕 〔ニュータイプ〕",-,+1,+1,"Dual Impact [GD02]",GD02-109.webp
+GD02-110,目覚める力,R,GD02,6,2,Purple,COMMAND,【メイン】自分のトラッシュのLv.5以下のユニットカード1枚を選ぶ。それをコストを支払って配備する。,-,-,-,-,-,"Dual Impact [GD02]",GD02-110.webp
+GD02-111,決戦の切り札,R,GD02,5,4,Purple,COMMAND,"【バースト】Lv.3以下の相手のユニット1つを選ぶ。それに2ダメージを与える。
+【メイン】自分のトラッシュの紫のユニットカード6枚を選ぶ。それらをゲームから除外する。そうしたなら、相手のユニット1つを選ぶ。それを破壊する。",-,-,-,-,-,"Dual Impact [GD02]",GD02-111.webp
+GD02-112,憩いのひととき,R,GD02,4,3,Purple,COMMAND,"【バースト】自分は1枚ドローする。
+【メイン】自分のトラッシュの紫のパイロットカード1枚を選ぶ。それを手札に加える。",-,-,-,-,-,"Dual Impact [GD02]",GD02-112.webp
+GD02-113,姉御肌,U,GD02,4,2,Purple,COMMAND,"【メイン】/【アクション】〔テイワズ〕の味方のリンクユニットがいるなら、AP2以下の相手のユニット1つを選ぶ。それを破壊する。
+【パイロット】「アミダ・アルカ」",-,〔テイワズ〕,-,+1,+1,"Dual Impact [GD02]",GD02-113.webp
+GD02-114,その名は流星号,U,GD02,2,1,Purple,COMMAND,"【メイン】/【アクション】ダメージを受けている味方のユニット1つを選ぶ。このターン中、それをAP+2する。
+【パイロット】「ノルバ・シノ」",-,"〔鉄華団〕 〔阿頼耶識〕",-,+1,+0,"Dual Impact [GD02]",GD02-114.webp
+GD02-115,家族への想い,C,GD02,2,1,Purple,COMMAND,"【メイン】/【アクション】〔バルチャー〕の味方のユニット1つを選ぶ。このターン中、それをAP+2する。
+【パイロット】「ウィッツ・スー」",-,〔バルチャー〕,-,+0,+1,"Dual Impact [GD02]",GD02-115.webp
+GD02-116,仲間意識,C,GD02,3,1,Purple,COMMAND,"【メイン】自分のトラッシュにカードが7枚以上あるなら、〔バルチャー〕の味方のユニット1つを選ぶ。このターン中、それはアクティブのLv.4以下の相手のユニットをアタック先に選んでもよい。
+【パイロット】「ロアビィ・ロイ」",-,〔バルチャー〕,-,+1,+0,"Dual Impact [GD02]",GD02-116.webp
+GD02-117,新たな鼓動,R,GD02,4,3,White,COMMAND,"【バースト】自分のトラッシュの〔エゥーゴ〕のベースカード1枚を選ぶ。それを手札に加える。
+【メイン】自分は3枚ドローする。その後、自分の手札2枚を捨てる。",-,-,-,-,-,"Dual Impact [GD02]",GD02-117.webp
+GD02-118,仇討ちの決意,U,GD02,3,1,White,COMMAND,"【アクション】《ブロッカー》を持つ味方のユニットとバトルしている、HP4以下の相手のユニット1つを選ぶ。それを持ち主の手札に戻す。
+【パイロット】「アイン・ダルトン」",-,〔ギャラルホルン〕,-,+1,+0,"Dual Impact [GD02]",GD02-118.webp
+GD02-119,面壁九年・堅牢堅固,U,GD02,2,1,White,COMMAND,"【アクション】〔ギャラルホルン〕の自分のリンクユニットがいるなら、相手のユニット1つを選ぶ。このバトル中、それをAP-3する。
+【パイロット】「カルタ・イシュー」",-,〔ギャラルホルン〕,-,+1,+0,"Dual Impact [GD02]",GD02-119.webp
+GD02-120,パイロットへの志願,C,GD02,3,1,White,COMMAND,"【アクション】〔エゥーゴ〕の自分の、ユニット1つ/ベース1つを選ぶ。それを2回復する。
+【パイロット】「ファ・ユイリィ」",-,〔エゥーゴ〕,-,+0,+1,"Dual Impact [GD02]",GD02-120.webp
+GD02-121,ドミニオン,U,GD02,4,1,Blue,BASE,"【バースト】このカードを配備する。
+【配備時】自分のシールド1つを手札に加える。その後、青の味方のユニット1つを選ぶ。それを2回復する。","宇宙 地球","〔地球連合〕 〔艦船〕",-,-,5,"Dual Impact [GD02]",GD02-121.webp
+GD02-122,アレキサンドリア,C,GD02,3,2,Blue,BASE,"【バースト】このカードを配備する。
+【配備時】自分のシールド1つを手札に加える。その後、レストのLv.4以下の相手のユニット1つを選ぶ。それに1ダメージを与える。",宇宙,"〔ティターンズ〕 〔艦船〕",-,-,5,"Dual Impact [GD02]",GD02-122.webp
+GD02-123,ソドン,R,GD02,3,2,Green,BASE,"【バースト】このカードを配備する。
+【配備時】自分のシールド1つを手札に加える。その後、味方のユニットトークン1つを選ぶ。このターン中、それはアクティブのAP5以下の相手のユニットをアタック先に選んでもよい。","宇宙 地球","〔ジオン〕 〔艦船〕",-,-,5,"Dual Impact [GD02]",GD02-123.webp
+GD02-124,ディーヴァ,C,GD02,3,1,Green,BASE,"【バースト】このカードを配備する。
+【配備時】自分のシールド1つを手札に加える。
+
+自分のターン中、自分がLv.7以上の間、緑の〔地球連邦〕の味方のユニットすべてをAP+1する。","宇宙 地球","〔地球連邦〕 〔艦船〕",-,-,5,"Dual Impact [GD02]",GD02-124.webp
+GD02-125,グワダン,R,GD02,4,2,Red,BASE,"【バースト】このカードを配備する。
+【配備時】自分のシールド1つを手札に加える。その後、自分のターンなら、自分の手札の赤のカード1枚を捨ててもよい。そうしたなら、自分は1枚ドローする。",宇宙,"〔ネオ・ジオン〕 〔艦船〕",-,-,5,"Dual Impact [GD02]",GD02-125.webp
+GD02-126,シュウジの隠れ家,C,GD02,3,1,Red,BASE,"【バースト】このカードを配備する。
+【配備時】自分のシールド1つを手札に加える。
+
+【破壊時】Lv.4以下の相手のユニット1つを選ぶ。それに1ダメージを与える。",宇宙,"〔クラン〕 〔拠点〕",-,-,5,"Dual Impact [GD02]",GD02-126.webp
+GD02-127,フリーデン,U,GD02,2,1,Purple,BASE,"【バースト】このカードを配備する。
+【配備時】自分のシールド1つを手札に加える。
+
+【破壊時】自分のデッキを上から2枚、自分のトラッシュに置く。",地球,"〔バルチャー〕 〔艦船〕",-,-,5,"Dual Impact [GD02]",GD02-127.webp
+GD02-128,ハンマーヘッド,C,GD02,4,2,Purple,BASE,"【バースト】このカードを配備する。
+【配備時】自分のシールド1つを手札に加える。その後、自分のターンで、〔テイワズ〕の味方のリンクユニットがいるなら、AP2以下の相手のユニット1つを選ぶ。それを破壊する。",宇宙,"〔テイワズ〕 〔艦船〕",-,-,5,"Dual Impact [GD02]",GD02-128.webp
+GD02-129,アーガマ,R,GD02,3,1,White,BASE,"【バースト】このカードを配備する。
+【配備時】自分のシールド1つを手札に加える。
+
+このベースは相手から効果ダメージを受けない。","宇宙 地球","〔エゥーゴ〕 〔艦船〕",-,-,5,"Dual Impact [GD02]",GD02-129.webp
+GD02-130,スレイプニル,C,GD02,4,2,White,BASE,"【バースト】このカードを配備する。
+【配備時】自分のシールド1つを手札に加える。その後、〔ギャラルホルン〕の味方のユニットがいるなら、相手のユニット1つを選ぶ。このターン中、それをAP-2する。",宇宙,"〔ギャラルホルン〕 〔艦船〕",-,-,5,"Dual Impact [GD02]",GD02-130.webp
+T-001,ガンダム,C,T,-,-,-,"UNIT TOKEN",-,-,〔WB隊〕,-,3,3,"Heroic Beginnings [ST01]",T-001.webp
+T-002,ガンキャノン,C,T,-,-,-,"UNIT TOKEN",-,-,〔WB隊〕,-,2,2,"Heroic Beginnings [ST01]",T-002.webp
+T-003,ガンタンク,C,T,-,-,-,"UNIT TOKEN",-,-,〔WB隊〕,-,1,1,"Heroic Beginnings [ST01]",T-003.webp
+T-004,リーオー,C,T,-,-,-,"UNIT TOKEN",-,-,〔OZ〕,-,1,1,"Wings of Advance [ST02]",T-004.webp
+T-005,トールギス,C,T,-,-,-,"UNIT TOKEN",-,-,〔OZ〕,-,4,2,"Wings of Advance [ST02]",T-005.webp
+T-006,ザクⅡ（シャア・アズナブル機）,C,T,-,-,-,"UNIT TOKEN",-,-,〔ジオン〕,-,3,1,"Zeon's Rush [ST03]",T-006.webp
+T-007,ザクⅡ,C,T,-,-,-,"UNIT TOKEN",-,-,〔ジオン〕,-,1,1,"Zeon's Rush [ST03]",T-007.webp
+T-008,エールストライクガンダム,C,T,-,-,-,"UNIT TOKEN",《ブロッカー》(レストにすることでアタック先をこのユニットにする),-,〔地球連合〕,-,3,3,"SEED Strike [ST04]",T-008.webp
+T-009,ランチャーストライクガンダム,C,T,-,-,-,"UNIT TOKEN",《ブロッカー》(レストにすることでアタック先をこのユニットにする),-,〔地球連合〕,-,2,4,"SEED Strike [ST04]",T-009.webp
+T-010,ソードストライクガンダム,C,T,-,-,-,"UNIT TOKEN",《ブロッカー》(レストにすることでアタック先をこのユニットにする),-,〔地球連合〕,-,4,2,"SEED Strike [ST04]",T-010.webp
+T-011,ファトゥム-00,C,T,-,-,-,"UNIT TOKEN",《ブロッカー》(レストにすることでアタック先をこのユニットにする),-,〔三隻同盟〕,-,2,2,"Newtype Rising [GD01]",T-011.webp
+T-012,ドートレス,C,T,-,-,-,"UNIT TOKEN",-,-,〔新連邦〕,-,-,1,-,T-012.webp
