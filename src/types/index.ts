@@ -17,6 +17,10 @@ export interface Card {
   link: string;
 }
 
+// ソートの項目を定義
+export type SortField = 'id' | 'level' | 'cost' | 'ap' | 'hp' | 'rarity';
+export type SortOrder = 'asc' | 'desc';
+
 export interface FilterState {
   colors: string[];      // 複数選択
   types: string[];       // 複数選択
@@ -28,4 +32,7 @@ export interface FilterState {
   aps: string[];         // 複数選択 (1-9)
   hps: string[];         // 複数選択 (1-9)
   text: string;
+
+  sort: SortField;
+  order: SortOrder;
 }

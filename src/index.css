@@ -20,8 +20,7 @@ body {
   margin: 0;
   min-width: 320px;
   min-height: 100vh;
-  /* スマホでの「引っ張って更新」を無効化（リロード事故防止） */
-  overscroll-behavior-y: none; 
+  overscroll-behavior-y: none;
 }
 
 /* ユーティリティ */
@@ -45,33 +44,381 @@ body {
   cursor: pointer;
 }
 
-/* --- スクロールバーのカスタマイズ (Webkit系: Chrome, Safari, Edge) --- */
+/* --- スクロールバー --- */
 ::-webkit-scrollbar {
-  width: 8px;  /* 幅を細くする (デフォルトは17pxくらい) */
-  height: 8px; /* 横スクロール時の高さ */
+  width: 6px;
+  height: 6px;
 }
-
-/* スクロールバーの背景（トラック） */
 ::-webkit-scrollbar-track {
-  background: transparent; /* 背景を透明にする → 角丸を邪魔しなくなる */
-  margin: 4px; /* 上下に少し余白を持たせる */
+  background: transparent;
 }
-
-/* スクロールバーの持ち手（サム） */
 ::-webkit-scrollbar-thumb {
-  background-color: #ccc; /* 薄いグレー */
-  border-radius: 4px;     /* 持ち手自体も丸くする */
-  border: 2px solid transparent; /* 余白を作るためのテクニック */
-  background-clip: content-box;  /* borderの内側だけ色を塗る */
+  background-color: #ccc;
+  border-radius: 4px;
 }
 
-/* ホバー時に少し濃くする */
-::-webkit-scrollbar-thumb:hover {
-  background-color: #999;
+
+/* =========================================
+   フィルターオーバーレイのスタイル
+   ========================================= */
+.filter-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 2000;
+  display: flex;
+  align-items: center; /* 上下中央 */
+  justify-content: center; /* 左右中央 */
+  backdrop-filter: blur(2px);
 }
 
-/* --- Firefox対応 (Webkitとは書き方が異なる) --- */
-* {
-  scrollbar-width: thin;          /* 細くする */
-  scrollbar-color: #ccc transparent; /* 持ち手 トラック */
+/* コンテンツ枠（PC基準：広く、2列レイアウト用） */
+.filter-content {
+  background: white;
+  width: 700px; /* PCでは幅広に */
+  max-width: 95vw;
+  max-height: 90vh; /* 画面内に収める */
+  border-radius: 12px;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.2);
+  display: flex;
+  flex-direction: column;
+  overflow: hidden; /* 内部スクロールのため */
+}
+
+/* ヘッダー */
+.filter-header {
+  padding: 16px 20px;
+  border-bottom: 1px solid #eee;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-shrink: 0;
+}
+.filter-header h2 {
+  margin: 0;
+  font-size: 18px;
+  font-weight: bold;
+}
+.filter-header button {
+  border: none;
+  background: none;
+  font-size: 24px;
+  cursor: pointer;
+  padding: 0;
+  color: #666;
+}
+
+/* ボディ（スクロールエリア） */
+.filter-body {
+  padding: 20px;
+  overflow-y: auto;
+  flex: 1;
+}
+
+/* ★PC用グリッドレイアウト（2列表示） */
+.filter-grid-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr; /* 2列 */
+  column-gap: 32px; /* 列の間隔 */
+  row-gap: 16px;    /* 行の間隔 */
+}
+
+.filter-section {
+  /* margin-bottomはgrid gapで制御するので削除または控えめに */
+  margin-bottom: 0; 
+}
+.filter-section h3 {
+  margin: 0 0 8px 0;
+  font-size: 14px;
+  color: #333;
+  font-weight: bold;
+}
+.filter-options {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+}
+
+/* リセットボタン */
+.filter-reset-btn {
+  width: 100%;
+  padding: 10px;
+  margin-top: 24px;
+  background: #f0f0f0;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: bold;
+  color: #333;
+  transition: background 0.2s;
+}
+.filter-reset-btn:hover {
+  background: #e0e0e0;
+}
+
+/* フィルターボタン（PC/共通） */
+.filter-btn {
+  padding: 6px 12px;
+  font-size: 13px;
+  border-radius: 16px;
+  border: 1px solid #ddd;
+  background: #f5f5f5;
+  color: #333;
+  cursor: pointer;
+  transition: all 0.2s;
+  user-select: none;
+}
+.filter-btn.selected {
+  background: #0056D2;
+  color: white;
+  border-color: #0056D2;
+}
+.circle-btn {
+  width: 34px;
+  height: 34px;
+  padding: 0 !important;
+  border-radius: 50% !important;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+
+/* =========================================
+   カード詳細モーダルのスタイル（PC/共通）
+   ========================================= */
+
+/* ナビゲーションボタン */
+.modal-nav-btn {
+  position: fixed;
+  top: 50%;
+  transform: translateY(-50%);
+  background: rgba(255, 255, 255, 0.9);
+  border: 1px solid #ddd;
+  border-radius: 50%;
+  width: 48px;
+  height: 48px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 24px;
+  cursor: pointer;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+  z-index: 1100;
+  user-select: none;
+  outline: none;
+  transition: all 0.2s;
+  color: #555;
+}
+.modal-nav-btn:hover {
+  background-color: white;
+  color: #0056D2;
+}
+.modal-nav-prev { left: max(10px, calc(50% - 340px)); }
+.modal-nav-next { right: max(10px, calc(50% - 340px)); }
+
+/* 画像エリア */
+.card-detail-image-container {
+  margin-bottom: 16px;
+  display: flex;
+  justify-content: center;
+}
+/* ★修正: PCでも画像を大きすぎないように制限して、読み込み後のガタつきを抑える */
+.card-detail-image {
+  max-width: 100%;
+  max-height: 45vh; /* PCでも画面の半分弱に抑える */
+  object-fit: contain;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+.card-detail-no-image {
+  width: 100%;
+  height: 300px;
+  background: #eee;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 8px;
+  color: #888;
+  font-size: 14px;
+}
+
+/* テキスト情報 */
+.card-detail-title {
+  margin: 0 0 10px 0;
+  font-size: 20px;
+  font-weight: bold;
+  text-align: center;
+}
+
+.card-detail-tags {
+  display: flex;
+  justify-content: center;
+  gap: 8px;
+  margin-bottom: 20px;
+  flex-wrap: wrap;
+}
+.card-tag {
+  background: #f0f0f0;
+  padding: 4px 10px;
+  border-radius: 12px;
+  font-size: 12px;
+  color: #444;
+  border: 1px solid #eee;
+}
+
+.card-detail-info-box {
+  text-align: left;
+  background: #F9FAFB;
+  padding: 16px;
+  border-radius: 8px;
+  font-size: 14px;
+  color: #333;
+  line-height: 1.6;
+  border: 1px solid #eee;
+}
+.card-info-row {
+  margin-bottom: 6px;
+}
+.card-text-body {
+  white-space: pre-wrap;
+  margin-top: 12px;
+  padding-top: 12px;
+  border-top: 1px solid #eee;
+}
+
+
+/* =========================================
+   スマホ・タブレット用レスポンシブ設定
+   ========================================= */
+@media screen and (max-width: 600px) {
+  
+  /* カードリスト（5列強制） */
+  .mobile-5-columns {
+    grid-template-columns: repeat(5, 1fr) !important;
+    gap: 2px !important;
+  }
+  
+  /* ヘッダー行 */
+  .header-row {
+    flex-wrap: nowrap !important;
+    gap: 6px !important;
+    align-items: center !important;
+  }
+  .header-row input[type="text"],
+  .header-row select,
+  .header-row > button {
+    height: 34px !important;
+    box-sizing: border-box !important;
+    margin: 0 !important;
+    font-size: 12px !important;
+  }
+  .header-row input[type="text"] {
+    flex: 1 1 auto !important;
+    min-width: 0 !important;
+    padding: 0 8px !important;
+  }
+  .header-row select {
+    width: 100% !important;
+    padding-left: 10px !important;
+    padding-right: 20px !important;
+    text-indent: 2px !important;
+  }
+  .header-row > button { 
+    width: 34px !important;
+    padding: 7px !important;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+  }
+
+
+  /* --- フィルターモーダル（スマホ調整） --- */
+  
+  /* ★修正: 左右に余白を作る */
+  .filter-content {
+    width: 90% !important; /* 横幅90%で左右に5%ずつの余白 */
+    max-width: none !important;
+    height: auto !important;
+    max-height: 85dvh !important;
+    padding: 16px !important;
+    border-radius: 12px !important;
+  }
+  
+  .filter-header {
+    padding: 0 0 12px 0 !important;
+  }
+  .filter-body {
+    padding: 0 !important;
+  }
+
+  /* ★修正: スマホでは1列に戻す */
+  .filter-grid-container {
+    display: block !important;
+  }
+
+  .filter-section {
+    margin-bottom: 12px !important; /* スマホではセクション間隔を少し開ける */
+  }
+  .filter-section h3 {
+    font-size: 12px !important;
+    margin-bottom: 6px !important;
+  }
+
+  /* ボタン調整 */
+  .filter-btn:not(.circle-btn) {
+    padding: 4px 10px !important;
+    font-size: 11px !important;
+  }
+  .circle-btn {
+    width: 30px !important;
+    height: 30px !important;
+    font-size: 11px !important;
+  }
+  .filter-options {
+    gap: 4px !important;
+  }
+  
+  .filter-reset-btn {
+    margin-top: 16px !important;
+    padding: 8px !important;
+    font-size: 12px !important;
+  }
+
+
+  /* --- カード詳細モーダル（スマホ調整） --- */
+
+  .modal-nav-btn {
+    width: 32px !important;
+    height: 32px !important;
+    font-size: 18px !important;
+    background: rgba(255, 255, 255, 0.95) !important;
+  }
+  .modal-nav-prev { left: 6px !important; }
+  .modal-nav-next { right: 6px !important; }
+
+  /* 画像サイズ */
+  .card-detail-image {
+    max-height: 35vh !important; /* スマホは少し小さめに */
+    max-width: 90% !important;
+  }
+
+  /* 詳細タグ：1行表示＋中央寄せ */
+  .card-detail-tags {
+    flex-wrap: nowrap !important;
+    overflow-x: auto !important;
+    justify-content: center !important;
+    padding-bottom: 8px !important;
+    -webkit-overflow-scrolling: touch;
+  }
+  .card-tag {
+    font-size: 11px !important;
+    padding: 4px 8px !important;
+    white-space: nowrap !important;
+    flex-shrink: 0 !important;
+  }
 }

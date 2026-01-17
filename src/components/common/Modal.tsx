@@ -33,7 +33,8 @@ export const Modal = ({ isOpen, onClose, children }: ModalProps) => {
       }}
       onClick={onClose} // 背景クリックで閉じる
     >
-      <div 
+      <div
+        className="mobile-modal-padding"
         style={{
           backgroundColor: 'white',
           borderRadius: '12px',
@@ -43,7 +44,7 @@ export const Modal = ({ isOpen, onClose, children }: ModalProps) => {
           overflowY: 'auto',   // 中身がこの高さを超えたらスクロール
           boxSizing: 'border-box', // paddingを高さに含める
           position: 'relative',
-          padding: '20px'
+          padding: '60px 20px 20px 20px'
         }}
         onClick={e => e.stopPropagation()} // 中身クリックでは閉じない
       >
@@ -52,7 +53,8 @@ export const Modal = ({ isOpen, onClose, children }: ModalProps) => {
           onClick={onClose}
           style={{
             position: 'absolute', top: '0', right: '10px',
-            background: 'none', border: 'none', fontSize: '60px', cursor: 'pointer', color: '#666'
+            background: 'none', border: 'none', fontSize: '60px', cursor: 'pointer', color: '#666',
+            zIndex: 10, lineHeight: '1'
           }}
         >
           ×

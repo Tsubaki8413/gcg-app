@@ -11,31 +11,10 @@ interface CardDetailModalProps {
   hasNext?: boolean;
 }
 
-// ナビゲーションボタンの共通スタイル
-const navButtonStyle: React.CSSProperties = {
-  position: 'fixed', // 画面に対して固定 (モーダルの中身ではなく画面端に置くため)
-  top: '50%',
-  transform: 'translateY(-50%)',
-  background: 'rgba(255, 255, 255, 0.8)',
-  border: '1px solid #ddd',
-  borderRadius: '50%',
-  width: '48px',
-  height: '48px',
-  display: 'flex',
-  alignItems: 'center',
-  justifyContent: 'center',
-  fontSize: '24px',
-  cursor: 'pointer',
-  boxShadow: '0 2px 8px rgba(0,0,0,0.2)',
-  zIndex: 1100, // モーダルのz-index(1000)より上
-  userSelect: 'none',
-  outline: 'none',
-};
-
 export const CardDetailModal = ({
   card, onClose, onPrev, onNext, hasPrev = false, hasNext = false
 }: CardDetailModalProps) => {
-  // キーボード操作対応
+  
   useEffect(() => {
     const handleKeyDown = (e: KeyboardEvent) => {
       if (!card) return;
@@ -49,13 +28,32 @@ export const CardDetailModal = ({
 
   if (!card) return null;
 
+  // 値が存在するかどうかの判定
+  const hasValue = (val: any) => val !== undefined && val !== null && val !== '';
+
+  // ★追加: 数値をCSVの表記（+付き）に戻すためのフォーマッタ
+  const formatStat = (val: any, type: string) => {
+    if (!hasValue(val)) return null;
+    
+    // PILOTなど、補正値を持つタイプの場合は符号をつける
+    // (データ読み込み時に数値化されているため、ここで+を再付与します)
+    // 必要なタイプがあれば条件に追加してください (例: || type === 'COMMAND')
+    if (type === 'PILOT') {
+      const num = Number(val);
+      if (!isNaN(num) && num >= 0) {
+        return `+${val}`; // 0以上なら+をつける（+0含む）
+      }
+    }
+    return val;
+  };
+
   return (
     <Modal isOpen={!!card} onClose={onClose}>
-      {/* ▼ ナビゲーションボタン (PC/タブレット/スマホ対応) */}
+      {/* ナビゲーションボタン */}
       {hasPrev && (
         <button 
+          className="modal-nav-btn modal-nav-prev"
           onClick={(e) => { e.stopPropagation(); onPrev?.(); }}
-          style={{ ...navButtonStyle, left: 'max(10px, calc(50% - 310px))' }} // 左端
           aria-label="Previous Card"
         >
           ‹
@@ -64,48 +62,58 @@ export const CardDetailModal = ({
 
       {hasNext && (
         <button 
+          className="modal-nav-btn modal-nav-next"
           onClick={(e) => { e.stopPropagation(); onNext?.(); }}
-          style={{ ...navButtonStyle, right: 'max(10px, calc(50% - 310px))' }} // 右端
           aria-label="Next Card"
         >
           ›
         </button>
       )}
 
-      <div style={{ textAlign: 'center' }}>
-        {/* 拡大画像 */}
-        <div style={{ marginBottom: '16px' }}>
+      {/* コンテンツエリア */}
+      <div>
+        {/* 画像 */}
+        <div className="card-detail-image-container">
           {card.image_url ? (
             <img 
               src={`/images/${card.image_url}`} 
-              alt={card.name} 
-              style={{ maxWidth: '100%', maxHeight: '50vh', objectFit: 'contain', borderRadius: '8px' }}
+              alt={card.name}
+              className="card-detail-image"
+              loading="eager"
+              fetchPriority="high"
             />
           ) : (
-            <div style={{ height: '300px', background: '#eee', display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
+            <div className="card-detail-no-image">
               No Image
             </div>
           )}
         </div>
 
-        {/* カード情報 */}
-        <h2 style={{ margin: '0 0 10px 0', fontSize: '19px' }}>{card.name}</h2>
-        <div style={{ display: 'flex', justifyContent: 'center', gap: '10px', marginBottom: '16px', flexWrap: 'wrap' }}>
-            <span style={{ background: '#eee', padding: '4px 8px', borderRadius: '4px' }}>{card.color}</span>
-            <span style={{ background: '#eee', padding: '4px 8px', borderRadius: '4px' }}>{card.type}</span>
-            <span style={{ background: '#eee', padding: '4px 8px', borderRadius: '4px' }}>Level: {card.level}</span>
-            <span style={{ background: '#eee', padding: '4px 8px', borderRadius: '4px' }}>Cost: {card.cost}</span>
-            <span style={{ background: '#eee', padding: '4px 8px', borderRadius: '4px' }}>AP: {card.ap}</span>
-            <span style={{ background: '#eee', padding: '4px 8px', borderRadius: '4px' }}>HP: {card.hp}</span>
+        {/* タイトル */}
+        <h2 className="card-detail-title">{card.name}</h2>
+
+        {/* 詳細タグ */}
+        <div className="card-detail-tags">
+          {hasValue(card.color) && <span className="card-tag">{card.color}</span>}
+          {hasValue(card.type) && <span className="card-tag">{card.type}</span>}
+          
+          {hasValue(card.level) && <span className="card-tag">Level: {card.level}</span>}
+          {hasValue(card.cost) && <span className="card-tag">Cost: {card.cost}</span>}
+          
+          {/* ★修正: AP/HP は formatStat を通して + を付与する */}
+          {hasValue(card.ap) && <span className="card-tag">AP: {formatStat(card.ap, card.type)}</span>}
+          {hasValue(card.hp) && <span className="card-tag">HP: {formatStat(card.hp, card.type)}</span>}
         </div>
 
-        {/* テキストエリア */}
-        <div style={{ textAlign: 'left', background: '#f9f9f9', padding: '12px', borderRadius: '8px', fontSize: '14px' }}>
-            <div style={{ marginBottom: '8px' }}><strong>Trait:</strong> {card.traits}</div>
-            <div style={{ marginBottom: '8px' }}><strong>Zone:</strong> {card.zone}</div>
-            <div style={{ marginBottom: '8px' }}><strong>Link:</strong> {card.link}</div>
-            <hr />
-            <div style={{ whiteSpace: 'pre-wrap', lineHeight: '1.6' }}>{card.text}</div>
+        {/* 詳細テキスト */}
+        <div className="card-detail-info-box">
+          <div className="card-info-row"><strong>Trait:</strong> {card.traits}</div>
+          <div className="card-info-row"><strong>Zone:</strong> {card.zone}</div>
+          <div className="card-info-row"><strong>Link:</strong> {card.link}</div>
+          
+          <div className="card-text-body">
+            {card.text}
+          </div>
         </div>
       </div>
     </Modal>

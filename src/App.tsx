@@ -1,32 +1,27 @@
-import { BrowserRouter, Routes, Route, Link } from 'react-router-dom';
-import { CardGrid } from './components/features/CardList/CardGrid'; // インポート追加
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import { Header } from './components/common/Header';
+import { Footer } from './components/common/Footer';
+import { CardGrid } from './components/features/CardList/CardGrid';
 
 // 仮のコンポーネント
-const DeckList = () => <div className="p-4"><h2>DECK LIST (Coming Soon)</h2></div>;
-const SoloPlay = () => <div className="p-4"><h2>SOLO PLAY (Coming Soon)</h2></div>;
-
-const Footer = () => (
-  <nav style={{ 
-    position: 'fixed', bottom: 0, width: '100%', 
-    background: 'white', borderTop: '1px solid #ddd',
-    display: 'flex', justifyContent: 'space-around', padding: '10px',
-    zIndex: 100
-  }}>
-    <Link to="/" style={{ textDecoration: 'none', color: '#333', fontWeight: 'bold' }}>Card List</Link>
-    <Link to="/deck" style={{ textDecoration: 'none', color: '#333', fontWeight: 'bold' }}>Deck List</Link>
-    <Link to="/play" style={{ textDecoration: 'none', color: '#333', fontWeight: 'bold' }}>Solo Play</Link>
-  </nav>
-);
+const DeckList = () => <div className="p-4" style={{ paddingTop: '80px' }}><h2>DECK LIST (Coming Soon)</h2></div>;
+const SoloPlay = () => <div className="p-4" style={{ paddingTop: '80px' }}><h2>SOLO PLAY (Coming Soon)</h2></div>;
 
 function App() {
   return (
     <BrowserRouter>
-      <div style={{ paddingBottom: '60px', minHeight: '100vh', background: '#F5F7FA' }}>
-        <Routes>
-          <Route path="/" element={<CardGrid />} />
-          <Route path="/deck" element={<DeckList />} />
-          <Route path="/play" element={<SoloPlay />} />
-        </Routes>
+      <div className="App" style={{ minHeight: '100vh', background: '#F5F7FA' }}>
+        <Header />
+        
+        {/* コンテンツエリア: ヘッダー(60px)とフッター(約50px)の分を考慮して余白を調整 */}
+        <main style={{ paddingTop: '60px', paddingBottom: '60px' }}>
+          <Routes>
+            <Route path="/" element={<CardGrid />} />
+            <Route path="/deck" element={<DeckList />} />
+            <Route path="/play" element={<SoloPlay />} />
+          </Routes>
+        </main>
+        
         <Footer />
       </div>
     </BrowserRouter>

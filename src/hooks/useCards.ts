@@ -1,6 +1,7 @@
-import { useState, useEffect, useMemo } from 'react';
+import { useState, useEffect, useCallback } from 'react';
 import type { Card, FilterState } from '../types';
 
+// 初期状態: デフォルトはID順の昇順
 const initialFilterState: FilterState = {
   colors: [],
   types: [],
@@ -12,6 +13,8 @@ const initialFilterState: FilterState = {
   aps: [],
   hps: [],
   text: '',
+  sort: 'id',
+  order: 'asc',
 };
 
 export const useCards = () => {
@@ -20,74 +23,63 @@ export const useCards = () => {
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState('');
 
-  // 1. データをAPIから取得（元のCardGridにあった処理を復活）
-  useEffect(() => {
-    const fetchCards = async () => {
-      try {
-        const res = await fetch('/api/get_cards.php');
-        if (!res.ok) throw new Error('Failed to fetch cards');
-        const data = await res.json();
-        setCards(data);
-      } catch (err) {
-        setError('カードデータの取得に失敗しました');
-        console.error(err);
-      } finally {
-        setLoading(false);
-      }
-    };
-    fetchCards();
-  }, []);
+  // APIからデータを取得する関数
+  const fetchCards = useCallback(async () => {
+    setLoading(true);
+    setError('');
 
-  // 2. フィルタリングロジック（複数選択対応）
-  const filteredCards = useMemo(() => {
-    return cards.filter((card) => {
-      // テキスト検索
-      const searchTarget = `${card.name} ${card.traits} ${card.id} ${card.text}`.toLowerCase();
+    try {
+      const params = new URLSearchParams();
 
-      // テキスト検索ロジック（空白区切り＆マイナス検索対応）
-      if (filters.text) {
-        // 1. 入力を小文字化し、全角スペースを半角に置換して、空白で分割
-        const keywords = filters.text
-          .toLowerCase()
-          .replace(/　/g, ' ') // 全角スペース対応
-          .split(' ')
-          .filter(k => k.trim() !== ''); // 空文字除去
+      // 1. 単一値のパラメータ
+      if (filters.text) params.append('search', filters.text);
+      params.append('sort', filters.sort);
+      params.append('order', filters.order);
 
-        // 2. すべてのキーワード条件を満たすかチェック (AND検索)
-        const isMatch = keywords.every((keyword) => {
-          if (keyword.startsWith('-')) {
-            // マイナス検索: 「-」を取り除いた単語が含まれていては『いけない』
-            const excludeWord = keyword.slice(1);
-            // マイナスだけの入力("-")は無視する
-            if (!excludeWord) return true; 
-            return !searchTarget.includes(excludeWord);
-          } else {
-            // 通常検索: 単語が含まれている『必要がある』
-            return searchTarget.includes(keyword);
-          }
-        });
+      // 2. 配列パラメータ (PHP側で colors[], types[] 等として受け取る形式)
+      // get_cards.php の仕様に合わせてキー名をマッピング
+      const arrayMap: { key: keyof FilterState; paramName: string }[] = [
+        { key: 'colors', paramName: 'colors[]' },
+        { key: 'types', paramName: 'types[]' },
+        { key: 'costs', paramName: 'costs[]' }, // PHP側はOR一致
+        // levelsはPHP側に実装がないようですが、ある場合はここで追加
+        { key: 'rarities', paramName: 'rarities[]' },
+        { key: 'expansion_sets', paramName: 'sets[]' }, // PHP側は sets
+        { key: 'zones', paramName: 'zones[]' },
+      ];
 
-        if (!isMatch) return false;
-      }
+      arrayMap.forEach(({ key, paramName }) => {
+        const values = filters[key];
+        if (Array.isArray(values) && values.length > 0) {
+          values.forEach((val) => params.append(paramName, String(val)));
+        }
+      });
 
-      // 各種フィルター（配列が空なら無視、入っていれば含まれるかチェック）
-      if (filters.colors.length > 0 && !filters.colors.includes(card.color)) return false;
-      if (filters.types.length > 0 && !filters.types.includes(card.type)) return false;
-      if (filters.costs.length > 0 && !filters.costs.includes(String(card.cost))) return false;
-      if (filters.levels.length > 0 && !filters.levels.includes(String(card.level))) return false;
-      if (filters.rarities.length > 0 && !filters.rarities.includes(card.rarity)) return false;
-      if (filters.expansion_sets.length > 0 && !filters.expansion_sets.includes(card.expansion_set)) return false;
-      if (filters.zones.length > 0 && !filters.zones.includes(card.zone)) return false;
+      // ※注意: aps, hps (1-9選択) について
+      // get_cards.php は ap_min/ap_max (範囲) しか受け付けないため、
+      // 複数の数字選択（例: 4と6）を正確にAPIに渡すのは困難です。
+      // 必要であればここで "4" -> min:4000, max:4999 のように変換ロジックを入れますが、
+      // 複数選択時はAPI側の改修が必要になるため、一旦ここでは除外するか、
+      // もしPHP側が traits 等で対応していればそちらを使います。
       
-      // AP/HP (1-9の選択肢として扱う場合)
-      // ※もしAPが4000とかなら、ここを「範囲」にするか、UI側を4000,5000にする必要があります。
-      // いったん「1-9の数字で選ぶ」という要望に合わせて文字列比較します
-      if (filters.aps.length > 0 && !filters.aps.includes(String(card.ap)[0])) return false; // 先頭の数字で判定など工夫が必要かも
-      if (filters.hps.length > 0 && !filters.hps.includes(String(card.hp)[0])) return false;
+      const res = await fetch(`/api/get_cards.php?${params.toString()}`);
+      if (!res.ok) throw new Error(`Failed to fetch cards: ${res.statusText}`);
+      
+      const data = await res.json();
+      setCards(data);
 
-      return true;
-    });
-  }, [cards, filters]);
+    } catch (err) {
+      setError('カードデータの取得に失敗しました');
+      console.error(err);
+    } finally {
+      setLoading(false);
+    }
+  }, [filters]);
 
-  return { cards: filteredCards, filters, setFilters, loading, error };
+  // フィルタ状態が変わるたびに再取得 (Debounceが必要なら別途実装)
+  useEffect(() => {
+    fetchCards();
+  }, [fetchCards]);
+
+  return { cards, filters, setFilters, loading, error, fetchCards };
 };

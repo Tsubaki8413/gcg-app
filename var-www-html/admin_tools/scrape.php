@@ -155,22 +155,28 @@ function cleanForExcel($text) {
     return trim($text);
 }
 
-// 【追加】DOM要素からHTMLを取得し、<br>を改行コードに変換してからテキスト化する関数
+// 【修正】テキスト整形・空行削除の強化版
 function getTextWithNewlines($node) {
     if (!$node) return '';
-
-    // ノード内のHTMLを取得 (例: "攻撃時<br>1枚引く")
+    
+    // 1. HTMLを取得
     $html = $node->ownerDocument->saveHTML($node);
-
-    // <br>タグ (表記ゆれ含む) を \n に置換
+    
+    // 2. <br> を改行コードに変換
     $html = preg_replace('/<br\s*\/?>/i', "\n", $html);
+    
+    // 3. タグを除去
+    $text = strip_tags($html);
+    
+    // 4. 実体参照（&nbsp;など）をデコードして通常の文字に戻す（これが重要）
+    $text = html_entity_decode($text, ENT_QUOTES, 'UTF-8');
+    
+    // 5. 前後の空白削除
+    $text = trim($text);
 
-    // タグを除去して前後の空白を削除
-    $text = trim(strip_tags($html));
-
-    // 「。」の後に改行が続き、その後に「(」または「（」が来る場合、
-    // 間の改行を強制的に「1つ」にします（空行を削除）。
-    $text = preg_replace('/(。)\n+([\(（])/u', "$1\n$2", $text);
+    // 6. 「。」＋「任意の空白・改行」＋「(」 のパターンを「。」＋「改行1つ」＋「(」に置換
+    // \s+ は改行、スペース、タブすべてを含みます。これで間のゴミを一掃します。
+    $text = preg_replace('/(。)\s+([\(（])/u', "$1\n$2", $text);
 
     return $text;
 }

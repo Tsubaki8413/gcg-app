@@ -18,37 +18,42 @@ export const FilterOverLay = ({ isOpen, onClose, filters, setFilters }: Props) =
 
   // 選択状態を切り替える関数
   const toggleFilter = (key: keyof FilterState, value: string) => {
-    const currentList = filters[key] as string[];
-    const newList = currentList.includes(value)
-      ? currentList.filter((v) => v !== value) // 削除
-      : [...currentList, value]; // 追加
+    // 1. 数字項目かどうか判定
+    const isNumeric = ['levels', 'costs', 'aps', 'hps'].includes(key);
+
+    // 2. データの型に合わせて変換（数値ならNumber型にする）
+    // カードデータが数値で管理されているため、ここで変換しないと一致しません
+    const convertedValue = isNumeric ? Number(value) : value;
+
+    const currentList = (filters[key] || []) as any[];
+    
+    // 3. 追加・削除ロジック
+    const newList = currentList.includes(convertedValue)
+      ? currentList.filter((v: any) => v !== convertedValue)
+      : [...currentList, convertedValue];
+    
     setFilters({ ...filters, [key]: newList });
   };
 
   // ボタン群を描画する関数
   const renderSection = (title: string, key: keyof FilterState, options: string[]) => {
-    const currentList = filters[key] as string[];
+    const currentList = (filters[key] || []) as any[];
+    const isNumericSection = ['levels', 'costs', 'aps', 'hps'].includes(key);
+
     return (
-      <div style={{ marginBottom: '20px' }}>
-        <h3 style={{ fontSize: '12px', fontWeight: 'bold', color: '#666', marginBottom: '8px' }}>{title}</h3>
-        <div style={{ display: 'flex', flexWrap: 'wrap', gap: '8px' }}>
+      <div className="filter-section">
+        <h3>{title}</h3>
+        <div className="filter-options">
           {options.map((option) => {
-            const isActive = currentList.includes(option);
+            // 判定時も型を合わせる（データ内の数値と比較するため、optionを数値化してチェック）
+            const checkValue = isNumericSection ? Number(option) : option;
+            const isSelected = currentList.includes(checkValue);
+
             return (
               <button
                 key={option}
+                className={`filter-btn ${isSelected ? 'selected' : ''} ${isNumericSection ? 'circle-btn' : ''}`}
                 onClick={() => toggleFilter(key, option)}
-                style={{
-                  padding: '6px 12px',
-                  borderRadius: '16px',
-                  border: '1px solid',
-                  fontSize: '14px',
-                  cursor: 'pointer',
-                  borderColor: isActive ? '#0056D2' : '#ddd',
-                  backgroundColor: isActive ? '#e3f2fd' : 'white',
-                  color: isActive ? '#0056D2' : '#333',
-                  fontWeight: isActive ? 'bold' : 'normal',
-                }}
               >
                 {option}
               </button>
@@ -60,60 +65,37 @@ export const FilterOverLay = ({ isOpen, onClose, filters, setFilters }: Props) =
   };
 
   return (
-    /* ▼ 1. 画面全体を覆う背景 (Backdrop) を追加 */
-    <div
-      onClick={onClose} // ここをクリックしたら閉じる
-      style={{
-        position: 'fixed',
-        top: 0,
-        left: 0,
-        width: '100%',
-        height: '100%',
-        backgroundColor: 'rgba(0, 0, 0, 0.5)', // 暗い背景
-        zIndex: 200,
-        display: 'flex',
-        justifyContent: 'flex-end', // 右寄せにする
-      }}
-    >
-      {/* ▼ 2. フィルターメニュー本体 (既存のdiv) */}
-      <div
-        onClick={(e) => e.stopPropagation()} // 中身のクリックで閉じないようにイベント伝播を止める
-        style={{
-          width: '85%',
-          maxWidth: '320px',
-          height: '100%',
-          backgroundColor: 'white',
-          display: 'flex',
-          flexDirection: 'column',
-          boxShadow: '-2px 0 10px rgba(0,0,0,0.1)',
-          // position: 'fixed' 等は親の Flexbox で制御するため削除
-        }}
-      >
+    <div className="filter-overlay" onClick={onClose}>
+      <div className="filter-content" onClick={(e) => e.stopPropagation()}>
         {/* ヘッダー */}
-        <div style={{ padding: '20px', borderBottom: '1px solid #eee', display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
-          <h2 style={{ margin: 0, fontSize: '18px' }}>Filters</h2>
-          <button onClick={onClose} style={{ border: 'none', background: 'none', fontSize: '24px', cursor: 'pointer' }}>×</button>
+        <div className="filter-header">
+          <h2>Filters</h2>
+          <button onClick={onClose}>×</button>
         </div>
 
         {/* スクロールエリア */}
-        <div style={{ padding: '20px', overflowY: 'auto', flex: 1 }}>
-          {renderSection('COLOR', 'colors', COLORS)}
-          {renderSection('TYPE', 'types', TYPES)}
-          {renderSection('LEVEL', 'levels', NUMBERS)}
-          {renderSection('COST', 'costs', NUMBERS)}
-          {renderSection('ZONE', 'zones', ZONES)}
-          {renderSection('AP', 'aps', NUMBERS)}
-          {renderSection('HP', 'hps', NUMBERS)}
+        <div className="filter-body">
+          {/* PC用グリッドコンテナ */}
+          <div className="filter-grid-container">
+            {renderSection('COLOR', 'colors', COLORS)}
+            {renderSection('TYPE', 'types', TYPES)}
+            {renderSection('LEVEL', 'levels', NUMBERS)}
+            {renderSection('COST', 'costs', NUMBERS)}
+            {renderSection('AP', 'aps', NUMBERS)}
+            {renderSection('HP', 'hps', NUMBERS)}
+            {renderSection('ZONE', 'zones', ZONES)}
+          </div>
 
           {/* リセットボタン */}
           <button
+            className="filter-reset-btn"
             onClick={() => setFilters({
+              ...filters,
               colors: [], types: [], costs: [], levels: [], rarities: [],
               expansion_sets: [], zones: [], aps: [], hps: [], text: filters.text
             })}
-            style={{ width: '100%', padding: '10px', marginTop: '20px', border: '1px solid #d32f2f', color: '#d32f2f', background: 'white', borderRadius: '6px', cursor: 'pointer' }}
           >
-            Clear All
+            Clear All Filters
           </button>
         </div>
       </div>
