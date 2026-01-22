@@ -14,7 +14,7 @@ interface CardDetailModalProps {
 export const CardDetailModal = ({
   card, onClose, onPrev, onNext, hasPrev = false, hasNext = false
 }: CardDetailModalProps) => {
-  
+
   useEffect(() => {
     const handleKeyDown = (e: KeyboardEvent) => {
       if (!card) return;
@@ -28,30 +28,43 @@ export const CardDetailModal = ({
 
   if (!card) return null;
 
-  // 値が存在するかどうかの判定
   const hasValue = (val: any) => val !== undefined && val !== null && val !== '';
 
-  // ★追加: 数値をCSVの表記（+付き）に戻すためのフォーマッタ
-  const formatStat = (val: any, type: string) => {
-    if (!hasValue(val)) return null;
-    
-    // PILOTなど、補正値を持つタイプの場合は符号をつける
-    // (データ読み込み時に数値化されているため、ここで+を再付与します)
-    // 必要なタイプがあれば条件に追加してください (例: || type === 'COMMAND')
-    if (type === 'PILOT') {
-      const num = Number(val);
-      if (!isNaN(num) && num >= 0) {
-        return `+${val}`; // 0以上なら+をつける（+0含む）
-      }
+  // ★修正: PILOTまたはテキストに【パイロット】が含まれる場合は「+」強制、それ以外は0を「-」にする
+  const formatStat = (val: number | string | null | undefined, type: string, text: string) => {
+    // 1. 値がない、または「-」の場合はそのまま「-」
+    if (val === null || val === undefined || val === '' || val === '-') {
+      return '-';
     }
-    return val;
+
+    const strVal = String(val);
+
+    // 既に "+" が付いている場合はそのまま返す
+    if (strVal.startsWith('+')) {
+      return strVal;
+    }
+
+    const num = Number(val);
+    if (isNaN(num)) return strVal;
+
+    // 2. 判定条件: カードタイプがPILOT、またはテキストに「【パイロット】」が含まれるか
+    // (テキストが undefined の可能性も考慮して空文字結合で安全にチェック)
+    const isPilotLike = type === 'PILOT' || (text || '').includes('【パイロット】');
+
+    if (isPilotLike) {
+      // PILOT系: 0以上なら常に「+」をつける (0 -> "+0", 1 -> "+1")
+      return num >= 0 ? `+${num}` : `${num}`;
+    } else {
+      // それ以外 (UNIT等): 0なら「-」、それ以外は数値をそのまま ("3000"など)
+      return num === 0 ? '-' : strVal;
+    }
   };
 
   return (
     <Modal isOpen={!!card} onClose={onClose}>
       {/* ナビゲーションボタン */}
       {hasPrev && (
-        <button 
+        <button
           className="modal-nav-btn modal-nav-prev"
           onClick={(e) => { e.stopPropagation(); onPrev?.(); }}
           aria-label="Previous Card"
@@ -61,7 +74,7 @@ export const CardDetailModal = ({
       )}
 
       {hasNext && (
-        <button 
+        <button
           className="modal-nav-btn modal-nav-next"
           onClick={(e) => { e.stopPropagation(); onNext?.(); }}
           aria-label="Next Card"
@@ -75,8 +88,8 @@ export const CardDetailModal = ({
         {/* 画像 */}
         <div className="card-detail-image-container">
           {card.image_url ? (
-            <img 
-              src={`/images/${card.image_url}`} 
+            <img
+              src={`/images/${card.image_url}`}
               alt={card.name}
               className="card-detail-image"
               loading="eager"
@@ -96,13 +109,13 @@ export const CardDetailModal = ({
         <div className="card-detail-tags">
           {hasValue(card.color) && <span className="card-tag">{card.color}</span>}
           {hasValue(card.type) && <span className="card-tag">{card.type}</span>}
-          
+
           {hasValue(card.level) && <span className="card-tag">Level: {card.level}</span>}
           {hasValue(card.cost) && <span className="card-tag">Cost: {card.cost}</span>}
-          
-          {/* ★修正: AP/HP は formatStat を通して + を付与する */}
-          {hasValue(card.ap) && <span className="card-tag">AP: {formatStat(card.ap, card.type)}</span>}
-          {hasValue(card.hp) && <span className="card-tag">HP: {formatStat(card.hp, card.type)}</span>}
+
+          {/* typeとtextを渡して判定します */}
+          <span className="card-tag">AP: {formatStat(card.ap, card.type, card.text)}</span>
+          <span className="card-tag">HP: {formatStat(card.hp, card.type, card.text)}</span>
         </div>
 
         {/* 詳細テキスト */}
@@ -110,7 +123,7 @@ export const CardDetailModal = ({
           <div className="card-info-row"><strong>Trait:</strong> {card.traits}</div>
           <div className="card-info-row"><strong>Zone:</strong> {card.zone}</div>
           <div className="card-info-row"><strong>Link:</strong> {card.link}</div>
-          
+
           <div className="card-text-body">
             {card.text}
           </div>

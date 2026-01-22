@@ -21,7 +21,7 @@ try {
         // そのまま出力するとエスケープが二重になる可能性があるため注意。
         // ここではPDOのFETCH_ASSOCのまま出すので、cardsカラムは「JSON文字列」の状態。
         // フロント側でパースして使う想定。
-        
+
         $exportData = [
             'version' => 1,
             'exported_at' => date('Y-m-d H:i:s'),
@@ -44,10 +44,10 @@ try {
             $sql = "INSERT INTO cards (id, name, rarity, expansion_set, level, cost, color, type, text, zone, traits, link, ap, hp, image_url, updated_at)
                     VALUES (:id, :name, :rarity, :set, :lvl, :cost, :color, :type, :text, :zone, :traits, :link, :ap, :hp, :img, :updated)
                     ON DUPLICATE KEY UPDATE
-                    name=VALUES(name), text=VALUES(text), updated_at=VALUES(updated_at)"; 
+                    name=VALUES(name), text=VALUES(text), updated_at=VALUES(updated_at)";
                     // 簡易化のため主要項目のみ更新。厳密にはupdated_at比較を入れるべきだが、
                     // 復元用途なら上書きで良いケースが多い。
-            
+
             $stmt = $pdo->prepare($sql);
             foreach ($input['cards'] as $c) {
                 $stmt->execute([
@@ -77,7 +77,7 @@ try {
                     VALUES (:id, :uid, :title, :cards, :thumb, :created, :updated)
                     ON DUPLICATE KEY UPDATE
                     title=VALUES(title), cards=VALUES(cards), updated_at=VALUES(updated_at)";
-            
+
             $stmt = $pdo->prepare($sql);
             foreach ($input['decks'] as $d) {
                 // cardsカラムが配列で来ている場合はJSON化、文字列ならそのまま

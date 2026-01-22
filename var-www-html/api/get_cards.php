@@ -1,26 +1,31 @@
 <?php
 // /var/www/html/api/get_cards.php
 
+// ▼▼▼ 追加: 出力バッファリング開始（エラーメッセージ混入防止） ▼▼▼
+ob_start();
+
 header("Access-Control-Allow-Origin: *");
 header("Content-Type: application/json; charset=UTF-8");
+
+// ▼▼▼ 追加: エラーを画面に出さない（JSONを壊さないため） ▼▼▼
+ini_set('display_errors', 0);
 
 require_once 'db_connect.php';
 
 try {
     // 検索パラメータの取得
     $search = isset($_GET['search']) ? $_GET['search'] : '';
-    
-    // フィルタ項目の取得（配列で来ることを想定）
-    // URL例: ?colors[]=Red&colors[]=Blue&ap_min=3000
+
+    // フィルタ項目の取得
     $colors = isset($_GET['colors']) ? $_GET['colors'] : [];
     $types = isset($_GET['types']) ? $_GET['types'] : [];
     $rarities = isset($_GET['rarities']) ? $_GET['rarities'] : [];
     $sets = isset($_GET['sets']) ? $_GET['sets'] : [];
     $zones = isset($_GET['zones']) ? $_GET['zones'] : [];
-    $traits = isset($_GET['traits']) ? $_GET['traits'] : ''; // 特徴はカンマ区切り等の文字列または配列
+    $traits = isset($_GET['traits']) ? $_GET['traits'] : '';
 
     // 範囲検索パラメータ
-    $costs = isset($_GET['costs']) ? $_GET['costs'] : []; // コストは複数選択(OR)のままか、範囲にするか。今回は選択式(OR)と想定
+    $costs = isset($_GET['costs']) ? $_GET['costs'] : [];
     $ap_min = isset($_GET['ap_min']) ? $_GET['ap_min'] : null;
     $ap_max = isset($_GET['ap_max']) ? $_GET['ap_max'] : null;
     $hp_min = isset($_GET['hp_min']) ? $_GET['hp_min'] : null;
@@ -33,9 +38,8 @@ try {
     // SQL構築
     $sql = "SELECT * FROM cards WHERE 1=1";
     $params = [];
-    $types_string = ""; 
 
-    // 1. フリーワード検索 (ID, Name, Text, Traits) - ここはANDで絞り込み
+    // 1. フリーワード検索
     if (!empty($search)) {
         $sql .= " AND (id LIKE ? OR name LIKE ? OR text LIKE ? OR traits LIKE ?)";
         $searchTerm = "%$search%";
@@ -45,17 +49,12 @@ try {
         $params[] = $searchTerm;
     }
 
-    // ---------------------------------------------------------
-    // 2. 詳細フィルタ (複数選択は OR 条件で結合)
-    // ---------------------------------------------------------
-
-    // ヘルパー関数: 配列を受け取り "AND (col LIKE ? OR col LIKE ?)" を生成
+    // 2. 詳細フィルタ (ヘルパー関数)
     function addOrCondition(&$sql, &$params, $col, $values, $isLike = false) {
         if (!empty($values)) {
             if (!is_array($values)) {
-                $values = explode(',', $values); // カンマ区切り文字列なら配列化
+                $values = explode(',', $values);
             }
-            
             $clauses = [];
             foreach ($values as $val) {
                 if ($isLike) {
@@ -72,27 +71,15 @@ try {
         }
     }
 
-    // 色 (OR)
+    // 各フィルタ適用
     addOrCondition($sql, $params, 'color', $colors, true);
-
-    // タイプ (OR)
     addOrCondition($sql, $params, 'type', $types, false);
-
-    // レアリティ (OR)
     addOrCondition($sql, $params, 'rarity', $rarities, false);
-
-    // 収録セット (OR)
     addOrCondition($sql, $params, 'expansion_set', $sets, false);
-
-    // 地形 (OR)
     addOrCondition($sql, $params, 'zone', $zones, true);
-
-    // コスト (OR) - 完全一致で複数選択
     addOrCondition($sql, $params, 'cost', $costs, false);
 
-    // ---------------------------------------------------------
-    // 3. 範囲検索 (AP / HP)
-    // ---------------------------------------------------------
+    // 3. 範囲検索
     if ($ap_min !== null && $ap_min !== '') {
         $sql .= " AND ap >= ?";
         $params[] = $ap_min;
@@ -111,19 +98,11 @@ try {
         $params[] = $hp_max;
     }
 
-    // ---------------------------------------------------------
-    // 4. 特徴検索 (Traits) - OR検索
-    // ---------------------------------------------------------
-    // 特徴がカンマ区切り等で送られてきた場合
+    // 4. 特徴検索
     addOrCondition($sql, $params, 'traits', $traits, true);
 
 
-    // ---------------------------------------------------------
-    // 5. ソート (Natural Sort 対応)
-    // ---------------------------------------------------------
-    // IDの場合はPHP側でソートするため、SQLでは一旦そのまま取得しても良いが、
-    // ここではページングなし全件取得前提なので取得後にソートする
-    // 数値系カラムのソートだけSQLでやっておくと楽
+    // 5. ソート (SQL側)
     if ($sort !== 'id') {
         $sql .= " ORDER BY $sort $order";
     }
@@ -133,7 +112,7 @@ try {
     $stmt->execute($params);
     $cards = $stmt->fetchAll(PDO::FETCH_ASSOC);
 
-    // IDのNatural Sort (ST01-2 < ST01-10)
+    // IDのNatural Sort
     if ($sort === 'id') {
         usort($cards, function($a, $b) use ($order) {
             $res = strnatcasecmp($a['id'], $b['id']);
@@ -141,9 +120,22 @@ try {
         });
     }
 
-    echo json_encode($cards);
+    // ▼▼▼ ここが重要: JSON化して出力 ▼▼▼
+    $json = json_encode($cards, JSON_INVALID_UTF8_IGNORE | JSON_UNESCAPED_UNICODE);
 
-} catch (PDOException $e) {
+    // 途中でWarningなどが出ていても、バッファをクリアして消し去る
+    ob_clean();
+
+    if ($json === false) {
+        http_response_code(500);
+        echo json_encode(["error" => "JSON Encoding Error: " . json_last_error_msg()]);
+    } else {
+        echo $json;
+    }
+    // ▲▲▲ ここまで ▲▲▲
+
+} catch (Exception $e) { // PDOExceptionも含めてすべてのエラーをキャッチ
+    ob_clean(); // エラー時もバッファをクリアしてきれいなJSONを返す
     http_response_code(500);
-    echo json_encode(["error" => "Database error: " . $e->getMessage()]);
+    echo json_encode(["error" => "Server Error: " . $e->getMessage()]);
 }

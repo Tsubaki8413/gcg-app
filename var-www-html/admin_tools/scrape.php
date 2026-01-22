@@ -3,7 +3,7 @@
 // エラー表示設定
 error_reporting(E_ALL & ~E_DEPRECATED);
 ini_set('display_errors', 1);
-set_time_limit(1800); 
+set_time_limit(1800);
 
 // GDライブラリのチェック（画像圧縮に必須）
 if (!extension_loaded('gd')) {
@@ -69,16 +69,16 @@ $xpath_id = ".//div[contains(@class, 'cardNo')]";
 $xpath_rarity = ".//div[contains(@class, 'rarity')]";
 
 // ▼▼▼ インデックス定義 ▼▼▼
-$idx_level = 0; 
-$idx_cost = 1; 
-$idx_color = 2; 
+$idx_level = 0;
+$idx_cost = 1;
+$idx_color = 2;
 $idx_type = 3;
-$idx_text = 4; 
-$idx_zone = 5; 
-$idx_trait = 6; 
+$idx_text = 4;
+$idx_zone = 5;
+$idx_trait = 6;
 $idx_link = 7;
-$idx_ap = 8; 
-$idx_hp = 9; 
+$idx_ap = 8;
+$idx_hp = 9;
 $idx_set = 11;
 
 // cURL関数
@@ -97,7 +97,7 @@ function fetchData($url, $referer = 'https://www.gundam-gcg.com/') {
         "Referer: $referer",
         'Accept-Language: ja,en-US;q=0.9,en;q=0.8'
     ]);
-    
+
     $data = curl_exec($ch);
     $http_code = curl_getinfo($ch, CURLINFO_HTTP_CODE);
     curl_close($ch);
@@ -118,7 +118,7 @@ function saveAsWebP($imgData, $savePath) {
 
     $width = imagesx($srcImage);
     $height = imagesy($srcImage);
-    
+
     // 長辺800px制限
     $maxSide = 800;
     if ($width > $maxSide || $height > $maxSide) {
@@ -129,13 +129,13 @@ function saveAsWebP($imgData, $savePath) {
             $newHeight = $maxSide;
             $newWidth = floor($width * ($maxSide / $height));
         }
-        
+
         $dstImage = imagecreatetruecolor($newWidth, $newHeight);
-        
+
         // 透過情報の維持
         imagealphablending($dstImage, false);
         imagesavealpha($dstImage, true);
-        
+
         imagecopyresampled($dstImage, $srcImage, 0, 0, 0, 0, $newWidth, $newHeight, $width, $height);
         imagedestroy($srcImage);
         $srcImage = $dstImage;
@@ -144,7 +144,7 @@ function saveAsWebP($imgData, $savePath) {
     // WebPで保存
     $result = imagewebp($srcImage, $savePath, 80);
     imagedestroy($srcImage);
-    
+
     return $result;
 }
 
@@ -158,25 +158,19 @@ function cleanForExcel($text) {
 // 【修正】テキスト整形・空行削除の強化版
 function getTextWithNewlines($node) {
     if (!$node) return '';
-    
-    // 1. HTMLを取得
-    $html = $node->ownerDocument->saveHTML($node);
-    
-    // 2. <br> を改行コードに変換
-    $html = preg_replace('/<br\s*\/?>/i', "\n", $html);
-    
-    // 3. タグを除去
-    $text = strip_tags($html);
-    
-    // 4. 実体参照（&nbsp;など）をデコードして通常の文字に戻す（これが重要）
-    $text = html_entity_decode($text, ENT_QUOTES, 'UTF-8');
-    
-    // 5. 前後の空白削除
-    $text = trim($text);
 
-    // 6. 「。」＋「任意の空白・改行」＋「(」 のパターンを「。」＋「改行1つ」＋「(」に置換
-    // \s+ は改行、スペース、タブすべてを含みます。これで間のゴミを一掃します。
-    $text = preg_replace('/(。)\s+([\(（])/u', "$1\n$2", $text);
+    // 1. HTMLタグ内の <br> を改行コードに変換
+    $text = str_replace(['<br>', '<br />', '<BR>'], "\n", $raw_text);
+
+    // 2. その他のHTMLタグを除去
+    $text = strip_tags($text);
+
+    // 3. 【修正】連続する改行コード(空行)を検知し、単一の改行に置換する
+    //    これにより「2文目と3文目の間の空行」や「。と（の間の空行」が全て解消されます
+    $text = preg_replace("/[\r\n]+/", "\n", $text);
+
+    // 4. 前後の空白を除去
+    $text = trim($text);
 
     return $text;
 }
@@ -196,9 +190,9 @@ fwrite($fp, "\xEF\xBB\xBF");
 
 // ヘッダー書き込み（SJIS変換）
 $header = [
-    'id', 'name', 'rarity', 'expansion_set', 
-    'level', 'cost', 'color', 'type', 
-    'text', 'zone', 'traits', 'link', 
+    'id', 'name', 'rarity', 'expansion_set',
+    'level', 'cost', 'color', 'type',
+    'text', 'zone', 'traits', 'link',
     'ap', 'hp', 'set_name', 'image_url'
 ];
 fputcsv($fp, $header);
@@ -219,7 +213,7 @@ foreach ($settings as $set) {
         flush();
 
         $html = fetchData($url);
-        $name = ''; 
+        $name = '';
 
         if ($html) {
             $dom = new DOMDocument;
@@ -240,7 +234,7 @@ foreach ($settings as $set) {
             if ($miss_count >= 3) {
                 echo "３回連続で見つからないため、次のセットへ移動します。\n";
                 flush();
-                break; 
+                break;
             }
             continue;
         }
@@ -255,12 +249,12 @@ foreach ($settings as $set) {
         $getByIndex = function($idx) use ($dataNodes, $idx_text) {
             if ($dataNodes->length > $idx) {
                 $node = $dataNodes->item($idx);
-                
+
                 // テキストの場合は、改行コード付きで取得する
                 if ($idx === $idx_text) {
                     return getTextWithNewlines($node);
                 }
-                
+
                 // それ以外は通常のテキスト取得
                 return trim($dataNodes->item($idx)->textContent);
             }
@@ -269,10 +263,10 @@ foreach ($settings as $set) {
 
         // 配列にまとめる
         $row_data = [
-            $id, 
-            $name, 
-            $rarity, 
-            $prefix, 
+            $id,
+            $name,
+            $rarity,
+            $prefix,
             $getByIndex($idx_level),
             $getByIndex($idx_cost),
             $getByIndex($idx_color),
@@ -329,7 +323,7 @@ foreach ($settings as $set) {
         echo "Done ($name)\n";
         flush();
 
-        usleep(300000); 
+        usleep(300000);
     }
 }
 

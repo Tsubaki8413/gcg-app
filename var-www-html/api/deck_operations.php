@@ -35,7 +35,7 @@ try {
     // --- POST: 新規作成 または 更新 ---
     elseif ($method === 'POST') {
         $input = json_decode(file_get_contents('php://input'), true);
-        
+
         if (!isset($input['title']) || !isset($input['cards'])) {
             throw new Exception("Missing required fields");
         }
@@ -60,7 +60,7 @@ try {
                 mt_rand(0, 0x3fff) | 0x8000,
                 mt_rand(0, 0xffff), mt_rand(0, 0xffff), mt_rand(0, 0xffff)
             );
-            
+
             $sql = "INSERT INTO decks (id, user_id, title, cards, thumbnail_id) VALUES (:id, :uid, :title, :cards, :thumb)";
             $stmt = $pdo->prepare($sql);
             $stmt->execute([':id'=>$new_id, ':uid'=>$user_id, ':title'=>$title, ':cards'=>$cards_json, ':thumb'=>$thumb]);

@@ -80,7 +80,7 @@ try {
 
     $pdo->commit();
     echo json_encode([
-        "status" => "success", 
+        "status" => "success",
         "message" => "Renamed $old_id to $new_id",
         "updated_decks" => $updatedDecksCount
     ]);

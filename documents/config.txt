@@ -1,0 +1,4 @@
+Host GCG_app
+  HostName 54.174.151.132
+  IdentityFile C:\Users\student\Desktop\GCG_app\documents\TCG_key.pem
+  User ec2-user

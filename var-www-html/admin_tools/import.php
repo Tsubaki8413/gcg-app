@@ -68,8 +68,8 @@ try {
             ':zone'          => $convert($data[9]),
             ':traits'        => $convert($data[10]),
             ':link'          => $convert($data[11]), // ここは元のままでOK(CSVの11番目がlink)
-            ':ap'            => (int)$data[12],
-            ':hp'            => (int)$data[13],
+            ':ap'            => $data[12],
+            ':hp'            => $data[13],
             ':image_url'     => $convert($data[15] ?? ''),
         ];
 

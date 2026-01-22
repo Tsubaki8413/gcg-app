@@ -18,12 +18,12 @@ CREATE TABLE IF NOT EXISTS cards (
     text TEXT COMMENT '効果テキスト(部分一致検索対象)',
     zone VARCHAR(50) COMMENT '地形適性',
     traits TEXT COMMENT '特徴(部分一致検索対象)',
-    link TEXT COMMENT 'リンク/搭乗条件(要件定義書に合わせてカラム名変更)', 
-    ap INT DEFAULT 0,
-    hp INT DEFAULT 0,
+    link TEXT COMMENT 'リンク/搭乗条件(要件定義書に合わせてカラム名変更)',
+    ap VARCHAR(10) DEFAULT '0',
+    hp VARCHAR(10) DEFAULT '0',
     image_url VARCHAR(255),
     updated_at DATETIME DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,
-    
+
     -- 検索・ソート高速化のためのインデックス
     INDEX idx_name (name),
     INDEX idx_color (color),

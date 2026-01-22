@@ -45,7 +45,7 @@ try {
         // FormDataで来るため $_POST と $_FILES を使用
         $id = strtoupper($_POST['id'] ?? '');
         $name = $_POST['name'] ?? '';
-        
+
         if (empty($id) || empty($name)) {
             throw new Exception("ID and Name are required.");
         }
@@ -62,7 +62,7 @@ try {
             $ext = 'webp';
             $new_filename = $id . '.' . $ext;
             $save_path = $image_dir . '/' . $new_filename;
-            
+
             if (saveUploadedImageAsWebP($_FILES['image']['tmp_name'], $save_path)) {
                 $image_filename = $new_filename;
             } else {
