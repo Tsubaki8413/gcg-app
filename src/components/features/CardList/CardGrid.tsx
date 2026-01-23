@@ -2,11 +2,29 @@ import { useState } from 'react';
 import { useCards } from '../../../hooks/useCards';
 import { FilterOverLay } from './FilterOverLay';
 import { CardDetailModal } from '../../CardDetail/CardDetailModal';
-import type { Card, SortField, SortOrder } from '../../../types';
+import type { Card, SortField } from '../../../types'; // SortFieldの型定義を利用
 
-// アイコン
+// アイコン: フィルタ
 const FilterIcon = () => (
   <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><polygon points="22 3 2 3 10 12.46 10 19 14 21 14 12.46 22 3"></polygon></svg>
+);
+
+// アイコン: 昇順 (Asc) - 低い方から高い方へ (A->Z, 0->9)
+const SortAscIcon = () => (
+  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+    <path d="M11 5h10M11 9h7M11 13h4" />
+    <path d="M3 17l3 3 3-3" />
+    <path d="M6 18V4" />
+  </svg>
+);
+
+// アイコン: 降順 (Desc) - 高い方から低い方へ (Z->A, 9->0)
+const SortDescIcon = () => (
+  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+    <path d="M11 5h4M11 9h7M11 13h10" />
+    <path d="M3 7l3-3 3 3" />
+    <path d="M6 6v14" />
+  </svg>
 );
 
 export const CardGrid = () => {
@@ -14,114 +32,112 @@ export const CardGrid = () => {
   const [selectedCard, setSelectedCard] = useState<Card | null>(null);
   const [isFilterOpen, setIsFilterOpen] = useState(false);
 
-  // 前後のカード移動用ロジック
+  // 1. 画像のプリロード用関数
+  const preloadImage = (url: string) => {
+    const img = new Image();
+    img.src = url;
+  };
+
+  // 2. 前後のカード移動用ロジック
   const currentIndex = selectedCard 
     ? cards.findIndex((c) => c.id === selectedCard.id) 
     : -1;
   const hasPrev = currentIndex > 0;
   const hasNext = currentIndex !== -1 && currentIndex < cards.length - 1;
 
-  const handlePrev = () => {
-    if (hasPrev) setSelectedCard(cards[currentIndex - 1]);
-  };
-  const handleNext = () => {
-    if (hasNext) setSelectedCard(cards[currentIndex + 1]);
-  };
+  const handlePrev = () => { if (hasPrev) setSelectedCard(cards[currentIndex - 1]); };
+  const handleNext = () => { if (hasNext) setSelectedCard(cards[currentIndex + 1]); };
 
-  const handleSortChange = (e: React.ChangeEvent<HTMLSelectElement>) => {
-    const value = e.target.value;
-    const [sort, order] = value.split('_') as [SortField, SortOrder];
-    
-    setFilters((prev) => ({
-      ...prev,
-      sort,
-      order,
-    }));
-  };
+  // 3. フィルタがアクティブかどうかの判定
+  const isFilterActive = Object.entries(filters).some(([key, value]) => 
+    key !== 'text' && key !== 'sort' && key !== 'order' && Array.isArray(value) && value.length > 0
+  );
 
-  // 1. 画像のプリロード用関数を作る
-  const preloadImage = (url: string) => {
-    const img = new Image();
-    img.src = url;
+  // 4. ソート順序の切り替えハンドラ
+  const toggleOrder = () => {
+    setFilters(prev => ({ ...prev, order: prev.order === 'asc' ? 'desc' : 'asc' }));
   };
-
-  const isFilterActive = 
-    Object.entries(filters).some(([key, value]) => 
-      key !== 'text' && key !== 'sort' && key !== 'order' && Array.isArray(value) && value.length > 0
-    );
 
   if (error) return <div style={{ padding: '20px', textAlign: 'center', color: 'red' }}>{error}</div>;
 
   return (
     <div style={{ padding: '20px', maxWidth: '1200px', margin: '0 auto' }}>
       
-      {/* ヘッダーエリア: 検索 + ソート + フィルタ */}
+      {/* ヘッダーエリア: 検索 + ソート(項目) + ソート(順序) + フィルタ */}
       <div
         className="header-row"
         style={{ 
           display: 'flex', gap: '10px', marginBottom: '20px',
           
-          // ▼▼▼ 修正箇所: stickyの設定を強化 ▼▼▼
-          position: 'sticky',     // 標準
-          top: '60px',            // ヘッダー(60px)
+          // Stickyの設定
+          position: 'sticky',
+          top: '60px',
           zIndex: 10,
           flexWrap: 'wrap',
           
-          // 背景色を指定しないと、スクロール時に後ろのカードが透けて見えてしまい
-          // stickyが効いていないように見えます。背景色をページ色に合わせます。
           backgroundColor: '#F5F7FA', 
           
-          // sticky時の上下の余白を少し調整（パディングをつけるときれいです）
           paddingTop: '10px',
           paddingBottom: '10px',
-          // マイナスマージンで左右のパディングを相殺して画面端まで広げるテクニック（任意）
-          margin: '-10px -20px 20px -20px',
+          margin: '-10px -20px 20px -20px', // 左右の余白を相殺
           paddingLeft: '20px',
           paddingRight: '20px'
         }}
       >
-        {/* フリーワード検索 */}
+        {/* 1. フリーワード検索 */}
         <input 
           type="text" 
           placeholder="Search..." 
           value={filters.text}
           onChange={(e) => setFilters(prev => ({ ...prev, text: e.target.value }))}
           style={{ 
-            flex: 1, minWidth: '150px', padding: '12px 16px', fontSize: '16px', borderRadius: '30px', 
+            flex: 1, minWidth: '120px', padding: '12px 16px', fontSize: '16px', borderRadius: '30px', 
             border: '1px solid #ddd', outline: 'none', boxShadow: '0 2px 8px rgba(0,0,0,0.1)'
           }}
         />
 
-        {/* ソート選択プルダウン */}
+        {/* 2. ソート項目選択 (Separated) */}
         <div style={{ position: 'relative' }}>
           <select
-            value={`${filters.sort}_${filters.order}`}
-            onChange={handleSortChange}
+            value={filters.sort}
+            onChange={(e) => setFilters(prev => ({ ...prev, sort: e.target.value as SortField }))}
             style={{
               appearance: 'none', padding: '0 30px 0 16px', height: '48px', borderRadius: '24px',
               border: '1px solid #ddd', background: 'white', fontSize: '14px', cursor: 'pointer',
-              boxShadow: '0 2px 8px rgba(0,0,0,0.1)', minWidth: '140px'
+              boxShadow: '0 2px 8px rgba(0,0,0,0.1)', minWidth: '100px'
             }}
           >
-            <option value="id_asc">No.順 (昇順)</option>
-            <option value="id_desc">No.順 (降順)</option>
-            <option value="level_asc">レベル (昇順)</option>
-            <option value="level_desc">レベル (降順)</option>
-            <option value="cost_asc">コスト (昇順)</option>
-            <option value="cost_desc">コスト (降順)</option>
-            <option value="ap_desc">AP (降順)</option>
-            <option value="hp_desc">HP (降順)</option>
-            <option value="rarity_desc">レアリティ (降順)</option>
+            <option value="id">No.</option>
+            <option value="level">Level</option>
+            <option value="cost">Cost</option>
+            <option value="ap">AP</option>
+            <option value="hp">HP</option>
+            <option value="rarity">Rarity</option>
           </select>
           <div style={{ position: 'absolute', right: '12px', top: '50%', transform: 'translateY(-50%)', pointerEvents: 'none', fontSize: '10px' }}>▼</div>
         </div>
 
-        {/* フィルタボタン */}
+        {/* 3. 昇順/降順 切り替えボタン (New) */}
+        <button
+          onClick={toggleOrder}
+          title={filters.order === 'asc' ? "昇順 (クリックで降順へ)" : "降順 (クリックで昇順へ)"}
+          style={{
+            width: '48px', height: '48px', borderRadius: '50%', flexShrink: 0,
+            background: 'white', color: '#666',
+            border: '1px solid #ddd', cursor: 'pointer',
+            display: 'flex', alignItems: 'center', justifyContent: 'center',
+            boxShadow: '0 2px 8px rgba(0,0,0,0.1)'
+          }}
+        >
+          {filters.order === 'asc' ? <SortAscIcon /> : <SortDescIcon />}
+        </button>
+
+        {/* 4. フィルタボタン */}
         <button 
           onClick={() => setIsFilterOpen(true)}
           style={{
             width: '48px', height: '48px', borderRadius: '50%', flexShrink: 0,
-            background: isFilterActive ? '#42A5F5' : 'white', // ここも色合わせ
+            background: isFilterActive ? '#42A5F5' : 'white', 
             color: isFilterActive ? 'white' : '#666',
             border: '1px solid #ddd', cursor: 'pointer',
             display: 'flex', alignItems: 'center', justifyContent: 'center', boxShadow: '0 2px 8px rgba(0,0,0,0.1)'
@@ -139,13 +155,20 @@ export const CardGrid = () => {
       {/* カード一覧グリッド */}
       <div 
         className="mobile-5-columns"
-        style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fill, minmax(110px, 1fr)', gap: '10px', paddingBottom: '80px', opacity: loading ? 0.6 : 1, transition: 'opacity 0.2s' }}
+        style={{ 
+          display: 'grid', 
+          gridTemplateColumns: 'repeat(auto-fill, minmax(110px, 1fr)', 
+          gap: '10px', 
+          paddingBottom: '80px', 
+          opacity: loading ? 0.6 : 1, 
+          transition: 'opacity 0.2s' 
+        }}
       >
         {cards.map((card) => (
           <div 
             key={card.id} 
             onClick={() => setSelectedCard(card)}
-            // ▼ 追加: マウスが乗った瞬間に裏で画像を読み込み開始
+            // 画像先読み
             onMouseEnter={() => card.image_url && preloadImage(`/images/${card.image_url}`)}
             style={{ 
               aspectRatio: '2.5 / 3.5', borderRadius: '6px', overflow: 'hidden', cursor: 'pointer',
@@ -170,7 +193,7 @@ export const CardGrid = () => {
         hasNext={hasNext}
       />
 
-      <FilterOverLay 
+      <FilterOverLay
         isOpen={isFilterOpen}
         onClose={() => setIsFilterOpen(false)}
         filters={filters}

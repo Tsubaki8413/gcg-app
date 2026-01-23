@@ -407,18 +407,51 @@ body {
     max-width: 90% !important;
   }
 
-  /* 詳細タグ：1行表示＋中央寄せ */
-  .card-detail-tags {
-    flex-wrap: nowrap !important;
-    overflow-x: auto !important;
+  /* * ×ボタンの調整
+   * 構造: .mobile-modal-padding > div(詳細モーダルのルート) > button(×ボタン)
+   * 階層を正確に指定することで、奥にあるナビゲーションボタンを除外します。
+   */
+  .mobile-modal-padding > div > button {
+    width: 44px !important;
+    height: 44px !important;
+    font-size: 28px !important;
+    
+    /* 位置調整 */
+    position: absolute !important;
+    top: 0px !important;      /* パディングエリアの上端に */
+    right: 0px !important;    /* パディングエリアの右端に */
+    
+    display: flex !important;
+    align-items: center !important;
     justify-content: center !important;
-    padding-bottom: 8px !important;
-    -webkit-overflow-scrolling: touch;
+    z-index: 100 !important;
+    padding: 0 !important;
+    background: transparent !important;
+    border: none !important;
+    cursor: pointer !important;
   }
+
+  /* * 詳細タグエリア
+   * 要件: 中央揃え / 横スクロールなし / 1行収め
+   */
+  .card-detail-tags {
+    display: flex !important;
+    flex-wrap: nowrap !important;     /* 2行にしない */
+    overflow: hidden !important;      /* はみ出し部分を隠す */
+    justify-content: center !important; /* 【修正】中央揃え */
+    align-items: center !important;
+    gap: 4px !important;              /* 間隔を微調整 */
+    width: 100%;
+    margin-bottom: 12px !important;
+  }
+
+  /* 個別のタグ: 1行に収めるためのサイズ調整 */
   .card-tag {
     font-size: 11px !important;
-    padding: 4px 8px !important;
+    padding: 4px 6px !important;      /* 横幅を節約 */
     white-space: nowrap !important;
-    flex-shrink: 0 !important;
+    flex-shrink: 1 !important;        /* 必要なら縮む */
+    border-radius: 12px !important;
+    text-overflow: ellipsis;          /* 文字が溢れたら...にする */
   }
 }

@@ -1,11 +1,15 @@
 # 提出課題
 
-## 起動方法
+http://54.174.151.132/ にて課題を制作しました。
+
+---
+
+## 更新方法
 
 ### フロントエンド側
-1. **distディレクトリに移動する**　cd dist
-2. **権限を取得する**　Set-ExecutionPolicy -ExecutionPolicy RemoteSigned -Scope Process
-3. **ビルドする**　npm run build
+1. **権限を取得する**　Set-ExecutionPolicy -ExecutionPolicy RemoteSigned -Scope Process
+2. **ビルドする**　npm run build
+3. **distディレクトリに移動する**　cd dist
 4. **scpコマンドを実行する**　scp -i ..\documents\TCG_key.pem -r ./* ec2-user@54.174.151.132:/var/www/html/
 
 ### バックエンド側

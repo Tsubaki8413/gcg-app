@@ -8,7 +8,7 @@ type Props = {
 };
 
 // 選択肢定義
-const COLORS = ['Red', 'Blue', 'White', 'Green', 'Purple'];
+const COLORS = ['Blue', 'Green', 'Red', 'Purple', 'White'];
 const TYPES = ['UNIT', 'PILOT', 'BASE', 'COMMAND', 'UNIT TOKEN'];
 const ZONES = ['宇宙', '地球'];
 const NUMBERS = ['0','1', '2', '3', '4', '5', '6', '7', '8', '9'];

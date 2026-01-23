@@ -42,6 +42,9 @@ export const useCards = () => {
         { key: 'colors', paramName: 'colors[]' },
         { key: 'types', paramName: 'types[]' },
         { key: 'costs', paramName: 'costs[]' }, // PHP側はOR一致
+        { key: 'levels', paramName: 'levels[]' },
+        { key: 'aps', paramName: 'aps[]' },
+        { key: 'hps', paramName: 'hps[]' },
         // levelsはPHP側に実装がないようですが、ある場合はここで追加
         { key: 'rarities', paramName: 'rarities[]' },
         { key: 'expansion_sets', paramName: 'sets[]' }, // PHP側は sets
