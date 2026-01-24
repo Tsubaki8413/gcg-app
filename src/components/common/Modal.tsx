@@ -9,7 +9,7 @@ interface ModalProps {
 }
 
 export const Modal = ({ isOpen, onClose, children }: ModalProps) => {
-  // モーダルが開いている間は背景スクロールを禁止
+  // モーダルオープン時の背景スクロール抑制
   useEffect(() => {
     if (isOpen) {
       document.body.style.overflow = 'hidden';
@@ -21,41 +21,19 @@ export const Modal = ({ isOpen, onClose, children }: ModalProps) => {
 
   if (!isOpen) return null;
 
-  // React Portalを使ってbody直下に描画（z-index管理のため）
   return createPortal(
     <div 
-      style={{
-        position: 'fixed', top: 0, left: 0, right: 0, bottom: 0,
-        backgroundColor: 'rgba(0, 0, 0, 0.7)',
-        zIndex: 1000,
-        display: 'flex', alignItems: 'center', justifyContent: 'center',
-        padding: '20px'
-      }}
-      onClick={onClose} // 背景クリックで閉じる
+      className="base-modal-backdrop"
+      onClick={onClose}
     >
       <div
-        className="mobile-modal-padding"
-        style={{
-          backgroundColor: 'white',
-          borderRadius: '12px',
-          maxWidth: '500px',
-          width: '100%',
-          height: '90vh',      // 高さを画面の80%に固定
-          overflowY: 'auto',   // 中身がこの高さを超えたらスクロール
-          boxSizing: 'border-box', // paddingを高さに含める
-          position: 'relative',
-          padding: '60px 20px 20px 20px'
-        }}
-        onClick={e => e.stopPropagation()} // 中身クリックでは閉じない
+        className="mobile-modal-padding base-modal-content"
+        onClick={e => e.stopPropagation()}
       >
-        {/* 閉じるボタン */}
+        {/* Close Button */}
         <button 
           onClick={onClose}
-          style={{
-            position: 'absolute', top: '0', right: '10px',
-            background: 'none', border: 'none', fontSize: '60px', cursor: 'pointer', color: '#666',
-            zIndex: 10, lineHeight: '1'
-          }}
+          className="base-modal-close-btn"
         >
           ×
         </button>

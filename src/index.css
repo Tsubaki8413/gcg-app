@@ -1,5 +1,8 @@
+/* =========================================
+   Base Settings & Variables
+   ========================================= */
 :root {
-  /* Design System Colors */
+  /* Colors */
   --color-bg: #F5F7FA;
   --color-surface: #FFFFFF;
   --color-primary: #0056D2;
@@ -8,6 +11,7 @@
   --color-danger: #D32F2F;
   --color-success: #2E7D32;
   
+  /* Fonts */
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
   line-height: 1.5;
   font-weight: 400;
@@ -23,7 +27,9 @@ body {
   overscroll-behavior-y: none;
 }
 
-/* ユーティリティ */
+/* =========================================
+   Utilities
+   ========================================= */
 .btn-primary {
   background-color: var(--color-primary);
   color: white;
@@ -44,7 +50,7 @@ body {
   cursor: pointer;
 }
 
-/* --- スクロールバー --- */
+/* Custom Scrollbar */
 ::-webkit-scrollbar {
   width: 6px;
   height: 6px;
@@ -57,38 +63,33 @@ body {
   border-radius: 4px;
 }
 
-
 /* =========================================
-   フィルターオーバーレイのスタイル
+   Component: Filter Overlay
    ========================================= */
 .filter-overlay {
   position: fixed;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
+  top: 0; left: 0; right: 0; bottom: 0;
   background-color: rgba(0, 0, 0, 0.5);
   z-index: 2000;
   display: flex;
-  align-items: center; /* 上下中央 */
-  justify-content: center; /* 左右中央 */
+  align-items: center;
+  justify-content: center;
   backdrop-filter: blur(2px);
 }
 
-/* コンテンツ枠（PC基準：広く、2列レイアウト用） */
 .filter-content {
   background: white;
-  width: 700px; /* PCでは幅広に */
+  width: 700px;
   max-width: 95vw;
-  max-height: 90vh; /* 画面内に収める */
+  max-height: 90vh;
   border-radius: 12px;
   box-shadow: 0 4px 20px rgba(0,0,0,0.2);
   display: flex;
   flex-direction: column;
-  overflow: hidden; /* 内部スクロールのため */
+  overflow: hidden;
 }
 
-/* ヘッダー */
+/* Header */
 .filter-header {
   padding: 16px 20px;
   border-bottom: 1px solid #eee;
@@ -111,23 +112,22 @@ body {
   color: #666;
 }
 
-/* ボディ（スクロールエリア） */
+/* Body */
 .filter-body {
   padding: 20px;
   overflow-y: auto;
   flex: 1;
 }
 
-/* ★PC用グリッドレイアウト（2列表示） */
+/* Grid Layout for Filter Sections */
 .filter-grid-container {
   display: grid;
-  grid-template-columns: 1fr 1fr; /* 2列 */
-  column-gap: 32px; /* 列の間隔 */
-  row-gap: 16px;    /* 行の間隔 */
+  grid-template-columns: 1fr 1fr;
+  column-gap: 32px;
+  row-gap: 16px;
 }
 
 .filter-section {
-  /* margin-bottomはgrid gapで制御するので削除または控えめに */
   margin-bottom: 0; 
 }
 .filter-section h3 {
@@ -136,13 +136,14 @@ body {
   color: #333;
   font-weight: bold;
 }
+
 .filter-options {
   display: flex;
   flex-wrap: wrap;
   gap: 6px;
 }
 
-/* リセットボタン */
+/* Buttons */
 .filter-reset-btn {
   width: 100%;
   padding: 10px;
@@ -159,7 +160,6 @@ body {
   background: #e0e0e0;
 }
 
-/* フィルターボタン（PC/共通） */
 .filter-btn {
   padding: 6px 12px;
   font-size: 13px;
@@ -187,12 +187,11 @@ body {
   flex-shrink: 0;
 }
 
-
 /* =========================================
-   カード詳細モーダルのスタイル（PC/共通）
+   Component: Card Detail Modal
    ========================================= */
 
-/* ナビゲーションボタン */
+/* Navigation Buttons */
 .modal-nav-btn {
   position: fixed;
   top: 50%;
@@ -221,16 +220,15 @@ body {
 .modal-nav-prev { left: max(10px, calc(50% - 340px)); }
 .modal-nav-next { right: max(10px, calc(50% - 340px)); }
 
-/* 画像エリア */
+/* Image Area */
 .card-detail-image-container {
   margin-bottom: 16px;
   display: flex;
   justify-content: center;
 }
-/* ★修正: PCでも画像を大きすぎないように制限して、読み込み後のガタつきを抑える */
 .card-detail-image {
   max-width: 100%;
-  max-height: 45vh; /* PCでも画面の半分弱に抑える */
+  max-height: 45vh;
   object-fit: contain;
   border-radius: 8px;
   box-shadow: 0 2px 8px rgba(0,0,0,0.1);
@@ -247,7 +245,7 @@ body {
   font-size: 14px;
 }
 
-/* テキスト情報 */
+/* Text & Info */
 .card-detail-title {
   margin: 0 0 10px 0;
   font-size: 20px;
@@ -291,44 +289,222 @@ body {
   border-top: 1px solid #eee;
 }
 
+/* =========================================
+   [NEW] Component: Base Modal (Modal.tsx)
+   ========================================= */
+.base-modal-backdrop {
+  position: fixed;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background-color: rgba(0, 0, 0, 0.7);
+  z-index: 1000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+}
+
+.base-modal-content {
+  background-color: white;
+  border-radius: 12px;
+  max-width: 500px;
+  width: 100%;
+  height: 90vh;
+  overflow-y: auto;
+  box-sizing: border-box;
+  position: relative;
+  padding: 40px 20px 20px 20px;
+}
+
+.base-modal-close-btn {
+  position: absolute;
+  top: 0;
+  right: 10px;
+  background: none;
+  border: none;
+  font-size: 60px;
+  cursor: pointer;
+  color: #666;
+  z-index: 10;
+  line-height: 1;
+}
 
 /* =========================================
-   スマホ・タブレット用レスポンシブ設定
+   [NEW] Component: CardGrid (CardGrid.tsx)
+   ========================================= */
+
+/* Error State */
+.cg-error-message {
+  padding: 20px;
+  text-align: center;
+  color: red;
+}
+
+/* Main Container */
+.cg-container {
+  padding: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Header Area */
+.cg-header {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 20px;
+  position: sticky;
+  top: 60px;
+  z-index: 10;
+  flex-wrap: wrap;
+  background-color: #F5F7FA;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  margin-left: -20px;
+  margin-right: -20px;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+/* Search Input */
+.cg-search-input {
+  flex: 1;
+  min-width: 120px;
+  padding: 12px 16px;
+  font-size: 16px;
+  border-radius: 30px;
+  border: 1px solid #ddd;
+  outline: none;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+/* Sort Select */
+.cg-select-wrapper {
+  position: relative;
+}
+.cg-sort-select {
+  appearance: none;
+  padding: 0 30px 0 16px;
+  height: 48px;
+  border-radius: 24px;
+  border: 1px solid #ddd;
+  background: white;
+  font-size: 14px;
+  cursor: pointer;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  min-width: 100px;
+}
+.cg-select-arrow {
+  position: absolute;
+  right: 12px;
+  top: 50%;
+  transform: translateY(-50%);
+  pointer-events: none;
+  font-size: 10px;
+}
+
+/* Header Buttons (Sort/Filter) */
+.cg-icon-btn {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  flex-shrink: 0;
+  background: white;
+  color: #666;
+  border: 1px solid #ddd;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+.cg-icon-btn.active {
+  background: #42A5F5;
+  color: white;
+}
+
+/* Results Count */
+.cg-results-row {
+  margin-bottom: 10px;
+  font-size: 14px;
+  color: #666;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.cg-loading-text {
+  font-size: 12px;
+  color: #42A5F5;
+}
+
+/* Card Grid Layout */
+.cg-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(110px, 1fr));
+  gap: 10px;
+  padding-bottom: 80px;
+  transition: opacity 0.2s;
+}
+.cg-grid.loading {
+  opacity: 0.6;
+}
+
+/* Card Item */
+.cg-card {
+  aspect-ratio: 2.5 / 3.5;
+  border-radius: 6px;
+  overflow: hidden;
+  cursor: pointer;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+  background: #e0e0e0;
+  position: relative;
+}
+.cg-card-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.cg-card-no-img {
+  padding: 10px;
+  font-size: 12px;
+  text-align: center;
+}
+
+/* =========================================
+   Responsive Settings (Mobile)
    ========================================= */
 @media screen and (max-width: 600px) {
   
-  /* カードリスト（5列強制） */
+  /* --- Card Grid --- */
   .mobile-5-columns {
     grid-template-columns: repeat(5, 1fr) !important;
     gap: 2px !important;
   }
   
-  /* ヘッダー行 */
-  .header-row {
+  /* --- Header --- */
+  .cg-header {
     flex-wrap: nowrap !important;
     gap: 6px !important;
     align-items: center !important;
   }
-  .header-row input[type="text"],
-  .header-row select,
-  .header-row > button {
+  .cg-search-input,
+  .cg-sort-select,
+  .cg-icon-btn {
     height: 34px !important;
     box-sizing: border-box !important;
     margin: 0 !important;
     font-size: 12px !important;
   }
-  .header-row input[type="text"] {
+  .cg-search-input {
     flex: 1 1 auto !important;
     min-width: 0 !important;
     padding: 0 8px !important;
   }
-  .header-row select {
+  .cg-sort-select {
     width: 100% !important;
     padding-left: 10px !important;
     padding-right: 20px !important;
     text-indent: 2px !important;
   }
-  .header-row > button { 
+  .cg-icon-btn { 
     width: 34px !important;
     padding: 7px !important;
     display: flex !important;
@@ -336,12 +512,9 @@ body {
     justify-content: center !important;
   }
 
-
-  /* --- フィルターモーダル（スマホ調整） --- */
-  
-  /* ★修正: 左右に余白を作る */
+  /* --- Filter Modal --- */
   .filter-content {
-    width: 90% !important; /* 横幅90%で左右に5%ずつの余白 */
+    width: 87.5% !important; /* ★変更: 90% -> 85% で余裕を持たせる */
     max-width: none !important;
     height: auto !important;
     max-height: 85dvh !important;
@@ -351,25 +524,24 @@ body {
   
   .filter-header {
     padding: 0 0 12px 0 !important;
+    margin-bottom: 12px !important; /* ★変更: ヘッダー下に余白を追加 */
   }
   .filter-body {
     padding: 0 !important;
   }
 
-  /* ★修正: スマホでは1列に戻す */
   .filter-grid-container {
     display: block !important;
   }
 
   .filter-section {
-    margin-bottom: 12px !important; /* スマホではセクション間隔を少し開ける */
+    margin-bottom: 12px !important;
   }
   .filter-section h3 {
     font-size: 12px !important;
     margin-bottom: 6px !important;
   }
 
-  /* ボタン調整 */
   .filter-btn:not(.circle-btn) {
     padding: 4px 10px !important;
     font-size: 11px !important;
@@ -389,9 +561,7 @@ body {
     font-size: 12px !important;
   }
 
-
-  /* --- カード詳細モーダル（スマホ調整） --- */
-
+  /* --- Card Detail Modal --- */
   .modal-nav-btn {
     width: 32px !important;
     height: 32px !important;
@@ -401,26 +571,19 @@ body {
   .modal-nav-prev { left: 6px !important; }
   .modal-nav-next { right: 6px !important; }
 
-  /* 画像サイズ */
   .card-detail-image {
-    max-height: 35vh !important; /* スマホは少し小さめに */
+    max-height: 35vh !important;
     max-width: 90% !important;
   }
 
-  /* * ×ボタンの調整
-   * 構造: .mobile-modal-padding > div(詳細モーダルのルート) > button(×ボタン)
-   * 階層を正確に指定することで、奥にあるナビゲーションボタンを除外します。
-   */
-  .mobile-modal-padding > div > button {
-    width: 44px !important;
-    height: 44px !important;
-    font-size: 28px !important;
-    
-    /* 位置調整 */
+  /* Close Button (×) Adjustment */
+  .mobile-modal-padding button:not(.modal-nav-btn):not(.btn-primary):not(.btn-secondary) {
+    width: 40px !important;
+    height: 40px !important;
+    font-size: 24px !important;
     position: absolute !important;
-    top: 0px !important;      /* パディングエリアの上端に */
-    right: 0px !important;    /* パディングエリアの右端に */
-    
+    top: 8px !important;
+    right: 8px !important;
     display: flex !important;
     align-items: center !important;
     justify-content: center !important;
@@ -429,29 +592,28 @@ body {
     background: transparent !important;
     border: none !important;
     cursor: pointer !important;
+    color: #333 !important;
   }
 
-  /* * 詳細タグエリア
-   * 要件: 中央揃え / 横スクロールなし / 1行収め
-   */
+  /* Tag Area */
   .card-detail-tags {
     display: flex !important;
-    flex-wrap: nowrap !important;     /* 2行にしない */
-    overflow: hidden !important;      /* はみ出し部分を隠す */
-    justify-content: center !important; /* 【修正】中央揃え */
+    flex-wrap: nowrap !important;
+    overflow: hidden !important;
+    justify-content: center !important;
     align-items: center !important;
-    gap: 4px !important;              /* 間隔を微調整 */
+    gap: 4px !important;
     width: 100%;
     margin-bottom: 12px !important;
   }
 
-  /* 個別のタグ: 1行に収めるためのサイズ調整 */
+  /* Individual Tag */
   .card-tag {
     font-size: 11px !important;
-    padding: 4px 6px !important;      /* 横幅を節約 */
+    padding: 4px 6px !important;
     white-space: nowrap !important;
-    flex-shrink: 1 !important;        /* 必要なら縮む */
+    flex-shrink: 1 !important;
     border-radius: 12px !important;
-    text-overflow: ellipsis;          /* 文字が溢れたら...にする */
+    text-overflow: ellipsis;
   }
 }
