@@ -29,18 +29,13 @@ const SortDescIcon = () => (
 
 /* --- Component --- */
 export const CardGrid = () => {
-  // 1. 表示用データ（フィルター操作で中身が変わる）
   const { cards, filters, setFilters, loading, error } = useCards();
-
-  // 2. ★追加: リンク判定用データ（常に全件取得する）
-  // 記述: 変数名を cards から allCards に変更して受け取る
   const { cards: allCards } = useCards();
 
   const [selectedCard, setSelectedCard] = useState<Card | null>(null);
   const [isFilterOpen, setIsFilterOpen] = useState(false);
   const [searchText, setSearchText] = useState('');
 
-  // フィルターが開いている間は背景スクロールを禁止
   useEffect(() => {
     if (isFilterOpen) {
       document.body.style.overflow = 'hidden';
@@ -50,13 +45,11 @@ export const CardGrid = () => {
     return () => { document.body.style.overflow = 'unset'; };
   }, [isFilterOpen]);
 
-  // 画像プリロード
   const preloadImage = (url: string) => {
     const img = new Image();
     img.src = url;
   };
 
-  // クライアントサイド検索 (AND / マイナス検索)
   const filteredCards = useMemo(() => {
     if (!searchText) return cards;
 
@@ -90,7 +83,6 @@ export const CardGrid = () => {
     });
   }, [cards, searchText]);
 
-  // 前後のカード移動ロジック
   const currentIndex = selectedCard 
     ? filteredCards.findIndex((c) => c.id === selectedCard.id) 
     : -1;
@@ -100,12 +92,10 @@ export const CardGrid = () => {
   const handlePrev = () => { if (hasPrev) setSelectedCard(filteredCards[currentIndex - 1]); };
   const handleNext = () => { if (hasNext) setSelectedCard(filteredCards[currentIndex + 1]); };
 
-  // フィルタ活性状態判定
   const isFilterActive = Object.entries(filters).some(([key, value]) => 
     key !== 'text' && key !== 'sort' && key !== 'order' && Array.isArray(value) && value.length > 0
   );
 
-  // ソート順切替
   const toggleOrder = () => {
     setFilters(prev => ({ ...prev, order: prev.order === 'asc' ? 'desc' : 'asc' }));
   };
@@ -126,6 +116,7 @@ export const CardGrid = () => {
           value={searchText}
           onChange={(e) => setSearchText(e.target.value)}
           className="cg-search-input"
+          aria-label="Search cards"
         />
 
         {/* Sort Select */}
@@ -134,21 +125,24 @@ export const CardGrid = () => {
             value={filters.sort}
             onChange={(e) => setFilters(prev => ({ ...prev, sort: e.target.value as SortField }))}
             className="cg-sort-select"
+            aria-label="Sort cards by" 
           >
-            <option value="id">カードNo.</option>
-            <option value="level">レベル</option>
-            <option value="cost">コスト</option>
+            <option value="id">No.</option>
+            <option value="level">Level</option>
+            <option value="cost">Cost</option>
             <option value="ap">AP</option>
             <option value="hp">HP</option>
-            <option value="rarity">レアリティ</option>
+            <option value="rarity">Rarity</option>
           </select>
           <div className="cg-select-arrow">▼</div>
         </div>
 
         {/* Sort Order Button */}
         <button
+          type="button" 
           onClick={toggleOrder}
-          title={filters.order === 'asc' ? "昇順 (クリックで降順へ)" : "降順 (クリックで昇順へ)"}
+          title={filters.order === 'asc' ? "Sort Ascending" : "Sort Descending"}
+          aria-label={filters.order === 'asc' ? "Sort Ascending" : "Sort Descending"} 
           className="cg-icon-btn"
         >
           {filters.order === 'asc' ? <SortAscIcon /> : <SortDescIcon />}
@@ -156,8 +150,10 @@ export const CardGrid = () => {
 
         {/* Filter Toggle Button */}
         <button 
+          type="button" 
           onClick={() => setIsFilterOpen(true)}
           className={`cg-icon-btn ${isFilterActive ? 'active' : ''}`}
+          aria-label="Open Filters" 
         >
           <FilterIcon />
         </button>
@@ -177,6 +173,9 @@ export const CardGrid = () => {
             onClick={() => setSelectedCard(card)}
             onMouseEnter={() => card.image_url && preloadImage(`/images/${card.image_url}`)}
             className="cg-card"
+            role="button" 
+            tabIndex={0}
+            aria-label={`View details for ${card.name}`}
           >
             {card.image_url ? (
               <img 

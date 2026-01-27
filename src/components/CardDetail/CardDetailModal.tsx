@@ -39,7 +39,6 @@ export const CardDetailModal = ({
   // カードが切り替わった時にスクロール位置をトップに戻す
   useEffect(() => {
     if (card) {
-      // Modalコンポーネント側のスクロール領域を取得してリセット
       const modalContent = document.querySelector('.base-modal-content');
       if (modalContent) {
         modalContent.scrollTop = 0;
@@ -47,6 +46,7 @@ export const CardDetailModal = ({
     }
   }, [card]);
 
+  // リンク可能なパイロットを抽出
   const linkablePilots = useMemo(() => {
     if (!card || !allCards || allCards.length === 0) return [];
     if (card.type?.toUpperCase() !== 'UNIT') return [];
@@ -94,9 +94,7 @@ export const CardDetailModal = ({
       // B. 名前マッチング
       if (targetNames.length > 0) {
         return targetNames.some(name => {
-          // 1. カード名に含まれているか
           if (c.name.includes(name)) return true;
-          // 2. テキストに含まれているか（「～としても扱う」対応）
           if (c.text && c.text.includes(name)) return true;
           return false;
         });
@@ -107,29 +105,39 @@ export const CardDetailModal = ({
 
   // 表示用パイロット名を決定する関数
   const getDisplayPilotName = (pilot: Card) => {
-    // テキストに【パイロット】があり、かつ「〇〇」が含まれている場合
     if (pilot.text && pilot.text.includes('【パイロット】')) {
-      // 最初の「」または『』の中身を抽出して返す
       const match = pilot.text.match(/[「『](.+?)[」』]/);
       if (match) {
         return match[1];
       }
     }
-    // なければ通常のカード名を返す
     return pilot.name;
   };
 
   if (!card) return null;
 
-  const hasValue = (val: any) => val !== undefined && val !== null && val !== '';
-  
-  const formatStat = (val: number | string | null | undefined, type: string, text?: string) => {
-    const num = Number(val);
-    const t = type ? type.toUpperCase() : '';
-    const isPilotLike = t === 'PILOT' || (text && text.includes('【パイロット】'));
-    if (isNaN(num) || val === '' || val === null || val === undefined) return '-';
-    if (isPilotLike) return num >= 0 ? `+${num}` : `${num}`;
-    return num === 0 ? '-' : `${num}`;
+  // --- ステータス表示のロジック ---
+  const isPilot = card.type === 'PILOT' || (card.text && card.text.includes('【パイロット】'));
+
+  /**
+   * ステータスの数値を整形して返す
+   * @param value 表示する値
+   * @param isBuff AP/HPなどパイロット時にプラス補正がかかる項目かどうか
+   */
+  const formatStatus = (value: number | string | undefined, isBuff: boolean = false) => {
+    if (value === undefined || value === null) return '-';
+
+    // パイロットかつバフ項目(AP/HP)なら "+" をつける
+    if (isPilot && isBuff) {
+      return `+${value}`;
+    }
+
+    // それ以外で 0 なら "-" にする
+    if (value == 0 || value === '0') {
+      return '-';
+    }
+
+    return value;
   };
 
   return (
@@ -145,7 +153,7 @@ export const CardDetailModal = ({
         </button>
       )}
 
-      <div style={{ paddingBottom: '40px' }}>
+      <div>
         <div className="card-detail-image-container">
           {card.image_url ? (
             <img src={`/images/${card.image_url}`} alt={card.name} className="card-detail-image" loading="eager" fetchPriority="high" />
@@ -156,86 +164,84 @@ export const CardDetailModal = ({
 
         <h2 className="card-detail-title">{card.name}</h2>
 
-        <div className="card-detail-tags">
-          {hasValue(card.color) && <span className="card-tag">{card.color}</span>}
-          {hasValue(card.type) && <span className="card-tag">{card.type}</span>}
-          {hasValue(card.level) && <span className="card-tag">Level: {card.level}</span>}
-          {hasValue(card.cost) && <span className="card-tag">Cost: {card.cost}</span>}
-          <span className="card-tag">AP: {formatStat(card.ap, card.type, card.text)}</span>
-          <span className="card-tag">HP: {formatStat(card.hp, card.type, card.text)}</span>
-        </div>
-
         <div className="card-detail-info-box">
-          <div className="card-info-row"><strong>Trait:</strong> {card.traits}</div>
-          <div className="card-info-row"><strong>Zone:</strong> {(card as any).zone}</div>
-          <div className="card-info-row"><strong>Link:</strong> {(card as any).link}</div>
+          <div className="card-stats-grid">
+            <div className="card-stat-row">
+              <span className="stat-label">Color:</span>
+              <span className="stat-value">{card.color}</span>
+            </div>
+            <div className="card-stat-row">
+              <span className="stat-label">Type:</span>
+              <span className="stat-value">{card.type}</span>
+            </div>
+            
+            <div className="card-stat-row">
+              <span className="stat-label">Level:</span>
+              {/* Levelはバフではないので isBuff=false (0なら-になる) */}
+              <span className="stat-value">{formatStatus(card.level, false)}</span>
+            </div>
+            <div className="card-stat-row">
+              <span className="stat-label">Cost:</span>
+              {/* Costもバフではない (0なら-になる) */}
+              <span className="stat-value">{formatStatus(card.cost, false)}</span>
+            </div>
+
+            <div className="card-stat-row">
+              <span className="stat-label">AP:</span>
+              {/* APはパイロット時にバフ扱い (0なら-、パイロットなら+数値) */}
+              <span className="stat-value">{formatStatus(card.ap, true)}</span>
+            </div>
+            <div className="card-stat-row">
+              <span className="stat-label">HP:</span>
+              {/* HPも同様 */}
+              <span className="stat-value">{formatStatus(card.hp, true)}</span>
+            </div>
+          </div>
+
+          <div className="card-info-row">
+            <span className="stat-label">Trait:</span>
+            <span>{card.traits}</span>
+          </div>
+          <div className="card-info-row">
+            <span className="stat-label">Zone:</span>
+            <span>{(card as any).zone}</span>
+          </div>
+          <div className="card-info-row">
+            <span className="stat-label">Link:</span>
+            <span>{(card as any).link}</span>
+          </div>
+          
           <div className="card-text-body">{card.text || 'No text available.'}</div>
         </div>
 
         {/* リンク可能パイロット表示 */}
         {linkablePilots.length > 0 && (
-          <div style={{ marginTop: '20px', borderTop: '1px solid #eee', paddingTop: '16px' }}>
-            <h3 style={{ fontSize: '14px', fontWeight: 'bold', marginBottom: '8px', color: '#333' }}>
+          <div className="linkable-pilots-section">
+            <h3 className="linkable-pilots-title">
               Linkable Pilots ({linkablePilots.length})
             </h3>
-            <div style={{ 
-              display: 'grid', 
-              gridTemplateColumns: 'repeat(5, 1fr)', 
-              gap: '8px',
-              paddingBottom: '8px' 
-            }}>
+            <div className="linkable-pilots-grid">
               {linkablePilots.map((pilot) => (
                 <div 
                   key={pilot.id}
+                  className="linkable-pilot-item"
                   onClick={() => onSelectCard && onSelectCard(pilot)}
-                  style={{ 
-                    cursor: 'pointer', 
-                    display: 'flex', 
-                    flexDirection: 'column', 
-                    alignItems: 'center' 
-                  }}
                 >
-                  <div style={{ 
-                    width: '100%', 
-                    aspectRatio: '5/7', 
-                    borderRadius: '4px', 
-                    border: '1px solid #eee',
-                    overflow: 'hidden',
-                    background: '#f9f9f9',
-                    position: 'relative'
-                  }}>
+                  <div className="linkable-pilot-img-wrapper">
                     {pilot.image_url ? (
                        <img 
                          src={`/images/${pilot.image_url}`} 
                          alt={pilot.name} 
-                         style={{ 
-                           width: '100%', 
-                           height: '100%', 
-                           objectFit: 'cover',
-                           display: 'block' 
-                         }} 
+                         className="linkable-pilot-img"
                        />
                     ) : (
-                      <div style={{ 
-                        width: '100%', height: '100%', 
-                        fontSize: '10px', display: 'flex', alignItems: 'center', justifyContent: 'center', textAlign: 'center', padding: '2px'
-                      }}>
+                      <div className="linkable-pilot-no-img">
                         {pilot.name}
                       </div>
                     )}
                   </div>
                   
-                  {/* ★修正: getDisplayPilotName を使用して表示名を切り替え */}
-                  <div style={{ 
-                    width: '100%',
-                    fontSize: '10px', 
-                    textAlign: 'center', 
-                    marginTop: '4px', 
-                    color: '#333',
-                    lineHeight: '1.2',
-                    wordWrap: 'break-word',
-                    overflowWrap: 'break-word'
-                  }}>
+                  <div className="linkable-pilot-name">
                     {getDisplayPilotName(pilot)}
                   </div>
                 </div>
