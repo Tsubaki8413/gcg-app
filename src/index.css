@@ -468,6 +468,50 @@ body {
   text-align: center;
 }
 
+/* --- Modal Sticky Close Button --- */
+.modal-close-sticky-container {
+  position: sticky !important;
+  top: 0 !important;
+  right: 0 !important;
+  z-index: 100 !important; /* 画像より確実に手前に */
+
+  /* ★重要変更: 高さを0にすることで、下の画像などに影響を与えなくします */
+  height: 0 !important;
+  overflow: visible !important;
+  margin-bottom: 0 !important;
+
+  display: flex !important;
+  justify-content: flex-end !important;
+  pointer-events: none;
+}
+
+.modal-sticky-close-btn {
+  /* ★位置調整: ここを変えても他の要素はずれません */
+  margin-top: 4px !important;   /* 上のフチからの距離（小さくすると上にいきます） */
+  margin-right: 4px !important; /* 右のフチからの距離 */
+
+  /* 以下、見た目の設定（変更なし） */
+  pointer-events: auto;
+  position: static !important;
+  width: 32px !important;
+  height: 32px !important;
+  font-size: 20px !important;
+  background: rgba(255, 255, 255, 0.8) !important;
+  backdrop-filter: blur(2px);
+  border-radius: 50% !important;
+  border: none !important;
+  color: #333 !important;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  cursor: pointer !important;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.modal-sticky-close-btn:hover {
+  background: rgba(255, 255, 255, 1);
+}
+
 /* =========================================
    Responsive Settings (Mobile)
    ========================================= */
@@ -577,7 +621,7 @@ body {
   }
 
   /* Close Button (×) Adjustment */
-  .mobile-modal-padding button:not(.modal-nav-btn):not(.btn-primary):not(.btn-secondary) {
+  .mobile-modal-padding button:not(.modal-nav-btn):not(.btn-primary):not(.btn-secondary):not(.modal-sticky-close-btn) {
     width: 40px !important;
     height: 40px !important;
     font-size: 24px !important;

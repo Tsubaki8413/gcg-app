@@ -24,6 +24,7 @@ export const CardDetailModal = ({
   onSelectCard
 }: CardDetailModalProps) => {
 
+  // キーボード操作設定
   useEffect(() => {
     const handleKeyDown = (e: KeyboardEvent) => {
       if (!card) return;
@@ -34,6 +35,17 @@ export const CardDetailModal = ({
     window.addEventListener('keydown', handleKeyDown);
     return () => window.removeEventListener('keydown', handleKeyDown);
   }, [card, hasPrev, hasNext, onPrev, onNext, onClose]);
+
+  // カードが切り替わった時にスクロール位置をトップに戻す
+  useEffect(() => {
+    if (card) {
+      // Modalコンポーネント側のスクロール領域を取得してリセット
+      const modalContent = document.querySelector('.base-modal-content');
+      if (modalContent) {
+        modalContent.scrollTop = 0;
+      }
+    }
+  }, [card]);
 
   const linkablePilots = useMemo(() => {
     if (!card || !allCards || allCards.length === 0) return [];
@@ -93,7 +105,7 @@ export const CardDetailModal = ({
     });
   }, [card, allCards]);
 
-  // ★追加: 表示用パイロット名を決定する関数
+  // 表示用パイロット名を決定する関数
   const getDisplayPilotName = (pilot: Card) => {
     // テキストに【パイロット】があり、かつ「〇〇」が含まれている場合
     if (pilot.text && pilot.text.includes('【パイロット】')) {

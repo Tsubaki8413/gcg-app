@@ -30,13 +30,16 @@ export const Modal = ({ isOpen, onClose, children }: ModalProps) => {
         className="mobile-modal-padding base-modal-content"
         onClick={e => e.stopPropagation()}
       >
-        {/* Close Button */}
-        <button 
-          onClick={onClose}
-          className="base-modal-close-btn"
-        >
-          ×
-        </button>
+        {/* Sticky Close Button Container */}
+        <div className="modal-close-sticky-container">
+          <button 
+            onClick={onClose}
+            className="modal-sticky-close-btn"
+            aria-label="Close"
+          >
+            ×
+          </button>
+        </div>
         {children}
       </div>
     </div>,

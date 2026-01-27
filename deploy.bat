@@ -1,26 +1,25 @@
 @echo off
 
 echo ==========================================
-echo �f�v���C���J�n���܂�...
+echo Deployment Started...
 echo ==========================================
 
-:: 1. �r���h�����s
-echo [1/3] �t�����g�G���h���r���h��...
+:: 1. Build
+echo [1/3] Building frontend...
 call npm run build
 if %errorlevel% neq 0 (
-    echo �r���h�Ɏ��s���܂����B���~���܂��B
+    echo Build failed. Stopping deployment.
     exit /b %errorlevel%
 )
 
-:: 2. �t�@�C�����T�[�o�[�֓]�� (SCP)
-echo [2/3] �T�[�o�[�փt�@�C����]����...
-:: ����: ���t�@�C���̃p�X�͐�΃p�X���A���̃o�b�`�t�@�C������̑��΃p�X�Ŏw�肵�܂�
+:: 2. File Transfer (SCP)
+echo [2/3] Transferring files to server...
 scp -i "documents\TCG_key.pem" -r ./dist/* ec2-user@54.174.151.132:/var/www/html/
 
-:: 3. �����̕ύX (SSH�o�R�ŃR�}���h���s)
-echo [3/3] �T�[�o�[�̌������C����...
+:: 3. Change Permissions (SSH)
+echo [3/3] Updating server permissions...
 ssh -i "documents\TCG_key.pem" ec2-user@54.174.151.132 "sudo chmod -R 755 /var/www/html/assets"
 
 echo ==========================================
-echo �f�v���C�������܂����I
+echo Deployment Successful!
 echo ==========================================
