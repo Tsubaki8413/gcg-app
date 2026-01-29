@@ -46,7 +46,36 @@ export const CardDetailModal = ({
     }
   }, [card]);
 
-  // リンク可能なパイロットを抽出
+  // --------------------------------------------------------------------------
+  // Helper: 表示用パイロット名を決定する関数
+  // --------------------------------------------------------------------------
+  const getDisplayPilotName = (pilot: Card) => {
+    if (pilot.text && pilot.text.includes('【パイロット】')) {
+      // 【パイロット】より後ろにある最初の「」または『』の中身を取得
+      const keywordIndex = pilot.text.indexOf('【パイロット】');
+      if (keywordIndex !== -1) {
+        const textAfterKeyword = pilot.text.slice(keywordIndex);
+        const match = textAfterKeyword.match(/[「『](.+?)[」』]/);
+        if (match) {
+          return match[1];
+        }
+      }
+    }
+    return pilot.name;
+  };
+
+  // --------------------------------------------------------------------------
+  // Helper: 「としても扱う」別名を取得する関数
+  // --------------------------------------------------------------------------
+  const getAliasName = (text: string | undefined) => {
+    if (!text) return null;
+    const match = text.match(/このカードのカード名は「([^」]+)」としても扱う/);
+    return match ? match[1] : null;
+  };
+
+  // --------------------------------------------------------------------------
+  // 1. リンク可能なパイロットを抽出 (Unit -> Pilot)
+  // --------------------------------------------------------------------------
   const linkablePilots = useMemo(() => {
     if (!card || !allCards || allCards.length === 0) return [];
     if (card.type?.toUpperCase() !== 'UNIT') return [];
@@ -57,8 +86,8 @@ export const CardDetailModal = ({
     const targetNames: string[] = [];
     const targetTraits: string[] = [];
 
-    // 1. 特徴の抽出
-    const traitRegex = /特徴(?:〔|\[|【)(.+?)(?:〕|\]|】)/g;
+    // 1. 特徴の抽出 (プレフィックスなしで抽出)
+    const traitRegex = /(?:〔|\[|【)(.+?)(?:〕|\]|】)/g;
     let tMatch;
     while ((tMatch = traitRegex.exec(rawLink)) !== null) {
       targetTraits.push(tMatch[1]);
@@ -73,7 +102,7 @@ export const CardDetailModal = ({
       targetNames.push(nMatch[1]);
     }
 
-    // 3. カッコがない場合のフォールバック
+    // 3. フォールバック
     if (!hasNameBrackets && targetTraits.length === 0) {
       const parts = rawLink.split('/');
       parts.forEach((p: string) => {
@@ -86,16 +115,31 @@ export const CardDetailModal = ({
       const isPilot = c.type === 'PILOT' || (c.text && c.text.includes('【パイロット】'));
       if (!isPilot) return false;
 
-      // A. 特徴マッチング
-      if (targetTraits.length > 0) {
-        if (c.traits && targetTraits.some(trait => c.traits.includes(trait))) return true;
+      // A. 特徴マッチング (完全一致)
+      if (targetTraits.length > 0 && c.traits) {
+        const pilotTraits: string[] = [];
+        const ptRegex = /(?:〔|\[|【)(.+?)(?:〕|\]|】)/g;
+        let ptMatch;
+        while ((ptMatch = ptRegex.exec(c.traits)) !== null) {
+          pilotTraits.push(ptMatch[1]);
+        }
+        if (targetTraits.some(target => pilotTraits.includes(target))) return true;
       }
 
-      // B. 名前マッチング
+      // B. 名前マッチング (部分一致)
       if (targetNames.length > 0) {
         return targetNames.some(name => {
+          // 1. カード名
           if (c.name.includes(name)) return true;
-          if (c.text && c.text.includes(name)) return true;
+          
+          // 2. 【パイロット】表記名
+          const displayName = getDisplayPilotName(c);
+          if (displayName !== c.name && displayName.includes(name)) return true;
+
+          // 3. 「としても扱う」別名 (NEW)
+          const aliasName = getAliasName(c.text);
+          if (aliasName && aliasName.includes(name)) return true;
+
           return false;
         });
       }
@@ -103,40 +147,99 @@ export const CardDetailModal = ({
     });
   }, [card, allCards]);
 
-  // 表示用パイロット名を決定する関数
-  const getDisplayPilotName = (pilot: Card) => {
-    if (pilot.text && pilot.text.includes('【パイロット】')) {
-      const match = pilot.text.match(/[「『](.+?)[」』]/);
-      if (match) {
-        return match[1];
+  // --------------------------------------------------------------------------
+  // 2. リンク可能なユニットを抽出 (Pilot -> Unit)
+  // --------------------------------------------------------------------------
+  const linkableUnits = useMemo(() => {
+    const isPilot = card && (card.type === 'PILOT' || (card.text && card.text.includes('【パイロット】')));
+    if (!isPilot || !allCards || allCards.length === 0) return [];
+
+    // 自分の情報を準備
+    const myName = card.name;
+    const myTextName = getDisplayPilotName(card);
+    const hasTextName = myTextName !== myName;
+    const myAliasName = getAliasName(card.text); // (NEW)
+
+    // 自分の特徴リストを作成
+    const myTraits: string[] = [];
+    if (card.traits) {
+      const myTraitRegex = /(?:〔|\[|【)(.+?)(?:〕|\]|】)/g;
+      let mMatch;
+      while ((mMatch = myTraitRegex.exec(card.traits)) !== null) {
+        myTraits.push(mMatch[1]);
       }
     }
-    return pilot.name;
-  };
+
+    return allCards.filter(unit => {
+      if (unit.type?.toUpperCase() !== 'UNIT') return false;
+      
+      const linkText = (unit as any).link;
+      if (!linkText || linkText === '-' || linkText === '') return false;
+
+      const targetNames: string[] = [];
+      const targetTraits: string[] = [];
+
+      // 1. 特徴条件の抽出
+      const unitTraitRegex = /(?:〔|\[|【)(.+?)(?:〕|\]|】)/g;
+      let tMatch;
+      while ((tMatch = unitTraitRegex.exec(linkText)) !== null) {
+        targetTraits.push(tMatch[1]);
+      }
+
+      // 2. 名前条件の抽出
+      const unitNameRegex = /[「『](.+?)[」』]/g;
+      let nMatch;
+      let hasNameBrackets = false;
+      while ((nMatch = unitNameRegex.exec(linkText)) !== null) {
+        hasNameBrackets = true;
+        targetNames.push(nMatch[1]);
+      }
+
+      // 3. フォールバック
+      if (!hasNameBrackets && targetTraits.length === 0) {
+        const parts = linkText.split('/');
+        parts.forEach((p: string) => {
+          const clean = p.trim();
+          if (clean) targetNames.push(clean);
+        });
+      }
+
+      // --- 判定ロジック ---
+
+      // A. 特徴マッチング (完全一致)
+      if (targetTraits.length > 0) {
+        const traitMatch = targetTraits.some(target => myTraits.includes(target));
+        if (traitMatch) return true;
+      }
+
+      // B. 名前マッチング (部分一致)
+      if (targetNames.length > 0) {
+        const nameMatch = targetNames.some(target => {
+          return myName.includes(target) || 
+                 (hasTextName && myTextName.includes(target)) ||
+                 (myAliasName && myAliasName.includes(target)); // (NEW)
+        });
+        if (nameMatch) return true;
+      }
+
+      return false;
+    });
+  }, [card, allCards]);
+
 
   if (!card) return null;
 
   // --- ステータス表示のロジック ---
   const isPilot = card.type === 'PILOT' || (card.text && card.text.includes('【パイロット】'));
 
-  /**
-   * ステータスの数値を整形して返す
-   * @param value 表示する値
-   * @param isBuff AP/HPなどパイロット時にプラス補正がかかる項目かどうか
-   */
   const formatStatus = (value: number | string | undefined, isBuff: boolean = false) => {
     if (value === undefined || value === null) return '-';
-
-    // パイロットかつバフ項目(AP/HP)なら "+" をつける
     if (isPilot && isBuff) {
       return `+${value}`;
     }
-
-    // それ以外で 0 なら "-" にする
     if (value == 0 || value === '0') {
       return '-';
     }
-
     return value;
   };
 
@@ -177,23 +280,19 @@ export const CardDetailModal = ({
             
             <div className="card-stat-row">
               <span className="stat-label">Level:</span>
-              {/* Levelはバフではないので isBuff=false (0なら-になる) */}
               <span className="stat-value">{formatStatus(card.level, false)}</span>
             </div>
             <div className="card-stat-row">
               <span className="stat-label">Cost:</span>
-              {/* Costもバフではない (0なら-になる) */}
               <span className="stat-value">{formatStatus(card.cost, false)}</span>
             </div>
 
             <div className="card-stat-row">
               <span className="stat-label">AP:</span>
-              {/* APはパイロット時にバフ扱い (0なら-、パイロットなら+数値) */}
               <span className="stat-value">{formatStatus(card.ap, true)}</span>
             </div>
             <div className="card-stat-row">
               <span className="stat-label">HP:</span>
-              {/* HPも同様 */}
               <span className="stat-value">{formatStatus(card.hp, true)}</span>
             </div>
           </div>
@@ -214,7 +313,7 @@ export const CardDetailModal = ({
           <div className="card-text-body">{card.text || 'No text available.'}</div>
         </div>
 
-        {/* リンク可能パイロット表示 */}
+        {/* Unit -> Pilot */}
         {linkablePilots.length > 0 && (
           <div className="linkable-pilots-section">
             <h3 className="linkable-pilots-title">
@@ -249,6 +348,42 @@ export const CardDetailModal = ({
             </div>
           </div>
         )}
+
+        {/* Pilot -> Unit */}
+        {linkableUnits.length > 0 && (
+          <div className="linkable-pilots-section">
+            <h3 className="linkable-pilots-title">
+              Linkable Units ({linkableUnits.length})
+            </h3>
+            <div className="linkable-pilots-grid">
+              {linkableUnits.map((unit) => (
+                <div 
+                  key={unit.id}
+                  className="linkable-pilot-item"
+                  onClick={() => onSelectCard && onSelectCard(unit)}
+                >
+                  <div className="linkable-pilot-img-wrapper">
+                    {unit.image_url ? (
+                       <img 
+                         src={`/images/${unit.image_url}`} 
+                         alt={unit.name} 
+                         className="linkable-pilot-img"
+                       />
+                    ) : (
+                      <div className="linkable-pilot-no-img">
+                        {unit.name}
+                      </div>
+                    )}
+                  </div>
+                  <div className="linkable-pilot-name">
+                    {unit.name}
+                  </div>
+                </div>
+              ))}
+            </div>
+          </div>
+        )}
+
       </div>
     </Modal>
   );
