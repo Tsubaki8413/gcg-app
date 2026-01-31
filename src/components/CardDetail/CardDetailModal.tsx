@@ -74,6 +74,28 @@ export const CardDetailModal = ({
   };
 
   // --------------------------------------------------------------------------
+  // タイトル表示用ロジック
+  // --------------------------------------------------------------------------
+  const titleDisplay = useMemo(() => {
+    if (!card) return '';
+    
+    // テキストに【パイロット】が含まれる場合、後ろの名前を抽出して連結
+    if (card.text && card.text.includes('【パイロット】')) {
+      const keywordIndex = card.text.indexOf('【パイロット】');
+      if (keywordIndex !== -1) {
+        const textAfterKeyword = card.text.slice(keywordIndex);
+        const match = textAfterKeyword.match(/[「『](.+?)[」』]/);
+        if (match) {
+          // 例: "深い愛情／ルクレツィア・ノイン"
+          return `${card.name}／${match[1]}`;
+        }
+      }
+    }
+    
+    return card.name;
+  }, [card]);
+
+  // --------------------------------------------------------------------------
   // 1. リンク可能なパイロットを抽出 (Unit -> Pilot)
   // --------------------------------------------------------------------------
   const linkablePilots = useMemo(() => {
@@ -265,7 +287,7 @@ export const CardDetailModal = ({
           )}
         </div>
 
-        <h2 className="card-detail-title">{card.name}</h2>
+        <h2 className="card-detail-title">{titleDisplay}</h2>
 
         <div className="card-detail-info-box">
           <div className="card-stats-grid">
